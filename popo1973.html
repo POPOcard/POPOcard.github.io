@@ -1,6 +1,135 @@
-<title>流量卡POPO的店铺</title>
+<title>POPO的店铺</title>
 
-
+   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4%;
+      background-color:#DCDCDC;
+      display: flex;  
+   justify-content: space-around;
+      align-items: center;
+    }
+    #menu a {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    #menu a:hover {
+      background-color: white;
+      color: black;
+    }
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .popup-content {
+      width: 100%;
+      height: 75%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .popup-content h1 { 
+   font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content p .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .popup-content {
+      width: 100%;
+      height: 90%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .popup-content h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content p {{
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .popup-content button {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      background-color: lightgray;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</style>
+  <script>
+    window.onload = function() {
+      var popup = document.getElementById('popup');
+      var confirmBtn = document.getElementById('confirm-btn');
+      confirmBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    }
+  </script>
+</head>
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>公告</h2>
+      <p> <h5> 店内所有套餐均已官方备案，官方承认！（非物联卡）<br>与你本地线下办理的手机卡无任何区别(归属地除外)！
+	  <br><br>所有套餐，免费申请，包邮到家！无任何其他费用！无需“开卡费”，“首冲”即预存话费，实时到账，不是“开卡费”，无需重复充值！
+	  <br><br>所有套餐均可在“中国移动、中国联通、中国电信”（网上营业厅）APP登录、查询、核实套餐内容及有效期（人工服务）！
+	  <br><br>套餐为4G套餐，但均已开通“5G SA”！请把手机5G开关打开！下载速度：300-500mbps！（个别套餐除外）
+	  <br><br>不限速、不虚量、可开热点、无套路、无暗坑、无任何隐藏消费，吊打任何“物联卡”！
+	<br><br>                                
+本店所有手机卡禁止用于“电话销售、电信网络诈骗”等违法犯罪！<br>
+凡是有上述情况发生均属于个人行为，与本店无关！
+请积极配合公安机关调查！<br>
+所有手机卡激活时均需实名认证与活体验证。请勿抱有任何侥幸心理贩卖、转借、出租自己的手机卡！<br>
+凡在本店申请的手机卡，即默认已知晓并同意上述规定！<br>
+每日拨打20-30不同号码，直接停机！（重复拨打同一号码计数为1）
+	  <br><br>拒绝任何虚假宣传，监督投诉举报方法：公众号“工信部12300”！ <h5></p>
+      <button id="confirm-btn">我已知晓</button>
+    
 <html>
 <head>
 	<title>翻牌式轮播和图片轮播</title>
