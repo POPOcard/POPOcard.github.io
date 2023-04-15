@@ -63,3 +63,48 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>固定跳转菜单</title>
+	<style>
+		/* 设置页面底部悬浮菜单的样式 */
+		#fixed-menu {
+			position: fixed;
+			bottom: 1%; /* 距离页面底部5%的位置 */
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background-color: #f9f9f9;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			z-index: 999; /* 让菜单浮在最上层 */
+		}
+		#fixed-menu a {
+			color: #333;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+line-height: 50px;
+			width: 33.33%;
+			box-sizing: border-box;
+		}
+		#fixed-menu a:hover {
+			background-color: #ccc;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="fixed-menu">
+		<a
+href="http://lm.05321888.com:88/hkzs/date/img/1681009251331.png">人工客服</a>
+		<a href="http://91haoka.cn/webapp/merchant/query.html">订单查询</a>
+		<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">公众号</a>
+	</div>
+</body>
+</html>
