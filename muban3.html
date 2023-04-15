@@ -1,11 +1,141 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.4">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:#DCDCDC;
+      display: flex;  
+   justify-content: space-around;
+      align-items: center;
+    }
+    #menu a {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    #menu a:hover {
+      background-color: white;
+      color: black;
+    }
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .popup-content {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .popup-content h1 { 
+   font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content p .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .popup-content {
+      width: 100%;
+      height: 80%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .popup-content h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content p {{
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .popup-content button {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      background-color: lightgray;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</style>
+  <script>
+    window.onload = function() {
+      var popup = document.getElementById('popup');
+      var confirmBtn = document.getElementById('confirm-btn');
+      confirmBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    }
+  </script>
+</head>
+</head>
+<body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h1>公告</h1>
+      <p> <h2> 店内所有套餐均已官方备案，官方承认！（非物联卡）<br>与你本地线下办理的手机卡无任何区别(归属地除外)！
+	  <br><br>所有套餐，免费申请，包邮到家！无任何其他费用！无需“开卡费”，“首冲”即预存话费，实时到账，不是“开卡费”，无需重复充值！
+	  <br><br>所有套餐均可在“中国移动、中国联通、中国电信”（网上营业厅）APP登录、查询、核实套餐内容及有效期（人工服务）！
+	  <br><br>套餐为4G套餐，但均已开通“5G SA”！请把手机5G开关打开！下载速度：300-500mbps！（个别套餐除外）
+	  <br><br>不限速、不虚量、可开热点、无套路、无暗坑、无任何隐藏消费，吊打任何“物联卡”！
+	<br><br>                                
+本店所有手机卡禁止用于“电话销售、电信网络诈骗”等违法犯罪！<br>
+凡是有上述情况发生均属于个人行为，与本店无关！
+请积极配合公安机关调查！<br>
+所有手机卡激活时均需实名认证与活体验证。请勿抱有任何侥幸心理贩卖、转借、出租自己的手机卡！<br>
+凡在本店申请的手机卡，即默认已知晓并同意上述规定！<br>
+每日拨打20-30不同号码（陌生），直接停机！（重复拨打同一号码计数为1）
+	  <br><br>拒绝任何虚假宣传，监督投诉举报方法：公众号“工信部12300”！ <h2></p>
+      <button id="confirm-btn"><h1>我已知晓<h1></button>
+    </div></div>
 
 </head>
 <head>
 	<title>调整缩略图大小</title>
 	<style>
 		img {
-			width: 300px;
-			height: 300px;
+			宽度：320 像素;
+			高度：320 像素;
 		}
 	</style>
 </head>
@@ -115,45 +245,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>固定跳转菜单</title>
-	<style>
-		/* 设置页面底部悬浮菜单的样式 */
-		#fixed-menu {
-			position: fixed;
-			bottom: 0%; /* 距离页面底部5%的位置 */
-			left: 0;
-			width: 100%;
-			height: 50px;
-			background-color: #f9f9f9;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			z-index: 999; /* 让菜单浮在最上层 */
-		}
-		#fixed-menu a {
-			color: #333;
-			text-decoration: none;
-			font-size: 16px;
-			font-weight: bold;
-			text-align: center;
-line-height: 50px;
-			width: 33.33%;
-			box-sizing: border-box;
-		}
-		#fixed-menu a:hover {
-			background-color: #ccc;
-			color: #fff;
-		}
-	</style>
+	</div>
+<head>
+    <title>Fixed Navigation Menu with Breathing Animation</title>
+    <style>
+      /* 设置菜单栏的样式 */
+      .menu {
+        position: fixed;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+
+      /* 设置菜单项的样式 */
+      .menu a {
+        color: #007bff;
+        font-size: calc(100% + 1vh);
+        text-decoration: none;
+        animation: breathing 3s ease-in-out infinite;
+      }
+
+      /* 定义呼吸跳动的动画 */
+      @keyframes breathing {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 菜单栏的HTML代码 -->
+    <div class="menu">
+      <a href="https://img1.imgtp.com/2023/04/09/X6AQdeU1.jpg">人工服务</a>
+      <a href="http://91haoka.cn/webapp/merchant/query.html">订单查询</a>
+      <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">公众号</a>
+    </div>
+  </body>
+</html>
+	    <!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <style>
+    body {
+      padding-bottom: 18%;
+    }
+  </style>
 </head>
 <body>
-
-	<div id="fixed-menu">
-		<a
-href="http://lm.05321888.com:88/hkzs/date/img/1681009251331.png">人工客服</a>
-		<a href="http://91haoka.cn/webapp/merchant/query.html">订单查询</a>
-		<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">公众号</a>
-	</div>
 </body>
-
