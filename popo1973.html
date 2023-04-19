@@ -1,8 +1,44 @@
-<title>POPO的店铺</title>
-<html>
+
 <head>
-	<title>翻牌式轮播和图片轮播</title>
+	<title>POPO的店铺</title>
 	<style>
+ body {
+      padding-bottom: 18%;
+    }
+  .menu {
+        position: fixed;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+
+      /* 设置菜单项的样式 */
+      .menu a {
+        color: #007bff;
+        font-size: calc(100% + 1vh);
+        text-decoration: none;
+        animation: breathing 3s ease-in-out infinite;
+      }
+
+      /* 定义呼吸跳动的动画 */
+      @keyframes breathing {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 		/* 样式表 */
 		#header {
 			display: flex;
@@ -112,9 +148,8 @@
 		</div>
 		<div id="slider">
 			<div class="slides">
-			
-				<div class="slide"><img src="https://static.91haoka.cn/1681549986h0T.jpg"></div>
-				<div class="slide"><img src="https://static.91haoka.cn/1681550051ijD.jpg"></div>
+				<div class="slide"><img src="https://img1.imgtp.com/2023/04/13/5Qu4Hg7s.jpg"></div>
+				<div class="slide"><img src="https://img1.imgtp.com/2023/04/13/lnaIGrSp.jpg"></div>
 				
 			</div>
 			<div id="prev"><</div>
@@ -148,27 +183,104 @@
 		document.querySelector('#slider .slides').style.left = offset + 'px';
 		currentSlide = slideIndex;
 	}
-	
-// 自动轮播
+	// 自动轮播
 	var intervalId = setInterval(function() {
 		goToSlide(currentSlide + 1);
 	}, 5000);
-	// 左右箭头切换图片
-	prev.addEventListener('click', function() {
-		goToSlide(currentSlide - 1);
-	});
-	next.addEventListener('click', function() {
-		goToSlide(currentSlide + 1);
-	});
 	
 </script>
 
-</div></div>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        .tab {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .tab.active {
+            display: block;
+        }
+        .tab-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .tab-menu button {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .tab-menu button.active {
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: none;
+        }
+.tab-menu button.active {
+  color: #00bfff;
+}
+
+.tab-menu button:nth-child(2) {
+  color: #ff7f50;
+}
+.tab-menu button.active {
+        color: #ffffff;
+        background-color: #0099ff;
+        animation: breathe 1s infinite;
+    }
+    
+    .tab-menu button:hover {
+        background-color: #f2f2f2;
+    }
+
+    @keyframes breathe {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="tab-menu">
+    <button class="active" onclick="openTab(event, 'tab1')"><h2>长期套餐</h2></button>
+    <button onclick="openTab(event, 'tab2')" style="color: #ff6666;"><h2>短期套餐</h2></button>
+
+
+	
+ </div>
+
+    <div id="tab1" class="tab">
+        <h2>长期套餐</h2>
+        <p>
 <div style="border: 2px solid #000; padding: 10px;">
   <div style="display: flex; align-items: center;">
     <div style="margin-right: 10px;">
-      <a href="https://popocard.github.io/linglei1.html">
-        <html>
+      <a href="https://popocard.github.io/duanqi1.html">
+	     
+	<html>
 <head>
 	<style>
 		.fixed-size {
@@ -178,26 +290,60 @@
 	</style>
 </head>
 <body>
-	<img src="https://static.91haoka.cn/1681742632IMl.jpg" class="fixed-size" alt="Thumbnail">
+	<img src="https://static.91haoka.cn/1681828775irU.jpg" class="fixed-size" alt="Thumbnail">
       </a>
 
 <html>
     </div>
     <div style="flex: 1;">
-      <font size="2" color="blue"><p><b><h1><p style="font-size: 130%;">云韵卡（短期2年）<br>99G全国通用流量+230G定向流量</p></h1><b>
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 130%;">凤栖卡（长期+无语音功能）<br></p></h1><b>
      
-      <font size="2" color="black"</p><p style="font-size: 150%;">短期套餐:2年</p>
-<font size="2" color="black"</p><p style="font-size: 150%;">首月免月租，第2-11个月38元99G全国通用流量+230G定向，12-24月48元28G全国通用流量+230G定向<br>2年后39元+5G全国通用+30G定向</p>
- <font size="2" color="black"</p><p style="font-size: 150%;">超大定向流量</p>
+      <font size="2" color="black"</p><p style="font-size: 150%;">长套餐:官方自动续约</p>
+<font size="2" color="black"</p><p style="font-size: 150%;">首月半价月租，长期29元<br>110G全国通用流量</p>
+ <font size="2" color="black"</p><p style="font-size: 150%;">无语音功能，可收发短信0.1元/条</p>
     
  </div>
     <div style="margin-left: 10px;">
-      <a href="https://popocard.github.io/linglei1.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
+      <a href="https://popocard.github.io/duanqi1.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
 </div>
 
 
-		
+
+</div></div>
+<div style="border: 2px solid #000; padding: 10px;">
+  <div style="display: flex; align-items: center;">
+    <div style="margin-right: 10px;">
+      <a href="https://popocard.github.io/linglei2.html">
+	     
+	<html>
+<head>
+	<style>
+		.fixed-size {
+			width: 320px;
+			height: 320px;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://static.91haoka.cn/1681828989TMu.jpg" class="fixed-size" alt="Thumbnail">
+      </a>
+
 <html>
+    </div>
+    <div style="flex: 1;">
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 130%;">澜月卡（长期+无语音功能）<br></p></h1><b>
+     
+      <font size="2" color="black"</p><p style="font-size: 150%;">长套餐:官方自动续约</p>
+<font size="2" color="black"</p><p style="font-size: 150%;">首月半价月租，长期39元<br>220G全国通用流量</p>
+ <font size="2" color="black"</p><p style="font-size: 150%;">无语音功能，可收发短信0.1元/条</p>
+    
+ </div>
+    <div style="margin-left: 10px;">
+      <a href="https://popocard.github.io/linglei2.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
+</div>
+
+
+
 </div></div>
 <div style="border: 2px solid #000; padding: 10px;">
   <div style="display: flex; align-items: center;">
@@ -220,7 +366,7 @@
 <html>
     </div>
     <div style="flex: 1;">
-      <font size="2" color="blue"><p><b><h1><p style="font-size: 130%;">赤芒卡（长期）<br>前2月免月租［极速发货］</p></h1><b>
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 130%;">赤芒卡（长期）［极速发货］<br>免月租2个月</p></h1><b>
      
       <font size="2" color="black"</p><p style="font-size: 150%;">长套餐:官方可查一年，自动续约</p>
 <font size="2" color="black"</p><p style="font-size: 150%;">前两月免月租，长期59元<br>302G全国通用流量+200分钟通话</p>
@@ -261,7 +407,7 @@
 <html>
     </div>
     <div style="flex: 1;">
-      <font size="2" color="blue"><p><b><h1><p style="font-size: 150%;">无双卡（长期）</p>选靓号</h1><b>  
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 150%;">无双卡（长期）</p>申请页面提前选号（靓号）</h1><b>  
       <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐：官方自动续约</p>
 <font size="2" color="black"</p><p style="font-size: 200%;">月租59元（第2-6个月39元） <br>204G全国通用流量+100分钟通话</p>
  <font size="2" color="black"</p><p style="font-size: 150%;">可提前选号</p>
@@ -296,7 +442,7 @@
 <html>
     </div>
     <div style="flex: 1;">
-      <font size="2" color="blue"><p><b><h1><p style="font-size: 150%;">畅玩卡（长期+送会员）</p>选靓号+一年会员</h1><b>
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 150%;">畅玩卡（长期）</p>选靓号+182种会员</h1><b>
     
       <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐:官方自动续约</p>
 <font size="2" color="black"</p><p style="font-size: 200%;">月租59元 <br>204G全国通用流量+100分钟通话</p>
@@ -307,38 +453,7 @@
     <div style="margin-left: 10px;">
       <a href="https://popocard.github.io/changwan.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
     </div>
-</div></div>
-<div style="border: 2px solid #000; padding: 10px;">
-  <div style="display: flex; align-items: center;">
-    <div style="margin-right: 10px;">
-      <a href="https://popocard.github.io/pobing.html">
-        <html>
-<head>
-	<style>
-		.fixed-size {
-			width: 320px;
-			height: 320px;
-		}
-	</style>
-</head>
-<body>
-	<img src="https://static.91haoka.cn/1681386728S64.jpg" class="fixed-size" alt="Thumbnail">
-      </a>
-
-<html>
-    </div>
-    <div style="flex: 1;">
-      <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">凝心卡（短期2年）</p></h1><b>
-     
-      <font size="2" color="black"</p><p style="font-size: 150%;">短期套餐:2年</p>
-<font size="2" color="black"</p><p style="font-size: 200%;">首月免费，第2-6个月19元，第7-13个月29元，后期长期29元30G全国通用流量+30G定向<br>162G全国通用流量+30G定向流量</p>
- <font size="2" color="black"</p><p style="font-size: 150%;">申请前先查是否支持自己的手机机型，所在地是否有“”中国广电营业厅”</p>
-    
- </div>
-    <div style="margin-left: 10px;">
-      <a href="https://popocard.github.io/pobing.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
-</div>
-</div></div>
+ </div> </div>
 <div style="border: 2px solid #000; padding: 10px;">
   <div style="display: flex; align-items: center;">
     <div style="margin-right: 10px;">
@@ -363,7 +478,7 @@
      
       <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐:自动续约</p>
 <font size="2" color="black"</p><p style="font-size: 150%;"><br></p>
- <font size="2" color="black"</p><p style="font-size: 150%;">禁止使用此卡:电销、电信网络诈骗！</p>
+ <font size="2" color="black"</p><p style="font-size: 150%;">禁止使用此卡:电销、电信网络诈骗！违者直接停机！</p>
     
  </div>
     <div style="margin-left: 10px;">
@@ -371,7 +486,7 @@
 </div>
 <html>
 </div></div>
-	      <!DOCTYPE html>
+
 <html>
   <head>
     <title>Fixed Navigation Menu with Breathing Animation</title>
@@ -435,3 +550,158 @@
 </head>
 <body>
 </body>
+
+
+
+
+
+
+
+    </div>
+
+    <div id="tab2" class="tab">
+        <h2>短期套餐</h2>
+        <p>
+<div style="border: 2px solid #000; padding: 10px;">
+  <div style="display: flex; align-items: center;">
+    <div style="margin-right: 10px;">
+      <a href="https://popocard.github.io/pobing.html">
+        <html>
+<head>
+	<style>
+		.fixed-size {
+			width: 320px;
+			height: 320px;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://static.91haoka.cn/1681386728S64.jpg" class="fixed-size" alt="Thumbnail">
+      </a>
+
+<html>
+    </div>
+    <div style="flex: 1;">
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">凝心卡（短期2年）</p></h1><b>
+     
+      <font size="2" color="black"</p><p style="font-size: 150%;">短期套餐:2年</p>
+<font size="2" color="black"</p><p style="font-size: 200%;">首月免费，第2-6个月19元，第7-13个月29元，后期长期29元30G全国通用流量+30G定向<br>162G全国通用流量+30G定向流量</p>
+ <font size="2" color="black"</p><p style="font-size: 150%;">申请前先查是否支持自己的手机机型，所在地是否有“”中国广电营业厅”</p>
+    
+ </div>
+    <div style="margin-left: 10px;">
+      <a href="https://popocard.github.io/pobing.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
+</div>
+	
+ 
+		
+
+
+
+    
+    
+    
+
+  </div></div>
+<div style="border: 2px solid #000; padding: 10px;">
+  <div style="display: flex; align-items: center;">
+    <div style="margin-right: 10px;">
+      <a href="https://popocard.github.io/linglei1.html">
+        <html>
+<head>
+	<style>
+		.fixed-size {
+			width: 320px;
+			height: 320px;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://static.91haoka.cn/1681742632IMl.jpg" class="fixed-size" alt="Thumbnail">
+      </a>
+
+<html>
+    </div>
+    <div style="flex: 1;">
+      <font size="2" color="blue"><p><b><h1><p style="font-size: 130%;">云韵卡（短期2年）<br>99G全国通用流量+230G定向流量</p></h1><b>
+     
+      <font size="2" color="black"</p><p style="font-size: 150%;">短期套餐:2年</p>
+<font size="2" color="black"</p><p style="font-size: 150%;">首月免月租，第2-11个月38元99G全国通用流量+230G定向，12-24月48元28G全国通用流量+230G定向<br>2年后39元+5G全国通用+30G定向</p>
+ <font size="2" color="black"</p><p style="font-size: 150%;">超大定向流量</p>
+    
+ </div>
+    <div style="margin-left: 10px;">
+      <a href="https://popocard.github.io/linglei1.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
+</div>
+
+
+
+
+    <script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tab-menu button.active").click();
+});
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByTagName("button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+        
+        var tabs = document.getElementsByClassName("tab");
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].addEventListener("click",
+function(event) {
+event.stopPropagation();
+});
+}
+// 左右箭头切换图片
+	prev.addEventListener('click', function() {
+		goToSlide(currentSlide - 1);
+	});
+	next.addEventListener('click', function() {
+		goToSlide(currentSlide + 1);
+	});
+	
+</script>
+
+</body>
+</html>
+  <!DOCTYPE html>
+<html>
+  
+  </head>
+  <body>
+    <!-- 菜单栏的HTML代码 -->
+    <div class="menu">
+      <a href="https://static.91haoka.cn/16815477547XM.jpg">人工服务</a>
+      <a href="http://91haoka.cn/webapp/merchant/query.html">订单查询</a>
+      <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">公众号</a>
+     
+    </div>
+  </body>
+</html>
