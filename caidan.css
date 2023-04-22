@@ -1,0 +1,46 @@
+/* 设置菜单栏的样式 */
+		.menu {
+			position: fixed;
+			bottom: 0%;
+			left: 0;
+			width: 100%;
+			height: 10%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			z-index: 1;
+		}
+
+		/* 设置菜单项的样式 */
+		.menu a {
+			color: black;
+			font-size: 0.8em; /* H6字体大小 */
+			text-decoration: none;
+			animation: breathing 3s ease-in-out infinite;
+			display: flex; /* 将菜单项设置为flex布局 */
+			flex-direction: column; /* 竖直方向布局 */
+			align-items: center; /* 居中对齐 */
+			justify-content: flex-start; /* 从上往下排列 */
+		}
+
+		/* 定义呼吸跳动的动画 */
+		@keyframes breathing {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		 }
+
+		/* 设置缩略图标的样式 */
+		.menu img {
+			width: 50px;
+			height: 50px;
+			margin-bottom: -1px; /* 调整菜单项与缩略图标的距离 */
+		}
