@@ -3,195 +3,42 @@
         <h2>浏览量：<span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2>
 </center>
 <head>
-	<title>恩山流量卡（公众号：POPOcard）</title>
+	
+	<title>恩山通信——公众号：POPOcard</title>
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>顶部头图示例</title>
 	<style>
- body {
-      padding-bottom: 18%;
-    }
-  .menu {
-        position: fixed;
-        bottom: 0%;
-        left: 0;
-        width: 100%;
-        height: 8%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-      }
-
-      /* 设置菜单项的样式 */
-      .menu a {
-        color: #007bff;
-        font-size: calc(100% + 1vh);
-        text-decoration: none;
-        animation: breathing 3s ease-in-out infinite;
-      }
-
-      /* 定义呼吸跳动的动画 */
-      @keyframes breathing {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-		/* 样式表 */
-		#header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color: #f1f1f1;
-			padding: 20px;
-			text-align: center;
-		}
-		.flip-container {
-			perspective: 1000px;
-			display: inline-block;
-			margin: 10px;
-			font-size: 5vw;
-		}
-		.flip-container .flipper {
-			position: relative;
-			text-align: center;
-			transform-style: preserve-3d;
-			transition: transform 0.5s;
-		}
-		.flip-container .front, .flip-container .back {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			backface-visibility: hidden;
-		}
-		.flip-container .front {
-			z-index: 2;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: red;
-			background-color: white;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		}
-		.flip-container .back {
-			transform: rotateY(180deg);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: red;
-			background-color: white;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		}
-		.flip-container.flip .flipper {
-			transform: rotateY(180deg);
-		}
-		/* 图片轮播 */
-		#slider {
-			width: 920px;
-			height: 500px;
-			margin: 0px auto;
-			position: relative;
-			overflow: hidden;
-			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-		}
-		#slider .slides {
-			display: flex;
-			position: absolute;
-			width: 300%;
-			height: 100%;
-			transition: left 0.5s;
-			left: 0;
-		}
-		#slider .slide {
-			width: 33.33%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		#slider .slide img {
+		/*将图像居中显示*/
+		#header-image {
+			display: block;
+			margin: 0 auto;
 			max-width: 100%;
-			max-height: 100%;
+			height: auto;
 		}
-		#slider #prev, #slider #next {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			padding: 10px;
-			background-color: rgba(255, 255, 255, 0.5);
-			color: black;
-			font-size: 24px;
-			cursor: pointer;
-			transition: background-color 0.5s, color 0.5s;
-		}
-		#slider #prev:hover, #slider #next:hover {
-			background-color: rgba(0, 0, 0, 0.5);
-			color: white;
-		}
-		#slider #prev {
-			left: 0;
-		}
-		#slider #next {
-			right: 0;
-
-</style>
+	</style>
 </head>
 <body>
-	<header id="header">
-		<div class="flip-container">
-			<div class="flipper">
-			</div>
-		</div>
-		<div id="slider">
-			<div class="slides">
-				<div class="slide"><img src="https://img1.imgtp.com/2023/04/13/5Qu4Hg7s.jpg"></div>
-				<div class="slide"><img src="https://img1.imgtp.com/2023/04/13/lnaIGrSp.jpg"></div>
-				
-			</div>
-			<div id="prev"><</div>
-			<div id="next">></div>
-		</div>
-		<hr>
+	<header>
+		<a href="https://www.example.com">
+			<img id="header-image" src="https://static.91haoka.cn/1682131773Pp1.jpg" alt="顶部头图">
+		</a>
 	</header>
-<script>
-	/* 图片轮播 */
-	var slider = document.getElementById('slider');
-	var slides = document.querySelectorAll('#slider .slide');
-	var prev = document.getElementById('prev');
-	var next = document.getElementById('next');
-	var slideWidth = slides[0].offsetWidth;
-	var currentSlide = 0;
+	<script>
+		/*禁止图像下载*/
+		var headerImage = document.getElementById('header-image');
+		headerImage.addEventListener('contextmenu', function(e) {
+			e.preventDefault();
+		});
+		headerImage.addEventListener('dragstart', function(e) {
+			e.preventDefault();
+		});
+	</script>
+</body>
+</html>
 
-	// 初始化
-	slider.style.width = slideWidth + 'px';
-	slides.forEach(function(slide) {
-		slide.style.width = slideWidth + 'px';
-	});
-
-	// 切换到指定图片
-	function goToSlide(slideIndex) {
-		if (slideIndex < 0) {
-			slideIndex = slides.length - 1;
-		} else if (slideIndex >= slides.length) {
-			slideIndex = 0;
-		}
-		var offset = -slideIndex * slideWidth;
-		document.querySelector('#slider .slides').style.left = offset + 'px';
-		currentSlide = slideIndex;
-	}
-	// 自动轮播
-	var intervalId = setInterval(function() {
-		goToSlide(currentSlide + 1);
-	}, 5000);
-	
-</script>
 
 
 
@@ -489,53 +336,78 @@
 <html>
 </div></div>
 
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Fixed Navigation Menu with Breathing Animation</title>
-    <style>
-      /* 设置菜单栏的样式 */
-      .menu {
-        position: fixed;
-        bottom: 0%;
-        left: 0;
-        width: 100%;
-        height: 8%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-      }
+<head>
+	<title>Fixed Navigation Menu with Breathing Animation</title>
+	<style>
+		/* 设置菜单栏的样式 */
+		.menu {
+			position: fixed;
+			bottom: 0%;
+			left: 0;
+			width: 100%;
+			height: 6%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			z-index: 1;
+		}
 
-      /* 设置菜单项的样式 */
-      .menu a {
-        color: #007bff;
-        font-size: calc(100% + 1vh);
-        text-decoration: none;
-        animation: breathing 3s ease-in-out infinite;
-      }
+		/* 设置菜单项的样式 */
+		.menu a {
+			color: black;
+			font-size: 1.5em; /* H6字体大小 */
+			text-decoration: none;
+			animation: breathing 3s ease-in-out infinite;
+			display: flex; /* 将菜单项设置为flex布局 */
+			flex-direction: column; /* 竖直方向布局 */
+			align-items: center; /* 居中对齐 */
+			justify-content: flex-start; /* 从上往下排列 */
+		}
 
-      /* 定义呼吸跳动的动画 */
-      @keyframes breathing {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 菜单栏的HTML代码 -->
-    <div class="menu">
-      <a href="https://static.91haoka.cn/16815477547XM.jpg">人工服务</a>
-      <a href="http://91haoka.cn/webapp/merchant/query.html">订单查询</a>
-      <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">公众号</a>
+		/* 定义呼吸跳动的动画 */
+		@keyframes breathing {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		 }
+
+		/* 设置缩略图标的样式 */
+		.menu img {
+			width: 70px;
+			height: 70px;
+			margin-bottom: -1px; /* 调整菜单项与缩略图标的距离 */
+		}
+	</style>
+</head>
+<body>
+	<!-- 菜单栏的HTML代码 -->
+	<div class="menu">
+		<a href="https://static.91haoka.cn/16815477547XM.jpg">
+			<img src="https://static.91haoka.cn/1682155560DDO.jpg" alt="Thumbnail 1"> <!-- 添加缩略图标 -->
+			人工服务
+		</a>
+		<a href="http://91haoka.cn/webapp/merchant/query.html">
+			<img src="https://static.91haoka.cn/1682156239ARH.jpg" alt="Thumbnail 2"> <!-- 添加缩略图标 -->
+			订单查询
+		</a>
+		<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">
+			<img src="https://static.91haoka.cn/1682156646Y7y.jpg" alt="Thumbnail 3"> <!-- 添加缩略图标 -->
+			公众号
+		</a>
+	</div>
+</body>
+</html>
+
      
     </div>
   </body>
@@ -755,19 +627,75 @@ event.stopPropagation();
 	
 </script>
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Navigation Menu with Breathing Animation</title>
+	<style>
+		/* 设置菜单栏的样式 */
+		.menu {
+			position: fixed;
+			bottom: 0%;
+			left: 0;
+			width: 100%;
+			height: 6%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			z-index: 1;
+		}
+
+		/* 设置菜单项的样式 */
+		.menu a {
+			color: black;
+			font-size: 1.5em; /* H6字体大小 */
+			text-decoration: none;
+			animation: breathing 3s ease-in-out infinite;
+			display: flex; /* 将菜单项设置为flex布局 */
+			flex-direction: column; /* 竖直方向布局 */
+			align-items: center; /* 居中对齐 */
+			justify-content: flex-start; /* 从上往下排列 */
+		}
+
+		/* 定义呼吸跳动的动画 */
+		@keyframes breathing {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		 }
+
+		/* 设置缩略图标的样式 */
+		.menu img {
+			width: 70px;
+			height: 70px;
+			margin-bottom: -1px; /* 调整菜单项与缩略图标的距离 */
+		}
+	</style>
+</head>
+<body>
+	<!-- 菜单栏的HTML代码 -->
+	<div class="menu">
+		<a href="https://static.91haoka.cn/16815477547XM.jpg">
+			<img src="https://static.91haoka.cn/1682155560DDO.jpg" alt="Thumbnail 1"> <!-- 添加缩略图标 -->
+			人工服务
+		</a>
+		<a href="http://91haoka.cn/webapp/merchant/query.html">
+			<img src="https://static.91haoka.cn/1682156239ARH.jpg" alt="Thumbnail 2"> <!-- 添加缩略图标 -->
+			订单查询
+		</a>
+		<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">
+			<img src="https://static.91haoka.cn/1682156646Y7y.jpg" alt="Thumbnail 3"> <!-- 添加缩略图标 -->
+			公众号
+		</a>
+	</div>
 </body>
 </html>
-  <!DOCTYPE html>
-<html>
-  
-  </head>
-  <body>
-    <!-- 菜单栏的HTML代码 -->
-    <div class="menu">
-      <a href="https://static.91haoka.cn/16815477547XM.jpg">人工服务</a>
-      <a href="http://91haoka.cn/webapp/merchant/query.html">订单查询</a>
-      <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4Mzg5NjgzMA==&scene=500#wechat_redirect">公众号</a>
-     
-    </div>
-  </body>
-</html>
+
