@@ -9,16 +9,14 @@
 	<meta charset="UTF-8">
 	<title>恩山通信</title>
 	<style>
-		img {
-
-  -moz-user-select: none; 
--webkit-user-select: none; 
--ms-user-select: none; 
--khtml-user-select: none; 
-user-select: none;
-pointer-events: none;
-}
-
+		 img {
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        pointer-events: none; /* 防止鼠标点击事件 */
+      }		
+	
 		/* 将图像居中显示 */
 		#header-image {
 			display: block;
