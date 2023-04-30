@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>［恩山通信］全网订单自助服务</title>
-请勿在网上乱申请手机卡、流量卡，防止个人信息泄露！请认准本店商品信息为“恩山”开头！<br>
-如查询到非本人申请的订单，请在下方链接自行取消。<br>
-收货时，一定要核对物流单号，防止被不良卡商掉包。
-如发现快递员掉包商品，可直接投诉举报！［物流公司补偿200-500块］
-<br>
-京东：950616 
-<br>顺丰：95338<br>
-EMS：11183
-<br>［恩山通信］
-售后微信：enshui1973
+    <title>订单自助服务（全网）</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .logo img {
+    width: 1000px;
+    height: 500px;
+    object-fit: contain;
+  }
       body {
         margin: 0;
         padding: 0;
@@ -47,27 +47,6 @@ EMS：11183
       .menu-item:hover {
         transform: translateY(-10px);
       }
-.text {
-        font-size: 16px;
-        font-weight: bold;
-      }
-      .text-blue {
-        color: #0088cc;
-      }
-      .text-red {
-        color: #ff5555;
-      }
-@keyframes breathe {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(1.05);
-        }
-      }
-      .text-green {
-        color: #55bb55;
-      }
       .thumbnail {
         width: px;
         height: px;
@@ -88,28 +67,49 @@ EMS：11183
           transform: scale(1.05);
         }
       }
-    </style>
-  </head>
-  <body>
-    <div class="menu">
+      .text-green {
+        color: #55bb55;
+      }
+      .text-red {
+        color: #ff5555;
+      }
+      .text-blue {
+        color: #0088cc;
+      }
+   <style>
+  /* 为中国电信增加浅蓝色字体 */
+  .text-blue {
+    color: #0088cc;
+  }
+  /* 为中国联通增加浅红色字体 */
+  .text-red {
+    color: #ff5555;
+  }
+  /* 为中国移动增加浅绿色字体 */
+  .text-green {
+    color: #55bb55;
+  }
+</style>
+</div>
+<div class="logo">
+  <img src="https://static.91haoka.cn/1682217329Z48.jpg" alt="Logo">
+</div>
+
+<div class="menu">
+ 
+  <a href="https://pms.189.cn/cljy-web/static/xshkzzfw/xshkzzfw_index.html?shopid=dq-hkddcx-rgkf&cmpid=dq-hkddcx-rgkf" class="menu-item">
+    <div class="thumbnail"></div>
+    <div class="text text-blue">中国电信［全网］</div>
+  </a>
+  <a href="https://m.10010.com/myorder/" class="menu-item">
+    <div class="thumbnail"></div>
+    <div class="text text-red">中国联通［全网］</div>
+  </a>
+  <a href="https://dev.coc.10086.cn/coc/web/coc2020/cardqueryorder/" class="menu-item">
+    <div class="thumbnail"></div>
+    <div class="text text-green">中国移动［全网］</div>
+  </a>
 <a href="http://91haoka.cn/webapp/merchant/query.html" class="menu-item">
-        <div class="thumbnail"></div>
-        <div class="text">订单查询</div>
-      </a>
-
-
-      <a href="https://pms.189.cn/cljy-web/static/xshkzzfw/xshkzzfw_index.html?shopid=dq-hkddcx-rgkf&cmpid=dq-hkddcx-rgkf" class="menu-item">
-        <div class="thumbnail"></div>
-        <div class="text">［中国电信］撤单［全网］</div>
-      </a>
-      <a href="https://m.10010.com/myorder/" class="menu-item">
-        <div class="thumbnail"></div>
-        <div class="text">［中国联通］撤单［全网］</div>
-      </a>
-      <a href="https://dev.coc.10086.cn/coc/web/coc2020/cardqueryorder/" class="menu-item">
-        <div class="thumbnail"></div>
-        <div class="text">［中国移动］撤单［全网］</div>
-      </a>
-    </div>
-  </body>
-</html>
+    <div class="thumbnail"></div>
+    <div class="text">返回商店</div>
+  </a>
