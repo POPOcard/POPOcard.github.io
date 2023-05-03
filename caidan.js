@@ -1,6 +1,24 @@
 
 
-
+                /* 定义呼吸跳动的动画 */ 
+                 @keyframes breathing { 
+                         0% { 
+                                 transform: scale(1); 
+                         } 
+                         50% { 
+                                 transform: scale(1.1); 
+                         } 
+                         100% { 
+                                 transform: scale(1); 
+                         } 
+                  } 
+  
+                 /* 设置缩略图标的样式 */ 
+                 .menu img { 
+                         width: 50px; 
+                         height: 50px; 
+                         margin-bottom: -1px; /* 调整菜单项与缩略图标的距离 */ 
+                 }
 		/*禁止图像下载*/
 		var headerImage = document.getElementById('header-image');
 		headerImage.addEventListener('contextmenu', function(e) {
