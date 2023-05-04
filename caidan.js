@@ -1,34 +1,11 @@
-
-
-                /* 定义呼吸跳动的动画 */ 
-                 @keyframes breathing { 
-                         0% { 
-                                 transform: scale(1); 
-                         } 
-                         50% { 
-                                 transform: scale(1.1); 
-                         } 
-                         100% { 
-                                 transform: scale(1); 
-                         } 
-                  } 
-  
-                 /* 设置缩略图标的样式 */ 
-                 .menu img { 
-                         width: 50px; 
-                         height: 50px; 
-                         margin-bottom: -1px; /* 调整菜单项与缩略图标的距离 */ 
-                 }
-		/*禁止图像下载*/
+/*禁止图像下载*/
 		var headerImage = document.getElementById('header-image');
 		headerImage.addEventListener('contextmenu', function(e) {
 			e.preventDefault();
 		});
 		headerImage.addEventListener('dragstart', function(e) {
 			e.preventDefault();
-		});
-
-function openTab(evt, tabName) {
+		});function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -76,21 +53,7 @@ event.stopPropagation();
 	next.addEventListener('click', function() {
 		goToSlide(currentSlide + 1);
 	});
-	
-var freeGet = document.getElementById("free-get");
-  setInterval(function() {
-    if (freeGet.style.color === "rgb(255, 117, 117)") {
-      freeGet.style.color = "#FF7575";
-    } else {
-      freeGet.style.color = "#FF7575";
-    }
-  }, 500);
-
-
-
-
-
-var freeGet = document.getElementById("free-get");
+	var freeGet = document.getElementById("free-get");
   setInterval(function() {
     if (freeGet.style.color === "rgb(255, 117, 117)") {
       freeGet.style.color = "#FF7575";
