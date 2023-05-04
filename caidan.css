@@ -5,6 +5,7 @@
 			max-width: 100%;
 			height: auto;
 		}
+
 		/* 针对屏幕宽度小于等于600像素的手机设备 */
 		@media only screen and (max-width: 600px) {
 			#header-image {
@@ -12,6 +13,7 @@
 				height: auto;
 			}
 		}
+
 		/* 针对屏幕宽度大于600像素的设备 */
 		@media only screen and (min-width: 601px) {
 			#header-image {
@@ -19,32 +21,7 @@
 				height: auto;
 				max-width: 1000px;
 			}
-		}
-
-/* 将图像居中显示 */
-		#header-image {
-			display: block;
-			margin: 0 auto;
-			max-width: 100%;
-			height: auto;
-		}
-		/* 针对屏幕宽度小于等于600像素的手机设备 */
-		@media only screen and (max-width: 600px) {
-			#header-image {
-				width: 100%;
-				height: auto;
-			}
-		}
-		/* 针对屏幕宽度大于600像素的设备 */
-		@media only screen and (min-width: 601px) {
-			#header-image {
-				width: 100%;
-				height: auto;
-				max-width: 1000px;
-			}
-		}
-
-	/* 设置菜单栏的样式 */
+		}/* 设置菜单栏的样式 */
 		.menu {
 			position: flex;
 			left: 0;
@@ -134,8 +111,7 @@
     .tab-menu button:hover {
         background-color: #f2f2f2;
     }
-
-@keyframes breath {
+ @keyframes breath {
     0% {
       transform: scale(1);
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -149,46 +125,12 @@
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     
   }
-    
-
-
-
-
-
-
-
-
 
 .fixed-size {
 			width: 320px;
 			height: 320px;
 		}
-
-
-
-body {
+ody {
       padding-bottom: 5%;
     }
-
-
-
-
-		/* 定义呼吸跳动的动画 */
-		@keyframes breathing {
-			0% {
-				transform: scale(1);
-			}
-			50% {
-				transform: scale(1.1);
-			}
-			100% {
-				transform: scale(1);
-			}
-		 }
-
-		/* 设置缩略图标的样式 */
-		.menu img {
-			width: 50px;
-			height: 50px;
-			margin-bottom: -1px; /* 调整菜单项与缩略图标的距离 */
-		}
+    
