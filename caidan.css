@@ -21,7 +21,9 @@
 				height: auto;
 				max-width: 1000px;
 			}
-		}/* 设置菜单栏的样式 */
+		}
+
+/* 设置菜单栏的样式 */
 		.menu {
 			position: flex;
 			left: 0;
@@ -111,6 +113,7 @@
     .tab-menu button:hover {
         background-color: #f2f2f2;
     }
+
  @keyframes breath {
     0% {
       transform: scale(1);
