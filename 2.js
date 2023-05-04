@@ -1,4 +1,4 @@
- <script>
+
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -48,4 +48,4 @@ event.stopPropagation();
 		goToSlide(currentSlide + 1);
 	});
 	
-</script>
+
