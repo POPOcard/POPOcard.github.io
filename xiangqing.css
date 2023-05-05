@@ -1,4 +1,4 @@
-		.popup {
+.popup {
 		  display: none;
 		  position: fixed;
 		  top: 50%;
@@ -107,6 +107,3 @@ width: 80%;
 		.close:hover {
 		  color: #007bff;
 		}
-
-
-
