@@ -1,7 +1,3 @@
- .fixed-size {
-			width: 320px;
-			height: 320px;
-		}
 		.popup {
 		  display: none;
 		  position: fixed;
@@ -114,19 +110,3 @@ width: 80%;
 
 
 
-
-
-.popup {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-  }
-  .popup * {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-  }
