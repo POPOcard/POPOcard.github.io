@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自适应页面</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		
+		.container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.menu-container {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			top: 10%; /* 初始距离为10% */
+		}
+		
+		.menu {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 80%;
+			max-width: 400px;
+			background-color: #fff;
+			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+			padding: 10px;
+			border-radius: 5px;
+		}
+		
+		.menu a {
+			text-decoration: none;
+			color: #333;
+			font-size: 16px;
+			font-weight: bold;
+			padding: 5px 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+		
+		.menu a:hover {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="menu-container">
+			<div class="menu">
+				<a href="#"><span style="color: red;">“长期卡”</span>与“短期卡”的区别</a><br>
+				<a href="#">“正规卡”与“物联卡”的区别</a>
+				<a href="#">菜单3</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		// 计算菜单容器距离顶部的距离
+		function calculateMenuTop() {
+			const menuContainer = document.querySelector('.menu-container');
+			const windowHeight = window.innerHeight;
+			const menuHeight = menuContainer.clientHeight;
+			const top = (windowHeight - menuHeight) / 2;
+			menuContainer.style.top = `${top}px`;
+		}
+		
+		// 当窗口大小改变时，重新计算菜单容器的位置
+		window.addEventListener('resize', calculateMenuTop);
+		
+		// 初始计算菜单容器的位置
+		calculateMenuTop();
+	</script>
+</body>
+</html>
