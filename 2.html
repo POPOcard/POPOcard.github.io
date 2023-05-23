@@ -262,31 +262,56 @@
   
   
  <script> 
- window.addEventListener('load', function() { 
-   document.querySelector('.tab-menu button:nth-child(1)').click(); 
- }); 
- </script><script>// 在页面加载完成后执行 
- window.addEventListener('load', function() { 
-   // 从 localStorage 中获取存储的选项卡索引 
-   var activeTabIndex = localStorage.getItem('activeTabIndex'); 
-  
-   // 默认选项卡索引为 0 
-   if (activeTabIndex === null) { 
-     activeTabIndex = 0; 
-   } 
-  
-   // 获取所有选项卡按钮 
-   var tabButtons = document.querySelectorAll('.tab-menu button'); 
-  
-   // 根据存储的选项卡索引，设置默认选中的选项卡 
-   tabButtons[activeTabIndex].click(); 
-  
-   // 为每个选项卡按钮添加点击事件监听器 
-   tabButtons.forEach(function(button, index) { 
-     button.addEventListener('click', function() { 
-       // 存储选项卡索引到 localStorage 
-       localStorage.setItem('activeTabIndex', index); 
-     }); 
-   }); 
- }); 
+ // 在页面加载完成后执行
+window.addEventListener('load', function() {
+  // 添加 pagehide 事件监听器
+  window.addEventListener('pagehide', function() {
+    // 存储选项卡索引和滚动位置到 sessionStorage
+    var activeTabIndex = getActiveTabIndex();
+    var scrollPosition = window.pageYOffset;
+
+    sessionStorage.setItem('activeTabIndex', activeTabIndex);
+    sessionStorage.setItem('scrollPosition', scrollPosition);
+  });
+
+  // 添加 pageshow 事件监听器
+  window.addEventListener('pageshow', function(event) {
+    // 从 sessionStorage 中获取存储的选项卡索引和滚动位置
+    var activeTabIndex = sessionStorage.getItem('activeTabIndex');
+    var scrollPosition = sessionStorage.getItem('scrollPosition');
+
+    // 默认选项卡索引为 0，滚动位置为 0
+    if (activeTabIndex === null) {
+      activeTabIndex = 0;
+    }
+    if (scrollPosition === null) {
+      scrollPosition = 0;
+    }
+
+    // 根据存储的选项卡索引，设置默认选中的选项卡
+    var tabButtons = document.querySelectorAll('.tab-menu button');
+    tabButtons[activeTabIndex].click();
+
+    // 将页面滚动到存储的位置
+    window.scrollTo(0, scrollPosition);
+  });
+
+  // 添加滚动事件监听器
+  window.addEventListener('scroll', function() {
+    // 存储滚动位置到 sessionStorage
+    sessionStorage.setItem('scrollPosition', window.pageYOffset);
+  });
+});
+
+// 获取当前选中的选项卡索引
+function getActiveTabIndex() {
+  var tabButtons = document.querySelectorAll('.tab-menu button');
+  for (var i = 0; i < tabButtons.length; i++) {
+    if (tabButtons[i].classList.contains('active')) {
+      return i;
+    }
+  }
+  return 0;
+}
+
  </script>
