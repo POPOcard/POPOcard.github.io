@@ -1,4 +1,4 @@
-/* 将图像居中显示 */
+
 		#header-image {
 			display: block;
 			margin: 0 auto;
@@ -6,7 +6,7 @@
 			height: auto;
 		}
 
-		/* 针对屏幕宽度小于等于600像素的手机设备 */
+		
 		@media only screen and (max-width: 600px) {
 			#header-image {
 				width: 100%;
@@ -14,7 +14,7 @@
 			}
 		}
 
-		/* 针对屏幕宽度大于600像素的设备 */
+		
 		@media only screen and (min-width: 601px) {
 			#header-image {
 				width: 100%;
@@ -23,7 +23,6 @@
 			}
 		}
 
-/* 设置菜单栏的样式 */
 		.menu {
 			position: flex;
 			left: 0;
@@ -37,36 +36,36 @@
 			z-index: 1;
 		}
 
-		/* 设置菜单项的样式 */
+		
 		.menu a {
 			color: black;
-			font-size: 2em; /* H6字体大小 */
+			font-size: 2em; 
 			text-decoration: none;
 			animation: breathing 3s ease-in-out infinite;
-			display: flex; /* 将菜单项设置为flex布局 */
-			flex-direction: column; /* 竖直方向布局 */
-			align-items: center; /* 居中对齐 */
-			justify-content: flex-start; /* 从上往下排列 */
+			display: flex; 
+			flex-direction: column; 
+			align-items: center; 
+			justify-content: flex-start;
 		}
 
 		
 
-		/* 设置缩略图标的样式 */
+		
 		.menu img {
 			width: 100px;
 			height: 100px;
-			margin-bottom: 5px; /* 调整菜单项与缩略图标的距离 */
+			margin-bottom: 5px;
 		}
 
-		/* 设置文字的样式 */
+		
 		.menu span {
-			margin-top: 5px; /* 调整文字与缩略图标的距离 */
+			margin-top: 5px;
 		}
 
 .tab {
             display: none;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
+            padding: 10;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
@@ -129,11 +128,12 @@
     
   }
 
-.fixed-size {
-			width: 320px;
-			height: 320px;
-		}
+
 ody {
       padding-bottom: 5%;
-    }
-    
+    }border: 1px solid black;
+      box-sizing: border-box;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 2;
+      margin-top: 10px;
