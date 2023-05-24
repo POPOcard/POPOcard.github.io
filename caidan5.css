@@ -1,62 +1,167 @@
- /* 设置悬浮窗口的样式 */  
-      #floating-container {  
-        position: fixed;  
-        top: 0;  
-        left: 0;  
-        width: 100%;  
-        max-width: 100%;  
-        height: auto;  
-        display: flex;  
-        align-items: center; /* 垂直居中对齐 */  
-        background-color: rgba(255, 255, 255, 0.8);  
-        padding: 5px;  
-        border: 1px solid black;  
-        box-sizing: border-box;  
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  
-        position: relative;  
-       margin-top: 20px;  
-      }  
-     .another-border {
-  z-index: 999;
-}
-      /* 设置左侧缩略图的样式 */  
-      #thumbnail {  
-        width: 320px;  
-        height: auto;  
-        margin-right: 2px;  
-      }  
-    
-      /* 设置悬浮跳转菜单样式 */  
-      #floating-menu {  
-        position: absolute;  
-        bottom: 1px;  
-        right: 3px;  
-    
+.popup {
+		  display: none;
+		  position: fixed;
+		  top: 43%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  background-color: #fff;
+		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		  padding: 20px;
+		  font-size: 25px;
+		  z-index: 9999;
+
+width: 92%;
      
-      }  
-    
-      
-    
-        
-    
-      /* 设置文字和超链接样式 */  
-      #content {  
-        font-size: 16px;  
- 
-        margin-top: 0; /* 移除顶部外边距 */  
-      }  
-    
-      #content a {  
-        color: blue;  
-        text-decoration: none;  
-      }  
-  #content a,  
-      
-      #floating-menu a {  
-        text-decoration: none;  
-      }  
-  .parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	 user-select: none;
+}
+
+.popup::after {
+  content: "公众号：恩水通信             公众号：恩水通信";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px; 
+  opacity: 0.05; 
+  pointer-events: none; 
+}
+
+		.popup h2 {
+		  margin-top: 0;
+		}
+
+#bt1 {
+		  display: inline-block;
+		  background-color: #a87f5f;
+		  color: #fff;
+		  border: none;
+		  padding: 10px 18px;
+		  border-radius: 5px;
+		  margin-top: 5px;
+		  cursor: pointer;
+		  font-size: 20px;
+		}
+
+		#btn1,
+		#btn2,
+		#btn3,
+		#btn4,
+		#btn5,
+		#btn6,
+		#btn7,
+		#btn8,
+		#btn9,
+		#btn10,
+		#btn11,
+		#btn12,
+		#btn13,
+		#btn14,
+		#btn15,
+		#btn16,
+		#btn17,
+		#btn18,
+		#btn19,
+		#btn20,
+		#btn21 {
+		  display: inline-block;
+		  background-color: #D2B48C;
+		  color: #fff;
+		  border: none;
+		  padding: 10px 18px;
+		  border-radius: 5px;
+		  margin-top: 5px;
+		  cursor: pointer;
+		  font-size: 20px;
+		}
+
+		#btn1:hover,
+		#btn2:hover,#btn3:hover,
+		#btn4:hover,#btn5:hover,
+		#btn6:hover,#btn7:hover,
+		#btn8:hover,#btn9:hover,
+		#btn10:hover,#btn11:hover,
+		#btn12:hover,#btn13:hover,
+		#btn14:hover,#btn15:hover,
+		#btn16:hover,#btn17:hover,
+		#btn18:hover,#btn19:hover,
+		#btn20:hover,
+		#btn21:hover {
+		  background-color: #0069d9;
+		}
+
+		#btn1:focus,
+		#btn2:focus,#btn3:focus,
+		#btn4:focus,#btn5:focus,
+		#btn8:focus,#btn7:focus,
+		#btn10:focus,#btn9:focus,
+		#btn12:focus,#btn11:focus,
+		#btn14:focus,#btn13:focus,
+		#btn15:focus,#btn16:focus,
+		#btn17:focus,#btn18:focus,
+		#btn19:focus,#btn20:focus,
+		#btn21:focus {
+		  outline: none;
+		  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+		}
+
+		#btn1:active,
+		#btn2:active,#btn3:active,
+		#btn4:active,#btn5:active,
+		#btn6:active,#btn7:active,
+		#btn8:active,#btn9:active,
+		#btn10:active,#btn11:active,
+		#btn12:active,#btn13:active,
+		#btn14:active,#btn15:active,
+		#btn16:active,#btn17:active,
+		#btn18:active,#btn19:active,
+		#btn20:active,
+		#btn21:active {
+		  background-color: #0062cc;
+		}
+  #close-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close-button:hover {
+  background-color: #999;
+}
+
+		.close {
+		  position: absolute;
+		  top: 10px;
+		  right: 10px;
+		  background: none;
+		  border: none;
+		  font-size: 18px;
+		  cursor: pointer;
+		}
+
+		.close:hover {
+		  color: #007bff;
+		}
+ @keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+#bt1 {
+  animation: breathe 1s infinite;
+}
+#closeBtn {
+  padding: 8px 16px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  background-color: #cc0000;
+}
