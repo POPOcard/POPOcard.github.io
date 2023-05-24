@@ -1,7 +1,7 @@
 .popup {
 		  display: none;
 		  position: fixed;
-		  top: 50%;
+		  top: 43%;
 		  left: 50%;
 		  transform: translate(-50%, -50%);
 		  background-color: #fff;
@@ -9,7 +9,8 @@
 		  padding: 20px;
 		  font-size: 25px;
 		  z-index: 9999;
-width: 80%;
+
+width: 92%;
      
 		}
 
@@ -104,7 +105,19 @@ width: 80%;
 		#btn21:active {
 		  background-color: #0062cc;
 		}
-  
+  #close-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close-button:hover {
+  background-color: #999;
+}
+
 		.close {
 		  position: absolute;
 		  top: 10px;
