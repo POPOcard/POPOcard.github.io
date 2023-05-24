@@ -1,16 +1,16 @@
 .popup {
 		  display: none;
 		  position: fixed;
-		  top: 50%;
+		  top: 43%;
 		  left: 50%;
 		  transform: translate(-50%, -50%);
 		  background-color: #fff;
 		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		  padding: 20px;
-		  font-size: 28px;
+		  font-size: 26px;
 		  z-index: 9999;
 
-width: 99%;
+width: 95%;
      
 	 user-select: none;
 }
