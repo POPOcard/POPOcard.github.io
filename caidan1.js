@@ -9,7 +9,7 @@ function isWeixinBrowser() {
   var userAgent = navigator.userAgent.toLowerCase();
   return userAgent.indexOf('micromessenger') !== -1;
 }
- </script> <script>var closeBtn = document.getElementById("closeBtn");
+ var closeBtn = document.getElementById("closeBtn");
 var popup = document.getElementById("popup2");
 
 closeBtn.addEventListener("click", function() {
