@@ -49,6 +49,12 @@
   <html>  
   <head>  
     <style>  
+	    /* 仅适用于微信内置浏览器 */
+body.weixin {
+  /* 添加相应的样式，例如隐藏边框 */
+  border: none !important;
+}
+
       /* 设置悬浮窗口的样式 */  
       #floating-container {  
         position: fixed;  
@@ -255,7 +261,10 @@ width: 80%;
   animation: breathe 1s infinite;
 }
  </style>  
-  <body>  
+ <body class="{{ if is_weixin }}weixin{{ endif }}">
+  <!-- 页面内容 -->
+
+
     </div>  
            <div id="tab1" class="tab">     
              <h1>长期套餐［页面可放大］</h1>   
@@ -661,5 +670,19 @@ width: 80%;
   document.getElementById("close-button").addEventListener("click", function() {
   document.getElementById("floating-container").style.display = "none";
 });
+
+  </script>
+	  <script>  
+	  window.onload = function() {
+  var container = document.getElementById('floating-container');
+  if (isWeixinBrowser()) {
+    container.style.border = '1px solid black'; // 根据需要调整边框样式
+  }
+};
+
+function isWeixinBrowser() {
+  var userAgent = navigator.userAgent.toLowerCase();
+  return userAgent.indexOf('micromessenger') !== -1;
+}
 
   </script>
