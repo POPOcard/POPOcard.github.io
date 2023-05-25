@@ -9,9 +9,9 @@
 		  padding: 20px;
 		  font-size: 25px;
 		  z-index: 9999;
-}width: 95%;
-     
-	 user-select: none;
+    width: 95%;
+    
+	   user-select: none;
 }
 
 .popup::after {
