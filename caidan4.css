@@ -58,3 +58,8 @@ body.weixin {
     justify-content: center;
     align-items: center;
   }
+    body { 
+       padding-bottom: 3%; 
+ margin-top: 0%; 
+         
+     }
