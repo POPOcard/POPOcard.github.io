@@ -9,8 +9,8 @@
 		  padding: 20px;
 		  font-size: 26px;
 		  z-index: 9999;
-
-width: 95%;
+  line-height: 0.6;
+}width: 95%;
      
 	 user-select: none;
 }
