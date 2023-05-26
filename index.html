@@ -11,7 +11,8 @@
  <link rel="stylesheet" href="caidan.css"> 
  <link rel="stylesheet" href="320.css"> 
  <script src="caidan.js"></script> 
-         <script src="2.js"></script> 
+ <script src="caidan2.js"></script> 
+     <script src="2.js"></script> 
   
  <header> 
   
@@ -514,66 +515,4 @@
         <a href="http://storep.91haoka.cn/h5/dingdan.html?id=6936" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>  
   </body>  
   
-  <script>   
-    
-  window.addEventListener('load', function() {  
-    window.addEventListener('pagehide', function() {  
-       sessionStorage  
-      var activeTabIndex = getActiveTabIndex();  
-      var scrollPosition = window.pageYOffset;  
-    
-      sessionStorage.setItem('activeTabIndex', activeTabIndex);  
-      sessionStorage.setItem('scrollPosition', scrollPosition);  
-    });  
-     
-    window.addEventListener('pageshow', function(event) {  
-        
-      var activeTabIndex = sessionStorage.getItem('activeTabIndex');  
-      var scrollPosition = sessionStorage.getItem('scrollPosition');  
-    
-       
-      if (activeTabIndex === null) {  
-        activeTabIndex = 0;  
-      }  
-      if (scrollPosition === null) {  
-        scrollPosition = 0;  
-      }  
-    
-        
-      var tabButtons = document.querySelectorAll('.tab-menu button');  
-      tabButtons[activeTabIndex].click();  
-    
-       
-      window.scrollTo(0, scrollPosition);  
-    });  
-    window.addEventListener('scroll', function() {   
-      sessionStorage.setItem('scrollPosition', window.pageYOffset);  
-    });  
-  });  
-    
-  function getActiveTabIndex() {  
-    var tabButtons = document.querySelectorAll('.tab-menu button');  
-    for (var i = 0; i < tabButtons.length; i++) {  
-      if (tabButtons[i].classList.contains('active')) {  
-        return i;  
-      }  
-    }  
-    return 0;  
-  }  
-   document.getElementById("close-button").addEventListener("click", function() { 
-   document.getElementById("floating-container").style.display = "none"; 
- }); 
   
-   </script> 
-  <script>window.onload = function() { 
-   var container = document.getElementById('floating-container'); 
-   if (isWeixinBrowser()) { 
-     container.style.border = '1px solid black';  
-   } 
- }; 
-  
- function isWeixinBrowser() { 
-   var userAgent = navigator.userAgent.toLowerCase(); 
-   return userAgent.indexOf('micromessenger') !== -1; 
- } 
-  </script> 
