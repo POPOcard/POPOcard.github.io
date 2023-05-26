@@ -31,7 +31,7 @@ body.weixin {
       /* 设置悬浮跳转菜单样式 */  
       #floating-menu {  
         position: absolute;  
-        bottom: 1px;  
+        bottom: 1.5px;  
         right: 3px;  
     
      
