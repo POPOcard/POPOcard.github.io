@@ -24,7 +24,7 @@ body.weixin {
       /* 设置左侧缩略图的样式 */  
       #thumbnail {  
         width: 320px;  
-        height: auto;  
+        height: 500px;  
         margin-right: 2px;  
       }  
     
