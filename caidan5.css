@@ -1,19 +1,21 @@
 .popup {
-		  display: none;
-		  position: fixed;
-		  top: 43%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-		  background-color: #fff;
-		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-		  padding: 20px;
-		  font-size: 28px;
-		  z-index: 9999;
-	line-height: 1;
+    display: none;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    font-size: 28px;
+    z-index: 9999;
+    line-height: 1;
     width: 95%;
-    
-	   user-select: none;
+    user-select: none;
 }
+
 
 .popup::after {
   content: "公众号：恩水通信";
