@@ -10,28 +10,27 @@
       zoom: 1.0;
     }
 
-    /* 根据屏幕宽度应用不同的样式 */
-    @media screen and (max-width: 600px) {
-      /* 屏幕宽度小于等于 600px 时的样式 */
+    /* 仅适用于竖屏模式且设备宽度小于等于 767px 的样式 */
+    @media screen and (orientation: portrait) and (max-width: 767px) {
       body {
         font-size: 14px;
       }
     }
 
-    @media screen and (min-width: 601px) and (max-width: 1024px) {
-      /* 屏幕宽度大于 600px 且小于等于 1024px 时的样式 */
+    /* 可选的其他样式，适用于大屏幕设备或横屏模式 */
+    @media screen and (min-width: 768px), screen and (orientation: landscape) {
       body {
         font-size: 16px;
       }
     }
-
-    @media screen and (min-width: 1025px) {
-      /* 屏幕宽度大于 1024px 时的样式 */
-      body {
-        font-size: 18px;
-      }
-    }
   </style>
+</head>
+<body>
+  <h1>网页自适应示例</h1>
+  <p>这是一段内容。</p>
+</body>
+</html>
+
 </head>
 <body>
   <h1>网页自适应示例</h1>
