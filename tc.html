@@ -1,3 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>网页自适应示例</title>
+  <style>
+    /* 设置视口宽度为设备宽度，并禁用缩放 */
+    @viewport {
+      width: device-width;
+      zoom: 1.0;
+    }
+
+    /* 根据屏幕宽度应用不同的样式 */
+    @media screen and (max-width: 600px) {
+      /* 屏幕宽度小于等于 600px 时的样式 */
+      body {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      /* 屏幕宽度大于 600px 且小于等于 1024px 时的样式 */
+      body {
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      /* 屏幕宽度大于 1024px 时的样式 */
+      body {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>网页自适应示例</h1>
+  <p>这是一段内容。</p>
+</body>
+</html>
+
+
 <style>
   table {
     border-collapse: collapse;
