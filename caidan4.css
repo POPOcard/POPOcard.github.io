@@ -78,7 +78,11 @@ table {
     padding: 8px;
     text-align: left;
     white-space: nowrap;
-  }
+    
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 
   td.longest-cell {
     width: 100%;
