@@ -15,6 +15,6 @@ function copyText1() {
       tempInput.select();
       document.execCommand("copy");
       document.body.removeChild(tempInput);
-      alert("文字已复制成功！");
-        window.location.href = "weixin://";
+      alert("文字已复制成功！请自行搜索长按粘贴即可");
+      window.location.href = "weixin://";
     }
