@@ -17,3 +17,6 @@ table {
     background-color: #f2f2f2;
     font-weight: bold;
   }
+.multiline-cell {
+    white-space: normal;
+  }
