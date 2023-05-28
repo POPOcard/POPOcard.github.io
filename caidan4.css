@@ -68,11 +68,16 @@ body.weixin {
 
 table {
     border-collapse: collapse;
-    width: auto;
+    width: 100%;
+  height: auto;
     max-width: 100%;
       font-size: 28px;
 
     }
+
+
+
+
   th, td {
     border: 1px solid black;
     padding: 8px;
