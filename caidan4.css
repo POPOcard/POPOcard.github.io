@@ -88,6 +88,11 @@ table {
   overflow-wrap: break-word;
 }
 
+td {
+  /* 其他样式属性... */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
   td.longest-cell {
     width: 100%;
