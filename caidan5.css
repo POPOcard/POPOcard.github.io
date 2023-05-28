@@ -1,7 +1,7 @@
 .popup {
     display: none;
     position: fixed;
-    top: 1%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: rgba(255, 255, 255, 1);
@@ -19,7 +19,7 @@
 
 .popup::after {
   content: "公众号：恩水通信";
-  position: absolute;
+"公众号：恩水通信";  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
