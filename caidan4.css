@@ -66,34 +66,3 @@ body.weixin {
          
      }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-  height: auto;
-    max-width: 100%;
-      font-size: 28px;
-
-    }
-
-
-
-
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-    white-space: nowrap;
-    
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-td {
-  /* 其他样式属性... */
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-  td.longest-cell {
-    width: 100%;
-  }
