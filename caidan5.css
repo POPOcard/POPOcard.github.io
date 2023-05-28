@@ -74,7 +74,17 @@ font-size: 23px;
 		#btn18,
 		#btn19,
 		#btn20,
-		#btn21 {
+		#btn21,
+  #btn22,
+		#btn23,
+		#btn24,
+		#btn25,
+		#btn26,
+		#btn27,
+		#btn28,
+		#btn29,
+		#btn38,
+		#btn31 {
 		 display: inline-block;
 background-color:	#D2B48C;
 color: transparent;
@@ -101,7 +111,12 @@ font-size: 23px;
 		#btn16:hover,#btn17:hover,
 		#btn18:hover,#btn19:hover,
 		#btn20:hover,
-		#btn21:hover {
+		#btn21:hover,#btn22:hover,#btn23:hover,
+		#btn24:hover,#btn25:hover,
+		#btn26:hover,#btn27:hover,
+		#btn28:hover,#btn29:hover,
+		#btn30:hover,
+		#btn31:hover {
 		  background-color: #0069d9;
 		}
 
@@ -115,7 +130,12 @@ font-size: 23px;
 		#btn15:focus,#btn16:focus,
 		#btn17:focus,#btn18:focus,
 		#btn19:focus,#btn20:focus,
-		#btn21:focus {
+		#btn21:focus,#btn22:focus,#btn23:focus,
+		#btn24:focus,#btn25:focus,
+		#btn26:focus,#btn27:focus,
+		#btn28:focus,#btn29:focus,
+		#btn30:focus,
+		#btn31:focus {
 		  outline: none;
 		  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 		}
@@ -131,7 +151,12 @@ font-size: 23px;
 		#btn16:active,#btn17:active,
 		#btn18:active,#btn19:active,
 		#btn20:active,
-		#btn21:active {
+		#btn21:active,#btn22:active,#btn23:active,
+		#btn24:active,#btn25:active,
+		#btn26:active,#btn27:active,
+		#btn28:active,#btn29:active,
+		#btn30:active,
+		#btn31:active {
 		  background-color: #0062cc;
 		}
   #close-button {
