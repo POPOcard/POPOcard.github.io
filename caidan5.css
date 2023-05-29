@@ -1,7 +1,7 @@
 .popup {
     display: none;
     position: fixed;
-    top: -3%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: rgba(255, 255, 255, 1);
@@ -12,7 +12,7 @@
     font-size: 28px;
     z-index: 9999;
     line-height: 1;
-    width: 98%;
+    width: 96%;
     user-select: none;
 }
 
