@@ -26,7 +26,7 @@
 .popup::before {
   content: "公众号：恩水通信";
   position: absolute;
-  top: 35%; /* 上方位置调整 */
+  top: 35%; 
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 90px;
@@ -38,7 +38,7 @@
 .popup::after {
   content: "公众号：恩水通信";
   position: absolute;
-  bottom: 35%; /* 下方位置调整 */
+  bottom: 35%; 
   left: 50%;
   transform: translate(-50%, 50%);
   font-size: 90px;
@@ -47,17 +47,6 @@
   white-space: nowrap;
 }
 
-.popup::after {
-  content: "公众号：恩水通信";
-"公众号：恩水通信";  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 90px;
-  opacity: 0.1;
-  pointer-events: none;
-  white-space: nowrap;
-}
 
 
 		.popup h2 {
