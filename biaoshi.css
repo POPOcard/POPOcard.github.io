@@ -1,6 +1,5 @@
 .new-product {
-            position: relative;
-            display: inline-block;
+            position: absolute;
             padding: 5px 10px;
             background-color: #ff0000;
             color: #ffffff;
