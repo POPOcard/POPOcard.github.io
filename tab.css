@@ -6,9 +6,9 @@ table {
   
   td {
     word-wrap: break-word;
-    padding: 8px;
+    padding: 5px;
     border: 3px solid #ccc;
-    font-size: 27px;
+    font-size: 25px;
     word-break: break-all;
     vertical-align: top;
   }
