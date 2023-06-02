@@ -2725,14 +2725,14 @@ btn4.addEventListener('click', function(event) {event.stopPropagation();togglePo
  btn29.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup29);}); 
  btn30.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup30);}); 
  btn31.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn32.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn33.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn34.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn35.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn36.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn37.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn38.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn39.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
- btn40.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup31);}); 
+ btn32.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup32);}); 
+ btn33.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup33);}); 
+ btn34.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup34);}); 
+ btn35.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup35);}); 
+ btn36.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup36);}); 
+ btn37.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup37);}); 
+ btn38.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup38);}); 
+ btn39.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup39);}); 
+ btn40.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup40);}); 
  
  closeBtns.forEach(function(btn) {btn.addEventListener('click', function(event) { event.stopPropagation(); const popup = this.parentNode; togglePopup(popup);});});popups.forEach(function(popup) {popup.addEventListener('click', function(event) { event.stopPropagation();});popup.querySelectorAll('*').forEach(function(el) { el.addEventListener('copy', function(event) {event.preventDefault(); });});document.addEventListener('click', function(event) { if (event.target !== popup && !popup.contains(event.target)) {popup.style.display = 'none'; }});}); </script>
