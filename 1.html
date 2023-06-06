@@ -17,7 +17,49 @@
   <header>  
   
   
-                          <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="顶部头图">  
+                         <style>
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    
+    .fade {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <img class="fade" src="https://static.91haoka.cn/1682846971qnS.jpg">
+    <img class="fade" src="https://static.91haoka.cn/1686092414kEP.jpg">
+  </div>
+
+  <script>
+    var slides = document.querySelectorAll('.fade');
+    var currentSlide = 0;
+
+    function fadeSlides() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
+      }
+      slides[currentSlide].style.opacity = 1;
+      currentSlide = (currentSlide + 1) % slides.length;
+    }
+
+
+    slides[currentSlide].style.opacity = 1;
+    
+    setTimeout(function() {
+      fadeSlides();
+      setInterval(fadeSlides, 5000); 
+    }, 5000);
+  </script>
                   </a>  
           </header>  
   
