@@ -1,186 +1,276 @@
- 
-<table>
 
-    <p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单查询</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="https://static.91haoka.cn/vant.css"/>
+        <script src="https://static.91haoka.cn/vue.min.js"></script>
+        <script src="https://static.91haoka.cn/vantall.js"></script>
+        <script src="https://static.91haoka.cn/axios.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://static.91haoka.cn/all.css"/>
+     </head>
+    <style type="text/css">
+		*{ box-sizing: border-box; font-family:'PingFang SC'; font-size: 14px;}
+		.p1{ background: #E7EEFF; border-radius: 0.4rem; padding: 0.3rem;}
+		.p1 img{ width: 0.54rem;}
+		.t1{ margin-top: 0.2rem; font-size: 0.28rem; color: #2D3038;}
+		.btnx{ background: #FF3400; border-radius: 0.6rem; color: #fff; font-weight: bold; margin-top: 0.15rem; width: 1.7rem; padding: 0.2rem 0rem; text-align: center;}
+		.p2 img{ width: 0.34rem;}
+		.t2{ font-size: 0.22rem; margin-top: 0.05rem;}
+		.li{ padding: 0.3rem 0; background: #fff; padding:0.2rem 0.4rem; margin-bottom: 0.2rem;}
+		.act{ color: #FF3400;}
+		
+		.van-popup{ background: transparent;}
+		.van-loading__text{ color: #FFFFFF;}
+		
+		.k1 {
+			margin-bottom: 0.3rem;
+		}
+				
+		.k3 {
+			color: #FF6367;
+			margin-bottom: 0.2rem;
+		}
+				
+		.k2 {
+			
+		}
+				
+		.van-field {
+			background: #FFFFFF;
+		}
+				
+		.red {
+			color: #FF6367;
+			font-size: 0.28rem;
+			margin: 0 0.05rem;
+		}
+				
+		.inp {
+			position: relative;
+			margin-bottom: 0.3rem;
+		}
+				
+		.inpa {
+			position: absolute;
+			right: 0.1rem;
+			top: 7px;
+			color: #FFFFFF;
+			background: #FFB300;
+			padding: 0 0.2rem;
+		}
+		.btn{
+			background: #FFB300; color: #FFFFFF;
+			padding: 0.2rem 0.6rem; border-radius: 3px; text-align: center; font-weight: bold; font-size: 0.3rem;
+		}
+		.btn2{
+			background: #FFB300; color: #FFFFFF; width: 2rem;
+			padding: 0.1rem 0.3rem; border-radius: 3px; text-align: center; font-weight: bold; font-size: 0.25rem;
+		}
+    </style>
+	<body>
+        <div id="app" style="background: #F1F1F1; min-height: 100vh;" v-cloak>
+			<div v-if="!jieguo" class="k2 btn" style="position: fixed; right: 0rem; bottom: 0rem; z-index: 99; width: 100%; font-size: 14px; padding:0.2rem 0.2rem;" @click="jieguo = !jieguo">更换查询手机号</div>
+			<div class="list" style="padding-bottom: 1rem;">
+				<div style="padding: 0.4rem;" v-if="jieguo">
+						
+					<div class="inp">
+						<van-field v-model="all.mobile" placeholder="请输入收货电话" />
+					</div>
+					<div class="inp">
+						<van-field v-model="all.id_card_num" placeholder="请输入购卡者身份证号" />
+					</div>
+					<div class="inp">
+						<van-field v-model="all.code" placeholder="请输入验证码" ></van-field>
+						<van-button class="inpa" size="small" @click="getcode" :disabled="use">{{countname}}</van-button>
+					</div>
+					<div class="k2 btn" @click="chaxun">查询订单</div>
+				</div>
+				
+				<div v-if="!jieguo && list == ''" style="width: 100vw; height: 100vh;" class="flexcc" style="color: #666666; font-size: 0.35rem;">
+					本手机号下面没有订单
+				</div>
+				<div class="li" v-for="item in list" :key='item.id'>
+					<div style="margin-left: 0.2rem; font-weight: bold; line-height: 0.5rem; ">
+						
+						<div style="color: #666;">{{item.product_sku}}</div>
+						<div style="color: #666;">订单号：{{item.id}}</div>
+						<div style="color: #f00;">订单状态：{{item.status}}</div>
+						<div style="color: #666;">收件人：{{item.address_name}}</div>
+						<div style="color: #666;">物流公司：{{item.company}}</div>
+						<div style="color: #666;">物流单号：{{item.tracking_number}}</div>
+					
+					</div>
+					
+				</div>
+				
+			</div>
+			<!-- <div class="fixed" style="bottom: 0; background: #fff; ">
+				<div class="flexb" style=" padding: 0.15rem 0rem; text-align: center;">
+					<div style="flex: 1;" @click="go('index.html?shop=127837')">
+						<div class="p2 flexcc"><img src="img/i44.png"></div>
+						<div class="t2 ">主页</div>
+					</div>
+					<div style="flex: 1;" @click="go('kefu.html')">
+						<div class="p2 flexcc"><img src="img/i5.png"></div>
+						<div class="t2 ">在线客服</div>
+					</div>
+					<div style="flex: 1;" @click="go2">
+						<div class="p2 flexcc"><img src="img/i66.png"></div>
+						<div class="t2 act">订单查询</div>
+					</div>
+				</div>
+			</div> -->
+        </div>
 
-<h1 align="center">葫芦卡</h1>
+       
+        <script>
+            var h = document.documentElement.clientWidth / 7.5 + 'px';
+                document.documentElement.style.fontSize = h;
+
+            
+            new Vue({
+                el: '#app',
+                data: function() {
+                	return {
+                       all: {
+                       	mobile:"",
+                       	id_card_num:"",
+						code:""
+                       },
+                       countname:"获取验证码",
+                       count:30,
+                       use:false,
+                       person:"",
+                       ing:false,
+					   list:"",
+					   jieguo:true
+                	}
+                },
+                created(){
+                   if(localStorage.getItem('mobile')&&localStorage.getItem('id_card_num')){
+					this.all.mobile = localStorage.getItem('mobile')
+					this.all.id_card_num = localStorage.getItem('id_card_num')
+                   	this.jieguo = false
+					
+                   // 	axios.get(`/web/page/query/order/code?mobile=${localStorage.getItem('mobile')}&id_card_num=${localStorage.getItem('id_card_num')}&code=${this.all.code}`)
+                   // 		.then(response => {
+                   // 			if(response.data.msg.code == 0){
+                   // 				let list = response.data.data
+                   // 				let list2 = []
+                   // 				let ids = []
+                   // 				list.forEach(item=>{
+                   // 					console.log(ids.includes(item.id))
+                   // 					if(!ids.includes(item.id)){
+                   // 						ids.push(item.id)
+                   // 						list2.push(item)
+                   // 					}else{
+                   						
+                   // 					}
+                   // 				})
+                   // 				this.list = list2
+                   // 			}else{
+                   // 				vant.Toast(response.data.msg.info);
+                   // 			}
+                   // 		})
+                   }else{
+                   	
+                   }
+                },
+                mounted () {
+                   
+                },
+                methods:{
+					tuikuan:function(id){
+						axios.post(`/api/plan-market/address/mobile/refund`,{id:id})
+							.then(response => {
+								if(response.data.msg.code == 0){
+									vant.Toast('已发起退款申请');
+									this.chaxun()
+								}else{
+									vant.Toast(response.data.msg.info);
+								}
+							})
+					},
+					chaxun:function(){
+						
+						if(this.all.mobile.length != 11 || this.all.id_card_num.length != 18){
+							vant.Toast('请输入正确的手机号和身份证号');
+							return false
+						}
+						if(this.all.code == ''){
+							vant.Toast('请输入验证码');
+							return false
+						}
+						
+						axios.get(`/web/page/queryorders`,{params:this.all})
+							.then(response => {
+								if(response.data.msg.code == 0){
+									localStorage.setItem('mobile',this.all.mobile)
+									localStorage.setItem('id_card_num',this.all.id_card_num)
+									this.jieguo = false
+									let list = response.data.data
+									let list2 = []
+									let ids = []
+									list.forEach(item=>{
+										console.log(ids.includes(item.id))
+										if(!ids.includes(item.id)){
+											ids.push(item.id)
+											list2.push(item)
+										}else{
+											
+										}
+									})
+									this.list = list2
+								}else{
+									vant.Toast(response.data.msg.info);
+								}
+							})
+					},
+					daojishi:function(){
+						if(this.all.phone == ''){
+							return false
+						}
+						this.use = true
+						this.dao = setInterval(()=>{
+							if(this.count > 0){
+								this.count --
+								this.countname = this.count + '秒后重新获取'
+							}else{
+								this.count = 30
+								this.countname = '获取验证码'
+								clearInterval(this.dao)
+								this.use = false
+							}
+						},1000)
+					},
+					getcode:function(){
+						axios.get(`/web/page/query/order/code?mobile=${this.all.mobile}`)
+							.then(response => {
+								if(response.data.msg.code == 0){
+									this.$toast('验证码已发送');
+									this.daojishi()
+								}else{
+									vant.Toast(response.data.msg.info);
+								}
+							})
+					},
+					
+                    go:function(url){
+                    	window.location.href = url
+                    },
+					go2:function(){
+						window.location.href = 'chadan.html'
+					},
+					go3:function(){
+						window.location.href = 'https://work.weixin.qq.com/kfid/kfc3e3ac50ca14e6ef8'
+					}
+                }
+            });
 
   
-
-
-
-  <tr>
-
-    <td><b>月租:</b></td>
-
-    <td>0元（半年）［首月免月租］</td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>语音/短信:</b></td>
-
-    <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>构成:</b></td>
-
-    <td colspan="3">每月125G全国通用流量+30G定向流量</b></td>
-
-  </tr>
-
-      <tr>
-
-    <td><b>首充:</b></td>
-
-    <td colspan="3">快递员处/专属地址充50元整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="font-size: 180%;">  
-
-    <a href="https://pms.189.cn/cljy-web/static/sc/sc_index.html?shopid=2000118600000002&cmpid=jt.cfsf.123" style="color: red;"><b>专属首冲地址</b></a>              
-
-</td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>性质:</b></td>
-
-    <td>短期: 流量包有效期24个月<b>
-
-      
-
-   </td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>激活方式:</b></td>
-
-
-
-    <td><b>快递员协助激活</b></td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>归属地:</b></td>
-
-    <td>随机</td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>号码:</b></td>
-
-    <td>随机</td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>年龄:</b></td>
-
-    <td>20-60周岁</td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>流量到账时间:</b></td>
-
-    <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>
-
-      <tr>
-
-    <td><b>合约期:</b></td>
-
-    <td colspan="3">6个月内销户扣50元违约金（第7个月可正常销户）<b></b></td>
-
-  </tr>
-
-   <tr>
-
-    <td><b>销户方式:</b></td>
-
-    <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>
-
-  <tr>
-
-    <td><b>禁发地:</b></td>
-
-    <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！</b></font></td>
-
-  </tr>
-
-  <tr>
-
-    <td><b>发货时间</b></td>
-
-    <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>
-
-   </tr>
-
-     <tr>
-
-    <td><b>套餐优势</b></td>
-
-    <td colspan="3"><font color="#ff6f6d"><b>性价比最高的短期过度套餐</b></font></td>
-
-   </tr>
-
-</table>
-
-<p>
-
-<table>
-
-<tr>
-
-    <td>
-
-<font color="#66b3ff"> 
-
- 必须按要求“首充50元”，否则无法达成宣传所承诺的流量［不可逆］  
-
- <p>参加“充50元送120”活动后，50元本金立即到账。
-
-   <br>首月送30元体验金（抵扣首月月租）+店铺额外送50元话费<br>
-
-  <br> 120元每月返10元，共返12个月。
-
-  <br> 首月免月租，第2-6月每月0元月租（扣赠送的50元）+每月155G全国流量<br>第7-24个月每月19元+每月155G全国流量！
-
- 
-
-  <br> 流量包只有24个月有效期，请提前一个月销户。
-
- </font> 
-
- <font color="#ff6f6d"> 
-
- <p>  
-
- <p>为了避免额外扣费，新卡激活后请先不要使用流量，用其他网络登录
-
-   <br>“中国电信”APP确认流量到账后，再合理使用！ 
-
-  
-
-   <p>  每个身份证号只能申请一张，多次申请无效！   
-
-   <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<br> 
-
- 
-   </a>
-</td>
-</tr>   
-</table>
+        </script>
+	</body>
+</html>
