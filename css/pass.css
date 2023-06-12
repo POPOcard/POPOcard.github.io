@@ -1,0 +1,23 @@
+
+  body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    .password-form {
+      margin-top: 200px;
+    }
+    
+    .password-input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    
+    .submit-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
