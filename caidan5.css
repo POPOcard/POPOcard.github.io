@@ -1,236 +1,268 @@
-.popup {
-    display: none;
-    position: fixed;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgba(255, 255, 255, 1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    font-size: 28px;
-    z-index: 9999;
-    line-height: 1;
-    width: 98%;
-    user-select: none;
-}
-
-.popup object {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-  }
-
-
-.popup::before {
-  content: "公众号：恩水通信";
-  position: absolute;
-  top: 35%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 90px;
-  opacity: 0.1;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-.popup::after {
-  content: "公众号：恩水通信";
-  position: absolute;
-  bottom: 35%; 
-  left: 50%;
-  transform: translate(-50%, 50%);
-  font-size: 90px;
-  opacity: 0.1;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-
-
-		.popup h2 {
-		  margin-top: 0;
-		}
-
-#bt1 {
-		 display: inline-block;
-background-color: #a87f5f;
-color: transparent;
--webkit-text-stroke: 0.05px black;
--webkit-text-fill-color: white;
-border: none;
-padding: 10px 18px;
-border-radius: 5px;
-margin-top: 5px;
-cursor: pointer;
-font-size: 23px;
-
-
-}
-
-
-
-	
-
-		#btn1,
-		#btn2,
-		#btn3,
-		#btn4,
-		#btn5,
-		#btn6,
-		#btn7,
-		#btn8,
-		#btn9,
-		#btn10,
-		#btn11,
-		#btn12,
-		#btn13,
-		#btn14,
-		#btn15,
-		#btn16,
-		#btn17,
-		#btn18,
-		#btn19,
-		#btn20,
-		#btn21,
-  #btn22,
-		#btn23,
-		#btn24,
-		#btn25,
-		#btn26,
-		#btn27,
-		#btn28,
-		#btn29,
-		#btn30,
-		#btn31,
-#btn32,#btn33,#btn34,#btn35,#btn36,#btn37,#btn38,#btn39,#btn40 {
-		 display: inline-block;
-background-color:	#D2B48C;
-color: transparent;
--webkit-text-stroke: 0.05px black;
--webkit-text-fill-color: white;
-border: none;
-padding: 10px 18px;
-border-radius: 5px;
-margin-top: 5px;
-cursor: pointer;
-font-size: 23px;
-
-
-}
-
-		#btn1:hover,
-		#btn2:hover,#btn3:hover,
-		#btn4:hover,#btn5:hover,
-		#btn6:hover,#btn7:hover,
-		#btn8:hover,#btn9:hover,
-		#btn10:hover,#btn11:hover,
-		#btn12:hover,#btn13:hover,
-		#btn14:hover,#btn15:hover,
-		#btn16:hover,#btn17:hover,
-		#btn18:hover,#btn19:hover,
-		#btn20:hover,
-		#btn21:hover,#btn22:hover,#btn23:hover,
-		#btn24:hover,#btn25:hover,
-		#btn26:hover,#btn27:hover,
-		#btn28:hover,#btn29:hover,
-		#btn30:hover,
-		#btn31:hover,#btn32:hover,
-#btn33:hover,#btn37:hover,
-#btn34:hover,#btn38:hover,
-#btn35:hover,#btn39:hover,
-#btn36:hover,#btn40:hover {
-		  background-color: #0069d9;
-		}
-
-		#btn1:focus,
-		#btn2:focus,#btn3:focus,
-		#btn4:focus,#btn5:focus,
-		#btn8:focus,#btn7:focus,
-		#btn10:focus,#btn9:focus,
-		#btn12:focus,#btn11:focus,
-		#btn14:focus,#btn13:focus,
-		#btn15:focus,#btn16:focus,
-		#btn17:focus,#btn18:focus,
-		#btn19:focus,#btn20:focus,
-		#btn21:focus,#btn22:focus,#btn23:focus,
-		#btn24:focus,#btn25:focus,
-		#btn26:focus,#btn27:focus,
-		#btn28:focus,#btn29:focus,
-		#btn30:focus,#btn31:focus,#btn32:focus,#btn33:focus,#btn34:focus,#btn35:focus,#btn36:focus,#btn37:focus,#btn38:focus,#btn39:focus,
-		#btn40:focus {
-		  outline: none;
-		  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-		}
-
-		#btn1:active,
-		#btn2:active,#btn3:active,
-		#btn4:active,#btn5:active,
-		#btn6:active,#btn7:active,
-		#btn8:active,#btn9:active,
-		#btn10:active,#btn11:active,
-		#btn12:active,#btn13:active,
-		#btn14:active,#btn15:active,
-		#btn16:active,#btn17:active,
-		#btn18:active,#btn19:active,
-		#btn20:active,
-		#btn21:active,#btn22:active,#btn23:active,
-		#btn24:active,#btn25:active,
-		#btn26:active,#btn27:active,
-		#btn28:active,#btn29:active,
-		#btn30:active,#btn31:active,
-#btn32:active,#btn36:active,
-#btn33:active,#btn37:active,
-#btn34:active,#btn38:active,
-#btn35:active,#btn39:active,
-		#btn40:active {
-		  background-color: #0062cc;
-		}
-  #close-button {
-  background-color: #ccc;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#close-button:hover {
-  background-color: #999;
-}
-
-		.close {
-		  position: absolute;
-		  top: 10px;
-		  right: 10px;
-		  background: none;
-		  border: none;
-		  font-size: 18px;
-		  cursor: pointer;
-		}
-
-		.close:hover {
-		  color: #007bff;
-		}
- @keyframes breathe {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-#bt1 {
-  animation: breathe 1s infinite;
-}
-#closeBtn {
-  padding: 8px 16px;
-  background-color: #ff0000;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#closeBtn:hover {
-  background-color: #cc0000;
-}
+.popup { 
+     display: none; 
+     position: fixed; 
+     top: 0%; 
+     left: 50%; 
+     transform: translate(-50%, 0); 
+     background-color: rgba(255, 255, 255, 1); 
+     backdrop-filter: blur(8px); 
+     -webkit-backdrop-filter: blur(8px); 
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+     padding: 20px; 
+     font-size: 28px; 
+     z-index: 9999; 
+     line-height: 1; 
+     width: 98%; 
+     user-select: none; 
+ } 
+  
+ .popup object { 
+     flex: 1; 
+     width: 100%; 
+     height: 100%; 
+   } 
+  
+  
+ .popup::before { 
+   content: "恩水通信"; 
+   position: absolute; 
+   top: 35%;  
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   font-size: 90px; 
+   opacity: 0.1; 
+   pointer-events: none; 
+   white-space: nowrap; 
+ } 
+  
+ .popup::after { 
+   content: "恩水通信"; 
+   position: absolute; 
+   bottom: 35%;  
+   left: 50%; 
+   transform: translate(-50%, 50%); 
+   font-size: 90px; 
+   opacity: 0.1; 
+   pointer-events: none; 
+   white-space: nowrap; 
+ } 
+  
+  
+  
+                 .popup h2 { 
+                   margin-top: 0; 
+                 } 
+  
+ #bt1 { 
+                  display: inline-block; 
+ background-color: #a87f5f; 
+ color: transparent; 
+ -webkit-text-stroke: 0.05px black; 
+ -webkit-text-fill-color: white; 
+ border: none; 
+ padding: 10px 18px; 
+ border-radius: 5px; 
+ margin-top: 5px; 
+ cursor: pointer; 
+ font-size: 23px; 
+  
+  
+ } 
+  
+  
+  
+  
+  
+                 #btn1, 
+                 #btn2, 
+                 #btn3, 
+                 #btn4, 
+                 #btn5, 
+                 #btn6, 
+                 #btn7, 
+                 #btn8, 
+                 #btn9, 
+                 #btn10, 
+                 #btn11, 
+                 #btn12, 
+                 #btn13, 
+                 #btn14, 
+                 #btn15, 
+                 #btn16, 
+                 #btn17, 
+                 #btn18, 
+                 #btn19, 
+                 #btn20, 
+                 #btn21, 
+   #btn22, 
+                 #btn23, 
+                 #btn24, 
+                 #btn25, 
+                 #btn26, 
+                 #btn27, 
+                 #btn28, 
+                 #btn29, 
+                 #btn30, 
+                 #btn31,
+                 
+                 
+ #btn32,#btn33,#btn34,#btn35,#btn36,#btn37,#btn38,#btn39,#btn40,
+              #btn41, 
+                 #btn42, 
+                 #btn43, 
+                 #btn44, 
+                 #btn45, 
+                 #btn46, 
+                 #btn47, 
+                 #btn48, 
+                 #btn49, 
+                 #btn50 
+ { 
+                  display: inline-block; 
+ background-color:        #D2B48C; 
+ color: transparent; 
+ -webkit-text-stroke: 0.05px black; 
+ -webkit-text-fill-color: white; 
+ border: none; 
+ padding: 10px 18px; 
+ border-radius: 5px; 
+ margin-top: 5px; 
+ cursor: pointer; 
+ font-size: 23px; 
+  
+  
+ } 
+  
+                 #btn1:hover, 
+                 #btn2:hover,#btn3:hover, 
+                 #btn4:hover,#btn5:hover, 
+                 #btn6:hover,#btn7:hover, 
+                 #btn8:hover,#btn9:hover, 
+                 #btn10:hover,#btn11:hover, 
+                 #btn12:hover,#btn13:hover, 
+                 #btn14:hover,#btn15:hover, 
+                 #btn16:hover,#btn17:hover, 
+                 #btn18:hover,#btn19:hover, 
+                 #btn20:hover, 
+                 #btn21:hover,#btn22:hover,#btn23:hover, 
+                 #btn24:hover,#btn25:hover, 
+                 #btn26:hover,#btn27:hover, 
+                 #btn28:hover,#btn29:hover, 
+                 #btn30:hover, 
+                 #btn31:hover,#btn32:hover, 
+ #btn33:hover,#btn37:hover, 
+ #btn34:hover,#btn38:hover, 
+ #btn35:hover,#btn39:hover, 
+ #btn36:hover,#btn40:hover,
+#btn41:hover, 
+                 #btn42:hover,#btn43:hover, 
+                 #btn44:hover,#btn45:hover, 
+                 #btn46:hover,#btn47:hover, 
+                 #btn48:hover,#btn49:hover, 
+                 #btn50:hover 
+ { 
+                   background-color: #0069d9; 
+                 } 
+  
+                 #btn1:focus, 
+                 #btn2:focus,#btn3:focus, 
+                 #btn4:focus,#btn5:focus, 
+                 #btn8:focus,#btn7:focus, 
+                 #btn10:focus,#btn9:focus, 
+                 #btn12:focus,#btn11:focus, 
+                 #btn14:focus,#btn13:focus, 
+                 #btn15:focus,#btn16:focus, 
+                 #btn17:focus,#btn18:focus, 
+                 #btn19:focus,#btn20:focus, 
+                 #btn21:focus,#btn22:focus,#btn23:focus, 
+                 #btn24:focus,#btn25:focus, 
+                 #btn26:focus,#btn27:focus, 
+                 #btn28:focus,#btn29:focus, 
+                 #btn30:focus,#btn31:focus,#btn32:focus,#btn33:focus,#btn34:focus,#btn35:focus,#btn36:focus,#btn37:focus,#btn38:focus,#btn39:focus, 
+                 #btn40:focus,
+                 #btn41:focus, 
+                 #btn42:focus,#btn43:focus, 
+                 #btn44:focus,#btn45:focus, 
+                 #btn46:focus,#btn47:focus, 
+                 #btn48:focus,#btn49:focus, 
+                 #btn50:focus { 
+                   outline: none; 
+                   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
+                 } 
+  
+                 #btn1:active, 
+                 #btn2:active,#btn3:active, 
+                 #btn4:active,#btn5:active, 
+                 #btn6:active,#btn7:active, 
+                 #btn8:active,#btn9:active, 
+                 #btn10:active,#btn11:active, 
+                 #btn12:active,#btn13:active, 
+                 #btn14:active,#btn15:active, 
+                 #btn16:active,#btn17:active, 
+                 #btn18:active,#btn19:active, 
+                 #btn20:active, 
+                 #btn21:active,#btn22:active,#btn23:active, 
+                 #btn24:active,#btn25:active, 
+                 #btn26:active,#btn27:active, 
+                 #btn28:active,#btn29:active, 
+                 #btn30:active,#btn31:active, 
+ #btn32:active,#btn36:active, 
+ #btn33:active,#btn37:active, 
+ #btn34:active,#btn38:active, 
+ #btn35:active,#btn39:active, 
+                 #btn40:active,
+                 #btn41:active, 
+                 #btn42:active,#btn43:active, 
+                 #btn44:active,#btn45:active, 
+                 #btn46:active,#btn47:active, 
+                 #btn48:active,#btn49:active, 
+                 #btn50:active 
+                 { 
+                   background-color: #0062cc; 
+                 } 
+   #close-button { 
+   background-color: #ccc; 
+   color: #fff; 
+   border: none; 
+   padding: 10px 20px; 
+   border-radius: 5px; 
+   cursor: pointer; 
+ } 
+  
+ #close-button:hover { 
+   background-color: #999; 
+ } 
+  
+                 .close { 
+                   position: absolute; 
+                   top: 10px; 
+                   right: 10px; 
+                   background: none; 
+                   border: none; 
+                   font-size: 18px; 
+                   cursor: pointer; 
+                 } 
+  
+                 .close:hover { 
+                   color: #007bff; 
+                 } 
+  @keyframes breathe { 
+   0% { transform: scale(1); } 
+   50% { transform: scale(1.1); } 
+   100% { transform: scale(1); } 
+ } 
+ #bt1 { 
+   animation: breathe 1s infinite; 
+ } 
+ #closeBtn { 
+   padding: 8px 16px; 
+   background-color: #ff0000; 
+   color: #ffffff; 
+   border: none; 
+   border-radius: 4px; 
+   font-size: 16px; 
+   cursor: pointer; 
+ } 
+  
+ #closeBtn:hover { 
+   background-color: #cc0000;
