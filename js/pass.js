@@ -6,7 +6,7 @@
       var password = passwordInput.value;
       
       // 在此处添加你的密码验证逻辑
-      if (password === "enshui111") {
+      if (password === "enshui123") {
         window.location.href = "https://www.example.com"; // 替换为你要跳转的网址
       } else {
         disableFormForDuration(5); // 禁用表单 5 分钟
