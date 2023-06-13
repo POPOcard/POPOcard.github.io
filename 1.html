@@ -1,438 +1,1119 @@
-<meta charset="UTF-8">  
-          <title>恩山的店铺</title>  
-  <html>   
-          <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
-  <center>  
-          <h2>浏览量：<span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2>  
-  </center>  
-  
-  
-  
-  <link rel="stylesheet" href="caidan.css">  
-  <link rel="stylesheet" href="320.css">  
-  <script src="caidan.js"></script>  
-  <script src="caidan2.js"></script>  
-      <script src="2.js"></script>  
-  
+<html><head><meta charset="UTF-8"><title>恩山的店铺</title><html><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><center><h2>浏览量： 
+   <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2></center>   
+   <link rel="stylesheet" href="caidan.css"> <link rel="stylesheet" href="caidan5.css"> <link rel="stylesheet" href="caidan4.css"> <link rel="stylesheet" href="xingmu.css"><link rel="stylesheet" href="tab.css">  <script src="caidan.js"> </script><script src="jiyi.js">   </script> <script src="wxys.js"> </script> <script src="2.js"></script>
 
+     <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="顶部头图">    
+                    </a>    
+            </header>    
+  
+    <div class="menu">    
+            <a href="https://popocard.github.io/kefu.html">    
+                    <img id="menu-image1" img src="https://static.91haoka.cn/1682155560DDO.jpg" alt="Thumbnail 1" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->    
+                    <span>人工服务</span>     
+            </a>    
+            <a href="http://popocard.github.io/chaxun.html">    
+                    <img src="https://static.91haoka.cn/1682156239ARH.jpg" alt="Thumbnail 2" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->    
+                    <span>订单查询</span>     
+            </a>    
+            <a href="https://popocard.github.io/gzh.html">    
+                    <img src="https://static.91haoka.cn/1682156646Y7y.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->    
+                    <span>企业公众号</span>     
+            </a>    
+  
+  
+  
+  
+            </a>    
+            <a href="https://mp.weixin.qq.com/s/A4jb4ebE7vjVQ3ZJVsoCNA">    
+                    <img src="https://static.91haoka.cn/1682508575GMC.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->    
+                    <span>解疑答惑</span>     
+            </a>    
+    </a>    
+            <a href="https://popocard.github.io/zuixin.html">    
+                    <img src="https://static.91haoka.cn/1685710666dzf.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->    
+                    <span>最新资讯</span>     
+            </a>    
+   
+          
+  
+    </a>    
+            <a href="https://popocard.github.io/fuli.html">    
+                    <img src="https://static.91haoka.cn/1685359030YiP.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->    
+                    <span>福利活动</span>     
+            </a>   </div>    
+            <br><br>     
+     <div class="tab-menu">     
+         <button class="active"onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>     
+         <button onclick="openTab(event, 'tab2')" style="color: #5B5B5B;"><h1>短期套餐</h1></button>     
+     <button onclick="openTab(event, 'tab3')" style="color: #5B5B5B;"><h1>纯流量卡</h1></button>   
+  
+    <button onclick="openTab(event, 'tab4')" style="color: #5B5B5B;"><h1>电话手表</h1></button>     
+  
+     <button onclick="openTab(event, 'tab5')" style="color: #5B5B5B;"><h1>超大通话</h1></button>     
   
-  
-                         <style>
-    .slideshow-container {
-      position: relative;
-      max-width: 100%;
-      height: auto;
-      margin: auto;
-    }
-    
-    .fade {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-  </style>
-
-  <div class="slideshow-container">
-    <img class="fade" src="https://static.91haoka.cn/1682846971qnS.jpg">
-    <img class="fade" src="https://static.91haoka.cn/1686092414kEP.jpg">
-  </div>
-
-  <script>
-    var slides = document.querySelectorAll('.fade');
-    var currentSlide = 0;
-
-    function fadeSlides() {
-      for (var i = 0; i < slides.length; i++) {
-        slides[i].style.opacity = 0;
-      }
-      slides[currentSlide].style.opacity = 1;
-      currentSlide = (currentSlide + 1) % slides.length;
-    }
-
-
-    slides[currentSlide].style.opacity = 1;
-    
-    setTimeout(function() {
-      fadeSlides();
-      setInterval(fadeSlides, 5000); 
-    }, 5000);
-  </script>
-                  </a>  
-    </p>  </p>  </p>  
-
-</div>   </div>        </header>  
-  
-  <div class="menu">  
-          <a href="https://popocard.github.io/kefu.html">  
-                  <img id="menu-image1" img src="https://static.91haoka.cn/1682155560DDO.jpg" alt="Thumbnail 1" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->  
-                  <span>人工服务</span>   
-          </a>  
-          <a href="http://popocard.github.io/chaxun.html">  
-                  <img src="https://static.91haoka.cn/1682156239ARH.jpg" alt="Thumbnail 2" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->  
-                  <span>订单查询</span>   
-          </a>  
-          <a href="https://mp.weixin.qq.com/s/-l3Hib2NnoFfQyuy9WppmQ">  
-                  <img src="https://static.91haoka.cn/1682156646Y7y.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->  
-                  <span>企业公众号</span>   
-          </a>  
-  
-  
-  
-  
-          </a>  
-          <a href="https://mp.weixin.qq.com/s/A4jb4ebE7vjVQ3ZJVsoCNA">  
-                  <img src="https://static.91haoka.cn/1682508575GMC.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->  
-                  <span>解疑答惑</span>   
-          </a>  
-          </a>  
-          <a href="">  
-                  <img src="https://static.91haoka.cn/1682594993Jcy.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->  
-                  <span>无损销户</span>   
-          </a>  
-  
-  </a>  
-          <a href="https://popocard.github.io/fuli.html">  
-                  <img src="https://static.91haoka.cn/1685359030YiP.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->  
-                  <span>福利活动</span>   
-          </a>   </div>  
-          <br><br>   
-   <div class="tab-menu">   
-       <button class="active" onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>   
-       <button onclick="openTab(event, 'tab2')" style="color: #5B5B5B;"><h1>短期套餐</h1></button>   
-   <button onclick="openTab(event, 'tab3')" style="color: #5B5B5B;"><h1>纯流量卡</h1></button> 
-  
-  <button onclick="openTab(event, 'tab4')" style="color: #5B5B5B;"><h1>电话手表</h1></button>   
-  
-   <button onclick="openTab(event, 'tab5')" style="color: #5B5B5B;"><h1>超大通话</h1></button>   
-  
-      </div>         
-  
-  
-       <div id="tab1" class="tab">   
-           <h1>长期套餐［页面可放大］</h1>  
-  
-  
-  
- <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-         <a href="https://www.gantanhao.vip/webapp/merchant/templet1.html?share_id=440016&id=4374101">   
-  
-  
-           <img src="https://static.91haoka.cn/1685354268aL5.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">全网独家［长期］</p>［支持5G SA］<br>自己激活</p></h1>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(快递员处/“中国联通”APP)</p>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐:自动续约</p>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">29.3元+163G全国通用流量+100分钟通话</p>   
-    <font size="2" color="black"</p><p style="font-size: 150%;">为了规避同行运营商投诉，需自行上传三张照片！介意勿下。 
- <br>请添加售后，否则一律不发货。</p>  </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=15887" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>            
-  
-  
-        </div>       
-  
- </div>              
-  
-  
-          <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-  
-  
- </head>   
-   <body>  
-  
-  
-  
-          <img src="https://static.91haoka.cn/1684512762eaW.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-      </div>  
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">“玉柱+古城”（自动续约）［通用流量可结转］</p>［自己选号，自己激活！支持5G SA 500mbps］</h1><b>   
-                  <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元（激活过程中充值）</p>   
-          <font size="2" color="black"</p><p style="font-size: 160%;">长期套餐:实际为自动续约</p>   
-                  <font size="2" color="black"</p><p style="font-size: 180%;">玉柱：24元40G全国通用流量+60G安H省内流量100分钟全国通话<br>古城：29元40G全国通用流量+100G安H省内流量+100分钟全国通话</p>   
-                 <font size="2" color="black"</p><p style="font-size: 150%;">首月按天扣费，激活过程中预存话费100元，月租和流量长期有效</p>   
-    <font size="2" color="black"</p><p style="font-size: 170%;">可额外办理亲情号码，送1000分钟，可发安H<br></p>   
-  
-    </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=13724" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>  </div> 
- </div>              
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-         <a href="https://www.gantanhao.vip/webapp/merchant/templet1.html?share_id=440016&id=4374101">   
-  
-  
-           <img src="https://static.91haoka.cn/1684513176v67.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">天涯卡（长期）［极速发货］</p>［支持5G SA］<br></p></h1>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(快递员处/“中国联通”APP)</p>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">长套餐:官方可查一年，自动续约</p>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">长期59元+302G全国通用流量+200分钟通话</p>   
-    <font size="2" color="black"</p><p style="font-size: 150%;">全网流量最多套餐</p>  </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7183" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>   
-  
-  
-  
- </div></div>    </div>      
-  
-      <div id="tab2" class="tab">   
-         <p>    
-               <h1>短期套餐［页面可放大］</h1>   
-  
-  
-       <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-  
-  
-           <img src="https://static.91haoka.cn/1685093049BGj.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-  
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">鼓浪卡（短期+首年19元） 
-  
- <font size="2" color="red"<p style="font-size: 80%;">［限量+极速发货］<a/><br>（支持5G SA）</h1><b>   
-                 <font size="2" color="black"</p><p style="font-size: 150%;">首冲50元（快递员）</p>   
-         <font size="2" color="black"</p><p style="font-size: 170%;">短期套餐:到期按政策续约</p>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">125G全国通用流量+30G定向+100分钟</p>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">首月免费，第2-12个月每月19元125G全国通用流量+30G定向+100分钟，第13个月-24个月29元月租+每月“125G全国通用流量+30G定向+100分钟。</p>   
-   <p style="font-size: 150%; color: red;">  
-    注意:到期按政策续约属于不可控因素，故:短期！ 
-  
-  
-    <p style="font-size: 180%;">   
-     <a href="http://2t8.cn/vOvre" style="color: red;"><b>专属首冲地址</b></a>            
-     </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=15423" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div></div></div>  
-  
-  
-  <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-  
-           <html>   
-  
-  
-   </head>   
-   <body>   
-           <img src="https://static.91haoka.cn/1685067094jrg.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">葫芦卡［半年0元］</p>［支持5G SA］</h1><b>   
-  
-  
-   <font size="2" color="black"</p><p style="font-size: 150%;">首冲50元［快递员处］</p>   
-          <font size="2" color="black"</p><p style="font-size: 150%;">短期套餐</p>    
-  
-  
- <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向</p>   
-   <font size="2" color="black"</p><p style="font-size: 200%;">首月免月租，第2-6个月0元（送50元抵扣），第7-24个月19元。</p>   
-    <font size="2" color="black"</p><p style="font-size: 150%;">6个月内销户扣50元违约金（第7个月扣19元后才能无损销户）</p>   
- <p style="font-size: 180%;">   
-     <a href="https://pms.189.cn/cljy-web/static/sc/sc_index.html?shopid=2000118600000002&cmpid=jt.cfsf.123" style="color: red;"><b>专属首冲地址</b></a>               
-    </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="https://haokawx.lot-ml.com/h5order/index?pudiD=85&userid=23752" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>   
-  
-  
-  
-                 </div></div>    
-  
-  
-          <div style="border: 2px solid #000; padding: 10px; position: relative;">  
-                <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-   <body>   
-           <img src="https://static.91haoka.cn/1685288198k30.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;"><a style="color:red;">草莓卡［短期+2年19元］<br></a></p>［支持5G SA］</h1><b>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">首冲50元（快递员处）</p>   
-                 <font size="2" color="black"</p><p style="font-size: 160%;">短期套餐：2年</p>   
-  
-         <font size="2" color="black"</p><p style="font-size: 180%;">135G全国通用流量+30G定向</p>   
-   <font size="2" color="black"</p><p style="font-size: 180%;">首月免月租，第2-24个月19元月租</p>  <br> 
- <b><a style="color:red;"><h2>10G全国通用流量需手动领取“福利活动”----“星卡福利”</h2></a> 
-  
- <p style="font-size: 180%;">   
-     <a href="https://pms.189.cn/cljy-web/static/sc/sc_index.html?shopid=2000118600000002&cmpid=jt.cfsf.123" style="color: red;"><b>专属首冲地址</b></a>      
-    </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="https://haokawx.lot-ml.com/h5order/index?pudiD=84&userid=23752" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>   
-  
-  
-  
-             </div></div>  
-  
-  
-   <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-         <a href="https://popocard.github.io/pobing.html">   
-           <html>   
-  
-  
-  
-  
-  
-  
-  
-   </head>   
-   <body>   
-           <img src="https://static.91haoka.cn/1685068715WCG.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">新奇卡（短期/长期）［可选号］</p>［支持5G SA］收货地即归属地</h1>   
-        <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(快递员处)</p>   
-         <font size="2" color="black"</p><p style="font-size: 190%;">162G全国通用流量+30G定向流量</p>   
-   <font size="2" color="black"</p><p style="font-size: 170%;">首月免费，第2-6个月19元，第7-13个月29元<br>24个月后长期29元30G全国通用流量+30G定向</p>   
-    <font size="2" color="black"</p><p style="font-size: 150%;">申请前先查是否支持自己的手机机型，所在地是否有“”中国广电营业厅”</p>   
-        <font size="2" color="black"</p><p style="font-size: 150%;">归属地为你本地城市的号码！</p>  
-    </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="https://popocard.github.io/pobing.html" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>  </div>  </div> 
-  
-  
-  
-     </div></div></div></div></div>   
-  
-         <div id="tab3" class="tab">   
-           <h1>全网无语音服务的套餐，均为正规套餐！</h1>   
-  
-  
-   <div style="border: 2px solid #000; padding: 10px; position: relative;">    
-      <div style="display: flex; align-items: center;">    
-        <div style="margin-right: 5px;">    
-  
-  
-  
-            <img src="https://static.91haoka.cn/16850679393iT.jpg" class="fixed-size" alt="Thumbnail">    
-          </a>    
-  
-    <html>    
         </div>    
-        <div style="flex: 1;">    
-          <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">（长期20年）无语音功能</p>［自己激活+流量可结转］<br><a style="color: red;"><b>［支持5G SA］［23日后订单已无1000mbps，目前500mbps］</p></h1></a>    
-                  <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(激活过程中)</p>    
-          <font size="2" color="black"</p><p style="font-size: 150%;">长套餐:20年</p>    
-    <font size="2" color="black"</p><p style="font-size: 190%;">首年:  29元+180G全国通用流量+30G定向 
- <br>次年起:39元+180G全国通用流量+30G定向 
- </p>    
-    <font size="2" color="black"</p><p style="font-size: 170%;">首月按天扣费，流量按天折算!流量和月租20年固定不变!</p>    
-     <font size="2" color="black"</p><p style="font-size: 170%;">无语音功能，<a style="color: red;">短信功能正常！0.1元/条</a>无合约期，无违约金。<a style="color: red;"></a></p><br>    
+   <html>   
+   <head>   
+  
+     <body class="{{ if is_weixin }}weixin{{ endif }}"> 
+  
+  
+     </div>   
+            <div id="tab1" class="tab">      
+              <h2>长期套餐［页面可放大］</h2>
+
+
+
+<div id="floating-container">   
+       <img id="thumbnail" src="https://static.91haoka.cn/16864518020Xy.jpg" alt="Thumbnail Image">   
+            <div>    <div class="new-product">返现30元</div>
+ <h1 id="title">“辣椒卡”【长期+12个月19元】  【秒发货】</h1> </b></a> 
+         <div id="content">   
+          <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【首冲100】【自己激活】</p></b></a> 
+  
+              <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（快递员/专属链接）</p>  
+        <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约［官方可查］</p>  
+  <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向+100分钟全国通话</p>  
+  <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租19元+每月125G全国通用流量+30G定向+100分钟全国通话
+<br>第14个月起长期29元月租+每月125G全国通用流量+30G定向+100分钟全国通话
+  </a> 
+<br><font color="red"></font>
+
+    
+       
+       
+     </div>   
+   <div id="popup40" class="popup"> 
+
+  <table>
+ 
+<h1 align="center">辣椒卡</h1>
+  
+
+  <tr>
+   <td class="header-cell"><b>月租:</b></td>
+    <td>19元（12个月）［首月免月租］</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>语音/短信:</b></td>
+    <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>构成:</b></td>
+    <td colspan="3">每月125G全国通用流量+30G定向流量+100分钟全国通话</td>
+  </tr>
+      <tr>
+    <td class="header-cell"><b>首冲:</b></td>
+    <td colspan="3">100元整(快递员/<a href="https://cfzf.hb.189.cn/cfhd/newActivity/index?channelSource=1028&activityId=10032">专属链接</a>)</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>性质:</b></td>
+    <td>长期: 自动续约［官方可查］<b>
+      
+   </td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>激活方式:</b></td>
+
+    <td><b>自己激活</b></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>归属地:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>号码:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>年龄:</b></td>
+    <td><font color="red">21-60周岁</font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>流量到账时间:</b></td>
+    <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>
+      <tr>
+    <td class="header-cell"><b>合约期:</b></td>
+    <td colspan="3">无合约期，无违约金！<b></b></td>
+  </tr>
+   <tr>
+    <td class="header-cell"><b>销户方式:</b></td>
+    <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>
+  <tr>
+    <td class="header-cell"><b>禁发地:</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！可发湖北！</b></font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>发货时间</b></td>
+    <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>
+   </tr>
+     <tr>
+    <td class="header-cell"><b>套餐优势</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>流量语音均衡，目前最佳性价比！</b></font></td>
+   </tr>
+</table>
+<p>
+<table>
+<tr>
+    <td>
+ 按要求一次性“冲100元整”，否则无法达成宣传所承诺的流量［不可逆］  
+ <p>参加“充100元送120”活动后，100元本金立即到账。
+<br>激活当月额外送30元体验金，自动抵扣当月话费，120元每月返10元，共返12个月。
+<br>综上所述:首月免月租，第2-13月每月19元月租+每月155G全国流量+100分钟全国通话。 
+<br>
+ </td></tr></table>
+ <table>
+<tr>
+    <td>  
+由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！ 
+   <p>  每个身份证号只能申请一张，多次申请无效！   
+   <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P> 
+ </b> <button id="btn39">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>
+ </td></tr></table>
+  <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="https://haokawx.lot-ml.com/Review/index?pudID=101&userid=23752"> 
+     <button id="bt1" style="color: white;"><b>免费领取</b></button> 
+   </a>
+   
+  </div>
+   </button>   <div id="popup39" class="popup"> 
+   <p>
+   <table>
+<tr> 
+   <td> 
+     <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td> 
+   </tr> 
+   <tr> 
+    <td class="header-cell"><b>所在区域：<br></b></td> 
+     <td>选择对应的“选项”：省、市、区/县</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>详细地址：<br></b></td> 
+     <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！ 
+  
+ <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font> 
+ <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］ 
+  
+ <p><b>**镇/乡**村/屯**号**</b> 
+ <br>如：大王镇小王村9号（请以实际地址为准！） 
+ </td></tr> 
+  
+ <tr> 
+ <td class="header-cell">禁填“字眼”</td> 
+  
+ <td>收货地址出现以下任何类似相关“字眼”不允发货: 
+ <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td> 
+ </tr> 
+  
+    <td class="header-cell"><b>解决办法：</b></td> 
+     <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！ 
+ <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td> 
+   </tr> 
+ <tr> 
+    <td class="header-cell"><b>疑惑解析：</b></td> 
+     <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！  
+   <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。  
+   <p>部分村庄无法送货上门，请以实际为准！</td> 
+   </tr> 
+  <tr><td><td><font color="#CD853F"><b></b></font> </table>  
+
+ </div> 
+  
+    </div>   
+ <div id="floating-menu">   
+   </button>    
+      <button id="btn40"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+   <a href="https://haokawx.lot-ml.com/Review/index?pudID=101&userid=23752">   
+     <button id="bt1"style="color: white;"><b>免费领取</b></button>   
+   </a>   
+     </div>   
+       </div></div>
+<div id="floating-container">   
+       <img id="thumbnail" src="https://static.91haoka.cn/16861049564kI.jpg" alt="Thumbnail Image">   
+            <div>    <div class="new-product">返现30元</div>
+ <h1 id="title">“辣椒卡【16周岁版】”【长期+12个月19元】  【秒发货】</h1> </b></a> 
+         <div id="content">   
+          <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【首冲50】【16周岁】</p></b></a> 
+  
+              <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（专属链接）</p>  
+        <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约［官方可查］</p>  
+  <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向</p>  
+  <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租19元+每月125G全国通用流量+30G定向
+<br>第14个月起长期29元月租+每月125G全国通用流量+30G定向
+  </a> 
+<br><font color="red">快递员处只有“冲50送50”，专属链接“充50送120”!</font>
+
+    
+       
+       
+     </div>   
+   <div id="popup24" class="popup"> 
+
+  <table>
+ 
+<h1 align="center">辣椒卡【16周岁】</h1>
+  
+
+  <tr>
+   <td class="header-cell"><b>月租:</b></td>
+    <td>19元（12个月）［首月免月租］</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>语音/短信:</b></td>
+    <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>构成:</b></td>
+    <td colspan="3">每月125G全国通用流量+30G定向流量</td>
+  </tr>
+      <tr>
+    <td class="header-cell"><b>首冲:</b></td>
+    <td colspan="3">100元整(<a href="https://cfzf.hb.189.cn/cfhd/newActivity/index?channelSource=1028&activityId=10032">专属链接</a>)</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>性质:</b></td>
+    <td>长期: 自动续约［官方可查］<b>
+      
+   </td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>激活方式:</b></td>
+
+    <td><b>自己激活</b></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>归属地:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>号码:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>年龄:</b></td>
+    <td><font color="red">16-55周岁</font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>流量到账时间:</b></td>
+    <td colspan="3">48小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>
+      <tr>
+    <td class="header-cell"><b>合约期:</b></td>
+    <td colspan="3">无合约期，无违约金！<b></b></td>
+  </tr>
+   <tr>
+    <td class="header-cell"><b>销户方式:</b></td>
+    <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>
+  <tr>
+    <td class="header-cell"><b>禁发地:</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！可发湖北！</b></font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>发货时间</b></td>
+    <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>
+   </tr>
+     <tr>
+    <td class="header-cell"><b>套餐优势</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>低领年段，目前最佳性价比！</b></font></td>
+   </tr>
+</table>
+<p>
+<table>
+<tr>
+    <td>
+ 按要求专属链接一次性“冲50元整”，否则无法达成宣传所承诺的流量［不可逆］  
+ <p>专属链接参加“充50元送120”活动后，50元本金立即到账。
+<br>激活当月额外送30元体验金，自动抵扣当月话费，50元每月返10元，共返5个月。
+<br>综上所述:首月免月租，第2-13月每月19元月租+每月155G全国流量。
+<br>第14个月后长期每月29元月租+每月155G全国流量。 
+<br><font color="red">不要再快递员那充……</font>
+ </td></tr></table>
+ <table>
+<tr>
+    <td>  
+由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！ 
+   <p>  每个身份证号只能申请一张，多次申请无效！   
+   <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P> 
+ </b> <button id="btn27">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>
+ </td></tr></table>
+  <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="https://haokawx.lot-ml.com/Review/index?pudID=102&userid=23752"> 
+     <button id="bt1" style="color: white;"><b>免费领取</b></button> 
+   </a>
+   
+  </div>
+   </button>   <div id="popup27" class="popup"> 
+   <p>
+   <table>
+<tr> 
+   <td> 
+     <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td> 
+   </tr> 
+   <tr> 
+    <td class="header-cell"><b>所在区域：<br></b></td> 
+     <td>选择对应的“选项”：省、市、区/县</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>详细地址：<br></b></td> 
+     <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！ 
+  
+ <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font> 
+ <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］ 
+  
+ <p><b>**镇/乡**村/屯**号**</b> 
+ <br>如：大王镇小王村9号（请以实际地址为准！） 
+ </td></tr> 
+  
+ <tr> 
+ <td class="header-cell">禁填“字眼”</td> 
+  
+ <td>收货地址出现以下任何类似相关“字眼”不允发货: 
+ <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td> 
+ </tr> 
+  
+    <td class="header-cell"><b>解决办法：</b></td> 
+     <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！ 
+ <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td> 
+   </tr> 
+ <tr> 
+    <td class="header-cell"><b>疑惑解析：</b></td> 
+     <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！  
+   <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。  
+   <p>部分村庄无法送货上门，请以实际为准！</td> 
+   </tr> 
+  <tr><td><td><font color="#CD853F"><b></b></font> </table>  
+
+ </div> 
+  
+    </div>   
+ <div id="floating-menu">   
+   </button>    
+      <button id="btn24"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+   <a href="https://haokawx.lot-ml.com/Review/index?pudID=102&userid=23752">   
+     <button id="bt1"style="color: white;"><b>免费领取</b></button>   
+   </a>   
+     </div>   
+       </div></div>
+
+  <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1685968903vDX.jpg" alt="Thumbnail Image">    
+             <div>    
+  <div class="new-product">返现30元</div>  <h1 id="title">“桃月卡”【长期+首年19元】  【独家渠道+严重限量!】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】（自己激活/快递员激活）【可发湖北！】【21周岁】【即将下架】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲100（快递员/激活过程中）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约［官方可查］</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向+100分钟全国通话</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租19元+每月125G全国通用流量+30G定向+100分钟全国通话 
+ <br>第14个月起长期固定29元月租+每月125G全国通用流量+30G定向+100分钟全国通话 
+   </a><br> 
+ <a style="color: red;"> 审核超严格:每人只有一次机会，无论成功与否！请按要求填写收货地址！
+ <br>16周岁版本，已被强行下架，限时直渠收尾单!</a> 
+ <br> 
+ <p><p> 
+ <br>  
+  
+  
+  
+  
   
       </div>    
-        <div style="position: absolute; right: 10px; bottom: 10px;">    
-          <a href="https://haokawx.lot-ml.com/h5order/index?pudID=94&userid=23752" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>    
+    <div id="popup10" class="popup">  
+  
+   <table> 
+  
+ <h1 align="center">桃月卡（带100分钟通话）</h1> 
   
   
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>19元（1年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月125G全国通用流量+30G定向流量+100分钟全国通话</td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">100元整（快递员/激活过程中）</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>长期: 自动续约［官方可查］<b> 
   
- </div>    
- </div>    
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
   
+     <td><b>快递员激活/自己激活（快递袋扫码激活）<a href="https://cfzf.hb.189.cn/cfhd/newActivity/index?channelSource=1028&activityId=10032"> 【专属首冲地址】</a></b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>21-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">无合约期，无违约金！<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><a style="color: red;">湖北的朋友千万别错过……</a></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>流量+语音均衡，最佳性价比！</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+  必须按要求一次性“首冲100元整”，否则无法达成宣传所承诺的流量［不可逆］   
+  <p>参加“充100元送120”活动后，100元本金立即到账。 
+    <br>激活送30元体验金，自动抵扣当月话费！<br> 
+   <br> 120元每月返10元，共返12个月。 
+   <br> 首月年月租，第2-13月每月19元月租+每月155G全国流量+100分钟全国通话。  
   
+   <br>第14个月后长期固定每月29元月租+每月155G全国流量+100分钟全国通话。  
+<br>由于地方运营商被同行举报，现已取消16周岁可申请的版本。
+<br>现渠道“自己激活、快递员激活”随机发货，无法指定快递。<br>7日12时-8日24时期间的订单为自己激活，8日24时后的订单恢复混发……（随时下架）
   
-   <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
+ </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn11">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17095">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
   
+   </div> 
+    </button>   <div id="popup11" class="popup">  
+    <p> 
+    <table> 
+ <tr>  
+    <td>  
+      <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>  
+    </tr>  
+    <tr>  
+     <td class="header-cell"><b>所在区域：<br></b></td>  
+      <td>选择对应的“选项”：省、市、区/县</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>详细地址：<br></b></td>  
+      <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！  
   
+  <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>  
+  <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］  
   
-           <img src="https://static.91haoka.cn/1685070083QTF.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
+  <p><b>**镇/乡**村/屯**号**</b>  
+  <br>如：大王镇小王村9号（请以实际地址为准！）  
+  </td></tr>  
   
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">倾城卡（长期20年）无语音功能<br>自己激活+流量可结转<br>（支持5G SA）下载速度200-500mbps</p></h1><b>   
-                 <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(快递员处)</p>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">长套餐:官方自动续约</p>   
-   <font size="2" color="black"</p><p style="font-size: 190%;">150G全国通用流量+30G定向</p>   
-   <font size="2" color="black"</p><p style="font-size: 170%;">首月免费，第2-6个月9元，第7-13个月29元，后长期39元</p>   
-    <font size="2" color="black"</p><p style="font-size: 170%;">无语音功能，只能收短信！无合约期，无违约金，可随时销户！</p>   
+  <tr>  
+  <td class="header-cell">禁填“字眼”</td>  
   
+  <td>收货地址出现以下任何类似相关“字眼”不允发货:  
+  <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>  
+  </tr>  
+  
+     <td class="header-cell"><b>解决办法：</b></td>  
+      <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！  
+  <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>  
+    </tr>  
+  <tr>  
+     <td class="header-cell"><b>疑惑解析：</b></td>  
+      <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！   
+    <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。   
+    <p>部分村庄无法送货上门，请以实际为准！</td>  
+    </tr>  
+   <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>   
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn10"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17095">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div>
+
+
+
+
+
+<div id="floating-container">   
+       <img id="thumbnail" src="https://static.91haoka.cn/1685616399hUl.jpg" alt="Thumbnail Image">   
+       <div>    <div class="new-product">返30</div>
+ <h1 id="title">“天宫卡”【首年19元】  【极速发货】</h1> </b></a> 
+         <div id="content">   
+          <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】［顺丰、EMS自己激活］</p></b></a> 
+  
+              <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（快递员处/专属链接）</p>  
+        <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约[官方可查]</p>  
+  <font size="2" color="black"</p><p style="font-size: 190%;">180G全国通用流量+30G定向</p>  
+  <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租19元+每月125G全国通用流量+30G定向
+<br>第14个月起长期固定月租29元+每月125G全国通用流量+30G定向
+<br>京东、顺丰、EMS随机发货，大概率顺丰、MES:自己激活！
+  </a> 
+<p>
+<p>
+
+    
+       
+       
      </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=10577" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>   
+   <div id="popup9" class="popup"> 
+
+  <table>
+ 
+<h1 align="center">天宫卡</h1>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-     </div></div></div></div></div>   
-  
-         <div id="tab4" class="tab">   
- <h1>联通上门开卡+本地归属地+免费绑定3个亲情号码（互打免费）+流量语音！电话手表必备！ 
-  
-  
- <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-  
-           <html>   
-  
-  
-   </head>   
-   <body>   
-           <img src="https://static.91haoka.cn/1685069887x5s.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
-  
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">亲子卡（长期+前7个月9元）<br>归属地即收货地</p></h1>   
-        <font size="2" color="black"</p><p style="font-size: 150%;">首冲50元(快递员处/“中国联通”APP)</p>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐</p>   
-   <font size="2" color="black"</p><p style="font-size: 190%;">第1-7个月9元月租，每月3G全国通用流量+10G定向+100分钟全国通话<br>后期长期固定19元月租，每月3G全国通用流量+10G定向+100分钟全国通话</p>   
-    <font size="2" color="black"</p><p style="font-size: 150%;">可免费绑定3个亲情号码（任意联通号码，互打免费！）电话手表专用！</p>   
+
+  <tr>
+   <td class="header-cell"><b>月租:</b></td>
+    <td>首年19元，长期29元［首月免月租］</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>语音/短信:</b></td>
+    <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>构成:</b></td>
+    <td colspan="3">每月125G全国通用流量+30G定向流量</td>
+  </tr>
+      <tr>
+    <td class="header-cell"><b>首冲:</b></td>
+    <td colspan="3">50元整.京东：快递员处/<a href="http://t.hn.189.cn/y6jmYz4" style="color: #66B3FF;"><b>【专属首冲地址】</b>
+       <br>其他快递：激活过程中充值</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>性质:</b></td>
+    <td>长期:自动续约[官方可查]<b>
+      
+   </td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>激活方式:</b></td>
+
+    <td><b>京东:快递员激活<br>其他快递:自己激活</b></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>归属地:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>号码:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>年龄:</b></td>
+    <td>20-60周岁</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>流量到账时间:</b></td>
+    <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>
+      <tr>
+    <td class="header-cell"><b>合约期:</b></td>
+    <td colspan="3">无合约期，无违约金！<b></b></td>
+  </tr>
+   <tr>
+    <td class="header-cell"><b>销户方式:</b></td>
+    <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>
+  <tr>
+    <td class="header-cell"><b>禁发地:</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！</b></font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>发货时间</b></td>
+    <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>
+   </tr>
+     <tr>
+    <td class="header-cell"><b>套餐优势</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>老牌套餐</b></font></td>
+   </tr>
+</table>
+<p>
+<table>
+<tr>
+    <td>
+<font color="#66b3ff"> 
+ 必须按要求“首充50元”，否则无法达成宣传所承诺的流量［不可逆］  
+ <p>参加“充50元送120”活动后，50元本金立即到账。
+   <br>额外送30元体验金，自动抵扣当月话费！<br>
+  <br> 120元每月返10元，共返10元个月。
+  <br> 首月年月租，第2-13月每月19元月租+每月155G全国流量 
+  <br>13个月后长期29元月租+每月155G全国流量
+ 
+  <br> 
+ </font> </td></tr></table>
+ <table>
+<tr>
+    <td>  
+由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！ 
+   <p>  每个身份证号只能申请一张，多次申请无效！   
+   <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P> 
+ </b> <button id="btn32">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>
+ </td></tr></table>
+  <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7335"> 
+     <button id="bt1" style="color: white;"><b>免费领取</b></button> 
+   </a>
+   
+  </div>
+   </button>   <div id="popup32" class="popup"> 
+
+<p>
+<table> 
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+
+ </div> 
   
     </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=9784" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>          
+ <div id="floating-menu">   
+   </button>    
+      <button id="btn9"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+   <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7335">   
+     <button id="bt1"style="color: white;"><b>免费领取</b></button>   
+   </a>   
+     </div>   
+       </div></div>
+
+
+ 
+
+<div id="floating-container">   
+       <img id="thumbnail" src="https://static.91haoka.cn/1685066048syx.jpg" alt="Thumbnail Image">   
+            <div>    <div class="new-product">返现30元</div>
+ <h1 id="title">“破冰卡plus”【真长期29元】  【正常发货】</h1> </b></a> 
+         <div id="content">   
+          <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【EMS、顺丰自己激活+选号】【流量全结转】</p></b></a> 
+  
+              <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（专属链接）</p>  
+        <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:一年一续约［官方可查］</p>  
+  <font size="2" color="black"</p><p style="font-size: 190%;">180G全国通用流量+30G定向</p>  
+  <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租29元+每月180G全国通用流量+30G定向
+<br>每年到期前三个月再次参加“冲100送240”续约（官方认可、可查）
+  </a> 
+<br><font color="red">京东、顺丰、EMS随机发货，无法指定！</font>
+
+    
+       
+       
+     </div>   
+   <div id="popup41" class="popup"> 
+
+  <table>
+ 
+<h1 align="center">破冰卡plus</h1>
+  
+
+  <tr>
+   <td class="header-cell"><b>月租:</b></td>
+    <td>29元［首月免月租］</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>语音/短信:</b></td>
+    <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>构成:</b></td>
+    <td colspan="3">每月180G全国通用流量+30G定向流量</td>
+  </tr>
+      <tr>
+    <td class="header-cell"><b>首冲:</b></td>
+    <td colspan="3">100元整(快递员/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://uop.hi.189.cn/uop-web/sPQJDq1" style="color: blue;">【专属首冲地址】</a>  )</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>性质:</b></td>
+    <td>长期: 自动续约［官方可查］<b>
+      
+   </td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>激活方式:</b></td>
+
+    <td><b>京东：快递员协助/
+    <br>EMS、顺丰：自己激活</b></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>归属地:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>号码:</b></td>
+    <td><b>EMS、顺丰：自己选号</b></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>年龄:</b></td>
+    <td><font color="red">20-60周岁</font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>流量到账时间:</b></td>
+    <td colspan="3">48小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>
+      <tr>
+    <td class="header-cell"><b>合约期:</b></td>
+    <td colspan="3">无合约期，无违约金！<b></b></td>
+  </tr>
+   <tr>
+    <td class="header-cell"><b>销户方式:</b></td>
+    <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>
+  <tr>
+    <td class="header-cell"><b>禁发地:</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！</b></font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>发货时间</b></td>
+    <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>
+   </tr>
+     <tr>
+    <td class="header-cell"><b>套餐优势</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>全网唯一：长期29元+流量全结转+通话功能</b></font></td>
+   </tr>
+</table>
+<p>
+<table>
+<tr>
+    <td>
+ 按要求一次性“冲100元整”，否则无法达成宣传所承诺的流量［不可逆］
+ 
+ <p>参加“充100元送240”活动后，100元本金立即到账。
+<br>激活当月额外送30元体验金，自动抵扣当月话费，240元每月返20元，共返12个月。
+<br>综上所述:首月免月租，第2-13月每月19元月租+每月155G全国流量+100分钟全国通话。 
+<br><font color="red">流量包为官方自动续约，手动参加活动续约的目的是为了“每月返20”的减免，以达成长期29元月租。</font>
+<br>活动到期前的三个月会收到续约短信，期间无空档期，每年可再次参加“充100送240”活动，达成长期29元月租。以此类推，无限续约！［官方客服认可、可查］若未收到续约短信，请移步“福利活动”板块，保证100%续约  。  <a href="https://uop.hi.189.cn/uop-web/html/order/stockStarCardRenew/html/index.html?code=20230309171249974&appCode=HNNewen&authCode=stockStarCardRenewPage" style="color: blue;">【续约地址】</a>  
+
+ </td></tr></table>
+ <table>
+<tr>
+    <td>  
+由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！ 
+   <p>  每个身份证号只能申请一张，多次申请无效！   
+   <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P> 
+ </b> <button id="btn42">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>
+ </td></tr></table>
+  <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=19589"> 
+     <button id="bt1" style="color: white;"><b>免费领取</b></button> 
+   </a>
+   
+  </div>
+   </button>   <div id="popup42" class="popup"> 
+   <p>
+   <table>
+<tr> 
+   <td> 
+     <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td> 
+   </tr> 
+   <tr> 
+    <td class="header-cell"><b>所在区域：<br></b></td> 
+     <td>选择对应的“选项”：省、市、区/县</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>详细地址：<br></b></td> 
+     <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！ 
+  
+ <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font> 
+ <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］ 
+  
+ <p><b>**镇/乡**村/屯**号**</b> 
+ <br>如：大王镇小王村9号（请以实际地址为准！） 
+ </td></tr> 
+  
+ <tr> 
+ <td class="header-cell">禁填“字眼”</td> 
+  
+ <td>收货地址出现以下任何类似相关“字眼”不允发货: 
+ <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td> 
+ </tr> 
+  
+    <td class="header-cell"><b>解决办法：</b></td> 
+     <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！ 
+ <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td> 
+   </tr> 
+ <tr> 
+    <td class="header-cell"><b>疑惑解析：</b></td> 
+     <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！  
+   <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。  
+   <p>部分村庄无法送货上门，请以实际为准！</td> 
+   </tr> 
+  <tr><td><td><font color="#CD853F"><b></b></font> </table>  
+
+ </div> 
+  
+    </div>   
+ <div id="floating-menu">   
+   </button>    
+      <button id="btn41"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+   <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=19589">   
+     <button id="bt1"style="color: white;"><b>免费领取</b></button>   
+   </a>   
+     </div>   
+       </div></div>  
+
+
+<div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1686234978j2i.jpg" alt="Thumbnail Image">    
+        <div>    
+  <div class="new-product">返现30元</div>  <h1 id="title">“瑶轩卡”【首年29元，长期39】  【秒发货】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】［自己激活］</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（激活过程中）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约［官方可查］</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">150G全国通用流量+30G定向</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租29元+每月150G全国通用流量+30G定向+100分钟全国通话
+   
+   <br>第13个月后长期固定月租39元+每月150G全国通用流量+30G定向+100分钟全国通话
+   </a>  
+   </a>  
+   <p> 
+  
+  
+  
+         <p>  
+  
+      </div>    
+    <div id="popup1" class="popup">  
+ </button>   
+  
+  
+ <h3 align="center">瑶轩卡</h3> 
+  
+  
+  <table> 
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>首年29元，长期39元。［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月150G全国通用流量+30G定向流量+100分钟全国通话<b><a style="color:#FF7575";></b></a></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">激活过程中冲100元整</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>长期: 手动一年一续约［官方客服可查］</a>  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>自己激活（快递袋/背面内有教程）</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>21-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">48小时内<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">无合约期，无违约金！<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”App在线异地销户！<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3">新疆、西藏、云南、北京，其他以地方运营商审核为准！<font color="#ff6f6d"><b>可发海南!</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>营养均衡</b></font></td> 
+    </tr> 
+ </table> 
+ <br> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  必须按要求“首充”，否则无非达成宣传所承诺的流量!［不可逆］ 
+  
+  <br>
+  </td></tr></table> 
+  
+ <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn2">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17721">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+     <div id="popup2" class="popup">  
+<p>
+<table> 
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn1"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17721">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div>       
+  
+ 
   
   
   
@@ -440,56 +1121,2224 @@
   
   
   
-  </div></div>    
+      <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1684512762eaW.jpg" alt="Thumbnail Image">    
+        <div>    
+  <h1 id="title">“古城、玉柱卡”【长期24/29元】  【只发A徽】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】［500mbps］【流量全结转】【自己激活】【自己选号】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（激活过程中）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:实际为自动续约［官方可查1年］</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;"> 
+ 玉柱：24元40G全国通用流量+60G安H省内流量100分钟全国通话 
+   <br>古城：29元40G全国通用流量+100G安H省内流量+100分钟全国通话</p>   
+  
+   <font size="2" color="black"><p style="font-size: 160%;">可额外办理1000分钟亲情号码！额外福利多！ 
+  <br> </a>  
+  
+       <p><br> 
   
   
-   </div></div></div></div></div>   
-  </div></div>  <div id="tab5" class="tab">   
-     <p>   
-           <h1>禁止用于：电话销售、电信诈骗等违法犯罪行为！［页面可放大］</h1>   
+  
+  
+      </div>    
+    <div id="popup3" class="popup">  
+  
+   <table> 
+  
+ <h3 align="center">古城玉柱</h3> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>24/29元［激活首月全额扣月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">玉柱: 
+ <br>24元40G全国通用流量+60G安H省内通用流量+100分钟全国通话 
+   <br>古城: 
+ <br>29元40G全国通用流量+100G安H省内通用流量+100分钟全国通话</b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">激活过程中预存100元整</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>长期套餐: 实际为自动续约［官方客服可查1年］<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>自己激活</b</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>激活过程中选号</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>20-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">48小时内<b>［流量全额到账］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">12个月合约期（解除合约后可销户［私信］，无违约金！）<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国联通”App在线销户！<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3">只发安徽！外省勿扰……<font color="#ff6f6d"><b>   </b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>自己激活+自己选号+省内通用流量+流量结转+500mbps</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> <td> 
+ 激活过程中充100，立即到账。 
+ 首月话费、流量按剩余天数折算。 
+ <br>每年1、2、7、8月送10G全国通用流量 
+ <br>可办理亲情卡一张，送1000分钟亲情通话。 
+ <p>外省勿扰，只限安H，归属地AN徽随机…… 
+  
+  
+ </td></tr></table> 
+ <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国联通”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn4">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=13724">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup4" class="popup">  
+<p>
+  <table> 
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+ 
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn3"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=13724">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div>   
+  
+  
+  
+ <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1684513176v67.jpg" alt="Thumbnail Image">    
+        <div>    <div class="new-product">返现20元</div>
+  <h1 id="title">“天涯卡”【长期59元】  【已恢复秒发货】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【支持5G SA】【全网流量最多】</b></a> </p> 
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（快递员/“中国联通”APP）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约［官方可查1年］</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">302G全国通用流量+200分钟全国通话</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月扣全额月租，流量全额到账！ 
+   </a>    
+      </div>    
+    <div id="popup5" class="popup">  
+   <table>    
+ <h1 align="center">天涯卡</h1> 
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>59元［首月扣59元］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月302G全国通用流量+200分钟全国通话<b></b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">快递员/“中国联通”APP预存100元整 
+  
+ </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>长期套餐: 自动续约［官方客服可查1年］<b> 
+ </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b></b>快递员激活&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>20-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">实时到账<b>［流量全额到账］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">无合约期（可随时销户，无违约金！）<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国联通”App在线异地销户！<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3">新疆、西藏、云南、北京，其他以地方运营商审核为准！禁发地少。<font color="#ff6f6d"><b>!</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>全网“全国通用流量”最多的套餐</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  必须按要求“首充”，否则无非达成宣传所承诺的流量［不可逆］   
+  <p>参加冲100活动后，100元本金立即到账。 
+  
+   <br> 官方客服可查1年，实际为自动续约！ 
+  </font> </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国联通”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn6">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7183">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup6" class="popup">  
+<p>
+<table> 
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn5"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7183">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div>   
+  
+  
+ </div>   
   
   
   
   
   
-          <div style="border: 2px solid #000; padding: 10px; position: relative;">  
-    <div style="display: flex; align-items: center;">  
-      <div style="margin-right: 5px;">  
   
   
   
-          <img src="https://static.91haoka.cn/1685069128c0s.jpg" class="fixed-size" alt="Thumbnail">  
-        </a>  
   
-  <html>  
-      </div>  
-      <div style="flex: 1;">  
-        <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">珠玉卡（长期）210G+600分钟</p>（支持5G SA）［极速发货］</p></h1><b>  
-                <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元（专属链接）  
-        <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐:官方自动续约[官方可查]</p>  
-  <font size="2" color="black"</p><p style="font-size: 190%;">170全国通用流量+30G定向+600分钟全国通话</p>  
-  <font size="2" color="black"</p><p style="font-size: 150%;">首月免月租元，第2-13个月每月49元170G全国通用流量+30G定向+600分钟，13个月后月租59元流量语音［长期固定不变］</p>  
-   <font size="2" color="black"</p><p style="font-size: 150%;">请仔细阅读宣传图“特别说明”！  
-                <a href="https://yx.nx.189.cn/m_lx2020xhzw/index_starCardhd.do?data=eyJhY3Rpdml0eSI6IuaYn%2BWNoemmluWFheW6l%2BmTuiIsImRldk9yZyI6IjY0MDEwMTIxMTgyMDMiLCJkZXZTdGFmZiI6ImQxemhvdWx1bzEyODExIiwic291cmNlIjoi5a6B5aSP5Y2P5LyX5ZWG5Lia566h55CG5pyJ6ZmQ5YWs5Y%2B4Iiwic2hvcElkIjoiMTkifQ%3D%3D%0A%0A>"</a>专属首冲地址  
-  </a></p>  
   
+  
+  
+  
+  
+  
+  
+  
+  
+   <div id="tab2" class="tab">      
+              <h1>短期套餐［页面可放大］</h1>  
+
+ <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1685436407xPX.jpg" alt="Thumbnail Image">    
+        <div>  
+  <h1 id="title">“六月卡”【半年0元】 【发货慢】 【16周岁】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（快递员处/专属链接）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:流量包2年有效期</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-6个月月租0元+每月125G全国通用流量+30G定向 
+ <br>第7-24个月月租29元+每月125G全国通用流量+30G定向 
+   </a>  
+   <br><font color="red">此套餐预存本金50+店铺赠送50+每月返10元（共返5个月）+首月免月租=6个月0月租。
+       <br>因为店铺额外赠送50，所以6个月内销户扣50违约金！第七个月可正常销户！</font>
+  
+  
+  
+  
+      </div>    
+    <div id="popup12" class="popup">  
+  
+   <table> 
+  
+ <h1 align="center">六月卡</h1> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>0元（半年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月125G全国通用流量+30G定向流量</b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">快递员处/专属地址充50元整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <a href="http://a.189.cn/F6fzbn" style="color: red;"><b>专属首冲地址</b></a>               
+  
+ </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>短期: 流量包有效期24个月<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>快递员协助激活</b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>20-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">6个月内销户扣50元违约金（第7个月可无损销户）<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京、贵州、广西、海南，其他地区看审核！</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>性价比最高的短期过度套餐</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  必须按要求“首充50元”，否则无法达成宣传所承诺的流量［不可逆］   
+  <p>参加“充50元送50”活动后，50元本金立即到账，赠送50每月返10元，共返5个月。 
+    <br>首月送30元体验金（抵扣首月月租）+店铺额外送50元话费<br> 
+   <br>  
+   <br> 达成：首月免月租，第2-6月每月0元月租+每月155G全国流量，第7-24个月每月29元+每月155G全国流量。 
+  
+   <br> 。 
+  </font> </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn13">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7410">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup13" class="popup">  
+  
+ <table> 
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b> 
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn12"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7410">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div> 
+
+
+<div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1686234445r7h.jpg" alt="Thumbnail Image">    
+             <div>     
+  <h1 id="title">“清凉卡”【前6个月9元】  【限量】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【全网最佳短期】【16周岁】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲50（快递员处/专属链接）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:24个月有效期</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-6个月月租9元+每月125G全国通用流量+30G定向
+ <br>第7-24个月起19元月租+每月125G全国通用流量+30G定向
+   </a><br> 
+ <a style="color: red;">此套餐与“六月卡”扣费模式不同，请仔细查看！</a> 
+ <br> 
+ <p><p> 
+ <br>  
+  
+  
+  
+  
+  
+      </div>    
+    <div id="popup35" class="popup">  
+  
+   <table> 
+  
+ <h1 align="center">清凉卡</h1> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>9元（半年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月125G全国通用流量+30G定向流量</td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">50元整（专属链接/快递员）</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>短期:24个月<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>快递员协助激活</b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>16-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">6个月内销户扣50违约金！<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><a style="color: red;">西藏、新疆、云南、北京、贵州、广西、海南，其他看审核。</a></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>全网最高性价比短期套餐！</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+  必须按要求一次性“首冲50元整”，否则无法达成宣传所承诺的流量［不可逆］   
+  <p>参加“充50元送50”活动后，50元本金立即到账。 
+    <br>激活送30元体验金，自动抵扣当月话费！<br> 
+   <br> 50元每月返10元，共返5个月。 
+   <br> 首月年月租，第2-6月每月9元月租+每月155G全国流量
+  
+   <br>第7-24个月每月19元月租+每月155G全国流量  <br>（24个月后125G全国通用流量包自动取消）
+  
+ </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn36">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17711">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup36" class="popup">  
+    <p> 
+    <table> 
+ <tr>  
+    <td>  
+      <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>  
+    </tr>  
+    <tr>  
+     <td class="header-cell"><b>所在区域：<br></b></td>  
+      <td>选择对应的“选项”：省、市、区/县</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>详细地址：<br></b></td>  
+      <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！  
+  
+  <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>  
+  <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］  
+  
+  <p><b>**镇/乡**村/屯**号**</b>  
+  <br>如：大王镇小王村9号（请以实际地址为准！）  
+  </td></tr>  
+  
+  <tr>  
+  <td class="header-cell">禁填“字眼”</td>  
+  
+  <td>收货地址出现以下任何类似相关“字眼”不允发货:  
+  <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>  
+  </tr>  
+  
+     <td class="header-cell"><b>解决办法：</b></td>  
+      <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！  
+  <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>  
+    </tr>  
+  <tr>  
+     <td class="header-cell"><b>疑惑解析：</b></td>  
+      <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！   
+    <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。   
+    <p>部分村庄无法送货上门，请以实际为准！</td>  
+    </tr>  
+   <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>   
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn35"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17711">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div>
+
+<div id="floating-container">   
+       <img id="thumbnail" src="https://static.91haoka.cn/1686622127rpf.jpg" alt="Thumbnail Image">   
+       <div>   <div class="new-product">返现20元</div>
+ <h1 id="title">“秋叶卡”【2年19元】 </h1> </b></a> 
+         <div id="content">   
+          <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【秒发货】</p></b></a> 
+  
+              <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（快递员处/专属链接）</p>  
+        <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:流量包2年有效期</p>  
+  <font size="2" color="black"</p><p style="font-size: 190%;">155G全国通用流量+30G定向</p>  
+  <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-13个月月租19元+每月125G全国通用流量+30G定向
+<br>再次参加“充50送120/充100赠240”
+   <br>  充50/100：第14-24个月月租19元+每月145G全国通用流量+30G定向
+ <br><font color="red">构成有点复杂：
+     <br>请仔细查看宣传图！！！<font>
+    
+     </a>
+<p> 
+  
+
+    
+       
+       
+     </div>   
+   <div id="popup33" class="popup"> 
+
+  <table>
+ 
+<h1 align="center">秋叶卡</h1>
+  
+
+  <tr>
+   <td class="header-cell"><b>月租:</b></td>
+    <td>19元（2年）［首月免月租］</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>语音/短信:</b></td>
+    <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>构成:</b></td>
+    <td colspan="3">每月55G全国通用流量+30G定向流量</td>
+  </tr>
+      <tr>
+    <td class="header-cell"><b>首冲:</b></td>
+    <td colspan="3">快递员处/专属地址充50元整&</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>性质:</b></td>
+    <td>短期: 流量包有效期24个月<b>
+      
+   </td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>激活方式:</b></td>
+
+    <td><b>快递员协助激活</b></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>归属地:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>号码:</b></td>
+    <td>随机</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>年龄:</b></td>
+    <td>20-60周岁</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>流量到账时间:</b></td>
+    <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>
+      <tr>
+    <td class="header-cell"><b>合约期:</b></td>
+    <td colspan="3">无合约期，无违约金！<b></b></td>
+  </tr>
+   <tr>
+    <td class="header-cell"><b>销户方式:</b></td>
+    <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>
+  <tr>
+    <td class="header-cell"><b>禁发地:</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！</b></font></td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>发货时间</b></td>
+    <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>
+   </tr>
+     <tr>
+    <td class="header-cell"><b>套餐优势</b></td>
+    <td colspan="3"><font color="#ff6f6d"><b>短期过度！</b></font></td>
+   </tr>
+</table>
+<p>
+<table>
+<tr>
+    <td>
+<font color="#66b3ff"> 
+ 必须按要求“首充50元”，否则无法达成宣传所承诺的流量［不可逆］  
+ 
+ <br>构成有点复杂，请仔细查看宣传图！
+   <br>
+  <br> 注意：125G流量包只有24个月有效期，到期不续约！！！
+   <br>不过，也别害怕，剩余话费全额退还！
+ </font> </td></tr></table>
+ <table>
+<tr>
+    <td>  
+由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！ 
+   <p>  每个身份证号只能申请一张，多次申请无效！   
+   <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P> 
+ </b> <button id="btn34">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>
+ </td></tr></table>
+  <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=19642"> 
+     <button id="bt1" style="color: white;"><b>免费领取</b></button> 
+   </a>
+   
+  </div>
+   </button>   <div id="popup34" class="popup"> 
+  <p>
+  <font color="red"><b>  
+ <h2 align="center">收货地址填写细则</h2></font></b>
+<table>  
+ <font color="CD853F"><b>   
+  <h1 align="center">收货地址填写规范</h1></font></b> 
+  
+ <tr> 
+   <td> 
+     <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td> 
+   </tr> 
+   <tr> 
+    <td class="header-cell"><b>所在区域：<br></b></td> 
+     <td>选择对应的“选项”：省、市、区/县</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>详细地址：<br></b></td> 
+     <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！ 
+  
+ <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font> 
+ <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］ 
+  
+ <p><b>**镇/乡**村/屯**号**</b> 
+ <br>如：大王镇小王村9号（请以实际地址为准！） 
+ </td></tr> 
+  
+ <tr> 
+ <td class="header-cell">禁填“字眼”</td> 
+  
+ <td>收货地址出现以下任何类似相关“字眼”不允发货: 
+ <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td> 
+ </tr> 
+  
+    <td class="header-cell"><b>解决办法：</b></td> 
+     <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！ 
+ <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td> 
+   </tr> 
+ <tr> 
+    <td class="header-cell"><b>疑惑解析：</b></td> 
+     <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！  
+   <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。  
+   <p>部分村庄无法送货上门，请以实际为准！</td> 
+   </tr> 
+  <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>  
+  
+
+ </div> 
+  
+    </div>   
+ <div id="floating-menu">   
+   </button>    
+      <button id="btn33"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+   <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=19642">   
+     <button id="bt1"style="color: white;"><b>免费领取</b></button>   
+   </a>   
+     </div>   
+       </div></div>
+
+  
+ 
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1685288198k30.jpg" alt="Thumbnail Image">    
+        <div>    <div class="new-product">返现30元</div>
+  <h1 id="title">“草莓卡”【短期+2年19元】  【秒发货】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（快递员处/专属链接）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:流量包2年有效期</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">125G全国通用流量+30G定向</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-24个月月租19元+每月135G全国通用流量+30G定向<br>10GB全国通用流量需手动领取，有效期12个月！> 
+ <p> 
+   </a>  
+  
+  
+  
+  
+  
+      </div>    
+    <div id="popup16" class="popup">  
+  
+   <table> 
+  
+ <h1 align="center">草莓卡</h1> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>19元（2年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月135G全国通用流量+30G定向流量</b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">专属地址充50元整    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <a href="https://pms.189.cn/cljy-web/static/sc/sc_index.html?shopid=2000118600000002&cmpid=jt.cfsf.123" style="color: red;"><b>专属首冲地址</b></a>      
+  
+       </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>短期: 流量包有效期24个月<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>快递员协助激活</b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>20-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">48小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">6个月（合约期内销户无违约金）<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>首充50+2年19元（短期过度）</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  必须按要求“首充50元”，否则无法达成宣传所承诺的流量［不可逆］   
+  <p>参加“充50元送50”活动后，50元本金立即到账。 
+    <br>首月送30元体验金（抵扣首月月租）<br> 
+   <br> 50元每月返10元，共返5个月，第7-24个月店铺每月送10元。 
+   <br> 首月免月租，第2-12月每月19元月租+每月165G全国流量 
+   <br>第13-24月每月19元月租+每月155G全国流量 
+  
+   <br> 流量包只有24个月有效期，请提前一个月销户。 
+  </font> </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn17">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="https://haokawx.lot-ml.com/h5order/index?pudiD=84&userid=23752">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup17" class="popup">  
+<p>
+<table> 
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn16"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="https://haokawx.lot-ml.com/h5order/index?pudiD=84&userid=23752">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div> 
+  
+  
+  <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1685454222W3t.jpg" alt="Thumbnail Image">    
+        <div>  <div class="new-product">返现20元</div>  
+  <h1 id="title">“星上卡+”【短期+1/2年19元】  【急单勿下，发货慢！】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【禁发区少，可发北京】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲50/100元（快递员处/专属链接）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:流量包1/2年有效期</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">130G全国通用流量+30G定向</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租： 
+ <br>充50：第2-13个月月租19元+每月130G全国通用流量+30G定向 
+ <br>充100：第2-24个月月租19元+每月130G全国通用流量+30G定向 
+ <p> 
+   </a>  
+   
+  
+  
+  
+  
+      </div>    
+    <div id="popup14" class="popup">  
+  
+   <table> 
+  
+ <h1 align="center">星上卡+</h1> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>19元（1/2年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月130G全国通用流量+30G定向流量</b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">专属地址充50/100元整    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <a href="https://sh.189.cn/s/yU02" style="color: red;"><b>专属首冲地址</b></a>      
+  
+       </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>短期: 流量包有效期12/24个月（到期按政策续约）<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>快递员协助激活</b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>20-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">48小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">无合约期，无违约金！<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他地区看审核！</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>首充50+1/2年19元（短期过度）</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  必须按要求“首充50/100元”，否则无法达成宣传所承诺的流量［二选一，不可逆］   
+  <p>参加“充50元送50”活动后，50元本金立即到账。 
+    <br>首月送30元体验金（抵扣首月月租）<br> 
+   <br>充50：第2-13个月月租19元+每月130G全国通用流量+30G定向 
+ <br>充100：第2-24个月月租19元+每月130G全国通用流量+30G定向 
+  
+   <br>发货极慢，勿催，急单勿下！ 
+  </font>  
+  <font color="#ff6f6d">  
+  <p>   
+  <p>为了避免额外扣费，新卡激活后请先不要使用流量，用其他网络登录 
+    “中国电<br>信”APP确认流量到账后，再合理使用！  
+  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<br>  
+  </b> <button id="btn15">  <b>收货地址填写标准（必看）</b> </font></button> 再次点击可关闭 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=16058">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup15" class="popup">  
+<p>
+<table> 
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn14"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=16058">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div> 
+  
+  
+  
+  
+ 
+  
+  
+     <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1685068715WCG.jpg" alt="Thumbnail Image">    
+        <div>    
+<div class="new-product">返现20元</div>
+  <h1 id="title">“新奇卡”【半年19元】  【归属地即收货地】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】［可提前选号］</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（快递员处）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">长/短期套餐:132G流量包2年有效期</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">162G全国通用流量+30G定向</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-6个月月租19元+每月162G全国通用流量+30G定向 
+ <br>第7-24个月月租29元+每月162G全国通用流量+30G定向 
+   </a>  
+  
+  
+  
+  
+  
+  
+      </div>    
+    <div id="popup18" class="popup">  
+  
+  
+  
+ <h5 align="center">新奇卡</h5> 
+   <table>  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>19元（半年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月162G全国通用流量+30G定向流量<b></b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">快递员处/专属链接│首冲100元整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     <a href="https://h5.10099.com.cn/h5wap/rechargeSendAds" style="color: red;"><b>专属首冲地址</b></a>            
+     </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>长/短期: 有效期24个月/永久<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>京东：</b>快递员协助激活</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>你填写的收货地址就是号码归属地</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>申请页面可提前选号（先选地址）</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>16-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">24小时内全部叠加<b>［］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">6个月（第7个月销户无违约金）<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">只能线下营业厅<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>西藏、新疆、云南、北京，其他看审核！</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过第2天上门开卡！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>与移动共用基站+可选号+可选归属地+可长期</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  激必须按要求“首充100元”，否则无法达成宣传所承诺的流量［不可逆］   
+  <br>参加“充100元送50”活动后，100元本金立即到账。 
+    <br>额外送30元体验金，自动抵扣当月话费！50元每月返10元，共返5个月。 
+   <br>首月免月租，第2-6月每月19元月租+每月192G全国流量。  
+  <br>第7-24月每月29元月租+每月192G全国流量 
+ <br>24个月后永久每月29元月租+每月60G全国流量（当长期也不错） 
+  
+ <p>  注意:如你本地无“中国广电”营业厅，不推荐申请。 
+   <br>申请前请务必查询自己的手机型号是否支持此卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <a href="https://shouji.10099.com.cn/list/" style="color: red;"><b>机型查询</b></a>            
+   <br>因篇幅有限，具体注意事项请在申请页面查看！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <a href="https://popocard.github.io/gddx.html" style="color: red;"><b>常见问题合集</b></a>            
+  </font>  </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国广电”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn19">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="https://popocard.github.io/pobing.html">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup19" class="popup">  
+    
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+   
+<table> 
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn18"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="https://popocard.github.io/pobing.html">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div> 
+  
+  
+  
+ <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/1686311455IpC.jpg" alt="Thumbnail Image">    
+             <div>    
+<div class="new-product">返现30元</div>     <h1 id="title">“柠檬卡”【2年29元】  【独家渠道+禁发区多】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】（快递员激活）【16周岁】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲50（快递员/专属链接）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:2年有效期</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">210G全国通用流量+30G定向+100分钟全国通话</p>   
+   <font size="2" color="black"><p style="font-size: 160%;">首月免月租，第2-12个月月租29元+每月210G全国通用流量+30G定向+100分钟全国通话 
+ <br>第13-24个月起29元月租+每月145G全国通用流量+30G定向
+   </a><br> 
+ <a style="color: red;"> 25G全国通用流量+100分钟全国通话需手动领取（有效期12个月）
+ <br>!</a> 
+ <br> 
+ <p><p> 
+ <br>  
+  
+  
+  
+  
+  
+      </div>    
+    <div id="popup20" class="popup">  
+  
+   <table> 
+  
+ <h1 align="center">柠檬卡</h1> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>29元（2年）［首月免月租］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">每月210G全国通用流量+30G定向流量+100分钟全国通话</td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">50元整（快递员/<a href="https://pms.189.cn/cljy-web/static/sc/sc_index.html?shopid=2000118600000002&cmpid=jt.cfsf.123">专属链接</a>)</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>短期: 有效期24个月<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>快递员协助激活</b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>16-60周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">无合约期，无违约金！<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3">西藏,云南,新疆,贵州,广西,海南,北京，其他看审核!</a></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>29元系列短期王者</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+  专属或快递员处“首冲50元整”，否则无法达成宣传所承诺的流量［不可逆］   
+  <p>参加“充50元送50”活动后，50元本金立即到账。 
+    <br>激活送60元体验金，自动抵扣当月话费！<br> 
+   <br> 50元每月返10元，共返5个月。 
+   <br> 首月免月租，第2-12月每月29元月租+每月210G全国流量+30G定向+100分钟全国通话。  
+  
+   <br>第13-24个月每月29元月租+每月145G全国通用流量+30G定向。  
+<br><font color="red">25G全国通用流量+100分钟全国通话，激活7天后需手动在公众号"星卡助手"手动领取（有效期12个月）。<br>活动截止日期2023年7月31日。
+<br>用一年就在线异地销户，最合适不过!</font>
+  
+ </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn21">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="https://haokawx.lot-ml.com/Review/index?pudID=106&userid=23752">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup21" class="popup">  
+    <p> 
+    <table> 
+ <tr>  
+    <td>  
+      <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>  
+    </tr>  
+    <tr>  
+     <td class="header-cell"><b>所在区域：<br></b></td>  
+      <td>选择对应的“选项”：省、市、区/县</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>详细地址：<br></b></td>  
+      <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！  
+  
+  <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>  
+  <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］  
+  
+  <p><b>**镇/乡**村/屯**号**</b>  
+  <br>如：大王镇小王村9号（请以实际地址为准！）  
+  </td></tr>  
+  
+  <tr>  
+  <td class="header-cell">禁填“字眼”</td>  
+  
+  <td>收货地址出现以下任何类似相关“字眼”不允发货:  
+  <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>  
+  </tr>  
+  
+     <td class="header-cell"><b>解决办法：</b></td>  
+      <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！  
+  <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>  
+    </tr>  
+  <tr>  
+     <td class="header-cell"><b>疑惑解析：</b></td>  
+      <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！   
+    <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。   
+    <p>部分村庄无法送货上门，请以实际为准！</td>  
+    </tr>  
+   <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>   
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn20"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="https://haokawx.lot-ml.com/Review/index?pudID=106&userid=23752">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div>  
+  
+  
+ </div>   
+  
+  
+  
+    <div id="tab3" class="tab">      
+              <h1>无语音功能，也是正规官方套餐！［页面可放大］</h1>   
+  
+  
+ <div id="floating-container">     
+         <img id="thumbnail" src="https://static.91haoka.cn/1685457148Qs9.jpg" alt="Thumbnail Image">     
+         <div>  
+
+<div class="new-product">返现30元</div>   
+   <h1 id="title">“吴楚卡”【一年一续约】  【急速发货】【无语音服务】</h1> </b></a>   
+           <div id="content">     
+            <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【自己激活】【禁发地区少，可发北京！】</p></b></a>   
+  
+                <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（激活过程中）</p>    
+          <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:一年一续约（按短信提示操作）</p>    
+    <font size="2" color="black"</p><p style="font-size: 190%;">每月125G全国通用流量+30G定向</p>    
+    <font size="2" color="black"><p style="font-size: 170%;">首月免费，第2-13个月每月19元月租+每月125G全国通用流量+30G定向 
+  <br>  
+  
+   <br> 
+  
+  
+  
+  
+  
+       </div>     
+     <div id="popup22" class="popup">   
+  
+    <table>  
+  
+  <h3 align="center">吴楚卡</h3>  
+  
+  
+    <tr>  
+     <td class="header-cell"><b>月租:</b></td>  
+      <td>19元（1年一续约）［首月免月租］</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>语音/短信:</b></td>  
+      <td><b>语音:</b>无 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>只能收短信</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>构成:</b></td>  
+      <td colspan="3">每月125G全国通用流量+30G定向流量</b></td>  
+    </tr>  
+        <tr>  
+      <td class="header-cell"><b>首冲:</b></td>  
+      <td colspan="3">激活过程中冲100元整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     </a>                
+  
+  </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>性质:</b></td>  
+      <td>长期: 一年一续（根据短信提示）<b>  
+  
+     </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>激活方式:</b></td>  
+  
+      <td><b>自己激活</b></td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>归属地:</b></td>  
+      <td>随机</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>号码:</b></td>  
+      <td>随机</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>年龄:</b></td>  
+      <td>16-60周岁</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>流量到账时间:</b></td>  
+      <td colspan="3">24小时内叠加   
+  <b>［实际到账流量以激活当月剩余天数折算］</b></td>  
+        <tr>  
+      <td class="header-cell"><b>合约期:</b></td>  
+      <td colspan="3">无合约期，无违约金！<b></b></td>  
+    </tr>  
+     <tr>  
+      <td class="header-cell"><b>销户方式:</b></td>  
+      <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>  
+    <tr>  
+      <td class="header-cell"><b>禁发地:</b></td>  
+  
+      <td class="multiline-cell" colspan="3">西藏、新疆，其他地区看审核……可发北京！</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>发货时间</b></td>  
+      <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>  
+     </tr>  
+       <tr>  
+      <td class="header-cell"><b>套餐优势</b></td>  
+      <td colspan="3"><font color="#ff6f6d"><b>可长期使用！</b></font></td>  
+     </tr>  
+  </table>  
+  <p>  
+  <table>  
+  <tr>  
+      <td>  
+  <font color="#66b3ff">   
+   激活过程中按要求充“100元”，否则无法达成宣传所承诺的流量［不可逆］    
+   <p>  
+     首月按天扣费，实际到账流量按当月剩余天数折算！  
+    <br>首月免费，第2-13个月每月19元月租+每月125G全国通用流量+30G定向 
+ 。到期根据短信提醒续约！ 
+  
+    <br> 无合约期，无违约金，支持随时在线异地销户。  
+   </font> </td></tr></table>  
+   <table>  
+  <tr>  
+      <td>    
+  由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！   
+     <p>  每个身份证号只能申请一张，多次申请无效！     
+     <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>   
+   </b> <button id="btn23">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>  
+   </td></tr></table>  
+    <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=16057">   
+       <button id="bt1" style="color: white;"><b>免费领取</b></button>   
+     </a>  
   
     </div>  
-      <div style="position: absolute; right: 10px; bottom: 10px;">  
-        <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7190" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>  
+     </button>   <div id="popup23" class="popup">   
+    <p>
+  
+  <table> 
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+   </div>   
+  
+      </div>     
+   <div id="floating-menu">     
+     </button>      
+        <button id="btn22"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   
+     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=16057">     
+       <button id="bt1"style="color: white;"><b>免费领取</b></button>     
+     </a>     
+       </div>     
+         </div></div> 
+  
+  
+ <div id="floating-container">     
+         <img id="thumbnail" src="https://static.91haoka.cn/1685070083QTF.jpg" alt="Thumbnail Image">     
+         <div>     
+   <h1 id="title">“倾城卡”【20年】  【正常发货】【无语音服务】</h1> </b></a>   
+           <div id="content">     
+            <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【自己激活+自己选号】【500mbps】+【流量全结转】</p></b></a>   
+  
+                <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（激活过程中）</p>    
+          <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:20年有效期（到期按政策续约）</p>    
+    <font size="2" color="black"</p><p style="font-size: 190%;">每月150G全国通用流量+30G定向</p>    
+    <font size="2" color="black"><p style="font-size: 170%;">首月免费，第2-6个月每月9元月租+每月150G全国通用流量+30G定向 
+  <br> 第7-13个月29元，后长期39元［流量不变］。 
+  
+   <br> 
   
   
   
   
-  </div></div>   
+  
+       </div>     
+     <div id="popup25" class="popup">   
+  
+    <table>  
+  
+  <h3 align="center">倾城卡</h3>  
+  
+  
+    <tr>  
+     <td class="header-cell"><b>月租:</b></td>  
+      <td>9元（半年）［首月按天扣费］</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>语音/短信:</b></td>  
+      <td><b>语音:</b>无 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>只能收短信</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>构成:</b></td>  
+      <td colspan="3">每月150G全国通用流量+30G定向流量【所有流量全结转】</b></td>  
+    </tr>  
+        <tr>  
+      <td class="header-cell"><b>首冲:</b></td>  
+      <td colspan="3">激活过程中冲100元整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     </a>                
+  
+  </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>性质:</b></td>  
+      <td>长期: 有效期20年（按政策续约）<b>  
+  
+     </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>激活方式:</b></td>  
+  
+      <td><b>自己激活</b></td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>归属地:</b></td>  
+      <td>随机</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>号码:</b></td>  
+      <td>激活过程中选号（无语音功能，选号貌似意义不大……）</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>年龄:</b></td>  
+      <td>20-60周岁</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>流量到账时间:</b></td>  
+      <td colspan="3">24小时内叠加   
+  <b>［实际到账流量以激活当月剩余天数折算］</b></td>  
+        <tr>  
+      <td class="header-cell"><b>合约期:</b></td>  
+      <td colspan="3">无合约期，无违约金！<b></b></td>  
+    </tr>  
+     <tr>  
+      <td class="header-cell"><b>销户方式:</b></td>  
+      <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>  
+    <tr>  
+      <td class="header-cell"><b>禁发地:</b></td>  
+  
+      <td class="multiline-cell" colspan="3">西藏、新疆、云南、北京，其他地区看审核！</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>发货时间</b></td>  
+      <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>  
+     </tr>  
+       <tr>  
+      <td class="header-cell"><b>套餐优势</b></td>  
+      <td colspan="3"><font color="#ff6f6d"><b>短期过度，随时销户！</b></font></td>  
+     </tr>  
+  </table>  
+  <p>  
+  <table>  
+  <tr>  
+      <td>  
+  <font color="#66b3ff">   
+   激活过程中按要求充“100元”，否则无法达成宣传所承诺的流量［不可逆］    
+   <p>  
+     首月按天扣费，实际到账流量按当月剩余天数折算！  
+    <br>首月免费，第2-6个月每月9元月租+每月150G全国通用流量+30G定向 
+  <br> 第7-13个月29元，后长期39元［180G全国流量］。 
+  
+    <br> 无合约期，无违约金，支持随时在线异地销户。  
+  短信功能正常，可发送、接收短信！  
+   </font> </td></tr></table>  
+   <table>  
+  <tr>  
+      <td>    
+  由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！   
+     <p>  每个身份证号只能申请一张，多次申请无效！     
+     <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>   
+   </b> <button id="btn26">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>  
+   </td></tr></table>  
+    <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=13806">   
+       <button id="bt1" style="color: white;"><b>免费领取</b></button>   
+     </a>  
+  
+    </div>  
+     </button>   <div id="popup26" class="popup">   
+    
+ <font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<table>
+<tr>
+   <td> <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>  
+  
+   </div>   
+  
+      </div>     
+   <div id="floating-menu">     
+     </button>      
+        <button id="btn25"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   
+     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=13806">     
+       <button id="bt1"style="color: white;"><b>免费领取</b></button>     
+     </a>     
+       </div>     
+         </div></div> 
+  
+  
+ <div id="floating-container">     
+         <img id="thumbnail" src="https://static.91haoka.cn/1685610515tAT.jpg" alt="Thumbnail Image">     
+         <div>  <div class="new-product">返现30元</div>   
+   <h1 id="title">“云台卡”【长期20年】  <br>【无语音服务+短信功能正常】</h1> </b></a>   
+           <div id="content">     
+            <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【自己激活+自己选号】【流量全结转】【最高1000mbps】</p></b></a>   
+  
+                <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（激活过程中）</p>    
+          <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:20年有效期（到期自动续约）</p>    
+    <font size="2" color="black"</p><p style="font-size: 190%;">每月180G全国通用流量+30G定向</p>    
+    <font size="2" color="black"><p style="font-size: 170%;">首月按天扣费，流量按天折算，第1-12个月:29元月租+180G全国通用流量+30G定向
+<br>第13个月起至20年:39元月租+每月180G全国通用流量+30G定向
+  <br>    <br> 
   
   
   
-   <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-         <a href="">   
-           <html>   
+  
+  
+  
+  
+       </div>     
+     <div id="popup30" class="popup">   
+  
+    <table>  
+  
+  <h3 align="center">云台卡</h3>  
+  
+  
+    <tr>  
+     <td class="header-cell"><b>月租:</b></td>  
+      <td>首年29元，长期39元［首月按天扣费］</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>语音/短信:</b></td>  
+      <td><b>语音:</b>无 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>构成:</b></td>  
+      <td colspan="3">每月180G全国通用流量+30G定向流量【流量全结转】</b></td>  
+    </tr>  
+        <tr>  
+      <td class="header-cell"><b>首冲:</b></td>  
+      <td colspan="3">激活过程中冲100元整&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     </a>                
+  
+  </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>性质:</b></td>  
+      <td>长期: 有效期20年（到期后自动续约）<b>  
+  
+     </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>激活方式:</b></td>  
+  
+      <td><b>自己激活</b></td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>归属地:</b></td>  
+      <td>随机</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>号码:</b></td>  
+      <td>激活过程中选号（无语音功能，选号貌似无意义……）</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>年龄:</b></td>  
+      <td>20-60周岁</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>流量到账时间:</b></td>  
+      <td colspan="3">24小时内叠加   
+  <b>［实际到账流量以激活当月剩余天数折算］</b></td>  
+        <tr>  
+      <td class="header-cell"><b>合约期:</b></td>  
+      <td colspan="3">无合约期，无违约金！<b></b></td>  
+    </tr>  
+     <tr>  
+      <td class="header-cell"><b>销户方式:</b></td>  
+      <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>  
+    <tr>  
+      <td class="header-cell"><b>禁发地:</b></td>  
+  
+      <td class="multiline-cell" colspan="3">西藏、新疆、云南、茂名、龙岩、莆田、保定、秦皇岛、抚州、无锡、北京、来宾、防城港、崇左、上思、南宁、河南全省，其他地区看审核！</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>发货时间</b></td>  
+      <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>  
+     </tr>  
+       <tr>  
+      <td class="header-cell"><b>套餐优势</b></td>  
+      <td colspan="3"><font color="#ff6f6d"><b>长期39元，最高下载速度：1000mbps！</b></font></td>  
+     </tr>  
+  </table>  
+  <p>  
+  <table>  
+  <tr>  
+      <td>  
+  <font color="#66b3ff">   
+   激活过程中按要求充“100元”，否则无法达成宣传所承诺的流量［不可逆］    
+   <p>  
+     首月按天扣费，实际到账流量按当月剩余天数折算！  
+    <br> 激活后每月减免21元（有效期20年）  
+  <br>自动添加1元160G全国通用流量包（有效期20年）。  
+   
+<P>1000mbps白金会员（此方法可能随时被修复！）:
+<br>编辑短信“ktbjsp”发送到“10001”（开通5G会员包）
+ <br> 登陆“中国电信”APP，搜索“已定业务”---附属销售品---“白金会员”(请以此显示为准)
+<P>编辑短信“tdbjsp”发送到“10001”（退订5G会员包）
+   <br>再次登陆“中国电信”APP，搜索“已定业务”---附属销售品---“白金会员”（请以此显示为准）
+<br>白金会员次月起生效（20年有效期）
+   </font> </td></tr></table>  
+   <table>  
+  <tr>  
+      <td>    
+  由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国电信”APP确认流量到账后，再合理使用！   
+     <p>  每个身份证号只能申请一张，多次申请无效！     
+     <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>   
+   </b> <button id="btn31">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>  
+   </td></tr></table>  
+    <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=16304">   
+       <button id="bt1" style="color: white;"><b>免费领取</b></button>   
+     </a>  
+  
+    </div>  
+     </button>   <div id="popup31" class="popup">   
+     <p> 
+  
+  <table>  
+  
+ <font color="CD853F"><b>   
+  <h1 align="center">收货地址填写规范</h1></font></b> 
+  
+ <tr> 
+   <td> 
+     <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td> 
+   </tr> 
+   <tr> 
+    <td class="header-cell"><b>所在区域：<br></b></td> 
+     <td>选择对应的“选项”：省、市、区/县</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>详细地址：<br></b></td> 
+     <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！ 
+  
+ <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font> 
+ <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］ 
+  
+ <p><b>**镇/乡**村/屯**号**</b> 
+ <br>如：大王镇小王村9号（请以实际地址为准！） 
+ </td></tr> 
+  
+ <tr> 
+ <td class="header-cell">禁填“字眼”</td> 
+  
+ <td>收货地址出现以下任何类似相关“字眼”不允发货: 
+ <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td> 
+ </tr> 
+  
+    <td class="header-cell"><b>解决办法：</b></td> 
+     <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！ 
+ <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td> 
+   </tr> 
+ <tr> 
+    <td class="header-cell"><b>疑惑解析：</b></td> 
+     <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！  
+   <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。  
+   <p>部分村庄无法送货上门，请以实际为准！</td> 
+   </tr> 
+  <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>  
+  
+   </div>   
+  
+      </div>     
+   <div id="floating-menu">     
+     </button>      
+        <button id="btn30"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   
+     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=16304">     
+       <button id="bt1"style="color: white;"><b>免费领取</b></button>     
+     </a>     
+       </div>     
+         </div></div> 
+  
+  
+  
+  
+ </div>   
   
   
   
@@ -497,32 +3346,198 @@
   
   
   
-   </head>   
-   <body>   
-           <img src="https://static.91haoka.cn/1685069441Pzl.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
+   <div id="tab4" class="tab">      
+              <h1>电话手表专用！［页面可放大］</h1>    
   
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">小宝卡（长期）2000分钟<br>号码归属地即收货地</p></h1>   
-                  <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(快递员/“中国联通”)</p>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐：官方自动续约</p>   
-         <font size="2" color="black"</p><p style="font-size: 190%;">20G全国通用流量+30G定向+2000分钟通话</p>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">月租：长期68元</p>   
-    <font size="2" color="black"</p><p style="font-size: 170%;">快递员、外卖、代驾专用！</p>   
+ <div id="floating-container">     
+         <img id="thumbnail" src="https://static.91haoka.cn/1685683689deq.jpg" alt="Thumbnail Image">     
+         <div>    
+   <h1 id="title">“亲子卡”【长期套餐】  【6个月9元，长期19元】</h1> </b></a>   
+           <div id="content">     
+            <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【收货地即归属地】【可提前选号】【16周岁】</b></a> </p>  
   
-    </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdan.html?id=6935" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>   
+                <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（快递员/“中国联通”APP）</p>    
+          <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约</p>    
+    <font size="2" color="black"</p><p style="font-size: 190%;">3全国通用流量+10G定向流量+100分钟全国通话</p>    
+    <font size="2" color="black"><p style="font-size: 160%;">可免费添加3个联通亲情号码！
+    </a>     
+       </div>     
+     <div id="popup7" class="popup">   
+    <table>     
+  <h1 align="center">亲子卡</h1>  
+    <tr>  
+     <td class="header-cell"><b>月租:</b></td>  
+      <td>［7个月9元］［长期19元］</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>语音/短信:</b></td>  
+      <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>构成:</b></td>  
+      <td colspan="3">每月3G全国通用流量+10G定向+100分钟全国通话<b></b></td>  
+    </tr>  
+        <tr>  
+      <td class="header-cell"><b>首冲:</b></td>  
+      <td colspan="3">京东快递员/你本地联通工作人员，充50元整  ！
   
-   </div></div>   
+  </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>性质:</b></td>  
+      <td>长期套餐：自动续约，官方可查！<b>  
+  </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>激活方式:</b></td>  
   
-   <div style="border: 2px solid #000; padding: 10px; position: relative;">   
-     <div style="display: flex; align-items: center;">   
-       <div style="margin-right: 5px;">   
-         <a href="">   
-           <html>   
+      <td><b></b>快递员/地方联通工作人员激活&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>归属地:</b></td>  
+      <td>收货地即号码归属地！</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>号码:</b></td>  
+      <td>申请页面提前选号</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>年龄:</b></td>  
+      <td>16-55周岁</td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>流量到账时间:</b></td>  
+      <td colspan="3">实时到账<b>［流量语音全额到账］</b></td>  
+        <tr>  
+      <td class="header-cell"><b>合约期:</b></td>  
+      <td colspan="3">无合约期（可随时销户，无违约金！）<b></b></td>  
+    </tr>  
+     <tr>  
+      <td class="header-cell"><b>销户方式:</b></td>  
+      <td colspan="3">支持“中国联通”App在线销户！<b></b></td>  
+    <tr>  
+      <td class="header-cell"><b>禁发地:</b></td>  
+      <td colspan="3">新疆、西藏，其他以地方运营商审核为准！禁发地少。<font color="#ff6f6d"><b>!</b></font></td>  
+    </tr>  
+    <tr>  
+      <td class="header-cell"><b>发货时间</b></td>  
+      <td colspan="3">审核期1-3个工作日，若审核通过2-3天送达</td>  
+     </tr>  
+       <tr>  
+      <td class="header-cell"><b>套餐优势</b></td>  
+      <td colspan="3"><font color="#ff6f6d"><b>提前选号、收货地即归属地、半年9元（长期19）免费3个亲情号码，比“中国联通”营业厅合适太多！</b></font></td>  
+     </tr>  
+  </table>  
+  <p>  
+  <table>  
+  <tr>  
+      <td>  
+  <font color="#66b3ff">   
+   必须按要求“首充50元”，否则无非达成宣传所承诺的流量［不可逆］    
+   <p>
+<br>现在可以提前选号，收货地即归属地，京东快递员/你当地联通工作人员上门开卡，免费添加3个亲情号码（联通），
+  <br>充50送50，每月返10元，共返5个月，20元需按要求额外手动领取，达成：6个月9元+每月3G全国通用+10G定向+100分钟全国通话。
+      
+<br>6个月优惠结束后长期固定19元月租+每月3G全国通用流量+10G定向+100分钟全国通。
+      <br>能选归属地的套餐少之又少，套餐流量和语音“电话手表”根本用不完，此卡拨打免费添加的任何亲情号码，免费（不扣全国通话分钟数）！
+    <br> 各地方“中国联通”APP也有这个套餐，但无任何优惠，所以此套餐性价比无敌。 
+      
+   </font> </td></tr></table>  
+   <table>  
+  <tr>  
+      <td>    
+  由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国联通”APP确认流量到账后，再合理使用！   
+     <p>  每个身份证号只能申请一张，多次申请无效！     
+     <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>   
+   </b> <button id="btn8">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>  
+   </td></tr></table>  
+    <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+     <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=5346051">   
+       <button id="bt1" style="color: white;"><b>免费领取</b></button>   
+     </a>  
+  
+    </div>  
+     </button>   <div id="popup8" class="popup">   
+ <p> 
+ <table>  
+ <font color="CD853F"><b>   
+  <h1 align="center">收货地址填写规范</h1></font></b> 
+  
+ <tr> 
+   <td> 
+     <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td> 
+   </tr> 
+   <tr> 
+    <td class="header-cell"><b>所在区域：<br></b></td> 
+     <td>选择对应的“选项”：省、市、区/县</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>详细地址：<br></b></td> 
+     <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！ 
+  
+ <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font> 
+ <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］ 
+  
+ <p><b>**镇/乡**村/屯**号**</b> 
+ <br>如：大王镇小王村9号（请以实际地址为准！） 
+ </td></tr> 
+  
+ <tr> 
+ <td class="header-cell">禁填“字眼”</td> 
+  
+ <td>收货地址出现以下任何类似相关“字眼”不允发货: 
+ <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td> 
+ </tr> 
+  
+    <td class="header-cell"><b>解决办法：</b></td> 
+     <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！ 
+ <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td> 
+   </tr> 
+ <tr> 
+    <td class="header-cell"><b>疑惑解析：</b></td> 
+     <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！  
+   <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。  
+   <p>部分村庄无法送货上门，请以实际为准！</td> 
+   </tr> 
+  <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table>  
+  
+   </div>   
+  
+      </div>     
+   <div id="floating-menu">     
+     </button>      
+        <button id="btn7"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   
+     <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=5346051">     
+       <button id="bt1"style="color: white;"><b>免费领取</b></button>     
+     </a>     
+       </div>     
+         </div></div>     
+      </div>    
+        </div></div> 
+       </div></div>  </div></div></div> 
+  
+  
+  
+       <div id="tab5" class="tab">      
+              <h1>超大语音［页面可放大］</h1>    
+  
+  
+        <div id="floating-container">    
+        <img id="thumbnail" src="https://static.91haoka.cn/16852842081pK.jpg" alt="Thumbnail Image">     
+        <div>    
+  <h1 id="title">“大宝小宝”【长期68/88元】  【超大语音】</h1> </b></a>  
+          <div id="content">    
+           <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】+【收货地即归属地】</p></b></a>  
+  
+               <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（快递员处/“中国联通”APP）</p>   
+         <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约</p>   
+   <font size="2" color="black"</p><p style="font-size: 190%;">小宝卡：68元+每月20G全国通用流量+30G定向+2000分钟全国通话 
+ <br>小宝卡：88元+每月30G全国通用流量+30G定向+3000分钟全国通话</p>   
+   <font size="2" color="black"><p style="font-size: 180%;">快递员、外卖、代驾专用！禁止用于“电销、电诈”等违法犯罪行为！ 
+ <P> 
   
   
   
@@ -530,23 +3545,248 @@
   
   
   
-   </head>   
-   <body>   
-           <img src="https://static.91haoka.cn/1685069410HJL.jpg" class="fixed-size" alt="Thumbnail">   
-         </a>   
+      </div>    
+    <div id="popup29" class="popup">  
   
-   <html>   
-       </div>   
-       <div style="flex: 1;">   
-         <font size="2" color="blue"><p><b><h1><p style="font-size: 120%;">大宝卡（长期）3000分钟<br>号码归属地即收货地</p></h1>   
-                  <font size="2" color="black"</p><p style="font-size: 150%;">首冲100元(快递员/“中国联通”)</p>   
-         <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐：官方自动续约</p>   
-         <font size="2" color="black"</p><p style="font-size: 190%;">30G全国通用流量+30G定向+3000分钟通话</p>   
-   <font size="2" color="black"</p><p style="font-size: 150%;">月租：长期88元</p>   
-    <font size="2" color="black"</p><p style="font-size: 170%;">快递员、外卖、代驾专用！</p>   
+   <table> 
   
-    </div>   
-       <div style="position: absolute; right: 10px; bottom: 10px;">   
-         <a href="http://storep.91haoka.cn/h5/dingdan.html?id=6936" style="display: inline-block;  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);border-radius: 10px; background-color: #FFFFFF; padding: 5px 5px; color: #FF7575; font-size: 10px; font-weight: bold; text-decoration: none; animation: breath 1s ease-in-out infinite;"><p id="free-get" style="font-size: 200%;">免费领取</p></a></div>   
-   </body>   
- 
+ <h1 align="center">大宝小宝</h1> 
+  
+  
+   <tr> 
+    <td class="header-cell"><b>月租:</b></td> 
+     <td>68/88元）［首月全额扣费］</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>语音/短信:</b></td> 
+     <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>构成:</b></td> 
+     <td colspan="3">小宝卡：68元+每月20G全国通用流量+30G定向+2000分钟全国通话 
+ <br>小宝卡：88元+每月30G全国通用流量+30G定向+3000分钟全国通话</b></td> 
+   </tr> 
+       <tr> 
+     <td class="header-cell"><b>首冲:</b></td> 
+     <td colspan="3">首冲100元（快递员处/“中国联通”APP）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    </a>               
+  
+ </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>性质:</b></td> 
+     <td>长期: 官方自动续约<b> 
+  
+    </td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>激活方式:</b></td> 
+  
+     <td><b>快递员协助激活</b></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>归属地:</b></td> 
+     <td>收货地即归属地</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>号码:</b></td> 
+     <td>随机</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>年龄:</b></td> 
+     <td>16-70周岁</td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>流量到账时间:</b></td> 
+     <td colspan="3">24小时内叠加  
+ <b>［全额到账］</b></td> 
+       <tr> 
+     <td class="header-cell"><b>合约期:</b></td> 
+     <td colspan="3">无合约期，无违约金！<b></b></td> 
+   </tr> 
+    <tr> 
+     <td class="header-cell"><b>销户方式:</b></td> 
+     <td colspan="3">支持“中国联通”APP在线异地销户<b></b></td> 
+   <tr> 
+     <td class="header-cell"><b>禁发地:</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>新疆 西藏 北京 其余下单看审核！</b></font></td> 
+   </tr> 
+   <tr> 
+     <td class="header-cell"><b>发货时间</b></td> 
+     <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td> 
+    </tr> 
+      <tr> 
+     <td class="header-cell"><b>套餐优势</b></td> 
+     <td colspan="3"><font color="#ff6f6d"><b>全网通话最多套餐，流量语音均衡！</b></font></td> 
+    </tr> 
+ </table> 
+ <p> 
+ <table> 
+ <tr> 
+     <td> 
+ <font color="#66b3ff">  
+  按要求“首充100元”，否则无法达成宣传所承诺的流量［不可逆］   
+  <p> 
+    <br>首月全额扣费，流量语音全额到账！<br> 
+   <br> 工作电话时间：8:00-21:00。通话分钟数小于120秒 
+ <br>若长于120秒，扣500分钟无限制语音分钟数！ 
+  
+   <br> 无合约期，无违约金，支持随时在线异地销户。 
+  <br>快递员、外卖、代驾专用！禁止用于“电销、电诈”等违法犯罪行为！ 
+  </font> </font> </td></tr></table> 
+  <table> 
+ <tr> 
+     <td>   
+ 由于新入网号码流量到账时间不一，为了避免因流量超额而额外扣费，新卡激活后先不要使用流量，请使用其他网络登录“中国联通”APP确认流量到账后，再合理使用！  
+    <p>  每个身份证号只能申请一张，多次申请无效！    
+    <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
+  </b> <button id="btn28">  <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  </td></tr></table> 
+   <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=15732">  
+      <button id="bt1" style="color: white;"><b>免费领取</b></button>  
+    </a> 
+  
+   </div> 
+    </button>   <div id="popup28" class="popup">  
+    <p>
+ <table> 
+
+<font color="CD853F"><b>  
+ <h1 align="center">收货地址填写规范</h1></font></b>
+
+<tr>
+  <td>
+    <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>
+  </tr>
+  <tr>
+   <td class="header-cell"><b>所在区域：<br></b></td>
+    <td>选择对应的“选项”：省、市、区/县</td>
+  </tr>
+  <tr>
+    <td class="header-cell"><b>详细地址：<br></b></td>
+    <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！
+
+<p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>
+<br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］
+
+<p><b>**镇/乡**村/屯**号**</b>
+<br>如：大王镇小王村9号（请以实际地址为准！）
+</td></tr>
+
+<tr>
+<td class="header-cell">禁填“字眼”</td>
+
+<td>收货地址出现以下任何类似相关“字眼”不允发货:
+<p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市……等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址……</td>
+</tr>
+
+   <td class="header-cell"><b>解决办法：</b></td>
+    <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可DIY］！
+<br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>
+  </tr>
+<tr>
+   <td class="header-cell"><b>疑惑解析：</b></td>
+    <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！ 
+  <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。 
+  <p>部分村庄无法送货上门，请以实际为准！</td>
+  </tr>
+ <tr><td><td><font color="#CD853F"><b>【点击下方任意位置空白可关闭此窗口】</b></font> </table> 
+  
+  </div>  
+  
+     </div>    
+  <div id="floating-menu">    
+    </button>     
+       <button id="btn29"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+    <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=15732">    
+      <button id="bt1"style="color: white;"><b>免费领取</b></button>    
+    </a>    
+      </div>    
+        </div></div> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </body>   
+   </html>   
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+<button id="btn4"></button><button id="btn5"></button><button id="btn6"></button><button id="btn7"></button><button id="btn8"></button><button id="btn9"></button><button id="btn10"></button><button id="btn11"></button><button id="btn12"></button><button id="btn13"></button><button id="btn14"></button><button id="btn15"></button><button id="btn16"></button><button id="btn17"></button><button id="btn18"></button><button id="btn19"></button><button id="btn20"></button><button id="btn21"></button> <button id="btn22"></button><button id="btn23"></button><button id="btn28"></button><button id="btn24"></button><button id="btn29"></button><button id="btn25"></button><button id="btn30"></button><button id="btn26"></button><button id="btn31"></button><button id="btn27"></button> </button> <button id="btn32"></button><button id="btn33"></button><button id="btn34"></button><button id="btn35"></button><button id="btn36"></button><button id="btn37"></button><button id="btn38"> </button><button id="btn39"></button>
+<button id="btn40"></button>  
+<button id="btn41"></button>
+<button id="btn42"></button>
+<button id="btn43"></button>
+<button id="btn44"></button>
+<button id="btn45"></button>
+<button id="btn46"></button>
+<button id="btn47"></button>
+<button id="btn48"></button>
+<button id="btn49"></button>
+<button id="btn50"></button> 
+      
+
+     const buttons = document.querySelectorAll('button[id^="btn"]');
+const popups = document.querySelectorAll('div[id^="popup"]');
+const closeBtns = document.querySelectorAll('.close');
+
+function togglePopup(popup) {
+  if (popup.style.display === 'none' || popup.style.display === '') {
+    popup.style.display = 'block';
+  } else {
+    popup.style.display = 'none';
+  }
+}
+
+buttons.forEach((button, index) => {
+  const popup = popups[index];
+  button.addEventListener('click', (event) => {
+    event.stopPropagation();
+    togglePopup(popup);
+  });
+});
+
+closeBtns.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const popup = closeBtn.parentNode;
+    togglePopup(popup);
+  });
+});
+
+document.addEventListener('click', (event) => {
+  popups.forEach((popup) => {
+    if (event.target !== popup && !popup.contains(event.target)) {
+      popup.style.display = 'none';
+    }
+  });
+});
+
+popups.forEach((popup) => {
+  popup.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+  popup.querySelectorAll('*').forEach((el) => {
+    el.addEventListener('copy', (event) => {
+      event.preventDefault();
+    });
+  });
+});
+
