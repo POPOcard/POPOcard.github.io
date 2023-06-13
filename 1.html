@@ -225,7 +225,7 @@
     </div>   
  <div id="floating-menu">   
    </button>    
-      <button id="btn40"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+      <button id="btn40" data-popup="popup40"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
    <a href="https://haokawx.lot-ml.com/Review/index?pudID=101&userid=23752">   
      <button id="bt1"style="color: white;"><b>免费领取</b></button>   
    </a>   
@@ -393,7 +393,7 @@
     </div>   
  <div id="floating-menu">   
    </button>    
-      <button id="btn24"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+      <button id="btn24" data-popup="popup24"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
    <a href="https://haokawx.lot-ml.com/Review/index?pudID=102&userid=23752">   
      <button id="bt1"style="color: white;"><b>免费领取</b></button>   
    </a>   
@@ -571,7 +571,7 @@
      </div>    
   <div id="floating-menu">    
     </button>     
-       <button id="btn10"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+       <button id="btn10" data-popup="popup10"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
     <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=17095">    
       <button id="bt1"style="color: white;"><b>免费领取</b></button>    
     </a>    
@@ -755,7 +755,7 @@
     </div>   
  <div id="floating-menu">   
    </button>    
-      <button id="btn9"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+      <button id="btn9" data-popup="popup9"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
    <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=7335">   
      <button id="bt1"style="color: white;"><b>免费领取</b></button>   
    </a>   
@@ -3743,39 +3743,26 @@
 <button id="btn50"></button> 
       
  <script>
-     const buttons = document.querySelectorAll('button[id^="btn"]');
-const popups = document.querySelectorAll('div[id^="popup"]');
-const closeBtns = document.querySelectorAll('.close');
+    const buttons = document.querySelectorAll('#floating-menu button');
+const popups = document.querySelectorAll('.popup');
 
-function togglePopup(popup) {
-  if (popup.style.display === 'none' || popup.style.display === '') {
-    popup.style.display = 'block';
-  } else {
-    popup.style.display = 'none';
-  }
-}
+buttons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const popupId = button.getAttribute('data-popup');
+    const popup = document.getElementById(popupId);
+    togglePopup(popup);
+  });
+});
+
+const buttons = document.querySelectorAll('#floating-menu button');
+const popups = document.querySelectorAll('.popup');
 
 buttons.forEach((button, index) => {
   const popup = popups[index];
   button.addEventListener('click', (event) => {
     event.stopPropagation();
     togglePopup(popup);
-  });
-});
-
-closeBtns.forEach((closeBtn) => {
-  closeBtn.addEventListener('click', (event) => {
-    event.stopPropagation();
-    const popup = closeBtn.parentNode;
-    togglePopup(popup);
-  });
-});
-
-document.addEventListener('click', (event) => {
-  popups.forEach((popup) => {
-    if (event.target !== popup && !popup.contains(event.target)) {
-      popup.style.display = 'none';
-    }
   });
 });
 
@@ -3789,5 +3776,14 @@ popups.forEach((popup) => {
     });
   });
 });
+
+document.addEventListener('click', (event) => {
+  popups.forEach((popup) => {
+    if (event.target !== popup && !popup.contains(event.target)) {
+      popup.style.display = 'none';
+    }
+  });
+});
+
 
  </script>
