@@ -4,49 +4,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自动轮播图片</title>
-    <style>
-        .slideshow {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-        }
+  <title>自动轮播图片</title>
+  <style>
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
 
-        .slideshow img {
-            width: 1100px;
-            height: 500px;
-            object-fit: cover;
-        }
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+    }
 
+    .slideshow-container img.active {
+      display: block;
+    }
 
-    </style>
+    .slideshow-container img.hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="slideshow">
-        <div class="slideshow-container">
-            <img src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 1">
-            <img src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 2">
-        </div>
-    </div>
+  <div class="slideshow-container">
+    <img class="active" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 1">
+    <img class="hidden" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 2">
+    <img class="hidden" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 3">
+  </div>
 
-    <script>
-        var slideshow = document.querySelector('.slideshow');
-        var container = document.querySelector('.slideshow-container');
-        var images = document.querySelectorAll('.slideshow img');
-        var currentImage = 0;
-        var interval = setInterval(nextImage, 3000);
+  <script>
+    var images = document.querySelectorAll('.slideshow-container img');
+    var currentIndex = 0;
 
-        function nextImage() {
-            var targetImage = (currentImage + 1) % images.length;
-            var translateValue = -(targetImage * 50);
-            container.style.transform = 'translateX(' + translateValue + '%)';
-            currentImage = targetImage;
-        }
-    </script>
+    function showNextImage() {
+      images[currentIndex].classList.remove('active');
+      images[currentIndex].classList.add('hidden');
+
+      currentIndex = (currentIndex + 1) % images.length;
+
+      images[currentIndex].classList.remove('hidden');
+      images[currentIndex].classList.add('active');
+    }
+
+    setInterval(showNextImage, 3000); // 每3秒切换一次图片
+  </script>
 </body>
 </html>
+
 
                     </a>    
             </header>    
