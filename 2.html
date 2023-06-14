@@ -4076,7 +4076,7 @@
 <button id="btn57"></button>
 <button id="btn58"></button>
 <button id="btn59"></button>
-<button id="btn60"></button>     
+    
 
       <script>const btn1 = document.getElementById('btn1');const btn2 = document.getElementById('btn2');const btn3 = document.getElementById('btn3');const btn4 = document.getElementById('btn4');const btn5 = document.getElementById('btn5');const btn6 = document.getElementById('btn6');const btn7 = document.getElementById('btn7');const btn8 = document.getElementById('btn8');const btn9 = document.getElementById('btn9');const btn10 = document.getElementById('btn10');const btn11 = document.getElementById('btn11');const btn12 = document.getElementById('btn12');const btn13 = document.getElementById('btn13');const btn14 = document.getElementById('btn14');const btn15 = document.getElementById('btn15');const btn16 = document.getElementById('btn16');const btn17 = document.getElementById('btn17');const btn18 = document.getElementById('btn18');const btn19 = document.getElementById('btn19');const btn20 = document.getElementById('btn20');const btn21 = document.getElementById('btn21');const btn22 = document.getElementById('btn22');const btn23 = document.getElementById('btn23');const btn24 = document.getElementById('btn24');const btn25 = document.getElementById('btn25');const btn26 = document.getElementById('btn26');const btn27 = document.getElementById('btn27');const btn28 = document.getElementById('btn28');const btn29 = document.getElementById('btn29');const btn30 = document.getElementById('btn30');const btn31 = document.getElementById('btn31'); 
 const btn32 = document.getElementById('btn32'); 
@@ -4107,7 +4107,7 @@ const btn56 = document.getElementById('btn56');
 const btn57 = document.getElementById('btn57');
 const btn58 = document.getElementById('btn58'); 
 const btn59 = document.getElementById('btn59'); 
-const btn60 = document.getElementById('btn60');          
+       
       
  const popup1 = document.getElementById('popup1');const popup2 = document.getElementById('popup2');const popup3 = document.getElementById('popup3');const popup4 = document.getElementById('popup4');const popup5 = document.getElementById('popup5');const popup6 = document.getElementById('popup6');const popup7 = document.getElementById('popup7');const popup8 = document.getElementById('popup8');const popup9 = document.getElementById('popup9');const popup10 = document.getElementById('popup10');const popup11 = document.getElementById('popup11');const popup12 = document.getElementById('popup12');const popup13 = document.getElementById('popup13');const popup14 = document.getElementById('popup14');const popup15 = document.getElementById('popup15');const popup16 = document.getElementById('popup16');const popup17 = document.getElementById('popup17');const popup18 = document.getElementById('popup18');const popup19 = document.getElementById('popup19');const popup20 = document.getElementById('popup20');const popup21 = document.getElementById('popup21');const popup22 = document.getElementById('popup22');const popup23 = document.getElementById('popup23');const popup24 = document.getElementById('popup24');const popup25 = document.getElementById('popup25');const popup26 = document.getElementById('popup26');const popup27 = document.getElementById('popup27');const popup28 = document.getElementById('popup28');const popup29 = document.getElementById('popup29');const popup30 = document.getElementById('popup30');const popup31 = document.getElementById('popup31');
          const popup32 = document.getElementById('popup32');
@@ -4138,7 +4138,7 @@ const btn60 = document.getElementById('btn60');
   const popup57 = document.getElementById('popup57');
   const popup58 = document.getElementById('popup58');
   const popup59 = document.getElementById('popup59');
-  const popup60 = document.getElementById('popup60');        
+      
          
          
          const closeBtns = document.querySelectorAll('.close');const popups = document.querySelectorAll('.popup');function togglePopup(popup) {if (popup.style.display === 'none' || popup.style.display === '') { popup.style.display = 'block';} else { popup.style.display = 'none';}}
@@ -4201,7 +4201,6 @@ btn54.addEventListener('click', function(event) {event.stopPropagation();toggleP
  btn57.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup57);}); 
  btn58.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup58);}); 
  btn59.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup59);}); 
- btn60.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup60);}); 
 
  closeBtns.forEach(function(btn) {btn.addEventListener('click', function(event) { event.stopPropagation(); const popup = this.parentNode; togglePopup(popup);});});popups.forEach(function(popup) {popup.addEventListener('click', function(event) { event.stopPropagation();});popup.querySelectorAll('*').forEach(function(el) { el.addEventListener('copy', function(event) {event.preventDefault(); });});document.addEventListener('click', function(event) { if (event.target !== popup && !popup.contains(event.target)) {popup.style.display = 'none'; }});}); </script>
 
@@ -4220,7 +4219,7 @@ function togglePopup(popup) {
 popupBtns.forEach(function(btn) {
   btn.addEventListener('click', function(event) {
     event.stopPropagation();
-    const popup = this.parentNode.querySelector('.popup');
+    const popup = this.nextElementSibling;
     togglePopup(popup);
   });
 });
@@ -4229,7 +4228,7 @@ popups.forEach(function(popup) {
   popup.addEventListener('click', function(event) {
     event.stopPropagation();
   });
-  
+
   popup.querySelectorAll('*').forEach(function(el) {
     el.addEventListener('copy', function(event) {
       event.preventDefault();
@@ -4244,5 +4243,6 @@ document.addEventListener('click', function(event) {
     }
   });
 });
+
 
  </script>
