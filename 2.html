@@ -3797,7 +3797,7 @@
     <p>  每个身份证号只能申请一张，多次申请无效！    
     <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
   </b><
-  <button class="popup-btn60" data-popup="popup60"> <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  <button class="popup-btn" data-popup="popup60"> <b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
   </td></tr></table> 
    <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -3974,7 +3974,7 @@
     <p>  每个身份证号只能申请一张，多次申请无效！    
     <br>为了提高审核速度与通过率，收货地址请务必按要求规范填写！<P>  
   </b>  <div id="floating-menu">
-  <button class="popup-btn60" data-popup="popup60"><b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
+  <button class="popup-btn" data-popup="popup60"><b>收货地址填写标准（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font> 
   </td></tr></table> 
    <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -4035,7 +4035,7 @@
      </div>    
    <div id="floating-menu">    
     </button>     
-       <button id="btn29"><b>套餐详情</b> </a></button>  <b>套餐详情</b></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
+       <button id="btn29"><b>套餐详情</b></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  
     <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=15732">    
       <button id="bt1"style="color: white;"><b>免费领取</b></button>    
     </a>    
@@ -4205,7 +4205,7 @@ btn54.addEventListener('click', function(event) {event.stopPropagation();toggleP
 
  closeBtns.forEach(function(btn) {btn.addEventListener('click', function(event) { event.stopPropagation(); const popup = this.parentNode; togglePopup(popup);});});popups.forEach(function(popup) {popup.addEventListener('click', function(event) { event.stopPropagation();});popup.querySelectorAll('*').forEach(function(el) { el.addEventListener('copy', function(event) {event.preventDefault(); });});document.addEventListener('click', function(event) { if (event.target !== popup && !popup.contains(event.target)) {popup.style.display = 'none'; }});}); </script>
 
- <script>const buttons = document.querySelectorAll('.popup-btn60');
+ <script>const buttons = document.querySelectorAll('.popup-btn');
 const popups = document.querySelectorAll('.popup');
 
 buttons.forEach((button) => {
