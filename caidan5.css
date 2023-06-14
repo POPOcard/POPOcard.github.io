@@ -47,8 +47,7 @@
    white-space: nowrap; 
  } 
   
-  .popup-btn {
-        margin-top: 0; 
+.popup-btn {
 display: inline-block; 
  background-color: #a87f5f; 
  color: transparent; 
@@ -60,11 +59,11 @@ display: inline-block;
  margin-top: 5px; 
  cursor: pointer; 
  font-size: 23px; 
-  
-  
+
  } 
   
-  
+
+
                  .popup h2 { 
                    margin-top: 0; 
                  } 
