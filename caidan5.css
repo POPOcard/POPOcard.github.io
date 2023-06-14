@@ -47,6 +47,22 @@
    white-space: nowrap; 
  } 
   
+  .popup-btn {
+        margin-top: 0; 
+display: inline-block; 
+ background-color: #a87f5f; 
+ color: transparent; 
+ -webkit-text-stroke: 0.05px black; 
+ -webkit-text-fill-color: white; 
+ border: none; 
+ padding: 10px 18px; 
+ border-radius: 5px; 
+ margin-top: 5px; 
+ cursor: pointer; 
+ font-size: 23px; 
+  
+  
+ } 
   
   
                  .popup h2 { 
