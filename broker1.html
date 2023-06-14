@@ -14,7 +14,7 @@
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
                         // 登录成功，重定向到目标页面
-                        window.location.href = 'target.html';
+                        window.location.href = 'broker.html';
                     } else {
                         // 登录失败，显示错误消息
                         document.getElementById('error-message').innerText = xhr.responseText;
