@@ -4,6 +4,38 @@
    <link rel="stylesheet" href="caidan.css"> <link rel="stylesheet" href="caidan5.css"> <link rel="stylesheet" href="caidan4.css"> <link rel="stylesheet" href="xingmu.css"><link rel="stylesheet" href="tab.css">  <script src="caidan.js"> </script><script src="jiyi.js">   </script> <script src="wxys.js"> </script> <script src="2.js"></script>
    
   <style>
+     .tab {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+/* 其他样式保持不变 */
+
     .slideshow-container {
       position: relative;
       width: 100%;
@@ -26,7 +58,7 @@
 
   <div class="slideshow-container">
     <img class="active" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 1">
-    <img class="hidden" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 2">
+    <img class="hidden" src="https://static.91haoka.cn/168300922555Bxr.jpg" alt="Image 2">
     <img class="hidden" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="Image 3">
   </div>
 
@@ -45,7 +77,20 @@
     }
 
     setInterval(showNextImage, 3000); // 每3秒切换一次图片
+     
+     
   </script>
+        <script>
+   window.addEventListener("scroll", function() {
+  var tabMenu = document.querySelector(".tab-menu");
+  if (window.pageYOffset > 0) {
+    tabMenu.classList.add("sticky");
+  } else {
+    tabMenu.classList.remove("sticky");
+  }
+});
+   
+        </script>
 <br>
 
                     </a>    
