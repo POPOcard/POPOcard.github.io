@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>访问控制示例</title>
+    <script>
+        function login() {
+            var password = document.getElementById('password').value;
+
+            // 创建一个XMLHttpRequest对象
+            var xhr = new XMLHttpRequest();
+
+            // 定义回调函数
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // 登录成功，重定向到目标页面
+                        window.location.href = 'target.html';
+                    } else {
+                        // 登录失败，显示错误消息
+                        document.getElementById('error-message').innerText = xhr.responseText;
+                    }
+                }
+            };
+
+            // 发送请求
+            xhr.open('POST', 'pop.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send('password=' + encodeURIComponent(password));
+        }
+    </script>
+</head>
+<body>
+    <h1>访问控制示例</h1>
+    <input type="password" id="password" placeholder="输入密码">
+    <button onclick="login()">登录</button>
+    <p id="error-message"></p>
+</body>
+</html>
