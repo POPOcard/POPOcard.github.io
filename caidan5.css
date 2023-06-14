@@ -116,7 +116,17 @@
                  #btn47, 
                  #btn48, 
                  #btn49, 
-                 #btn50 
+                 #btn50,
+ #btn51, 
+                 #btn52, 
+                 #btn53, 
+                 #btn54, 
+                 #btn55, 
+                 #btn56, 
+                 #btn57, 
+                 #btn58, 
+                 #btn59, 
+                 #btn60 
  { 
                   display: inline-block; 
  background-color:        #D2B48C; 
@@ -159,7 +169,13 @@
                  #btn44:hover,#btn45:hover, 
                  #btn46:hover,#btn47:hover, 
                  #btn48:hover,#btn49:hover, 
-                 #btn50:hover 
+                 #btn50:hover， 
+#btn51:hover, 
+                 #btn52:hover,#btn53:hover, 
+                 #btn54:hover,#btn55:hover, 
+                 #btn56:hover,#btn57:hover, 
+                 #btn58:hover,#btn59:hover, 
+                 #btn60:hover 
  { 
                    background-color: #0069d9; 
                  } 
@@ -179,13 +195,19 @@
                  #btn26:focus,#btn27:focus, 
                  #btn28:focus,#btn29:focus, 
                  #btn30:focus,#btn31:focus,#btn32:focus,#btn33:focus,#btn34:focus,#btn35:focus,#btn36:focus,#btn37:focus,#btn38:focus,#btn39:focus, 
-                 #btn40:focus,
-                 #btn41:focus, 
+                 #btn40:focus, #btn41:focus, 
                  #btn42:focus,#btn43:focus, 
                  #btn44:focus,#btn45:focus, 
                  #btn46:focus,#btn47:focus, 
                  #btn48:focus,#btn49:focus, 
-                 #btn50:focus { 
+                 #btn50:focus， #btn51:focus, 
+                 #btn52:focus,#btn53:focus, 
+                 #btn54:focus,#btn55:focus, 
+                 #btn56:focus,#btn57:focus, 
+                 #btn58:focus,#btn59:focus, 
+                 #btn60:focus 
+
+{ 
                    outline: none; 
                    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); 
                  } 
@@ -205,18 +227,19 @@
                  #btn24:active,#btn25:active, 
                  #btn26:active,#btn27:active, 
                  #btn28:active,#btn29:active, 
-                 #btn30:active,#btn31:active, 
- #btn32:active,#btn36:active, 
- #btn33:active,#btn37:active, 
- #btn34:active,#btn38:active, 
- #btn35:active,#btn39:active, 
+                 #btn30:active,#btn31:active,  #btn32:active,#btn36:active, #btn33:active,#btn37:active,  #btn34:active,#btn38:active,#btn35:active,#btn39:active, 
                  #btn40:active,
                  #btn41:active, 
                  #btn42:active,#btn43:active, 
                  #btn44:active,#btn45:active, 
                  #btn46:active,#btn47:active, 
                  #btn48:active,#btn49:active, 
-                 #btn50:active 
+                 #btn50:active,#btn51:active, 
+                 #btn52:active,#btn53:active, 
+                 #btn54:active,#btn55:active, 
+                 #btn56:active,#btn57:active, 
+                 #btn58:active,#btn59:active, 
+                 #btn60:active 
                  { 
                    background-color: #0062cc; 
                  } 
