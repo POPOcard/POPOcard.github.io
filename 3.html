@@ -3111,9 +3111,8 @@
 
 
 
-  
-  
-  <div id="popup60" class="popup"> 
+    <div id="popup60" class="popup" style="display: none;">
+
     <p>
  <table> 
 
@@ -3403,3 +3402,18 @@ btn54.addEventListener('click', function(event) {event.stopPropagation();toggleP
 
 });
  </script>
+  <script>
+
+    function showHiddenCode() {
+
+      var hiddenCodeElement = document.getElementById('popup60');
+
+      hiddenCodeElement.style.display = 'block';
+
+    }
+
+    // 示例：在需要显示隐藏代码的地方调用函数
+
+    showHiddenCode();
+
+  </script>
