@@ -1,6 +1,6 @@
 <html><head><meta charset="UTF-8"><title>恩山的店铺</title><html><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><center><h2>浏览量： 
    <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2></center>   
-   <link rel="stylesheet" href="caidan.css"> <link rel="stylesheet" href="caidan5.css"> <link rel="stylesheet" href="caidan4.css"> <link rel="stylesheet" href="xingmu.css"><link rel="stylesheet" href="tab.css">  <script src="caidan.js"> </script><script src="jiyi.js">   </script> <script src="wxys.js"> </script> <script src="2.js"></script>
+   <link rel="stylesheet" href="caidan.css"> <link rel="stylesheet" href="caidan5.css"> <link rel="stylesheet" href="caidan4.css"> <link rel="stylesheet" href="xingmu.css"><link rel="stylesheet" href="tab.css">  <script src="caidan.js"> </script><script src="jiyi.js">   </script> <script src="wxys.js"> </script> <script src="2.js"></script><script src="too3.js"></script>
      <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="顶部头图">    
 </a>  </header>  <br> 
     <div class="menu">    
@@ -3319,90 +3319,4 @@ btn54.addEventListener('click', function(event) {event.stopPropagation();toggleP
  btn59.addEventListener('click', function(event) {event.stopPropagation();togglePopup(popup59);}); 
 
  closeBtns.forEach(function(btn) {btn.addEventListener('click', function(event) { event.stopPropagation(); const popup = this.parentNode; togglePopup(popup);});});popups.forEach(function(popup) {popup.addEventListener('click', function(event) { event.stopPropagation();});popup.querySelectorAll('*').forEach(function(el) { el.addEventListener('copy', function(event) {event.preventDefault(); });});document.addEventListener('click', function(event) { if (event.target !== popup && !popup.contains(event.target)) {popup.style.display = 'none'; }});}); </script>
-
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-  const btns = document.querySelectorAll('.popup-btn');
-
-  const popups = document.querySelectorAll('.popup');
-
-  btns.forEach(function(btn) {
-
-    btn.addEventListener('click', function() {
-
-      const popupId = this.getAttribute('data-popup');
-
-      const popup = document.getElementById(popupId);
-
-      togglePopup(popup, this);
-
-    });
-
-  });
-
-  function togglePopup(popup, btn) {
-
-    if (popup.style.display === 'none' || popup.style.display === '') {
-
-      popup.style.display = 'block';
-
-      btn.classList.add('active');
-
-    } else {
-
-      popup.style.display = 'none';
-
-      btn.classList.remove('active');
-
-    }
-
-  }
-
-  popups.forEach(function(popup) {
-
-    popup.addEventListener('click', function(event) {
-
-      event.stopPropagation();
-
-    });
-
-    popup.querySelectorAll('*').forEach(function(el) {
-
-      el.addEventListener('copy', function(event) {
-
-        event.preventDefault();
-
-      });
-
-    });
-
-    document.addEventListener('click', function(event) {
-
-      const activePopups = document.querySelectorAll('.popup.active');
-
-      activePopups.forEach(function(activePopup) {
-
-        if (event.target !== activePopup && !activePopup.contains(event.target)) {
-
-          activePopup.style.display = 'none';
-
-          const activeBtn = document.querySelector('.popup-btn.active[data-popup="' + activePopup.id + '"]');
-
-          if (activeBtn) {
-
-            activeBtn.classList.remove('active');
-
-          }
-
-        }
-
-      });
-
-    });
-
-  });
-
-});
- </script>
   
