@@ -1,4 +1,4 @@
- // 检查本地存储中的时间戳
+ // 检查本地存储中的时间戳 
         var lastVisitTime = localStorage.getItem('lastVisitTime');
 
         // 获取当前时间戳
