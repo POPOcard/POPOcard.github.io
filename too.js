@@ -34,6 +34,7 @@ closeBtn.style.position = 'absolute';
 closeBtn.style.right = '23px';
 closeBtn.style.bottom = '10px';
 closeBtn.style.display = 'block';
+closeBtn.style.transform = 'translate(50%, 50%)';
 
 
 
