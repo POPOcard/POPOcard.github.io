@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     closeBtn.style.cursor = "pointer";
     closeBtn.style.fontSize = "23px";
     closeBtn.style.position = 'absolute';
-closeBtn.style.right = '35px';
+closeBtn.style.right = '31px';
 closeBtn.style.bottom = '10px';
 closeBtn.style.display = 'block';
 
