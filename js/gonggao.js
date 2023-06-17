@@ -20,16 +20,16 @@
         z-index: 9999; /* 调整优先级为最高 */
       }
       #unique-announcement-container h2 {
-        font-size: 24px;
+        font-size: 50px;
         margin-bottom: 10px;
       }
       #unique-announcement-container p {
-        font-size: 16px;
+        font-size: 35px;
         line-height: 1.5;
         margin-bottom: 10px;
       }
       .close-button {
-        font-size: 16px;
+        font-size: 35px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
