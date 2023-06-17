@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
   popups.forEach(function(popup) {
     const closeBtn = popup.querySelector('.close-btn');
     closeBtn.addEventListener('click', function() {
+      const popupContent = this.parentNode;
+      const popup = popupContent.parentNode;
       togglePopup(popup);
     });
 
