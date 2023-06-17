@@ -31,7 +31,7 @@
 .additional-text {
         font-size: 14px;
         position: absolute;
-        bottom: 70px;
+        bottom: 100px;
         right: 20px;
         margin: 10px;
       }
