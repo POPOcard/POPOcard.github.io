@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   popups.forEach(function(popup) {
     const closeBtn = document.createElement('button');
 closeBtn.classList.add('close-btn');
-closeBtn.textContent = '关闭';
+closeBtn.textContent = '关闭此窗口';
 closeBtn.addEventListener('click', function() {
   togglePopup(popup);
 });
