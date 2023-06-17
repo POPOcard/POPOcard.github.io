@@ -12,13 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   popups.forEach(function(popup) {
     const closeBtn = document.createElement('button');
-    closeBtn.classList.add('close-btn');
-    closeBtn.textContent = '关闭';
-    closeBtn.addEventListener('click', function() {
-      togglePopup(popup);
-    });
-    popup.appendChild(closeBtn);
-    closeBtn.style.backgroundColor = "#a87f5f";
+closeBtn.classList.add('close-btn');
+closeBtn.textContent = '关闭';
+closeBtn.addEventListener('click', function() {
+  togglePopup(popup);
+});
+popup.appendChild(closeBtn);
+
+// 添加样式属性
+closeBtn.style.backgroundColor = "#a87f5f";
 closeBtn.style.color = "transparent";
 closeBtn.style.webkitTextStroke = "0.05px black";
 closeBtn.style.webkitTextFillColor = "white";
@@ -28,6 +30,7 @@ closeBtn.style.borderRadius = "5px";
 closeBtn.style.marginTop = "5px";
 closeBtn.style.cursor = "pointer";
 closeBtn.style.fontSize = "23px";
+
 
     popup.addEventListener('click', function(event) {
       event.stopPropagation();
