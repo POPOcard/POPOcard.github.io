@@ -31,8 +31,8 @@
 .additional-text {
         font-size: 14px;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 70px;
+        right: 20px;
         margin: 10px;
       }
        .close-button { 
