@@ -9,7 +9,7 @@
       #unique-announcement-container {
         display: none;
         position: fixed;
-        top: 0%;
+        top: 10%;
         left: 10%;
         right: 10%;
         max-width: 90%;
@@ -20,11 +20,11 @@
         z-index: 9999; /* 调整优先级为最高 */
       }
       #unique-announcement-container h2 {
-        font-size: 50px;
+        font-size: 55px;
         margin-bottom: 10px;
       }
       #unique-announcement-container p {
-        font-size: 35px;
+        font-size: 28px;
         line-height: 1.5;
         margin-bottom: 10px;
       }
