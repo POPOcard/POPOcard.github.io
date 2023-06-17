@@ -10,33 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  function togglePopup(popup, btn) {
-    if (popup.style.display === 'none' || popup.style.display === '') {
-      popup.style.display = 'block';
-      btn.classList.add('active');
-    } else {
-      popup.style.display = 'none';
-      btn.classList.remove('active');
-    }
-
-    // 获取关闭按钮元素
-    const closeBtn = popup.querySelector('.close-btn');
-    if (closeBtn) {
-      // 修改关闭按钮的样式
-      closeBtn.style.display = 'inline-block';
-      closeBtn.style.backgroundColor = '#a87f5f';
-      closeBtn.style.color = 'transparent';
-      closeBtn.style.webkitTextStroke = '0.05px black';
-      closeBtn.style.webkitTextFillColor = 'white';
-      closeBtn.style.border = 'none';
-      closeBtn.style.padding = '10px 18px';
-      closeBtn.style.borderRadius = '5px';
-      closeBtn.style.marginTop = '5px';
-      closeBtn.style.cursor = 'pointer';
-      closeBtn.style.fontSize = '23px';
-    }
-  }
-
   popups.forEach(function(popup) {
     const closeBtn = document.createElement('button');
     closeBtn.classList.add('close-btn');
@@ -45,6 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
       togglePopup(popup);
     });
     popup.appendChild(closeBtn);
+    closeBtn.style.backgroundColor = "#a87f5f";
+closeBtn.style.color = "transparent";
+closeBtn.style.webkitTextStroke = "0.05px black";
+closeBtn.style.webkitTextFillColor = "white";
+closeBtn.style.border = "none";
+closeBtn.style.padding = "10px 18px";
+closeBtn.style.borderRadius = "5px";
+closeBtn.style.marginTop = "5px";
+closeBtn.style.cursor = "pointer";
+closeBtn.style.fontSize = "23px";
 
     popup.addEventListener('click', function(event) {
       event.stopPropagation();
