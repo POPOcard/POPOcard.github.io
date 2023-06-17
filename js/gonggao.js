@@ -8,8 +8,8 @@
       }
       #unique-announcement-container {
         display: none;
-        position: relative;
-        top: 10%;
+        position: fixed;
+        top: 0%;
         left: 10%;
         right: 10%;
         max-width: 90%;
