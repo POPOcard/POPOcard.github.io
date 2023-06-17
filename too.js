@@ -31,7 +31,7 @@ closeBtn.style.marginTop = "5px";
 closeBtn.style.cursor = "pointer";
 closeBtn.style.fontSize = "23px";
 closeBtn.style.position = 'absolute';
-closeBtn.style.right = '20px';
+closeBtn.style.right = '23px';
 closeBtn.style.bottom = '10px';
 closeBtn.style.display = 'block';
 
