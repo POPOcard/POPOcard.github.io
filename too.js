@@ -30,6 +30,10 @@ closeBtn.style.borderRadius = "5px";
 closeBtn.style.marginTop = "5px";
 closeBtn.style.cursor = "pointer";
 closeBtn.style.fontSize = "23px";
+    closeBtn.style.position = 'absolute';
+closeBtn.style.right = '10px';
+closeBtn.style.bottom = '10px';
+
 
 
     popup.addEventListener('click', function(event) {
@@ -62,17 +66,7 @@ closeBtn.style.fontSize = "23px";
       popup.style.display = 'none';
       if (btn) {
         btn.classList.remove('active');
-         }
-
-      // 将关闭按钮定位到右下角
-      const closeBtn = popup.querySelector('.close-btn');
-      closeBtn.style.position = 'absolute';
-      closeBtn.style.right = '10px';
-      closeBtn.style.bottom = '10px';
-    } else {
-      popup.style.display = 'none';
-      if (btn) {
-        btn.classList.remove('active');
+      
       }
     }
   }
