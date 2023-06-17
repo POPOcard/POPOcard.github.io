@@ -5,7 +5,7 @@
         var currentTime = new Date().getTime();
 
         // 如果本地存储中没有时间戳或者当前时间距上次访问时间超过5分钟，则显示公告
-        if (!lastVisitTime || currentTime - lastVisitTime > 5 * 60 * 10) {
+        if (!lastVisitTime || currentTime - lastVisitTime > 5 * 60 * 1000) {
             // 显示公告
             document.getElementById('announcement').style.display = 'block';
 
