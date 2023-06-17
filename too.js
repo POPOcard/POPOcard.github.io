@@ -30,9 +30,11 @@ closeBtn.style.borderRadius = "5px";
 closeBtn.style.marginTop = "5px";
 closeBtn.style.cursor = "pointer";
 closeBtn.style.fontSize = "23px";
-    closeBtn.style.position = 'absolute';
+closeBtn.style.position = 'absolute';
 closeBtn.style.right = '10px';
 closeBtn.style.bottom = '10px';
+closeBtn.style.display = 'block';
+
 
 
 
@@ -66,7 +68,6 @@ closeBtn.style.bottom = '10px';
       popup.style.display = 'none';
       if (btn) {
         btn.classList.remove('active');
-      
       }
     }
   }
