@@ -11,12 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   popups.forEach(function(popup) {
-    const closeBtn = popup.querySelector('.close-btn');
+    const closeBtn = document.createElement('button');
+    closeBtn.classList.add('close-btn');
+    closeBtn.textContent = '关闭';
     closeBtn.addEventListener('click', function() {
-      const popupContent = this.parentNode;
-      const popup = popupContent.parentNode;
       togglePopup(popup);
     });
+    popup.appendChild(closeBtn);
 
     popup.addEventListener('click', function(event) {
       event.stopPropagation();
