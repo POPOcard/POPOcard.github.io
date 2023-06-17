@@ -20,7 +20,7 @@ closeBtn.addEventListener('click', function() {
 popup.appendChild(closeBtn);
 
 // 添加样式属性
-closeBtn.style.backgroundColor = "#a87f5f";
+closeBtn.style.backgroundColor = "#0062cc;
 closeBtn.style.color = "transparent";
 closeBtn.style.webkitTextStroke = "0.05px black";
 closeBtn.style.webkitTextFillColor = "white";
@@ -31,10 +31,9 @@ closeBtn.style.marginTop = "5px";
 closeBtn.style.cursor = "pointer";
 closeBtn.style.fontSize = "23px";
 closeBtn.style.position = 'absolute';
-closeBtn.style.right = '23px';
+closeBtn.style.right = '25px';
 closeBtn.style.bottom = '10px';
 closeBtn.style.display = 'block';
-closeBtn.style.transform = 'translate(50%, 50%)';
 
 
 
