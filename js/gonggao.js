@@ -8,11 +8,11 @@
       }
       #unique-announcement-container {
         display: none;
-        position: fixed;
-        top: 20%;
+        position: relative;
+        top: 10%;
         left: 10%;
         right: 10%;
-        max-width: 80%;
+        max-width: 90%;
         background-color: #fff;
         padding: 20px;
         text-align: center;
