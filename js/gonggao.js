@@ -1,44 +1,50 @@
 (function() {
   var styles = `
     <style>
-      body.custom-unique-page {
+            body.custom-unique-page {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
       }
       #unique-announcement-container {
         display: none;
         position: fixed;
-        top: 0%;
-        left: 2%;
-        right: 2%;
-        max-width: 96%;
+        top: 20%;
+        left: 10%;
+        right: 10%;
+        max-width: 80%;
         background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ccc; /* 新增边框样式 */
+        transition: transform 0.3s ease-in-out; /* 新增悬浮效果的过渡动画 */
         z-index: 9999;
-        color: #333;
+      }
+      #unique-announcement-container:hover {
+        transform: scale(1.05); /* 悬浮时放大 */
       }
       #unique-announcement-container h2 {
-        font-size: 55px;
+        font-size: 24px;
         margin-bottom: 10px;
+        color: #333;
       }
       #unique-announcement-container p {
-        font-size: 25px;
+        font-size: 16px;
         line-height: 1.5;
         margin-bottom: 10px;
+        color: #666;
       }
       .additional-text {
-        font-size: 25px;
+        font-size: 16px;
         position: absolute;
-        bottom: 100px;
+        bottom: 20px;
         right: 20px;
         margin: 10px;
+        color: #999;
       }
       .close-button {
-        font-size: 30px;
+        font-size: 14px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
