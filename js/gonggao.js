@@ -9,10 +9,10 @@
       #unique-announcement-container {
         display: none;
         position: fixed;
-        top: 2%;
-        left: 1%;
-        right: 1%;
-        max-width: 98%;
+        top: 1.5%;
+        left: 1.5%;
+        right: 1.5%;
+        max-width: 97%;
         background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
@@ -30,13 +30,13 @@
         color: #333;
       }
       #unique-announcement-container p {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 1.5;
         margin-bottom: 10px;
         color: #666;
       }
       .additional-text {
-        font-size: 28px;
+        font-size: 26px;
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -44,7 +44,7 @@
         color: #999;
       }
       .close-button {
-        font-size: 28px;
+        font-size: 26px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
