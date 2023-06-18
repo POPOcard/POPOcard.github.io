@@ -38,8 +38,8 @@
        .additiona-text { 
          font-size: 25px; 
          position: absolute; 
-         bottom: 520px; 
-         right: 30px; 
+         bottom: 820px; 
+         right: 25px; 
          margin: 10px; 
          color: #999; 
        }     
