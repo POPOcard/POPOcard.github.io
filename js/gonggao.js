@@ -9,10 +9,10 @@
       #unique-announcement-container {
         display: none;
         position: fixed;
-        top: 5%;
-        left: 5%;
-        right: 5%;
-        max-width: 90%;
+        top: 2%;
+        left: 1%;
+        right: 1%;
+        max-width: 98%;
         background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
@@ -30,13 +30,13 @@
         color: #333;
       }
       #unique-announcement-container p {
-        font-size: 20px;
+        font-size: 28px;
         line-height: 1.5;
         margin-bottom: 10px;
         color: #666;
       }
       .additional-text {
-        font-size: 20px;
+        font-size: 28px;
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -44,7 +44,7 @@
         color: #999;
       }
       .close-button {
-        font-size: 20px;
+        font-size: 28px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
@@ -70,7 +70,7 @@
       <br><br><b> 为深入贯彻落实党中央、国务院决策部署，坚决遏制电信网络诈骗犯罪高发多发姿态，切实维护广大人民群众合法权益，按照《中华人民共和国刑法》《中华人民共和国治安管理处罚法》《中华人民共和国网络安全法》《互联网信息服务管理办法》相关法律法规要求：   
        <br>严厉打击非法办理、出租、出售、购买、囤积电话卡、物联网卡、网络账号的行为！</b > 
 
-<p>现在全国联网，所有套餐均为实名制，激活需要本人活体验证，公安机关想追根溯源太简单……
+<p>所有套餐均为实名制，激活需要本人活体验证，全国联网！公安机关想追根溯源太过简单……
 <br>请勿抱有任何侥幸心理，以任何理由：贩卖、出借自己的手机卡（包括利用此卡注册的网络账号），收卡人员100%用于“电信网络诈骗”，而你将附有连带刑事责任！注意是刑事责任，不是罚个钱就能解决的（3年）！
 <br>如果你是在校生的话，一辈子基本就凉了……<br>
 如果你是社会人员，你的工作肯定没了，你的儿女、孙子孙女，三代人与“当兵、警察、公务员、教师等工作”彻底无缘！（政审100%不通过）注意是三代人！
