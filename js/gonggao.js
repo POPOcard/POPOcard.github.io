@@ -30,13 +30,13 @@
         color: #333;
       }
       #unique-announcement-container p {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 1.5;
         margin-bottom: 10px;
         color: #666;
       }
       .additional-text {
-        font-size: 25px;
+        font-size: 20px;
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -44,7 +44,7 @@
         color: #999;
       }
       .close-button {
-        font-size: 25px;
+        font-size: 20px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
