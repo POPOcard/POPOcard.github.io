@@ -25,12 +25,12 @@
         transform: scale(1.05); /* 悬浮时放大 */
       }
       #unique-announcement-container h2 {
-        font-size: px;
+        font-size: 40px;
         margin-bottom: 10px;
         color: #333;
       }
       #unique-announcement-container p {
-        font-size: 40px;
+        font-size: 25px;
         line-height: 1.5;
         margin-bottom: 10px;
         color: #666;
@@ -44,7 +44,7 @@
         color: #999;
       }
       .close-button {
-        font-size: 40px;
+        font-size: 25px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
