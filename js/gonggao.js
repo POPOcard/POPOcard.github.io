@@ -9,10 +9,10 @@
       #unique-announcement-container {
         display: none;
         position: fixed;
-        top: 20%;
-        left: 10%;
-        right: 10%;
-        max-width: 80%;
+        top: 2%;
+        left: 1%;
+        right: 1%;
+        max-width: 98%;
         background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
