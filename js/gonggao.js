@@ -9,10 +9,10 @@
       #unique-announcement-container {
         display: none;
         position: fixed;
-        top: 2%;
-        left: 1%;
-        right: 1%;
-        max-width: 98%;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        max-width: 90%;
         background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
@@ -25,18 +25,18 @@
         transform: scale(1.05); /* 悬浮时放大 */
       }
       #unique-announcement-container h2 {
-        font-size: 24px;
+        font-size: px;
         margin-bottom: 10px;
         color: #333;
       }
       #unique-announcement-container p {
-        font-size: 16px;
+        font-size: 40px;
         line-height: 1.5;
         margin-bottom: 10px;
         color: #666;
       }
       .additional-text {
-        font-size: 16px;
+        font-size: 25px;
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -44,7 +44,7 @@
         color: #999;
       }
       .close-button {
-        font-size: 14px;
+        font-size: 40px;
         background-color: #4CAF50;
         color: #fff;
         border: none;
