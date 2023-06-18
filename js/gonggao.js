@@ -14,7 +14,7 @@
         left: 2%;
         right: 2%;
         max-width: 96%;
-        background-color: #fff;
+        background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
