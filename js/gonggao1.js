@@ -5,7 +5,7 @@
             function displayAnnouncement() {
                 announcementContainer.style.display = 'block';
             }
-
+ 
             function closeAnnouncement() {
                 announcementContainer.style.display = 'none';
 
