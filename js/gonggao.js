@@ -1,11 +1,14 @@
 (function() { 
    var styles = ` 
      <style> 
-             body.custom-unique-page { 
-         margin: 0; 
-         padding: 0; 
-         font-family: Arial, sans-serif; 
-       } 
+
+body.custom-unique-page {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        -webkit-text-size-adjust: 100%; /* 禁用字体大小调整 */
+      }
+             
        #unique-announcement-container { 
          display: none; 
          position: fixed; 
@@ -28,11 +31,11 @@
          font-size: 40px; 
          margin-bottom: 10px; 
          color: #333; 
-        line-height: 1;
+        line-height: 1.2;
        } 
        #unique-announcement-container p { 
          font-size: 23px; 
-         line-height: 1.1; 
+         line-height: 1.5; 
          margin-bottom: 10px; 
          color: #666; 
        } 
