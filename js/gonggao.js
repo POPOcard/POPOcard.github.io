@@ -31,13 +31,13 @@
         line-height: 1.2;
        } 
        #unique-announcement-container p { 
-         font-size: 25px; 
+         font-size: 23px; 
          line-height: 1.5; 
          margin-bottom: 10px; 
          color: #666; 
        } 
        .additiona-text { 
-         font-size: 25px; 
+         font-size: 23px; 
          position: absolute; 
          bottom: 1050px; 
          right: 25px; 
@@ -45,7 +45,7 @@
          color: #999; 
        }     
        .additional-text { 
-         font-size: 25px; 
+         font-size: 23px; 
          position: absolute; 
          bottom: 100px; 
          right: 30px; 
