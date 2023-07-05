@@ -62,10 +62,12 @@
          cursor: pointer; 
        } 
        @media screen and (max-width: 980px) {  
-          .apple-browser #unique-announcement-container h2,  
-          .apple-browser #unique-announcement-container p {  
-            -webkit-text-size-adjust: 100%;  
-            text-size-adjust: 100%;  
+     .apple-browser #unique-announcement-container h2,
+.apple-browser #unique-announcement-container p {
+-webkit-text-size-adjust: 100%;  
+            text-size-adjust: 100%;          
+  font-size: 1rem;
+  line-height: 1.5;
           }  
         }  
      </style> 
