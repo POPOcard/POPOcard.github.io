@@ -61,6 +61,13 @@
          border-radius: 4px; 
          cursor: pointer; 
        } 
+       @media screen and (max-width: 980px) {  
+          .apple-browser #unique-announcement-container h2,  
+          .apple-browser #unique-announcement-container p {  
+            -webkit-text-size-adjust: 100%;  
+            text-size-adjust: 100%;  
+          }  
+        }  
      </style> 
    `; 
   
@@ -123,4 +130,12 @@
    for (var i = 0; i < closeButtons.length; i++) { 
      closeButtons[i].addEventListener('click', closeAnnouncement); 
    } 
+function addAppleBrowserClass() {  
+      var isAppleBrowser = /(Mac|iPhone|iPod|iPad)/i.test(navigator.userAgent);  
+      if (isAppleBrowser) {  
+        document.body.classList.add('apple-browser');  
+      }  
+    }  
+  
+    addAppleBrowserClass();
  })();
