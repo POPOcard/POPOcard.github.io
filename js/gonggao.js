@@ -28,11 +28,11 @@
          font-size: 40px; 
          margin-bottom: 10px; 
          color: #333; 
-        line-height: 1.2;
+        line-height: 1;
        } 
        #unique-announcement-container p { 
          font-size: 23px; 
-         line-height: 1.5; 
+         line-height: 1.1; 
          margin-bottom: 10px; 
          color: #666; 
        } 
@@ -67,7 +67,7 @@
 -webkit-text-size-adjust: 100%;  
             text-size-adjust: 100%;          
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.1;
           }  
         }  
      </style> 
