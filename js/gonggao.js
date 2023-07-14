@@ -1,79 +1,43 @@
-(function() { 
-   var styles = ` 
-     <style> 
-
-body.custom-unique-page {
+(function() {
+  var styles = `
+    <style>
+      body.custom-unique-page {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        -webkit-text-size-adjust: 100%; /* 禁用字体大小调整 */
       }
-             
-       #unique-announcement-container { 
-         display: none; 
-         position: fixed; 
-         top: 3%; 
-         left: 1.5%; 
-         right: 1.5%; 
-         max-width: 97%; 
-         background-color: #f2f2f2; 
-         padding: 20px; 
-         text-align: center; 
-         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-         border: 2px solid #ccc; /* 新增边框样式 */ 
-         transition: transform 0.3s ease-in-out; /* 新增悬浮效果的过渡动画 */ 
-         z-index: 9999; 
-       } 
-       #unique-announcement-container:hover { 
-         transform: scale(1.05); /* 悬浮时放大 */ 
-       } 
-       #unique-announcement-container h2 { 
-         font-size: 40px; 
-         margin-bottom: 10px; 
-         color: #333; 
-        line-height: 1.2;
-       } 
-       #unique-announcement-container p { 
-         font-size: 23px; 
-         line-height: 1.5; 
-         margin-bottom: 10px; 
-         color: #666; 
-       } 
-       .additiona-text { 
-         font-size: 23px; 
-         position: absolute; 
-         bottom: 1250px; 
-         right: 25px; 
-         margin: 10px; 
-         color: #999; 
-       }     
-       .additional-text { 
-         font-size: 23px; 
-         position: absolute; 
-         bottom: 100px; 
-         right: 30px; 
-         margin: 10px; 
-         color: #999; 
-       } 
-       .close-button { 
-         font-size: 23px; 
-         background-color: #4CAF50; 
-         color: #fff; 
-         border: none; 
-         padding: 10px 20px; 
-         border-radius: 4px; 
-         cursor: pointer; 
-       } 
-       @media screen and (max-width: 980px) {  
-     .apple-browser #unique-announcement-container h2,
-.apple-browser #unique-announcement-container p {
--webkit-text-size-adjust: 100%;  
-            text-size-adjust: 100%;          
-  font-size: 1rem;
-  line-height: 1.1;
-          }  
-        }  
-     </style> 
+      #unique-announcement-container {
+        display: none;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        right: 10%;
+        max-width: 80%;
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ccc;
+        transition: transform 0.3s ease-in-out;
+        z-index: 9999;
+      }
+      @-moz-document url-prefix() {
+        /* Firefox 浏览器特定样式修复 */
+        #unique-announcement-container {
+          transform: none;
+        }
+        #unique-announcement-container h2 {
+          font-size: 24px !important;
+        }
+        #unique-announcement-container p {
+          font-size: 16px !important;
+        }
+        .additional-text {
+          font-size: 16px !important;
+        }
+      }
+    </style>
+
    `; 
   
    document.head.insertAdjacentHTML('beforeend', styles); 
