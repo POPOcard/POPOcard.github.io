@@ -42,7 +42,7 @@ body.custom-unique-page {
        .additiona-text { 
          font-size: 23px; 
          position: absolute; 
-         bottom: 1050px; 
+         bottom: 1250px; 
          right: 25px; 
          margin: 10px; 
          color: #999; 
