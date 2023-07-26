@@ -10,7 +10,7 @@
   
 
     <script>
-    // Automatically create the mirror on page load
+     // Automatically create the mirror on page load
         document.addEventListener("DOMContentLoaded", function() {
             createMirror();
         });
@@ -43,6 +43,7 @@
             var mirroredButtons = mirrorBlock.querySelectorAll('[id^="popupButton"]');
             for (var j = 0; j < mirroredButtons.length; j++) {
                 var button = mirroredButtons[j];
+                button.removeAttribute('onclick'); // Remove the original onclick attribute
                 button.addEventListener('click', createMirroredPopupHandler(button));
             }
         }
@@ -50,7 +51,7 @@
         // Function to create a handler for mirrored popups
         function createMirroredPopupHandler(button) {
             return function() {
-                var popupContentId = button.getAttribute('onclick').replace("openPopup('", "").replace("')", "");
+                var popupContentId = button.id.replace("popupButton", "popupContent");
                 openPopup(popupContentId);
             };
         }
