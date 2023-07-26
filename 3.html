@@ -39,6 +39,30 @@
         function handleClick() {
             alert("Button in the original code block clicked!");
         }
+
+        // Example event handler for form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form submission to avoid page reload
+            var formData = new FormData(event.target);
+            var inputValue = formData.get('inputField');
+            alert("Form submitted with value: " + inputValue);
+        }
+
+        // Event delegation for the code mirror
+        document.getElementById('mirrorBlock').addEventListener('click', function(event) {
+            // Handle events for the code mirror here
+            if (event.target.tagName === 'BUTTON') {
+                handleClick();
+            }
+        });
+
+        // Event delegation for the form submission
+        document.getElementById('mirrorBlock').addEventListener('submit', function(event) {
+            // Handle form submissions for the code mirror here
+            if (event.target.tagName === 'FORM') {
+                handleSubmit(event);
+            }
+        });
     </script>
  </body> 
  </html> 
