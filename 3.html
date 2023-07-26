@@ -10,7 +10,7 @@
   
 
     <script>
-       // Automatically create the mirror on page load
+      // Automatically create the mirror on page load
         document.addEventListener("DOMContentLoaded", function() {
             createMirror();
         });
@@ -38,6 +38,12 @@
 
             // Step 7: Insert the cloned element into the mirror block container
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
+
+            // Step 8: Rebind the event handlers for the cloned elements
+            var buttonsInMirror = mirrorBlock.getElementsByTagName("button");
+            for (var j = 0; j < buttonsInMirror.length; j++) {
+                buttonsInMirror[j].onclick = handleClick;
+            }
         }
 
         // Example event handler for the button click
