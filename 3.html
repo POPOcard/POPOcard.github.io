@@ -10,7 +10,7 @@
   
 
     <script>
-    // Automatically create the mirror on page load
+   // Automatically create the mirror on page load
         document.addEventListener("DOMContentLoaded", function() {
             createMirror();
         });
@@ -22,14 +22,13 @@
             // Step 2: Clone the original code block element (with events)
             var mirrorBlock = codeBlock.cloneNode(true);
 
-            // Step 3: Remove the id attribute from the cloned block
-            mirrorBlock.removeAttribute('id');
-
-            // Step 4: Modify IDs of elements inside the mirror block
+            // Step 3: Modify IDs of elements inside the mirror block
             var originalButton = mirrorBlock.querySelector('#originalButton');
-            var mirroredButton = mirrorBlock.querySelector('button');
-            originalButton.id = 'originalButton';
-            mirroredButton.id = 'mirroredButton';
+            originalButton.removeAttribute('onclick'); // Remove onclick attribute
+            originalButton.id = 'mirroredButton'; // Change ID to avoid duplicate IDs
+
+            // Step 4: Remove the id attribute from the cloned block
+            mirrorBlock.removeAttribute('id');
 
             // Step 5: Clear the existing content of mirrorBlock
             document.getElementById('mirrorBlock').innerHTML = '';
