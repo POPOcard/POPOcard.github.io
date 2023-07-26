@@ -33,36 +33,11 @@
 
             // Step 5: Insert the cloned element into the mirror block container
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
-
-            // Step 6: Copy event handlers from original to mirrored code block
-            copyEventHandlers(codeBlock, mirrorBlock);
         }
 
         // Example event handler for the button click
         function handleClick() {
             alert("Button in the original code block clicked!");
-        }
-
-        // Function to copy event handlers from original to mirrored code block
-        function copyEventHandlers(originalElement, clonedElement) {
-            var eventList = getEventList(originalElement);
-            for (var event in eventList) {
-                eventList[event].forEach(function (eventHandler) {
-                    clonedElement.addEventListener(event, eventHandler);
-                });
-            }
-        }
-
-        // Function to get a list of event handlers attached to an element
-        function getEventList(element) {
-            var events = getEventListeners(element);
-            var eventList = {};
-            for (var event in events) {
-                eventList[event] = events[event].map(function (eventObject) {
-                    return eventObject.listener;
-                });
-            }
-            return eventList;
         }
     </script>
  </body> 
