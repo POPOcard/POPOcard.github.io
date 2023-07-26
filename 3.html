@@ -91,7 +91,14 @@
       <button onclick="openTab(event, 'tab5')" style="color: #5B5B5B;"><h1>超大通话</h1></button>    
   
 
- 
+   </div>     
+    <html>    
+    <head>    
+  
+      <body class="{{ if is_weixin }}weixin{{ endif }}">  
+  
+  
+      </div>    
     
       
 
@@ -100,7 +107,7 @@
                <h2>推荐［页面可放大］</h2> 
 
 
- <body class="{{ if is_weixin }}weixin{{ endif }}">  
+  <div id="mirrorBlock">
 
     </div>      </div>     </div>     </div>  
 
@@ -114,7 +121,7 @@
         
              <div id="tab8" class="tab">       
                <h2>［页面可放大］</h2> 
- <div id="mirrorBlock">
+ <div id="codeBlock">
 <div id="floating-container">     
          <img id="thumbnail" src="https://static.91haoka.cn/1690297234EMG.jpg" alt="Thumbnail Image">     
          <div>     
