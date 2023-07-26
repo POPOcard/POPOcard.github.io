@@ -39,14 +39,26 @@
             // Step 7: Insert the cloned element into the mirror block container
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
 
-            // Step 8: Add event listener to the mirror button
-            var mirroredButton = mirrorBlock.querySelector('#originalButton');
-            mirroredButton.addEventListener('click', handleClick);
+            // Step 8: Add event listeners to the mirror buttons
+            var mirroredButtons = mirrorBlock.querySelectorAll('[id^="popupButton"]');
+            for (var j = 0; j < mirroredButtons.length; j++) {
+                var button = mirroredButtons[j];
+                button.addEventListener('click', createMirroredPopupHandler(button));
+            }
         }
 
-        // Example event handler for the button click
-        function handleClick() {
-            alert("Button clicked!");
+        // Function to create a handler for mirrored popups
+        function createMirroredPopupHandler(button) {
+            return function() {
+                var popupContentId = button.getAttribute('onclick').replace("openPopup('", "").replace("')", "");
+                openPopup(popupContentId);
+            };
+        }
+
+        // Example function to open popups
+        function openPopup(popupContentId) {
+            var popupContent = document.getElementById(popupContentId);
+            alert(popupContent.textContent);
         }
     </script>
  </body> 
