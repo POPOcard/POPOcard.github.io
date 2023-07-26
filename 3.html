@@ -24,8 +24,8 @@
 
             // Step 3: Remove the button element from the cloned code block
             var buttonsInMirror = mirrorBlock.getElementsByTagName("button");
-            for (var i = buttonsInMirror.length - 1; i >= 0; i--) {
-                buttonsInMirror[i].remove();
+            while (buttonsInMirror.length > 0) {
+                buttonsInMirror[0].remove();
             }
 
             // Step 4: Remove the id attribute to avoid duplicate ids
@@ -33,6 +33,9 @@
 
             // Step 5: Insert the cloned element into the mirror block container
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
+
+            // Step 6: Clone event handlers from original to mirror
+            cloneEventHandlers(codeBlock, mirrorBlock);
         }
 
         // Example event handler for the button click
@@ -40,29 +43,16 @@
             alert("Button in the original code block clicked!");
         }
 
-        // Example event handler for form submission
-        function handleSubmit(event) {
-            event.preventDefault(); // Prevent form submission to avoid page reload
-            var formData = new FormData(event.target);
-            var inputValue = formData.get('inputField');
-            alert("Form submitted with value: " + inputValue);
+        // Function to clone event handlers from original to mirror
+        function cloneEventHandlers(original, mirror) {
+            var events = getEventListeners(original);
+            for (var type in events) {
+                for (var i = 0; i < events[type].length; i++) {
+                    var event = events[type][i];
+                    mirror.addEventListener(type, event.listener);
+                }
+            }
         }
-
-        // Event delegation for the code mirror
-        document.getElementById('mirrorBlock').addEventListener('click', function(event) {
-            // Handle events for the code mirror here
-            if (event.target.tagName === 'BUTTON') {
-                handleClick();
-            }
-        });
-
-        // Event delegation for the form submission
-        document.getElementById('mirrorBlock').addEventListener('submit', function(event) {
-            // Handle form submissions for the code mirror here
-            if (event.target.tagName === 'FORM') {
-                handleSubmit(event);
-            }
-        });
     </script>
  </body> 
  </html> 
