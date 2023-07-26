@@ -10,7 +10,7 @@
   
 
     <script>
-     // Automatically create the mirror on page load
+    // Automatically create the mirror on page load
         document.addEventListener("DOMContentLoaded", function() {
             createMirror();
         });
@@ -19,30 +19,32 @@
             // Step 1: Get the original code block element
             var codeBlock = document.getElementById('codeBlock');
 
-            // Step 2: Clone the original code block's children (with events)
-            var mirrorContent = codeBlock.cloneNode(true).childNodes;
+            // Step 2: Clone the original code block element (with events)
+            var mirrorBlock = codeBlock.cloneNode(true);
 
-            // Step 3: Create a new div for the mirrored code block
-            var mirrorBlock = document.createElement('div');
-
-            // Step 4: Append the cloned content to the mirror block
-            for (var i = 0; i < mirrorContent.length; i++) {
-                mirrorBlock.appendChild(mirrorContent[i].cloneNode(true));
-            }
-
-            // Step 5: Remove the id attribute to avoid duplicate ids
+            // Step 3: Remove the id attribute from the cloned block
             mirrorBlock.removeAttribute('id');
 
-            // Step 6: Clear the existing content of mirrorBlock
+            // Step 4: Modify IDs of elements inside the mirror block
+            var originalButton = mirrorBlock.querySelector('#originalButton');
+            var mirroredButton = mirrorBlock.querySelector('button');
+            originalButton.id = 'originalButton';
+            mirroredButton.id = 'mirroredButton';
+
+            // Step 5: Clear the existing content of mirrorBlock
             document.getElementById('mirrorBlock').innerHTML = '';
 
-            // Step 7: Insert the cloned element into the mirror block container
+            // Step 6: Insert the cloned element into the mirror block container
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
+
+            // Step 7: Add event listener to the mirror button
+            var mirroredButton = mirrorBlock.querySelector('#mirroredButton');
+            mirroredButton.addEventListener('click', handleClick);
         }
 
         // Example event handler for the button click
         function handleClick() {
-            alert("Button in the original code block clicked!");
+            alert("Button clicked!");
         }
     </script>
  </body> 
