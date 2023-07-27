@@ -67,6 +67,61 @@
             console.log("Popup with ID " + popupContentId + " triggered.");
         }
     </script>
+
+    <script>
+  // JavaScript部分
+// 定义togglePopup函数
+function togglePopup(popup) {
+  if (!popupStatus[popup.id]) {
+    popup.style.display = 'block';
+  } else {
+    popup.style.display = 'none';
+  }
+  popupStatus[popup.id] = !popupStatus[popup.id];
+}
+
+// 获取所有弹窗的关闭按钮
+const closeBtns = document.querySelectorAll('.close');
+closeBtns.forEach(function (btn) {
+  btn.addEventListener('click', function (event) {
+    event.stopPropagation();
+    const popup = this.parentNode;
+    togglePopup(popup);
+  });
+});
+
+// 获取所有的弹窗并初始化显示状态
+const popups = document.querySelectorAll('.popup');
+const popupStatus = {}; // 定义一个对象用于保存每个弹窗的显示状态
+
+popups.forEach(function (popup) {
+  popupStatus[popup.id] = false; // 初始化每个弹窗状态为隐藏
+});
+
+// 点击页面其他位置时隐藏弹窗
+document.addEventListener('click', function (event) {
+  popups.forEach(function (popup) {
+    if (event.target !== popup && !popup.contains(event.target)) {
+      popup.style.display = 'none';
+      popupStatus[popup.id] = false;
+    }
+  });
+});
+
+// 为每个按钮添加点击事件监听器
+const buttons = document.querySelectorAll('button[id^="btn"]');
+buttons.forEach(function (btn) {
+  const popupId = btn.dataset.popup; // 获取按钮上的自定义数据属性data-popup
+  const popup = document.getElementById(popupId);
+
+  if (popup) {
+    btn.addEventListener('click', function (event) {
+      event.stopPropagation();
+      togglePopup(popup);
+    });
+  }
+});
+    </script>
  </body> 
  </html> 
      <div class="menu">     
