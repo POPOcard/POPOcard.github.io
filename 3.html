@@ -69,7 +69,7 @@
     </script>
 
     <script>
-  // JavaScript部分
+ // JavaScript部分
 // 定义togglePopup函数
 function togglePopup(popup) {
   if (!popupStatus[popup.id]) {
@@ -109,7 +109,7 @@ document.addEventListener('click', function (event) {
 });
 
 // 为每个按钮添加点击事件监听器
-const buttons = document.querySelectorAll('button[id^="btn"]');
+const buttons = document.querySelectorAll('[id^="btn"]');
 buttons.forEach(function (btn) {
   const popupId = btn.dataset.popup; // 获取按钮上的自定义数据属性data-popup
   const popup = document.getElementById(popupId);
@@ -121,6 +121,7 @@ buttons.forEach(function (btn) {
     });
   }
 });
+
     </script>
  </body> 
  </html> 
