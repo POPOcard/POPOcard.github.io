@@ -10,7 +10,7 @@
   
 
     <script>
-      // Automatically create the mirrors on page load
+       // Automatically create the mirrors on page load
         document.addEventListener("DOMContentLoaded", function() {
             createMirrors();
         });
@@ -54,7 +54,7 @@
 
         // Function to handle popup logic for both original and mirrored buttons
         function openMirroredPopup() {
-            var popupContentId = this.getAttribute('data-popup');
+            var popupContentId = this.getAttribute('data-popup-id');
             var popupContent = document.getElementById(popupContentId);
             showPopup(popupContent);
         }
