@@ -10,36 +10,41 @@
   
 
     <script>
-     // Automatically create the mirror on page load
+    // Automatically create the mirrors on page load
         document.addEventListener("DOMContentLoaded", function() {
-            createMirror();
+            createMirrors();
         });
 
-        function createMirror() {
-            // Step 1: Get the original code block element
-            var codeBlock = document.getElementById('codeBlock');
+        function createMirrors() {
+            // Step 1: Get all original code blocks
+            var codeBlocks = document.getElementsByClassName('codeBlock');
 
-            // Step 2: Clone the original code block's children (with events)
+            // Step 2: Create mirrors for each code block
+            for (var i = 0; i < codeBlocks.length; i++) {
+                var codeBlock = codeBlocks[i];
+                createMirror(codeBlock);
+            }
+        }
+
+        function createMirror(codeBlock) {
+            // Step 1: Clone the original code block's children (with events)
             var mirrorContent = codeBlock.cloneNode(true).childNodes;
 
-            // Step 3: Create a new div for the mirrored code block
+            // Step 2: Create a new div for the mirrored code block
             var mirrorBlock = document.createElement('div');
 
-            // Step 4: Append the cloned content to the mirror block
+            // Step 3: Append the cloned content to the mirror block
             for (var i = 0; i < mirrorContent.length; i++) {
                 mirrorBlock.appendChild(mirrorContent[i].cloneNode(true));
             }
 
-            // Step 5: Remove the id attribute to avoid duplicate ids
+            // Step 4: Remove the id attribute to avoid duplicate ids
             mirrorBlock.removeAttribute('id');
 
-            // Step 6: Clear the existing content of mirrorBlock
-            document.getElementById('mirrorBlock').innerHTML = '';
-
-            // Step 7: Insert the cloned element into the mirror block container
+            // Step 5: Clear the existing content of mirrorBlock
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
-
-            // Step 8: Add event listeners to the mirror buttons
+            
+            // Step 6: Add event listeners to the mirror buttons
             var mirroredButtons = mirrorBlock.querySelectorAll('.popup-btn');
             for (var j = 0; j < mirroredButtons.length; j++) {
                 var button = mirroredButtons[j];
@@ -964,7 +969,8 @@
 
 
                
- <div id="codeBlock">
+     <div class="codeBlock">
+
       
       <div id="floating-container">     
          <img id="thumbnail" src="https://static.91haoka.cn/1688437953HF4.jpg" alt="Thumbnail Image">     
@@ -1074,7 +1080,7 @@
        <button id="bt1"style="color: white;"><b>免费领取</b></button>     
      </a>     
        </div>     
-         </div></div>
+         </div></div></div>
 
  <div id="floating-container">      
           <img id="thumbnail" src="https://static.91haoka.cn/1689653784CsP.jpg" alt="Thumbnail Image">      
@@ -2725,7 +2731,8 @@
         </div>      
           </div></div>  
   
-  
+       <div class="codeBlock">
+
   <div id="floating-container">      
           <img id="thumbnail" src="https://static.91haoka.cn/1690328828CbE.jpg" alt="Thumbnail Image">      
           <div>     
@@ -2984,7 +2991,7 @@
         <button id="bt1"style="color: white;"><b>免费领取</b></button>      
       </a>      
         </div>      
-          </div></div>    
+          </div></div>    </div> 
   
   
   
