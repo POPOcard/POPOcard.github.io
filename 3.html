@@ -10,10 +10,7 @@
   
 
     <script>
-   // An array to store popup button information
-        var popupButtonsInfo = [];
-
-        // Automatically create the mirrors on page load
+    // Automatically create the mirrors on page load
         document.addEventListener("DOMContentLoaded", function() {
             createMirrors();
         });
@@ -46,22 +43,19 @@
 
             // Step 5: Clear the existing content of mirrorBlock
             document.getElementById('mirrorBlock').appendChild(mirrorBlock);
-
+            
             // Step 6: Add event listeners to the mirror buttons
             var mirroredButtons = mirrorBlock.querySelectorAll('.popup-btn');
             for (var j = 0; j < mirroredButtons.length; j++) {
                 var button = mirroredButtons[j];
-                button.onclick = null; // Remove the original onclick attribute
-                button.addEventListener('click', createMirroredPopupHandler(button));
+                button.onclick = openMirroredPopup; // Set the same event handler for all buttons
             }
         }
 
-        // Function to create a handler for mirrored popups
-        function createMirroredPopupHandler(button) {
-            return function() {
-                var popupContentId = button.getAttribute('data-popup');
-                openPopup(popupContentId);
-            };
+        // Function to handle popup logic for both original and mirrored buttons
+        function openMirroredPopup() {
+            var popupContentId = this.getAttribute('data-popup');
+            openPopup(popupContentId);
         }
 
         // Function to open popups
