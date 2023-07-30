@@ -2,7 +2,38 @@
    <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2></center>   
    <link rel="stylesheet" href="caidan.css"> <link rel="stylesheet" href="caidan5.css"> <link rel="stylesheet" href="caidan4.css"> <link rel="stylesheet" href="xingmu.css"><link rel="stylesheet" href="tab.css">  <script src="caidan.js"> </script><script src="jiyi.js">   </script> <script src="wxys.js"> </script> <script src="2.js"></script>
 
-<script src="/js/gonggao.js"></script>
+<script src="/js/gonggao.js"></script> <script>
+    function showPopup(url) {
+      var popupContainer = document.getElementById("popupContainer");
+      var xmlhttp = new XMLHttpRequest();
+      
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+          var popupContent = xmlhttp.responseText;
+          popupContainer.innerHTML = '<div class="popup">' + popupContent + '</div>';
+          popupContainer.style.display = "block";
+
+          // 添加关闭按钮功能
+          var closeButton = document.createElement("span");
+          closeButton.classList.add("popup-close");
+          closeButton.innerHTML = "&times;";
+          closeButton.onclick = function() {
+            closePopup();
+          };
+          popupContainer.firstElementChild.appendChild(closeButton);
+        }
+      };
+
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+    }
+    
+    function closePopup() {
+      var popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+      popupContainer.innerHTML = "";
+    }
+  </script>
      <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="顶部头图">    
 </a>  </header>  <br> 
     <div class="menu">    
@@ -57,7 +88,9 @@
      </div>   
             <div id="tab1" class="tab">      
               <h2>长期套餐［页面可放大］</h2>
-
+<button class="button" onclick="showPopup('//popocard.github.io/package/shandong.html')">弹窗按钮1</button>
+ 
+  <div class="popup-container" id="popupContainer"></div>
 <div id="floating-container">   
        <img id="thumbnail" src="https://static.91haoka.cn/1686740391oE5.jpg" alt="Thumbnail Image">   
             <div>    <div class="new-product">返现30元</div>
