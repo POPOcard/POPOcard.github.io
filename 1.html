@@ -1,3 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>动态生成弹窗示例</title>
+  <style>
+    /* 样式可以根据需求进行自定义 */
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
 
+    .popup-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999; /* 确保弹窗在其他元素之上显示 */
+    }
 
-<meta http-equiv="refresh" content="0;url=http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=9798" >
+    .popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 98%; /* 设置弹窗宽度为屏幕宽度的98% */
+      max-height: 90%; /* 设置弹窗内容的最大高度 */
+      overflow-y: auto; /* 允许出现纵向滚动以查看过长的内容 */
+      padding: 20px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style> <link rel="stylesheet" href="/css/tab.css">  
+</head>
+<body>
+  <button class="button" onclick="showPopup('/package/shandong.html')">弹窗按钮1</button>
+
+  <div class="popup-container" id="popupContainer"></div>
+
+  <script>
+    function showPopup(url) {
+      var popupContainer = document.getElementById("popupContainer");
+      var xmlhttp = new XMLHttpRequest();
+      
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+          var popupContent = xmlhttp.responseText;
+          popupContainer.innerHTML = '<div class="popup">' + popupContent + '</div>';
+          popupContainer.style.display = "block";
+
+          // 添加关闭按钮功能
+          var closeButton = document.createElement("span");
+          closeButton.classList.add("popup-close");
+          closeButton.innerHTML = "&times;";
+          closeButton.onclick = function() {
+            closePopup();
+          };
+          popupContainer.firstElementChild.appendChild(closeButton);
+        }
+      };
+
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+    }
+    
+    function closePopup() {
+      var popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+      popupContainer.innerHTML = "";
+    }
+  </script>
+</body>
+</html>
