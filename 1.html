@@ -8,7 +8,7 @@
  </head>  <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg" alt="顶部头图">     
  </a>  </header>  <br>  
   
- <style>
+<style>
     /* 样式可以根据需求进行自定义 */
     .button {
       background-color: #4CAF50;
@@ -39,15 +39,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 98%; /* 设置弹窗宽度为屏幕宽度的98% */
-      max-height: 90%; /* 设置弹窗内容的最大高度 */
+      width: 97%; /* 设置弹窗宽度为屏幕宽度的98% */
+       max-width: 96%;
+      max-height: 100%; /* 设置弹窗内容的最大高度 */
       overflow-y: auto; /* 允许出现纵向滚动以查看过长的内容 */
       padding: 20px;
       background-color: #f1f1f1;
       border: 1px solid #ccc;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       border-radius: 8px;
-      font-size: 16px; /* 设置弹窗内容的字体大小为16px */
     }
 
     .popup-close {
@@ -56,20 +56,7 @@
       right: 10px;
       cursor: pointer;
     }
-
-    .popup-close-bottom {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .popup-close-right {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
-  </style>
-  <script>
+  </style> <script>
     function showPopup(url) {
       var popupContainer = document.getElementById("popupContainer");
       var xmlhttp = new XMLHttpRequest();
@@ -127,7 +114,9 @@
         closePopup();
       }
     });
-  </script>
+  </script>  </script><link rel="stylesheet" href="//popocard.github.io/css/tab.css">  
+
+
 
   
  </body> 
@@ -329,7 +318,7 @@
       </div>     
         <div id="floating-menu">  
 <button class="button" onclick="showPopup('//popocard.github.io/package/shandong.html')">弹窗按钮1</button>
- <div class="popup-container" id="popupContainer"></div>
+ 
  
    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   
      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218.html?id=14827">     
