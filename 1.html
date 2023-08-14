@@ -8,7 +8,115 @@ html><head><meta charset="UTF-8"><title>恩水通信</title><html><script async 
  </head>  <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg">     
  </a>  </header>  <br>  
 
-  
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品筛选</title>
+  <style>
+    /* 添加你的样式代码 */
+    /* 样式代码可以用于美化页面元素的外观和布局 */
+  </style>
+</head>
+<body>
+  <h1>商品筛选</h1>
+
+  <form id="filterForm">
+    <label>运营商：</label>
+    <input type="radio" name="operator" value="all" checked>不限
+    <input type="radio" name="operator" value="telecom">电信
+    <input type="radio" name="operator" value="mobile">移动
+    <input type="radio" name="operator" value="unicom">联通
+
+    <br>
+
+    <label>套餐性质：</label>
+    <input type="radio" name="packageType" value="all" checked>不限
+    <input type="radio" name="packageType" value="longTerm">长期
+    <input type="radio" name="packageType" value="shortTerm">短期
+
+    <br>
+
+    <label>最低申请年龄：</label>
+    <input type="radio" name="minAge" value="all" checked>不限
+    <input type="radio" name="minAge" value="16">16周岁
+    <input type="radio" name="minAge" value="18">18周岁
+
+    <br>
+
+    <label>可发货地区：</label>
+    <input type="radio" name="deliveryArea" value="all" checked>不限
+    <input type="radio" name="deliveryArea" value="Yunnan">云南
+    <input type="radio" name="deliveryArea" value="Beijing">北京
+
+    <br>
+  </form>
+
+  <div id="results">
+    <!-- 这里将显示筛选结果 -->
+  </div>
+
+  <script>
+    // 在这里添加你的JavaScript代码
+    // 你可以使用JavaScript监听各个选项的改变事件，并在事件触发时执行筛选逻辑
+
+    const form = document.getElementById('filterForm');
+    const resultsDiv = document.getElementById('results');
+
+    form.addEventListener('change', function(event) {
+      // 阻止默认表单提交行为
+      event.preventDefault();
+
+      // 获取用户选择的筛选条件
+      const operator = document.querySelector('input[name="operator"]:checked').value;
+      const packageType = document.querySelector('input[name="packageType"]:checked').value;
+      const minAge = document.querySelector('input[name="minAge"]:checked').value;
+      const deliveryArea = document.querySelector('input[name="deliveryArea"]:checked').value;
+
+      // 检查是否所有选项都处于“不限”状态
+      const allUnlimited = (operator === 'all' && packageType === 'all' && minAge === 'all' && deliveryArea === 'all');
+
+      // 在这里编写筛选逻辑
+      // 你可以根据用户选择的条件，从后端获取符合条件的商品数据并显示在页面上
+      // 也可以通过JavaScript直接过滤页面已有的商品数据并显示符合条件的结果
+
+      if (allUnlimited) {
+        // 如果所有选项都处于“不限”状态，则显示所有内容
+        displayAllContent();
+      } else {
+        // 否则根据选项进行筛选并显示结果
+        const filteredResults = filterResults(operator, packageType, minAge, deliveryArea);
+        displayResults(filteredResults);
+      }
+    });
+
+    // 示例：根据条件筛选商品
+    function filterResults(operator, packageType, minAge, deliveryArea) {
+      // 在这里编写你的商品数据筛选逻辑
+      // 返回符合条件的商品数据
+      // 示例：这里返回一个空数组，表示没有商品数据
+      return [];
+    }
+
+    // 示例：显示所有内容
+    function displayAllContent() {
+      resultsDiv.innerHTML = '<p>所有内容都会显示在这里。</p>';
+    }
+
+    // 示例：显示筛选结果
+    function displayResults(filteredResults) {
+      let html = '<ul>';
+      for (const product of filteredResults) {
+        html += `<li>${product.name}</li>`;
+      }
+      html += '</ul>';
+      resultsDiv.innerHTML = html;
+    }
+  </script>
+</body>
+</html>
+
 <style>
     /* 样式可以根据需求进行自定义 */
     .button {
