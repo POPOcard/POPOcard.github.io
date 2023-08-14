@@ -97,36 +97,7 @@
  </head>  <header>   
 
 
-  <form id="filterForm">
-    <label>运营商：</label>
-    <input type="radio" name="operator" value="all" checked>不限
-    <input type="radio" name="operator" value="telecom">电信
-    <input type="radio" name="operator" value="mobile">移动
-    <input type="radio" name="operator" value="unicom">联通
-
-    <br>
-
-    <label>套餐性质：</label>
-    <input type="radio" name="packageType" value="all" checked>不限
-    <input type="radio" name="packageType" value="longTerm">长期
-    <input type="radio" name="packageType" value="shortTerm">短期
-
-    <br>
-
-    <label>最低申请年龄：</label>
-    <input type="radio" name="minAge" value="all" checked>不限
-    <input type="radio" name="minAge" value="16">16周岁
-    <input type="radio" name="minAge" value="18">18周岁
-
-    <br>
-
-    <label>可发货地区：</label>
-    <input type="radio" name="deliveryArea" value="all" checked>不限
-    <input type="radio" name="deliveryArea" value="Yunnan">云南
-    <input type="radio" name="deliveryArea" value="Beijing">北京
-
-    <br>
-</form>
+ 
 
 
 	 
@@ -169,6 +140,7 @@
              </a>   </div>     
              <br>     
       <div class="tab-menu">      
+	          <button onclick="openTab(event, 'tab8')" style="color: #5B5B5B;"><h1>筛选</h1></button>
           <button class="active"onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>  
 
           <button onclick="openTab(event, 'tab7')" style="color: #5B5B5B;"><h1>独家</h1></button>   
@@ -181,7 +153,7 @@
      <button onclick="openTab(event, 'tab4')" style="color: #5B5B5B;"><h1>电话手表</h1></button>      
   
       <button onclick="openTab(event, 'tab5')" style="color: #5B5B5B;"><h1>超大通话</h1></button>  
-	       <button onclick="openTab(event, 'tab8')" style="color: #5B5B5B;"><h1>筛选</h1></button>
+	      
   
 
  
@@ -195,6 +167,38 @@
   
       </div>    
  <div id="tab8" class="tab">    
+
+
+	  <form id="filterForm">
+    <label>运营商：</label>
+    <input type="radio" name="operator" value="all" checked>不限
+    <input type="radio" name="operator" value="telecom">电信
+    <input type="radio" name="operator" value="mobile">移动
+    <input type="radio" name="operator" value="unicom">联通
+
+    <br>
+
+    <label>套餐性质：</label>
+    <input type="radio" name="packageType" value="all" checked>不限
+    <input type="radio" name="packageType" value="longTerm">长期
+    <input type="radio" name="packageType" value="shortTerm">短期
+
+    <br>
+
+    <label>最低申请年龄：</label>
+    <input type="radio" name="minAge" value="all" checked>不限
+    <input type="radio" name="minAge" value="16">16周岁
+    <input type="radio" name="minAge" value="18">18周岁
+
+    <br>
+
+    <label>可发货地区：</label>
+    <input type="radio" name="deliveryArea" value="all" checked>不限
+    <input type="radio" name="deliveryArea" value="Yunnan">云南
+    <input type="radio" name="deliveryArea" value="Beijing">北京
+
+    <br>
+</form>
 <div id="results">
     <!-- 这里将显示筛选结果 -->
   </div>
