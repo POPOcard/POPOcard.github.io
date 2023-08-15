@@ -76,10 +76,12 @@
 
   
   
+ 
   <script>
     const form = document.getElementById('filterFormContainer');
     const productsDiv = document.getElementById('products');
     const resultsDiv = document.getElementById('resultsContainer');
+    const filteredProductsDiv = document.getElementById('filteredProducts');
 
     form.addEventListener('change', function(event) {
       event.preventDefault();
@@ -104,7 +106,7 @@
     });
 
     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
-      const allProducts = document.querySelectorAll('.product');
+      const allProducts = filteredProductsDiv.querySelectorAll('.product');
 
       for (const product of allProducts) {
         const productOperator = product.getAttribute('data-operator');
@@ -141,8 +143,10 @@
           (!history || productHistory)
         ) {
           product.style.display = 'block'; // 显示符合条件的商品
+          product.querySelector('.tab').style.display = 'block'; // 显示选项卡内容
         } else {
           product.style.display = 'none'; // 隐藏不符合条件的商品
+          product.querySelector('.tab').style.display = 'none'; // 隐藏选项卡内容
         }
       }
     }
@@ -360,9 +364,35 @@
         <span><font color="red">推荐</h1></font></span>
       </label>
     </div>
-  </div> 
-<div id="resultsContainer">
+ 
+
+  <div id="resultsContainer">
     <!-- 这里将显示筛选结果 -->
+    <div id="filteredProducts">
+      <div class="product" 
+           data-operator="mobile" 
+           data-package-type="longTerm" 
+           data-min-age="16" 
+           data-delivery-area="Yunnan" 
+           data-rollover="true" 
+           data-broadband="false" 
+           data-location="true" 
+           data-number="false" 
+           data-nice-number="true" 
+           data-self-activate="false" 
+           data-video-member="true"
+           data-super-data="true"
+           data-super-voice="false"
+           data-recommended="true"
+           data-history="false">
+        商品 1（满足条件）
+        <div id="tab8" class="tab">
+          <!-- 这里是选项卡内容 -->
+        </div>
+      </div>
+      <!-- ...（其他商品信息）... -->
+    </div>
+  </div>
   
 
  
