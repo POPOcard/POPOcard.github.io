@@ -220,10 +220,6 @@
     <!-- ...（其他商品信息）... -->
   </div>
 
-  <!-- 商品信息，用于展示 -->
-  <div id="products">
-    <!-- 商品信息 -->
-  </div>
 
   
   
@@ -340,7 +336,12 @@
                       <span>福利活动</span>       
               </a>   </div>      
               <br>      
-       <div class="tab-menu">       
+       <div class="tab-menu"> 
+
+  <button onclick="openTab(event, 'tab8')" style="color: #5B5B5B;"><h1>筛选</h1></button>     
+  
+  
+      
            <button class="active"onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>   
   
            <button onclick="openTab(event, 'tab7')" style="color: #5B5B5B;"><h1>独家</h1></button>    
@@ -364,7 +365,29 @@
        <body class="{{ if is_weixin }}weixin{{ endif }}">   
   
   
-       </div>     
+       </div>    
+
+
+
+
+
+
+
+
+
+
+  <div id="tab8" class="tab">    
+  <!-- 商品信息，用于展示 -->
+  <div id="products">
+    <!-- 商品信息 -->
+  </div>
+
+
+
+
+
+
+ 
               <div id="tab1" class="tab">        
                 <h2>长期套餐［页面可放大］</h2>  
   
