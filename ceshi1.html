@@ -94,27 +94,28 @@
     });
 
     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history, resultContainer) {
-      const tabContents = document.querySelectorAll('.tab-content-item');
+  const tabContents = document.querySelectorAll('.tab-content-item');
 
-      resultContainer.innerHTML = ''; // 清空选项卡内容
+  resultContainer.innerHTML = ''; // 清空选项卡内容
 
-      tabContents.forEach(content => {
-        const contentOperator = content.getAttribute('data-operator');
-        const contentPackageType = content.getAttribute('data-package-type');
-        const contentMinAge = content.getAttribute('data-min-age');
+  tabContents.forEach(content => {
+    const contentOperator = content.getAttribute('data-operator');
+    const contentPackageType = content.getAttribute('data-package-type');
+    const contentMinAge = content.getAttribute('data-min-age');
 
-        const contentMatchesCondition = (
-          (operator === 'all' || contentOperator === operator) &&
-          (packageType === 'all' || contentPackageType === packageType) &&
-          (minAge === 'all' || contentMinAge === minAge)
-          // 还可以添加其他条件的判断
-        );
+    const contentMatchesCondition = (
+      (operator === 'all' || contentOperator === operator) &&
+      (packageType === 'all' || contentPackageType === packageType) &&
+      (minAge === 'all' || contentMinAge === minAge)
+      // 还可以添加其他条件的判断
+    );
 
-        if (contentMatchesCondition) {
-          resultContainer.appendChild(content.cloneNode(true)); // 将符合条件的内容添加到选项卡
-        }
-      });
+    if (contentMatchesCondition) {
+      const clonedContent = content.cloneNode(true);
+      resultContainer.appendChild(clonedContent); // 将符合条件的内容添加到选项卡
     }
+  });
+}
   </script></body>
 
 
@@ -348,7 +349,7 @@
          data-recommended="true"
          data-history="false">
       </div>
-    
+     <div id="filteredResults"></div>
   </div>    
   </div>    
   </div>     </div>    </div>  
