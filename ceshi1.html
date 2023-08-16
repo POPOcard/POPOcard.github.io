@@ -68,7 +68,60 @@
  
 
  
-  
+  <script>
+    // 获取各个筛选条件的 DOM 元素
+    const operatorFilter = document.querySelector('input[name="operator"]');
+    const packageTypeFilter = document.querySelector('input[name="packageType"]');
+    const minAgeFilter = document.querySelector('input[name="minAge"]');
+    const deliveryAreaFilter = document.querySelector('input[name="deliveryArea"]');
+
+    // 获取结果容器
+    const resultsContainer = document.getElementById('filteredProducts');
+
+    // 初始化筛选条件的值
+    let currentOperator = 'all';
+    let currentPackageType = 'all';
+    let currentMinAge = 'all';
+    let currentDeliveryArea = 'all';
+
+    // 监听筛选条件的变化
+    operatorFilter.addEventListener('change', updateFilters);
+    packageTypeFilter.addEventListener('change', updateFilters);
+    minAgeFilter.addEventListener('change', updateFilters);
+    deliveryAreaFilter.addEventListener('change', updateFilters);
+
+    // 更新筛选条件并显示商品
+    function updateFilters() {
+      currentOperator = operatorFilter.value;
+      currentPackageType = packageTypeFilter.value;
+      currentMinAge = minAgeFilter.value;
+      currentDeliveryArea = deliveryAreaFilter.value;
+
+      filterAndDisplay();
+    }
+
+    function filterAndDisplay() {
+      const allProducts = document.querySelectorAll('.product');
+
+      allProducts.forEach(product => {
+        const operator = product.getAttribute('data-operator');
+        const packageType = product.getAttribute('data-package-type');
+        const minAge = product.getAttribute('data-min-age');
+        const deliveryArea = product.getAttribute('data-delivery-area');
+
+        if (
+          (currentOperator === 'all' || currentOperator === operator) &&
+          (currentPackageType === 'all' || currentPackageType === packageType) &&
+          (currentMinAge === 'all' || currentMinAge === minAge) &&
+          (currentDeliveryArea === 'all' || currentDeliveryArea === deliveryArea)
+        ) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  </script>
   
   
   <script>
@@ -360,34 +413,25 @@
       <!-- 商品信息 -->
     </div>
   </div>
- 
 
 
 
 </div></div></div>
 
- 
+  <div id="tabsContainer">
               <div id="tab1" class="tab">        
                 <h2>长期套餐［页面可放大］</h2>  
               
- 
+ <div id="tabContentContainer">
+         <div class="tab-content tab1">
+      <!-- 选项卡 1 内容 -->
       <div class="product" id="product1"
-         data-operator="mobile" 
-         data-package-type="longTerm" 
-         data-min-age="16" 
-         data-delivery-area="Yunnan" 
-         data-rollover="true" 
-         data-broadband="false" 
-         data-location="true" 
-         data-number="false" 
-         data-nice-number="true" 
-         data-self-activate="false" 
-         data-video-member="true"
-         data-super-data="true"
-         data-super-voice="false"
-         data-recommended="true"
-         data-history="false">
-     
+           data-operator="mobile" 
+           data-package-type="longTerm" 
+           data-min-age="16" 
+           data-delivery-area="Yunnan">
+        商品 1（选项卡 1）
+      </div>
    选项卡1
  
      
