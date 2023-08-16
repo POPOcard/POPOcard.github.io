@@ -68,7 +68,50 @@
  
 
  
-  
+   <script>
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        filterAndDisplay();
+      });
+    });
+
+    const form = document.getElementById('filterFormContainer');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    form.addEventListener('change', function(event) {
+      event.preventDefault();
+      filterAndDisplay();
+    });
+
+    function filterAndDisplay() {
+      // 获取当前选中的选项卡
+      const activeTab = document.querySelector('.tab.active').getAttribute('data-tab');
+      const products = document.querySelectorAll(`.tab-content.${activeTab} .product`);
+
+      products.forEach(product => {
+        const productId = product.getAttribute('id');
+        const operatorFilter = document.querySelector(`#${productId} input[name="operator"]:checked`).value;
+        const packageTypeFilter = document.querySelector(`#${productId} input[name="packageType"]:checked`).value;
+        const minAgeFilter = document.querySelector(`#${productId} input[name="minAge"]:checked`).value;
+        const deliveryAreaFilter = document.querySelector(`#${productId} input[name="deliveryArea"]:checked`).value;
+
+        if (
+          (operatorFilter === 'all' || operatorFilter === product.getAttribute('data-operator')) &&
+          (packageTypeFilter === 'all' || packageTypeFilter === product.getAttribute('data-package-type')) &&
+          (minAgeFilter === 'all' || minAgeFilter === product.getAttribute('data-min-age')) &&
+          (deliveryAreaFilter === 'all' || deliveryAreaFilter === product.getAttribute('data-delivery-area'))
+          // ...（其他条件判断）...
+        ) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  </script>
 
   
   
@@ -367,14 +410,11 @@
 
 </div>
 
-
- 
-              <div id="tab1" class="tab">        
-                <h2>长期套餐［页面可放大］</h2>  
   <div id="tabsContainer">
   <div class="tab" data-tab="tab1">
- <div id="tab1" class="tab">   
-    </div>
+              <div id="tab1" class="tab">        
+                <h2>长期套餐［页面可放大］</h2>  
+ </div>
  <div id="tabContentContainer">
 <div class="tab-content tab1">
       <div class="product" id="product1"
