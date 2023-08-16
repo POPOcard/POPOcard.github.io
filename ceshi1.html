@@ -5,7 +5,7 @@
   <script src="/js/caidan.js"> </script>  
   <script src="/js/jiyi.js">    </script> <script src="/js/wxllq.js"> </script> <script src="/js/2.js"></script><script src="/js/tob3.js"></script>  
 
-    <style>
+   <style>
     body {
       font-family: Arial, sans-serif;
     }
@@ -232,39 +232,39 @@
   <div id="tab8" class="tab">    
   <!-- 商品信息，用于展示 -->
 
- <div id="filterFormContainer">
-    <div>
+  <div id="filterFormContainer">
+    <div><div>
 <span><h2><b>运营商：</b></span>
       <label>
         <input type="radio" name="operator" value="all" checked>
-        <span>全部</span>
+        <span>全部</span>&ensp;
       </label>
       <label>
         <input type="radio" name="operator" value="mobile">
-        <span>移动</span>
+        <span>移动</span>&ensp;
       </label>
       <label>
         <input type="radio" name="operator" value="unicom">
-        <span>联通</span>
+        <span>联通</span>&ensp;
       </label>
       <label>
         <input type="radio" name="operator" value="telecom">
-        <span>电信</span>
+        <span>电信</span>&ensp;
       </label>
       <label>
         <input type="radio" name="operator" value="bcast">
         <span>广电</span>
       </label>
     </div>
-   
-<div><span><h2><b>性&nbsp&nbsp&nbsp&nbsp质：</b></span>
+   <div>
+<span><h2><b>性&nbsp&nbsp&nbsp&nbsp质：</b></span>
       <label>
         <input type="radio" name="packageType" value="all" checked>
-        <span>全部</span>
+        <span>全部</span>&ensp;
       </label>
       <label>
         <input type="radio" name="packageType" value="longTerm">
-        <span>长期卡</span>
+        <span>长期卡</span>&ensp;
       </label>
       <label>
         <input type="radio" name="packageType" value="shortTerm">
@@ -275,11 +275,11 @@
 <span><h2><b>年&nbsp&nbsp&nbsp&nbsp龄：</b></span>
       <label>
         <input type="radio" name="minAge" value="all" checked>
-        <span>全部</span>
+        <span>全部</span>&ensp;
       </label>
       <label>
         <input type="radio" name="minAge" value="16">
-        <span>16周岁</span>
+        <span>16周岁</span>&ensp;
       </label>
       <label>
         <input type="radio" name="minAge" value="18">
@@ -290,19 +290,19 @@
 <div><span><h2><b>可发货：</b></span>
       <label>
         <input type="radio" name="deliveryArea" value="all" checked>
-        <span>全国</span>
+        <span>全国</span>&ensp;
       </label>
       <label>
         <input type="radio" name="deliveryArea" value="Tibet">
-        <span>西藏</span>
+        <span>西藏</span>&ensp;
       </label>
       <label>
         <input type="radio" name="deliveryArea" value="Beijing">
-        <span>北京</span>
+        <span>北京</span>&ensp;
       </label>
       <label>
         <input type="radio" name="deliveryArea" value="Xinjiang">
-        <span>新疆</span>
+        <span>新疆</span>&ensp;
       </label>
       <label>
         <input type="radio" name="deliveryArea" value="Yunnan">
@@ -310,51 +310,50 @@
       </label>
     </div>
     <div>
-<span><b><h2>【更多选项：可多选】</b></span>
+<span><b><h2>【更多选项：可多选】</b></span><br><br>
 
 <label>
         <input type="checkbox" name="selfActivate">
         <span>自己激活</span>
-      </label>
+      </label>&ensp; 
 <label>
         <input type="checkbox" name="number">
         <span>可选号</span>
-      </label>
+      </label>&ensp; 
       <label>
         <input type="checkbox" name="rollover">
         <span>流量可结转</span>
-      </label>
+      </label>&ensp; 
       <label>
         <input type="checkbox" name="broadband">
         <span>宽带</span>
-      </label>
+      </label>&ensp; 
       <label>
         <input type="checkbox" name="location">
         <span>可选归属地</span>
-      </label>
+      </label>&ensp; 
       
       <label>
         <input type="checkbox" name="niceNumber">
         <span>靓号</span>
-      </label>
+      </label>&ensp; 
       
       <label>
         <input type="checkbox" name="videoMember">
         <span>送视频会员</span>
-      </label>
+      </label>&ensp; 
       <label>
         <input type="checkbox" name="superData">
         <span>超大流量</span>
-      </label>
+      </label>&ensp; 
       <label>
         <input type="checkbox" name="superVoice">
         <span>超大语音</span>
-      </label>
-      
+      </label>&ensp; 
       <label>
         <input type="checkbox" name="history">
         <span>可查20年</span>
-      </label>
+      </label>&ensp; 
 <label>
         <input type="checkbox" name="recommended">
         <span><font color="red">推荐</h2></font></span>
@@ -373,14 +372,16 @@
 </div>
 
 
- 
+ <div id="tabsContainer">
+  <div class="tab" data-tab="tab1">
               <div id="tab1" class="tab">        
                 <h2>长期套餐［页面可放大］</h2>  
+  <div id="tabContentContainer">
   
   
-  
- <div id="filteredProducts">
-<div class="product" 
+<div class="tab-content tab1">
+      <!-- 选项卡 1 内容 -->
+      <div class="product" id="product1"
          data-operator="mobile" 
          data-package-type="longTerm" 
          data-min-age="16" 
