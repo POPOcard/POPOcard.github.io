@@ -66,32 +66,9 @@
 
 
  
-<script>
+ <script>
     // 您的筛选逻辑代码
-    function filterAndDisplay(operator, packageType, minAge, deliveryArea, /*...*/) {
-      // 获取选项卡内容
-      const tabContents = document.querySelectorAll('.tab-content-item');
-
-      // 遍历选项卡内容，根据筛选条件显示或隐藏
-      tabContents.forEach(content => {
-        const contentOperator = content.getAttribute('data-operator');
-        const contentPackageType = content.getAttribute('data-package-type');
-        const contentMinAge = content.getAttribute('data-min-age');
-
-        const contentMatchesCondition = /* 根据条件判断选项卡内容是否符合筛选条件 */;
-        content.style.display = contentMatchesCondition ? 'block' : 'none';
-      });
-    }
-  </script>
-
-
-
-
-
- 
-  <script>
     const form = document.getElementById('filterFormContainer');
-    const productsDiv = document.getElementById('products');
     const resultsDiv = document.getElementById('resultsContainer');
 
     form.addEventListener('change', function(event) {
@@ -117,47 +94,22 @@
     });
 
     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
-      const allProducts = document.querySelectorAll('.product');
+      const tabContents = document.querySelectorAll('.tab-content-item');
 
-      for (const product of allProducts) {
-        const productOperator = product.getAttribute('data-operator');
-        const productPackageType = product.getAttribute('data-package-type');
-        const productMinAge = product.getAttribute('data-min-age');
-        const productDeliveryArea = product.getAttribute('data-delivery-area');
-        const productRollover = product.getAttribute('data-rollover') === 'true';
-        const productBroadband = product.getAttribute('data-broadband') === 'true';
-        const productLocation = product.getAttribute('data-location') === 'true';
-        const productNumber = product.getAttribute('data-number') === 'true';
-        const productNiceNumber = product.getAttribute('data-nice-number') === 'true';
-        const productSelfActivate = product.getAttribute('data-self-activate') === 'true';
-        const productVideoMember = product.getAttribute('data-video-member') === 'true';
-        const productSuperData = product.getAttribute('data-super-data') === 'true';
-        const productSuperVoice = product.getAttribute('data-super-voice') === 'true';
-        const productRecommended = product.getAttribute('data-recommended') === 'true';
-        const productHistory = product.getAttribute('data-history') === 'true';
+      tabContents.forEach(content => {
+        const contentOperator = content.getAttribute('data-operator');
+        const contentPackageType = content.getAttribute('data-package-type');
+        const contentMinAge = content.getAttribute('data-min-age');
 
-        if (
-          (operator === 'all' || productOperator === operator) &&
-          (packageType === 'all' || productPackageType === packageType) &&
-          (minAge === 'all' || productMinAge === minAge) &&
-          (deliveryArea === 'all' || productDeliveryArea === deliveryArea) &&
-          (!rollover || productRollover) &&
-          (!broadband || productBroadband) &&
-          (!location || productLocation) &&
-          (!number || productNumber) &&
-          (!niceNumber || productNiceNumber) &&
-          (!selfActivate || productSelfActivate) &&
-          (!videoMember || productVideoMember) &&
-          (!superData || productSuperData) &&
-          (!superVoice || productSuperVoice) &&
-          (!recommended || productRecommended) &&
-          (!history || productHistory)
-        ) {
-          product.style.display = 'block'; // 显示符合条件的商品
-        } else {
-          product.style.display = 'none'; // 隐藏不符合条件的商品
-        }
-      }
+        const contentMatchesCondition = (
+          (operator === 'all' || contentOperator === operator) &&
+          (packageType === 'all' || contentPackageType === packageType) &&
+          (minAge === 'all' || contentMinAge === minAge)
+          // 还可以添加其他条件的判断
+        );
+        
+        content.style.display = contentMatchesCondition ? 'block' : 'none';
+      });
     }
   </script></body>
 
