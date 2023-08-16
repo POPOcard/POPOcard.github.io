@@ -5,7 +5,7 @@
   <script src="/js/caidan.js"> </script>  
   <script src="/js/jiyi.js">    </script> <script src="/js/wxllq.js"> </script> <script src="/js/2.js"></script><script src="/js/tob3.js"></script>  
 
-   <style>
+  <style>
     body {
       font-family: Arial, sans-serif;
     }
@@ -68,70 +68,17 @@
  
 
  
-  <script>
-    // 获取各个筛选条件的 DOM 元素
-    const operatorFilter = document.querySelector('input[name="operator"]');
-    const packageTypeFilter = document.querySelector('input[name="packageType"]');
-    const minAgeFilter = document.querySelector('input[name="minAge"]');
-    const deliveryAreaFilter = document.querySelector('input[name="deliveryArea"]');
-
-    // 获取结果容器
-    const resultsContainer = document.getElementById('filteredProducts');
-
-    // 初始化筛选条件的值
-    let currentOperator = 'all';
-    let currentPackageType = 'all';
-    let currentMinAge = 'all';
-    let currentDeliveryArea = 'all';
-
-    // 监听筛选条件的变化
-    operatorFilter.addEventListener('change', updateFilters);
-    packageTypeFilter.addEventListener('change', updateFilters);
-    minAgeFilter.addEventListener('change', updateFilters);
-    deliveryAreaFilter.addEventListener('change', updateFilters);
-
-    // 更新筛选条件并显示商品
-    function updateFilters() {
-      currentOperator = operatorFilter.value;
-      currentPackageType = packageTypeFilter.value;
-      currentMinAge = minAgeFilter.value;
-      currentDeliveryArea = deliveryAreaFilter.value;
-
-      filterAndDisplay();
-    }
-
-    function filterAndDisplay() {
-      const allProducts = document.querySelectorAll('.product');
-
-      allProducts.forEach(product => {
-        const operator = product.getAttribute('data-operator');
-        const packageType = product.getAttribute('data-package-type');
-        const minAge = product.getAttribute('data-min-age');
-        const deliveryArea = product.getAttribute('data-delivery-area');
-
-        if (
-          (currentOperator === 'all' || currentOperator === operator) &&
-          (currentPackageType === 'all' || currentPackageType === packageType) &&
-          (currentMinAge === 'all' || currentMinAge === minAge) &&
-          (currentDeliveryArea === 'all' || currentDeliveryArea === deliveryArea)
-        ) {
-          product.style.display = 'block';
-        } else {
-          product.style.display = 'none';
-        }
-      });
-    }
-  </script>
-  
-  
-  <script>
-    const form = document.getElementById('filterFormContainer');
+   <script>
+  const form = document.getElementById('filterFormContainer');
     const productsDiv = document.getElementById('products');
     const resultsDiv = document.getElementById('resultsContainer');
+    const filteredProductsDiv = document.getElementById('filteredProducts');
 
     form.addEventListener('change', function(event) {
       event.preventDefault();
 
+      // 获取选项卡标识
+     
       const operator = document.querySelector('input[name="operator"]:checked').value;
       const packageType = document.querySelector('input[name="packageType"]:checked').value;
       const minAge = document.querySelector('input[name="minAge"]:checked').value;
@@ -152,7 +99,7 @@
     });
 
     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
-      const allProducts = document.querySelectorAll('.product');
+      const allProducts = filteredProductsDiv.querySelectorAll('.product');
 
       for (const product of allProducts) {
         const productOperator = product.getAttribute('data-operator');
@@ -406,33 +353,34 @@
         <input type="checkbox" name="recommended">
         <span><font color="red">推荐</h2></font></span>
       </label>
-    </div>
+    </div> </div> 
   <div id="resultsContainer">
     <!-- 这里将显示筛选结果 -->
     <div id="filteredProducts">
-      <!-- 商品信息 -->
+      <div class="product" 
+           data-operator="mobile" 
+           data-package-type="longTerm" 
+           data-min-age="16" 
+          > 
+        商品 1（满足条件）
+      </div>
+      <!-- ...（其他商品信息）... -->
     </div>
+  </div>
+
+  <!-- 商品信息，用于展示 -->
+  <div id="products">
+    <!-- 商品信息 -->
   </div>
 
 
 
-</div></div></div>
+</div></div></div></div>
 
-  <div id="tabsContainer">
+
               <div id="tab1" class="tab">        
                 <h2>长期套餐［页面可放大］</h2>  
               
- <div id="tabContentContainer">
-         <div class="tab-content tab1">
-      <!-- 选项卡 1 内容 -->
-      <div class="product" id="product1"
-           data-operator="mobile" 
-           data-package-type="longTerm" 
-           data-min-age="16" 
-           data-delivery-area="Yunnan">
-        商品 1（选项卡 1）
-      </div>
-   选项卡1
  
      
 
@@ -559,7 +507,7 @@
          <button id="bt1"style="color: white;"><b>免费领取</b></button>       
        </a>       
          </div>       
-           </div></div>    <div>   </div>
+           </div></div>    <div> 
    
  <div id="floating-container">      
           <img id="thumbnail" src="https://static.91haoka.cn/1691762343QQn.jpg" alt="Thumbnail Image">      
