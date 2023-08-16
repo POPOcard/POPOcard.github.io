@@ -69,7 +69,7 @@
  <script>
     // 您的筛选逻辑代码
     const form = document.getElementById('filterFormContainer');
-    const resultsDiv = document.getElementById('resultsContainer');
+    const tab8 = document.getElementById('tab8'); // 获取指定选项卡
 
     form.addEventListener('change', function(event) {
       event.preventDefault();
@@ -90,11 +90,13 @@
       const recommended = document.querySelector('input[name="recommended"]').checked;
       const history = document.querySelector('input[name="history"]').checked;
 
-      filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history);
+      filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history, tab8);
     });
 
-    function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
+    function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history, resultContainer) {
       const tabContents = document.querySelectorAll('.tab-content-item');
+
+      resultContainer.innerHTML = ''; // 清空选项卡内容
 
       tabContents.forEach(content => {
         const contentOperator = content.getAttribute('data-operator');
@@ -107,8 +109,10 @@
           (minAge === 'all' || contentMinAge === minAge)
           // 还可以添加其他条件的判断
         );
-        
-        content.style.display = contentMatchesCondition ? 'block' : 'none';
+
+        if (contentMatchesCondition) {
+          resultContainer.appendChild(content.cloneNode(true)); // 将符合条件的内容添加到选项卡
+        }
       });
     }
   </script></body>
