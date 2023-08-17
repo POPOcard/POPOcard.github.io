@@ -284,30 +284,7 @@
   <!-- 其他选项卡的内容 -->
 </div>
    
- 
-   <script>
-  const filterForm = document.getElementById('filterFormContainer');
-  const filteredResults = document.getElementById('filteredResults');
-
-  filterForm.addEventListener('change', function(event) {
-    event.preventDefault();
-
-    // 执行筛选操作，根据条件生成符合条件的商品元素
-    const filteredProducts = []; // 用于存储符合条件的商品元素
-
-    // ... 执行筛选操作，将符合条件的商品添加到filteredProducts数组 ...
-
-    // 清空之前的结果
-    filteredResults.innerHTML = '';
-
-    // 将符合条件的商品插入到筛选结果容器中
-    filteredProducts.forEach(product => {
-      filteredResults.appendChild(product);
-    });
-  });
-
-  // ... 其他筛选逻辑 ...
-</script><script>
+ <script>
 
     const form = document.getElementById('filterFormContainer');
     const productsDiv = document.getElementById('products');
