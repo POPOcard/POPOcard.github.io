@@ -66,40 +66,7 @@
 
 
  
- <script>
-    const form = document.getElementById('filterFormContainer');
-    const productsDiv = document.getElementById('products');
-    const resultsDiv = document.getElementById('resultsContainer');
 
-    form.addEventListener('change', function(event) {
-      event.preventDefault();
-
-      const broadbandChecked = document.querySelector('input[name="broadband"]').checked;
-      // 其他筛选条件类似
-      filterAndDisplay(broadbandChecked, /* 其他条件 */);
-    });
-
-    function filterAndDisplay(broadbandChecked, /* 其他条件 */) {
-      const allProducts = productsDiv.querySelectorAll('.product');
-      resultsDiv.innerHTML = ''; // 清空之前的筛选结果
-
-      for (const product of allProducts) {
-        const productBroadband = product.getAttribute('data-broadband') === 'true';
-        // 其他属性类似
-
-        if (
-          (!broadbandChecked || productBroadband) &&
-          // 其他条件判断
-        ) {
-          product.style.display = 'block';
-          // 将筛选后的商品信息添加到结果容器中
-          resultsDiv.appendChild(product.cloneNode(true));
-        } else {
-          product.style.display = 'none';
-        }
-      }
-    }
-  </script>
   
   
   <script>
@@ -223,11 +190,11 @@
               <br>      
        <div class="tab-menu"> 
 
-  <button onclick="openTab(event, 'tab8')" style="color: #5B5B5B;"><h1>筛选</h1></button>     
+  <button class="active"onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>筛选</h1></button>  
+        <button onclick="openTab(event, 'tab8')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>     
   
   
-      
-           <button class="active"onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>   
+         
   
            <button onclick="openTab(event, 'tab7')" style="color: #5B5B5B;"><h1>独家</h1></button>    
            <button onclick="openTab(event, 'tab2')" style="color: #5B5B5B;"><h1>短期套餐</h1></button>       
@@ -258,9 +225,9 @@
 
 
 
+     </div>  
 
-
- 
+  <div id="tab1" class="tab">    
   <!-- 商品信息，用于展示 -->
 
   <div id="filterFormContainer">
@@ -389,7 +356,7 @@
         <input type="checkbox" name="recommended">
         <span><font color="red">推荐</h2></font></span>
       </label>
-    </div> </div>  
+    </div> </div>       </div>  
   
 
 
@@ -402,7 +369,7 @@
 
 
 
-              <div id="tab1" class="tab">        
+              <div id="tab8" class="tab">        
                 <h2>长期套餐［页面可放大］</h2>  
 
 
@@ -429,6 +396,7 @@
      data-super-voice="false"
      data-recommended="true"
      data-history="false">
+   33505
  <div id="floating-container">  
            <img id="thumbnail" src="https://static.91haoka.cn/1692058206F21.jpg" alt="Thumbnail Image">       
                 <div>                <div class="new-product">最新</div>     
