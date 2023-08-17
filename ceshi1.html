@@ -275,9 +275,8 @@
         <span><font color="red">推荐</h2></font></span>
       </label>
      
-  <div id="filteredResultsContainer">
-  <!-- 这里将显示筛选结果 -->
-</div>
+  <div id="filteredResults"></div>
+
  <script>
 
 
@@ -309,7 +308,10 @@
     });
 
     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
-      const allProducts = document.querySelectorAll('.product');
+  const allProducts = document.querySelectorAll('.product');
+  const filteredResultsDiv = document.getElementById('filteredResults');
+  filteredResultsDiv.innerHTML = ''; // 清空之前的结果
+
 
       for (const product of allProducts) {
         const productOperator = product.getAttribute('data-operator');
@@ -345,9 +347,8 @@
           (!recommended || productRecommended) &&
           (!history || productHistory)
         ) {
-          product.style.display = 'block'; // 显示符合条件的商品
-        } else {
-          product.style.display = 'none'; // 隐藏不符合条件的商品
+         const clonedProduct = product.cloneNode(true);
+      filteredResultsDiv.appendChild(clonedProduct);
         }
       }
     }
