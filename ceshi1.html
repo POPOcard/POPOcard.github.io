@@ -276,51 +276,40 @@
         <input type="checkbox" name="recommended">
         <span><font color="red">推荐</h2></font></span>
       </label>
- <div id="filteredResultsContainer">
-  <!-- 这里将显示筛选结果 -->
-</div>
      
 <div id="resultsContainer">
     <!-- 这里将显示筛选结果 -->
     <div id="filteredResults">
       
   </div>
-
+<div class="product">
+  <!-- 其他选项卡的内容 -->
+</div>
   </div> </div>   </div>   </div>  
  
-   <script>   function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
-  const allProducts = document.querySelectorAll('.product');
-  const filteredResultsContainer = document.getElementById('filteredResults');
-  filteredResultsContainer.innerHTML = ''; // 清空容器
+   <script>
+  const filterForm = document.getElementById('filterFormContainer');
+  const filteredResults = document.getElementById('filteredResults');
 
-  for (const product of allProducts) {
-    // 获取商品的属性
-    const productOperator = product.getAttribute('data-operator');
-    const productPackageType = product.getAttribute('data-package-type');
-    // ...（获取其他商品属性）
+  filterForm.addEventListener('change', function(event) {
+    event.preventDefault();
 
-    if (
-      // 检查商品是否符合筛选条件
-      // ...（筛选条件的逻辑）
-    ) {
-      // 创建商品的HTML元素
-      const productElement = document.createElement('div');
-      productElement.classList.add('product');
-      // ...（设置商品属性）
+    // 执行筛选操作，根据条件生成符合条件的商品元素
+    const filteredProducts = []; // 用于存储符合条件的商品元素
 
-      // 创建商品的HTML内容，根据你的需要修改
-      productElement.innerHTML = `
-        <h2 class="product-title">${productTitle}</h2>
-        <p class="product-description">${productDescription}</p>
-        <!-- ... 其他商品内容 ... -->
-      `;
+    // ... 执行筛选操作，将符合条件的商品添加到filteredProducts数组 ...
 
-      // 将商品元素添加到filteredResultsContainer中
-      filteredResultsContainer.appendChild(productElement);
-    }
-  }
-}
-   </script><script>
+    // 清空之前的结果
+    filteredResults.innerHTML = '';
+
+    // 将符合条件的商品插入到筛选结果容器中
+    filteredProducts.forEach(product => {
+      filteredResults.appendChild(product);
+    });
+  });
+
+  // ... 其他筛选逻辑 ...
+</script><script>
 
     const form = document.getElementById('filterFormContainer');
     const productsDiv = document.getElementById('products');
