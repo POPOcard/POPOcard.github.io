@@ -12,7 +12,7 @@
         top: 3%;
         left: 1%;
         right: 1%;
-        max-width: 80%;
+        max-width: 100%;
         background-color: #f2f2f2;
         padding: 20px;
         text-align: center;
