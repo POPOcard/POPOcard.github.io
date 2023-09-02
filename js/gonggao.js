@@ -1,45 +1,6 @@
 (function() {
   var styles = `
-    <style>
-      body.custom-unique-page {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-      #unique-announcement-container {
-        display: none;
-        position: fixed;
-        top: 3%;
-        left: 1%;
-        right: 1%;
-        max-width: 100%;
-        background-color: #f2f2f2;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        border: 2px solid #ccc;
-        transition: transform 0.3s ease-in-out;
-        z-index: 9999;
-      }
-      @-moz-document url-prefix() {
-        /* Firefox 浏览器特定样式修复 */
-        #unique-announcement-container {
-          transform: none;
-        }
-        #unique-announcement-container h2 {
-          font-size: 24px !important;
-        }
-        #unique-announcement-container p {
-          font-size: 16px !important;
-        }
-        .additional-text {
-          font-size: 16px !important;
-        }
-      }
-    </style>
 
-   `; 
-  
    document.head.insertAdjacentHTML('beforeend', styles); 
   
    var announcementContainer = document.createElement('div'); 
