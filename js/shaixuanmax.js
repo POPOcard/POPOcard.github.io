@@ -68,4 +68,4 @@ const form = document.getElementById('filterFormContainer');
            product.style.display = 'none'; // 隐藏不符合条件的商品 
          } 
        } 
-     } 
+     }   
