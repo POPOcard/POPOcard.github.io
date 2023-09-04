@@ -1,13 +1,14 @@
 const form = document.getElementById('filterFormContainer');
 const productsDiv = document.getElementById('products');
+const resultsDiv = document.getElementById('resultsContainer');
 
 form.addEventListener('change', function (event) {
   event.preventDefault();
 
-  const operator = getSelectedValues('operator');
-  const packageType = getSelectedValues('packageType');
-  const minAge = getSelectedValues('minAge');
-  const deliveryArea = getSelectedValues('deliveryArea');
+  const operator = document.querySelector('input[name="operator"]:checked').value;
+  const packageType = document.querySelector('input[name="packageType"]:checked').value;
+  const minAges = Array.from(document.querySelectorAll('input[name="minAge"]:checked')).map(input => input.value);
+  const deliveryAreas = Array.from(document.querySelectorAll('input[name="deliveryArea"]:checked')).map(input => input.value);
   const rollover = document.querySelector('input[name="rollover"]').checked;
   const broadband = document.querySelector('input[name="broadband"]').checked;
   const location = document.querySelector('input[name="location"]').checked;
@@ -20,22 +21,18 @@ form.addEventListener('change', function (event) {
   const recommended = document.querySelector('input[name="recommended"]').checked;
   const history = document.querySelector('input[name="history"]').checked;
 
-  filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history);
+  filterAndDisplay(operator, packageType, minAges, deliveryAreas, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history);
 });
 
-function getSelectedValues(name) {
-  const selectedCheckboxes = Array.from(document.querySelectorAll(`input[name="${name}"]:checked`));
-  return selectedCheckboxes.map(checkbox => checkbox.value);
-}
-
-function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
+function filterAndDisplay(operator, packageType, minAges, deliveryAreas, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
   const allProducts = document.querySelectorAll('.product');
 
   allProducts.forEach(product => {
     const productOperator = product.getAttribute('data-operator');
     const productPackageType = product.getAttribute('data-package-type');
-    const productMinAges = product.getAttribute('data-min-ages').split(' ');
+    const productMinAges = product.getAttribute('data-min-ages').split(' ').map(age => parseInt(age));
     const productDeliveryAreas = product.getAttribute('data-delivery-areas').split(' ');
+
     const productRollover = product.getAttribute('data-rollover') === 'true';
     const productBroadband = product.getAttribute('data-broadband') === 'true';
     const productLocation = product.getAttribute('data-location') === 'true';
@@ -49,10 +46,10 @@ function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover,
     const productHistory = product.getAttribute('data-history') === 'true';
 
     if (
-      (operator.includes('all') || operator.includes(productOperator)) &&
-      (packageType.includes('all') || packageType.includes(productPackageType)) &&
-      (minAge.includes('all') || minAge.some(age => productMinAges.includes(age))) &&
-      (deliveryArea.includes('all') || deliveryArea.some(area => productDeliveryAreas.includes(area))) &&
+      (operator === 'all' || operator === productOperator) &&
+      (packageType === 'all' || packageType === productPackageType) &&
+      (minAges.includes('all') || minAges.some(age => productMinAges.includes(age))) &&
+      (deliveryAreas.includes('all') || deliveryAreas.some(area => productDeliveryAreas.includes(area))) &&
       (!rollover || productRollover) &&
       (!broadband || productBroadband) &&
       (!location || productLocation) &&
