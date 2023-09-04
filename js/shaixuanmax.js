@@ -32,7 +32,7 @@ const form = document.getElementById('filterFormContainer');
          const productPackageType = product.getAttribute('data-package-type'); 
          const productMinAge = product.getAttribute('data-min-age'); 
          
-    const productDeliveryAreas = product.getAttribute('data-delivery-area').split(' '); 
+    const productDeliveryArea = product.getAttribute('data-delivery-area').split(' '); 
          const productRollover = product.getAttribute('data-rollover') === 'true'; 
          const productBroadband = product.getAttribute('data-broadband') === 'true'; 
          const productLocation = product.getAttribute('data-location') === 'true'; 
