@@ -4,7 +4,7 @@ const form = document.getElementById('filterFormContainer');
   
      form.addEventListener('change', function(event) { 
        event.preventDefault(); 
-  
+   
        const operator = document.querySelector('input[name="operator"]:checked').value; 
        const packageType = document.querySelector('input[name="packageType"]:checked').value; 
        const minAge = document.querySelector('input[name="minAge"]:checked').value; 
