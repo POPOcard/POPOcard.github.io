@@ -7,8 +7,10 @@ form.addEventListener('change', function(event) {
 
   const operator = document.querySelector('input[name="operator"]:checked').value;
   const packageType = document.querySelector('input[name="packageType"]:checked').value;
-  const selectedMinAges = Array.from(document.querySelectorAll('input[name="minAge"]:checked')).map(input => input.value);
-  const selectedDeliveryAreas = Array.from(document.querySelectorAll('input[name="deliveryArea"]:checked')).map(input => input.value);
+  const selectedMinAges = document.querySelectorAll('input[name="minAge"]:checked');
+  const minAges = Array.from(selectedMinAges).map(age => age.value);
+  const selectedDeliveryAreas = document.querySelectorAll('input[name="deliveryArea"]:checked');
+  const deliveryAreas = Array.from(selectedDeliveryAreas).map(area => area.value);
   const rollover = document.querySelector('input[name="rollover"]').checked;
   const broadband = document.querySelector('input[name="broadband"]').checked;
   const location = document.querySelector('input[name="location"]').checked;
@@ -21,17 +23,17 @@ form.addEventListener('change', function(event) {
   const recommended = document.querySelector('input[name="recommended"]').checked;
   const history = document.querySelector('input[name="history"]').checked;
 
-  filterAndDisplay(operator, packageType, selectedMinAges, selectedDeliveryAreas, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history);
+  filterAndDisplay(operator, packageType, minAges, deliveryAreas, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history);
 });
 
-function filterAndDisplay(operator, packageType, selectedMinAges, selectedDeliveryAreas, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
+function filterAndDisplay(operator, packageType, minAges, deliveryAreas, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) {
   const allProducts = document.querySelectorAll('.product');
 
   for (const product of allProducts) {
     const productOperator = product.getAttribute('data-operator');
     const productPackageType = product.getAttribute('data-package-type');
-    const productMinAges = product.getAttribute('data-min-age').split(','); // Split multiple ages
-    const productDeliveryAreas = product.getAttribute('data-delivery-area').split(','); // Split multiple areas
+    const productMinAges = product.getAttribute('data-min-ages').split(',');
+    const productDeliveryAreas = product.getAttribute('data-delivery-areas').split(',');
 
     const productRollover = product.getAttribute('data-rollover') === 'true';
     const productBroadband = product.getAttribute('data-broadband') === 'true';
@@ -48,11 +50,8 @@ function filterAndDisplay(operator, packageType, selectedMinAges, selectedDelive
     if (
       (operator === 'all' || productOperator === operator) &&
       (packageType === 'all' || productPackageType === packageType) &&
-      (selectedMinAges.length === 0 || selectedMinAges.some(age => productMinAges.includes(age))) && // Check if any selected age is in productMinAges
-      (
-        selectedDeliveryAreas.length === 0 ||
-        selectedDeliveryAreas.some(area => productDeliveryAreas.includes(area))
-      ) &&
+      (minAges.includes('all') || minAges.some(age => productMinAges.includes(age))) &&
+      (deliveryAreas.includes('all') || deliveryAreas.some(area => productDeliveryAreas.includes(area))) &&
       (!rollover || productRollover) &&
       (!broadband || productBroadband) &&
       (!location || productLocation) &&
