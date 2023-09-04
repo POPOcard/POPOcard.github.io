@@ -50,7 +50,7 @@ const form = document.getElementById('filterFormContainer');
            (packageType === 'all' || productPackageType === packageType) && 
            (minAge === 'all' || productMinAge === minAge) && 
            
-      (deliveryArea === 'all' || productDeliveryAreas.includes(deliveryArea)) && 
+      (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea)) && 
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
            (!location || productLocation) && 
