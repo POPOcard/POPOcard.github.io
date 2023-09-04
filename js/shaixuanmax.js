@@ -1,7 +1,7 @@
 const form = document.getElementById('filterFormContainer'); 
      const productsDiv = document.getElementById('products'); 
      const resultsDiv = document.getElementById('resultsContainer'); 
-  
+   
      form.addEventListener('change', function(event) { 
        event.preventDefault(); 
    
