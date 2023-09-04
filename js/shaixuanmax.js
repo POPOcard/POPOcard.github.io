@@ -34,8 +34,8 @@ function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover,
   allProducts.forEach(product => {
     const productOperator = product.getAttribute('data-operator');
     const productPackageType = product.getAttribute('data-package-type');
-    const productMinAge = product.getAttribute('data-min-age').split(' ');
-    const productDeliveryArea = product.getAttribute('data-delivery-area').split(' ');
+    const productMinAges = product.getAttribute('data-min-ages').split(' ');
+    const productDeliveryAreas = product.getAttribute('data-delivery-areas').split(' ');
     const productRollover = product.getAttribute('data-rollover') === 'true';
     const productBroadband = product.getAttribute('data-broadband') === 'true';
     const productLocation = product.getAttribute('data-location') === 'true';
@@ -51,8 +51,8 @@ function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover,
     if (
       (operator.includes('all') || operator.includes(productOperator)) &&
       (packageType.includes('all') || packageType.includes(productPackageType)) &&
-      (minAge.includes('all') || minAge.some(age => productMinAge.includes(age))) &&
-      (deliveryArea.includes('all') || deliveryArea.some(area => productDeliveryArea.includes(area))) &&
+      (minAge.includes('all') || minAge.some(age => productMinAges.includes(age))) &&
+      (deliveryArea.includes('all') || deliveryArea.some(area => productDeliveryAreas.includes(area))) &&
       (!rollover || productRollover) &&
       (!broadband || productBroadband) &&
       (!location || productLocation) &&
