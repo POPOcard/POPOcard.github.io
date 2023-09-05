@@ -1,4 +1,3 @@
-const selectedDeliveryArea = Array.from(document.querySelectorAll('input[name="deliveryArea"]:checked')).map(input => input.value);
 const form = document.getElementById('filterFormContainer'); 
      const productsDiv = document.getElementById('products'); 
      const resultsDiv = document.getElementById('resultsContainer'); 
@@ -21,11 +20,16 @@ const form = document.getElementById('filterFormContainer');
        const superVoice = document.querySelector('input[name="superVoice"]').checked; 
        const recommended = document.querySelector('input[name="recommended"]').checked; 
        const history = document.querySelector('input[name="history"]').checked; 
+          const yunnan = document.querySelector('input[name="yunnan"]').checked; 
+const guangdong = document.querySelector('input[name="guangdong"]').checked; 
+const xizang = document.querySelector('input[name="xizang"]').checked; 
+const xinjiang = document.querySelector('input[name="xinjiang"]').checked; 
+const beijing = document.querySelector('input[name="beijing"]').checked; 
   
-       filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history); 
+       filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, xizang, guangdong, beijing, yunnan, xinjiang, history); 
      }); 
   
-     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, history) { 
+     function filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, xizang, guangdong, beijing, yunnan, xinjiang, history) { 
        const allProducts = document.querySelectorAll('.product'); 
   
        for (const product of allProducts) { 
@@ -45,13 +49,18 @@ const form = document.getElementById('filterFormContainer');
          const productSuperVoice = product.getAttribute('data-super-voice') === 'true'; 
          const productRecommended = product.getAttribute('data-recommended') === 'true'; 
          const productHistory = product.getAttribute('data-history') === 'true'; 
+            const productxizang = product.getAttribute('data-xizang') === 'true'; 
+         const productyunnan = product.getAttribute('data-yunnan') === 'true'; 
+         const productbeijing = product.getAttribute('data-beijing') === 'true'; 
+         const productguangdong = product.getAttribute('data-guangdong') === 'true'; 
+     const productxinjiang = product.getAttribute('data-xinjiang') === 'true'; 
   
          if ( 
            (operator === 'all' || productOperator === operator) && 
            (packageType === 'all' || productPackageType === packageType) && 
            (minAge === 'all' || productMinAge === minAge) && 
           
-     (selectedDeliveryArea.includes('all') || selectedDeliveryArea.some(area => productDeliveryArea.includes(area)))
+     (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea))
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
            (!location || productLocation) && 
@@ -62,6 +71,11 @@ const form = document.getElementById('filterFormContainer');
            (!superData || productSuperData) && 
            (!superVoice || productSuperVoice) && 
            (!recommended || productRecommended) && 
+           (!yunnan || productyunnan) && 
+           (!beijing || productbeijing) && 
+           (!guangdong || productguangdong) && 
+           (!xizang || productxizang) && 
+           (!xinjiang || productxinjiang) && 
            (!history || productHistory) 
          ) { 
            product.style.display = 'block'; // 显示符合条件的商品 
