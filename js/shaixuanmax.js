@@ -45,17 +45,13 @@ const form = document.getElementById('filterFormContainer');
          const productRecommended = product.getAttribute('data-recommended') === 'true'; 
          const productHistory = product.getAttribute('data-history') === 'true'; 
   
-         if ( 
-           (operator === 'all' || productOperator === operator) && 
-           (packageType === 'all' || productPackageType === packageType) && 
-           
-          (minAge === 'all' || productMinAge.includes(minAge)) && 
-      (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea)) && 
-
-
-
-
-
+         
+           if (
+  (operator === 'all' || productOperator === operator) &&
+  (packageType === 'all' || productPackageType === packageType) &&
+  (minAge === 'all' || productMinAge.includes(minAge)) &&
+  (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea)) &&
+  (!rollover || productRollover) &&
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
            (!location || productLocation) && 
