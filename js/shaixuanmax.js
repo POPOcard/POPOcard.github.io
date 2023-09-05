@@ -30,8 +30,8 @@ const form = document.getElementById('filterFormContainer');
        for (const product of allProducts) { 
          const productOperator = product.getAttribute('data-operator'); 
          const productPackageType = product.getAttribute('data-package-type'); 
-         const productMinAge = product.getAttribute('data-min-age'); 
-         
+          const productMinAge = product.getAttribute('data-min-age').split(' ');
+  
     const productDeliveryArea = product.getAttribute('data-delivery-area').split(' '); 
          const productRollover = product.getAttribute('data-rollover') === 'true'; 
          const productBroadband = product.getAttribute('data-broadband') === 'true'; 
@@ -48,9 +48,14 @@ const form = document.getElementById('filterFormContainer');
          if ( 
            (operator === 'all' || productOperator === operator) && 
            (packageType === 'all' || productPackageType === packageType) && 
-           (minAge === 'all' || productMinAge === minAge) && 
-          
+           
+          (minAge === 'all' || productMinAge.includes(minAge)) && 
       (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea)) && 
+
+
+
+
+
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
            (!location || productLocation) && 
