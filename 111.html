@@ -84,24 +84,31 @@
 
  <div id="tab7" class="tab">        
                 <h1>全网独家特供套餐！［页面可放大］</h1>  
-  <!DOCTYPE html>
-<html>
-<head>
-    <title>您的页面标题</title>
-</head>
-<body>
+ 
 
-<!-- 其他页面内容 -->
 
-<!-- 使用iframe标签引入products.html -->
-<iframe src="/2.html"></iframe>
 
-<!-- 其他页面内容 -->
+
+<iframe id="productFrame" src="/2.html" frameborder="0"></iframe>
+
+
+
+<script>
+    // 获取iframe元素
+    const iframe = document.getElementById('productFrame');
+
+    // 监听iframe内容加载完成事件
+    iframe.addEventListener('load', function() {
+        // 调整iframe高度以适应内容的高度
+        this.style.height = this.contentWindow.document.body.scrollHeight + 'px';
+    });
+</script>
 
 </body>
 </html>
 
-  <div>  <div>  <div> 
+
+  <div>  <div>  <div>   </div> 
 
 
  
