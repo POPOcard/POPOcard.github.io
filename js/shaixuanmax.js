@@ -8,7 +8,7 @@ const form = document.getElementById('filterFormContainer');
       const operator = document.querySelector('input[name="operator"]:checked').value; 
        const packageType = document.querySelector('input[name="packageType"]:checked').value; 
        const minAge = document.querySelector('input[name="minAge"]:checked').value; 
-       const deliveryArea = document.querySelector('input[name="deliveryArea"]:checked').value; 
+     
        const rollover = document.querySelector('input[name="rollover"]').checked; 
        const broadband = document.querySelector('input[name="broadband"]').checked; 
        const location = document.querySelector('input[name="location"]').checked; 
@@ -37,7 +37,7 @@ const beijing = document.querySelector('input[name="beijing"]').checked;
          const productPackageType = product.getAttribute('data-package-type'); 
          const productMinAge = product.getAttribute('data-min-age'); 
          
-    const productDeliveryArea = product.getAttribute('data-delivery-area').split(','); 
+  
          const productRollover = product.getAttribute('data-rollover') === 'true'; 
          const productBroadband = product.getAttribute('data-broadband') === 'true'; 
          const productLocation = product.getAttribute('data-location') === 'true'; 
@@ -60,7 +60,7 @@ const beijing = document.querySelector('input[name="beijing"]').checked;
            (packageType === 'all' || productPackageType === packageType) && 
            (minAge === 'all' || productMinAge === minAge) && 
           
-     (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea))
+    
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
            (!location || productLocation) && 
