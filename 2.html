@@ -119,25 +119,25 @@
  <span><h2><b>可发货：</b></span>
      
       <label>
-         <input type="checkbox" name=="Tibet">
-        <span>西藏</span>&ensp;
-      </label>
-      <label>
-         <input type="checkbox" name=="Xinjiang">
-        <span>新疆</span>&ensp;
-      </label>
-      <label>
-         <input type="checkbox" name=="Yunnan">
-        <span>云南</span>
-      </label>
-  <label>
-         <input type="checkbox" name="Guangdong">
-        <span>广东</span>&ensp;
-      </label>
-  <label>
-         <input type="checkbox" name=="Beijing">
-        <span>北京</span>&ensp;
-      </label>
+      <input type="radio" name="deliveryArea" value="all" checked>
+      <span>可发货地区：</span>
+    </label>
+    <label>
+      <input type="radio" name="deliveryArea" value="Yunnan">
+      <span>云南</span>
+    </label>
+    <label>
+      <input type="radio" name="deliveryArea" value="Beijing">
+      <span>北京</span>
+    </label>
+    <label>
+      <input type="radio" name="deliveryArea" value="Xinjiang">
+      <span>新疆</span>
+    </label>
+    <label>
+      <input type="radio" name="deliveryArea" value="Tibet">
+      <span>西藏</span>
+    </label>
     
        </div> </div>
   
@@ -157,7 +157,7 @@
      data-operator="telecom"
      data-package-type="longTerm"
      data-min-age="16"   
-
+data-delivery-area="all"
 data-self-activate="true"
 data-number="false"
 data-rollover="false"
@@ -169,8 +169,6 @@ data-super-data="false"
 
 data-nice-number="true"
 data-history="false"
-data-xxizang="true"
- data-xxinjiang="true"
  data-super-voice="false"
 data-recommended="true">
    
