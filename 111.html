@@ -87,25 +87,31 @@
  
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>您的页面标题</title>
+    <style>
+        /* 使 iframe 填充整个屏幕 */
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none; /* 去掉边框 */
+        }
+    </style>
+</head>
+<body>
 
+<!-- 其他页面内容 -->
 
-<iframe id="productFrame" src="/2.html" frameborder="0"></iframe>
+<!-- 使用 iframe 标签引入 products.html -->
+<iframe src="2.html"></iframe>
 
-
-
-<script>
-    // 获取iframe元素
-    const iframe = document.getElementById('productFrame');
-
-    // 监听iframe内容加载完成事件
-    iframe.addEventListener('load', function() {
-        // 调整iframe高度以适应内容的高度
-        this.style.height = this.contentWindow.document.body.scrollHeight + 'px';
-    });
-</script>
+<!-- 其他页面内容 -->
 
 </body>
 </html>
+
 
 
   <div>  <div>  <div>   </div> 
