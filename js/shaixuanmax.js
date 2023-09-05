@@ -49,7 +49,7 @@ const form = document.getElementById('filterFormContainer');
            (operator === 'all' || productOperator === operator) && 
            (packageType === 'all' || productPackageType === packageType) && 
            (minAge === 'all' || productMinAge === minAge) && 
-           
+          
       (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea)) && 
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
