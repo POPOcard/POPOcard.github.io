@@ -1,3 +1,4 @@
+const selectedDeliveryAreas = Array.from(document.querySelectorAll('input[name="deliveryArea"]:checked')).map(input => input.value);
 const form = document.getElementById('filterFormContainer'); 
      const productsDiv = document.getElementById('products'); 
      const resultsDiv = document.getElementById('resultsContainer'); 
@@ -50,7 +51,7 @@ const form = document.getElementById('filterFormContainer');
            (packageType === 'all' || productPackageType === packageType) && 
            (minAge === 'all' || productMinAge === minAge) && 
           
-      (deliveryArea === 'all' || productDeliveryArea.includes(deliveryArea)) && 
+     (selectedDeliveryAreas.includes('all') || selectedDeliveryAreas.some(area => productDeliveryArea.includes(area)))
            (!rollover || productRollover) && 
            (!broadband || productBroadband) && 
            (!location || productLocation) && 
