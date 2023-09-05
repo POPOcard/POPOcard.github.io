@@ -20,11 +20,11 @@ const form = document.getElementById('filterFormContainer');
        const superVoice = document.querySelector('input[name="superVoice"]').checked; 
        const recommended = document.querySelector('input[name="recommended"]').checked; 
        const history = document.querySelector('input[name="history"]').checked; 
-           const yunnan = document.querySelector('input[name="yunnan"]').checked; 
-const guangdong = document.querySelector('input[name="guangdong"]').checked; 
-const xizang = document.querySelector('input[name="xizang"]').checked; 
-const xinjiang = document.querySelector('input[name="xinjiang"]').checked; 
-const beijing = document.querySelector('input[name="beijing"]').checked; 
+           const yyunnan = document.querySelector('input[name="yyunnan"]').checked; 
+const gguangdong = document.querySelector('input[name="gguangdong"]').checked; 
+const xxizang = document.querySelector('input[name="xxizang"]').checked; 
+const xxinjiang = document.querySelector('input[name="xxinjiang"]').checked; 
+const bbeijing = document.querySelector('input[name="bbeijing"]').checked; 
 
        filterAndDisplay(operator, packageType, minAge, deliveryArea, rollover, broadband, location, number, niceNumber, selfActivate, videoMember, superData, superVoice, recommended, , xizang, guangdong, beijing, yunnan, xinjiang,  history); 
      }); 
@@ -48,11 +48,11 @@ const beijing = document.querySelector('input[name="beijing"]').checked;
          const productSuperVoice = product.getAttribute('data-super-voice') === 'true'; 
          const productRecommended = product.getAttribute('data-recommended') === 'true'; 
          const productHistory = product.getAttribute('data-history') === 'true'; 
-             const productXizang = product.getAttribute('data-xizang') === 'true'; 
-         const productYunnan = product.getAttribute('data-yunnan') === 'true'; 
-         const productBeijing = product.getAttribute('data-beijing') === 'true'; 
-         const productGuangdong = product.getAttribute('data-guangdong') === 'true'; 
-     const productXinjiang = product.getAttribute('data-xinjiang') === 'true'; 
+             const productXxizang = product.getAttribute('data-xxizang') === 'true'; 
+         const productYyunnan = product.getAttribute('data-yyunnan') === 'true'; 
+         const productBbeijing = product.getAttribute('data-bbeijing') === 'true'; 
+         const productGguangdong = product.getAttribute('data-gguangdong') === 'true'; 
+     const productXxinjiang = product.getAttribute('data-xxinjiang') === 'true'; 
 
          if ( 
            (operator === 'all' || productOperator === operator) && 
@@ -69,11 +69,11 @@ const beijing = document.querySelector('input[name="beijing"]').checked;
            (!superData || productSuperData) && 
            (!superVoice || productSuperVoice) && 
            (!recommended || productRecommended) && 
-           (!yunnan || productYunnan) && 
-           (!beijing || productBeijing) && 
-           (!guangdong || productGuangdong) && 
-           (!xizang || productXizang) && 
-           (!xinjiang || productXinjiang) && 
+           (!yyunnan || productYyunnan) && 
+           (!bbeijing || productBbeijing) && 
+           (!gguangdong || productGguangdong) && 
+           (!xxizang || productXxizang) && 
+           (!xxinjiang || productXxinjiang) && 
            (!history || productHistory) 
          ) { 
            product.style.display = 'block'; // 显示符合条件的商品 
