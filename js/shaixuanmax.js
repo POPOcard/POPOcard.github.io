@@ -48,11 +48,11 @@ const beijing = document.querySelector('input[name="beijing"]').checked;
          const productSuperVoice = product.getAttribute('data-super-voice') === 'true'; 
          const productRecommended = product.getAttribute('data-recommended') === 'true'; 
          const productHistory = product.getAttribute('data-history') === 'true'; 
-             const productxizang = product.getAttribute('data-xizang') === 'true'; 
-         const productyunnan = product.getAttribute('data-yunnan') === 'true'; 
-         const productbeijing = product.getAttribute('data-beijing') === 'true'; 
-         const productguangdong = product.getAttribute('data-guangdong') === 'true'; 
-     const productxinjiang = product.getAttribute('data-xinjiang') === 'true'; 
+             const productXizang = product.getAttribute('data-xizang') === 'true'; 
+         const productYunnan = product.getAttribute('data-yunnan') === 'true'; 
+         const productBeijing = product.getAttribute('data-beijing') === 'true'; 
+         const productGuangdong = product.getAttribute('data-guangdong') === 'true'; 
+     const productXinjiang = product.getAttribute('data-xinjiang') === 'true'; 
 
          if ( 
            (operator === 'all' || productOperator === operator) && 
