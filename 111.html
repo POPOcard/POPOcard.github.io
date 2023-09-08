@@ -4913,21 +4913,20 @@
     </body>     
      </html>     
   
-  
 <script>
-  const numButtons = 50;
+  const buttons = document.querySelectorAll('.btn');
   const closeBtns = document.querySelectorAll('.close');
   const popups = document.querySelectorAll('.popup');
 
-  for (let i = 1; i <= numButtons; i++) {
-    const btn = document.getElementById(`btn${i}`);
-    const popup = document.getElementById(`popup${i}`);
+  buttons.forEach(function (btn) {
+    const popupId = btn.getAttribute('id').replace('btn', 'popup');
+    const popup = document.getElementById(popupId);
 
     btn.addEventListener('click', function (event) {
       event.stopPropagation();
       togglePopup(popup);
     });
-  }
+  });
 
   closeBtns.forEach(function (btn) {
     btn.addEventListener('click', function (event) {
