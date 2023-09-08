@@ -3,7 +3,7 @@
      <link rel="stylesheet" href="/css/caidan1.css">   
    <link rel="stylesheet" href="/css/menu.css"> <link rel="stylesheet" href="/css/tcontent.css"> <link rel="stylesheet" href="/css/xingmu.css"><link rel="stylesheet" href="/css/tab.css">   
   <script src="/js/caidan.js"> </script>  
-  <script src="/js/jiyi.js">    </script> <script src="/js/wxllq.js"> </script> <script src="/js/2.js"></script><script src="/js/tob3.js"></script>  
+  <script src="/js/jiyi.js">    </script> <script src="/js/wxllq.js"> </script> <script src="/js/tanchuang.js"> </script> <script src="/js/2.js"></script><script src="/js/tob3.js"></script>  
 
 
   
@@ -4913,55 +4913,7 @@
     </body>     
      </html>     
   
-<script>
-  const buttons = document.querySelectorAll('.popup-button');
-  const closeBtns = document.querySelectorAll('.close');
-  const popups = document.querySelectorAll('.popup');
 
-  buttons.forEach(function (btn) {
-    const popupId = btn.getAttribute('data-popup');
-    const popup = document.getElementById(popupId);
-
-    btn.addEventListener('click', function (event) {
-      event.stopPropagation();
-      togglePopup(popup);
-    });
-  });
-
-  closeBtns.forEach(function (btn) {
-    btn.addEventListener('click', function (event) {
-      event.stopPropagation();
-      const popup = this.parentNode;
-      togglePopup(popup);
-    });
-  });
-
-  popups.forEach(function (popup) {
-    popup.addEventListener('click', function (event) {
-      event.stopPropagation();
-    });
-
-    popup.querySelectorAll('*').forEach(function (el) {
-      el.addEventListener('copy', function (event) {
-        event.preventDefault();
-      });
-    });
-
-    document.addEventListener('click', function (event) {
-      if (event.target !== popup && !popup.contains(event.target)) {
-        popup.style.display = 'none';
-      }
-    });
-  });
-
-  function togglePopup(popup) {
-    if (popup.style.display === 'none' || popup.style.display === '') {
-      popup.style.display = 'block';
-    } else {
-      popup.style.display = 'none';
-    }
-  }
-</script>
 
   
   
