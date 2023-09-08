@@ -8,65 +8,69 @@
 
 
 
-  <script>
-    function showPopup(url) {
-      var popupContainer = document.getElementById("popupContainer");
-      var xmlhttp = new XMLHttpRequest();
-      
-      xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-          var popupContent = xmlhttp.responseText;
-          popupContainer.innerHTML = '<div class="popup">' + popupContent + '</div>';
-          
-          // 添加关闭按钮
-          var closeButton = document.createElement("span");
-          closeButton.classList.add("popup-close");
-          closeButton.innerHTML = "&times;";
-          closeButton.onclick = function() {
-            closePopup();
-          };
-          popupContainer.firstElementChild.appendChild(closeButton);
-          
-          // 添加底部关闭按钮
-          var closeButtonBottom = document.createElement("button");
-          closeButtonBottom.classList.add("popup-close-bottom");
-          closeButtonBottom.innerHTML = "关闭弹窗";
-          closeButtonBottom.onclick = function() {
-            closePopup();
-          };
-          popupContainer.firstElementChild.appendChild(closeButtonBottom);
-          
-          // 添加最右下角关闭按钮
-          var closeButtonRight = document.createElement("span");
-          closeButtonRight.classList.add("popup-close-right");
-          closeButtonRight.innerHTML = "&times;";
-          closeButtonRight.onclick = function() {
-            closePopup();
-          };
-          popupContainer.firstElementChild.appendChild(closeButtonRight);
-          
-          popupContainer.style.display = "block";
+  <style>
+        /* 隐藏弹出窗口 */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            z-index: 999;
         }
-      };
 
-      xmlhttp.open("GET", url, true);
-      xmlhttp.send();
-    }
-    
-    function closePopup() {
-      var popupContainer = document.getElementById("popupContainer");
-      popupContainer.style.display = "none";
-      popupContainer.innerHTML = "";
-    }
+        /* 显示图片容器 */
+        #imageContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            overflow: auto;
+        }
 
-    // 点击弹窗容器以外的任意位置自动关闭弹窗
-    window.addEventListener("click", function(event) {
-      var popupContainer = document.getElementById("popupContainer");
-      if (event.target === popupContainer) {
-        closePopup();
-      }
-    });
-  </script></body>
+        /* 显示图片 */
+        #imageContainer img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 关闭按钮样式 */
+        #closeButton {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 图片链接 -->
+  
+
+    <script>
+        // 获取相关元素
+        var showImageLink = document.getElementById("showImage");
+        var popup = document.getElementById("popup");
+
+        // 点击链接时显示弹出窗口
+        showImageLink.addEventListener("click", function(event) {
+            event.preventDefault(); // 阻止链接默认行为
+            popup.style.display = "block";
+        });
+
+        // 关闭弹出窗口
+        function closePopup() {
+            popup.style.display = "none";
+        }
+    </script>
 
   
   </head>  <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg">      
@@ -265,10 +269,18 @@
     <br>到期后专属链接参加续约，以达成长期19元+每月155G流量<a href="http://flow.hn.189.cn/hnfx/hd/cfsf50120xy?clientid=wxgzh01&des=&code=001rui0009EztQ1Rf10000ZkV31rui0P&state=1691488730425&WxUg5ztDmi=1693412338505">专属续约地址（每年一次）</a>
   <font color="red">每年续约的目的∶只为了10元月租减免，流量包为自动续订!（客服可查）</font>
  
-     <br>  <button class="button" onclick="showPopup('//popocard.github.io/package/shandong.html')">弹窗按钮1</button>
+     <br>    <a href="#" id="showImage">点击查看图片</a>
+    
+    <!-- 弹出窗口 -->
+    <div id="popup">
+        <div id="imageContainer">
+            <img src="https://file.storep.91haoka.cn/img/1691762974206.jpeg" alt="弹出图片">
+        </div>
+        <span id="closeButton" onclick="closePopup()">&times;</span>
+    </div>
   <!-- 根据需要添加更多按钮 -->
 
-  <div class="popup-container" id="popupContainer"></div>
+
       
       
       </td></tr></table>  
