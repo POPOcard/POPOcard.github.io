@@ -4914,12 +4914,12 @@
      </html>     
   
 <script>
-  const buttons = document.querySelectorAll('.btn');
+  const buttons = document.querySelectorAll('.popup-button');
   const closeBtns = document.querySelectorAll('.close');
   const popups = document.querySelectorAll('.popup');
 
   buttons.forEach(function (btn) {
-    const popupId = btn.getAttribute('id').replace('btn', 'popup');
+    const popupId = btn.getAttribute('data-popup');
     const popup = document.getElementById(popupId);
 
     btn.addEventListener('click', function (event) {
