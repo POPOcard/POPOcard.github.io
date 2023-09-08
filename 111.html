@@ -5,6 +5,133 @@
   <script src="/js/caidan.js"> </script>  
   <script src="/js/jiyi.js">    </script> <script src="/js/wxllq.js"> </script>   <script src="/js/2.js"></script><script src="/js/tob3.js"></script>  
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>动态生成弹窗示例</title>
+  <style>
+    /* 样式可以根据需求进行自定义 */
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .popup-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999; /* 确保弹窗在其他元素之上显示 */
+    }
+
+    .popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 98%; /* 设置弹窗宽度为屏幕宽度的98% */
+      max-height: 90%; /* 设置弹窗内容的最大高度 */
+      overflow-y: auto; /* 允许出现纵向滚动以查看过长的内容 */
+      padding: 20px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      font-size: 16px; /* 设置弹窗内容的字体大小为16px */
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .popup-close-bottom {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .popup-close-right {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+
+
+  <script>
+    function showPopup(url) {
+      var popupContainer = document.getElementById("popupContainer");
+      var xmlhttp = new XMLHttpRequest();
+      
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+          var popupContent = xmlhttp.responseText;
+          popupContainer.innerHTML = '<div class="popup">' + popupContent + '</div>';
+          
+          // 添加关闭按钮
+          var closeButton = document.createElement("span");
+          closeButton.classList.add("popup-close");
+          closeButton.innerHTML = "&times;";
+          closeButton.onclick = function() {
+            closePopup();
+          };
+          popupContainer.firstElementChild.appendChild(closeButton);
+          
+          // 添加底部关闭按钮
+          var closeButtonBottom = document.createElement("button");
+          closeButtonBottom.classList.add("popup-close-bottom");
+          closeButtonBottom.innerHTML = "关闭弹窗";
+          closeButtonBottom.onclick = function() {
+            closePopup();
+          };
+          popupContainer.firstElementChild.appendChild(closeButtonBottom);
+          
+          // 添加最右下角关闭按钮
+          var closeButtonRight = document.createElement("span");
+          closeButtonRight.classList.add("popup-close-right");
+          closeButtonRight.innerHTML = "&times;";
+          closeButtonRight.onclick = function() {
+            closePopup();
+          };
+          popupContainer.firstElementChild.appendChild(closeButtonRight);
+          
+          popupContainer.style.display = "block";
+        }
+      };
+
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+    }
+    
+    function closePopup() {
+      var popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+      popupContainer.innerHTML = "";
+    }
+
+    // 点击弹窗容器以外的任意位置自动关闭弹窗
+    window.addEventListener("click", function(event) {
+      var popupContainer = document.getElementById("popupContainer");
+      if (event.target === popupContainer) {
+        closePopup();
+      }
+    });
+  </script></body>
 
   
   </head>  <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg">      
@@ -202,7 +329,14 @@
     <br> 首月年月租，第2-13月每月19元月租+每月155G全国流量
     <br>到期后专属链接参加续约，以达成长期19元+每月155G流量<a href="http://flow.hn.189.cn/hnfx/hd/cfsf50120xy?clientid=wxgzh01&des=&code=001rui0009EztQ1Rf10000ZkV31rui0P&state=1691488730425&WxUg5ztDmi=1693412338505">专属续约地址（每年一次）</a>
   <font color="red">每年续约的目的∶只为了10元月租减免，流量包为自动续订!（客服可查）</font>
-  </td></tr><button class="button" onclick="showPopup('//popocard.github.io/package/shandong.html')">弹窗按钮1</button></table>  
+ 
+     <br>  <button class="button" onclick="showPopup('//popocard.github.io/package/shandong.html')">弹窗按钮1</button>
+  <!-- 根据需要添加更多按钮 -->
+
+  <div class="popup-container" id="popupContainer"></div>
+      
+      
+      </td></tr></table>  
    <table>  
   <tr>  
       <td>    
