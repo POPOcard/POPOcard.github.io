@@ -7689,4 +7689,19 @@
       popup.style.display = 'none';
     }
   }
-</script>
+</script>  <script>
+        // 获取相关元素
+        var showImageLink = document.getElementById("showImage");
+        var popup = document.getElementById("popup");
+
+        // 点击链接时显示弹出窗口
+        showImageLink.addEventListener("click", function(event) {
+            event.preventDefault(); // 阻止链接默认行为
+            popup.style.display = "block";
+        });
+
+        // 关闭弹出窗口
+        function closePopup() {
+            popup.style.display = "none";
+        }
+    </script>
