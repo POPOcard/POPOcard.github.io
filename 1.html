@@ -12,7 +12,78 @@
             height: 100vh;
             border: none; /* 去掉边框 */
         }
+​ </script>
+(function() {
+  var styles = `
+    /* Your existing styles go here */
+  `;
 
+  document.head.insertAdjacentHTML('beforeend', styles);
+
+  var announcementContainer = document.createElement('div');
+  announcementContainer.id = 'unique-announcement-container';
+  announcementContainer.innerHTML = `
+     <h2><B>公告</b></h2>
+        <p><b> 为深入贯彻落实党中央、国务院决策部署，坚决遏制电信网络诈骗犯罪高发多发姿态，切实维护广大人民群众合法权益，按照《中华人民共和国刑法》《中华人民共和国治安管理处罚法》《中华人民共和国网络安全法》《互联网信息服务管理办法》相关法律法规要求：    
+        <br>严厉打击非法办理、出租、出售、购买、囤积电话卡、物联网卡、网络账号的行为！！！</b >  
+  <p class="additiona-text"><b>工信部联网安函〔2021〕133号</b></p>
+ <br><br>
+<h2><B><font color="red">免责声明</font></b></h2>
+<p>本店所有套餐均为“官方正规套餐”（非物联卡），严格遵守实名制，激活时必须本人活体验证…… 
+ <br><br>请勿抱有任何侥幸心理，以任何理由：贩卖、出借、出租自己［亲属］的手机卡（包括贩卖、出借、出租利用此卡注册的任何网络账号）！收购人员100%利用你的卡搞“电信网络诈骗”！若东窗事发，案情严重，你将附有连带责任！若触犯刑法，案底伴随终生！对你［以及子女］以后的就业造成严重影响！［“政审查三代”了解一下］
+ <br>现在是互联网大数据时代，公安机关追根溯源太过简单，请不要过于“幼稚天真”，为了蝇头小利，提前葬送自己和后代的未来！
+ 
+ 
+<br><br>
+凡因出售、出租、出借手机卡、网络账号造成的任何违法犯罪：均属个人行为，与本店无关！<br>请积极配合公安机关调查，并自行承担相应的法律后果！  
+       <br> <br> 凡在本店申请任何套餐，均已默认知晓、同意此公告与声明！并严格遵守相应的法律法规！<br><br><font color="red"><b>打击“电信网络诈骗”，人人有责！！！</b></font><br><br></p><p class="additional-text"><b>恩水通信<br>2023年3月20日</b></p> 
+      
+         
+    <button class="close-button">我已知晓</button>
+  `;
+  document.body.appendChild(announcementContainer);
+
+  // Your existing functions remain unchanged
+
+  // Add some styles for the close button
+  var style = document.createElement('style');
+  style.innerHTML = `
+    .close-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .close-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Additional styles for Apple browser */
+    .apple-browser {
+      /* Add your styles for Apple browser here */
+    }
+  `;
+  document.head.appendChild(style);
+
+  checkAnnouncement();
+
+  for (var i = 0; i < closeButtons.length; i++) {
+    closeButtons[i].addEventListener('click', closeAnnouncement);
+  }
+
+  function addAppleBrowserClass() {
+    var isAppleBrowser = /(Mac|iPhone|iPod|iPad)/i.test(navigator.userAgent);
+    if (isAppleBrowser) {
+      document.body.classList.add('apple-browser');
+    }
+  }
+
+  addAppleBrowserClass();
+})();
+​ </script>
 
     </style>
   
