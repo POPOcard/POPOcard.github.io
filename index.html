@@ -1,23 +1,27 @@
 <!DOCTYPE html><html><meta charset="UTF-8"><title>恩水通信</title>
-  <center><h2>浏览量：    
+     <center><h2>浏览量：    
       <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2></center>    <head>
+<head><link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
      <link rel="stylesheet" href="https://popocard.gitee.io/enshui.io/caidan.css">   
   <link rel="stylesheet" href="https://popocard.gitee.io/enshui.io/tab.css">     
   </head> 
    
 
 <body>
-	 <script src="https://popocard.gitee.io/enshui.io/tab.js"></script>
- <script src="https://popocard.gitee.io/enshui.io/menu.js"></script>  
- <script src="https://popocard.gitee.io/enshui.io/content.js"></script>  	
+<script src="https://popocard.gitee.io/enshui.io/menu.js"></script>  
+ <script src="https://popocard.gitee.io/enshui.io/content.js"></script> 
+ <script src="https://popocard.gitee.io/enshui.io/tab.js"></script>
+  	
 	<body class="{{ if is_weixin }}weixin{{ endif }}">   
    <script> window.onload=function(){var a=document.getElementById("floating-container");if(isWeixinBrowser()){a.style.border="1px solid black"}};function isWeixinBrowser(){var a=navigator.userAgent.toLowerCase();return a.indexOf("micromessenger")!==-1}; </script> 
  <script src="https://popocard.gitee.io/enshui.io/tc1.js"></script> 
  <script src="https://popocard.gitee.io/enshui.io/tc2.js"></script>   
 </body>  
-	 <header> <img id="header-image" src="https://static.91haoka.cn/1683009555Bxr.jpg">     </header>
+	 <header> <img id="header-image" src="https://static.91haoka.cn/1701006859dTv.jpg">     </header>
       <div class="menu">      
-              <a href="https://www.enshuicards.cn/kefu.html">      
+              <a href="kefu.html">      
                       <img id="menu-image1" img src="https://static.91haoka.cn/1682155560DDO.jpg" alt="Thumbnail 1" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
                       <span>人工服务</span>    
               </a>      
@@ -36,7 +40,7 @@
                       <span>解疑答惑</span>       
               </a>      
       </a>      
-              <a href="https://www.enshuicards.cn/new.html">      
+              <a href="new.html">      
                       <img src="https://static.91haoka.cn/1685710666dzf.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
                       <span>最新资讯</span>       
               </a>      
@@ -52,25 +56,21 @@
        <div class="tab-menu"> 
 
 
+<button id="tab1Btn" class="active" onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>
 
-           <button class="active"onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1>长期套餐</h1></button>   
+<button id="tab2Btn" onclick="openTab(event, 'tab2')" style="color: #5B5B5B;"><h1>短期过渡</h1></button>
 
+<button id="tab3Btn" onclick="openTab(event, 'tab3')" style="color: #5B5B5B;"><h1>纯流量卡</h1></button>
 
-           <button onclick="openTab(event, 'tab2')" style="color: #5B5B5B;"><h1>短期过渡</h1></button>       
-       <button onclick="openTab(event, 'tab3')" style="color: #5B5B5B;"><h1>纯流量卡</h1></button>     
+<button id="tab6Btn" onclick="openTab(event, 'tab6')" style="color: #5B5B5B;"><h1>中国移动</h1></button>
 
+<button id="tab4Btn" onclick="openTab(event, 'tab4')" style="color: #5B5B5B;"><h1>电话手表</h1></button>
 
- <button onclick="openTab(event, 'tab6')" style="color: #5B5B5B;"><h1>中国移动</h1></button>       
+<button id="tab5Btn" onclick="openTab(event, 'tab5')" style="color: #5B5B5B;"><h1>超大通话</h1></button>
 
-      <button onclick="openTab(event, 'tab4')" style="color: #5B5B5B;"><h1>电话手表</h1></button>       
-
-       <button onclick="openTab(event, 'tab5')" style="color: #5B5B5B;"><h1>超大通话</h1></button>     
-  <button onclick="openTab(event, 'tab7')" style="color: #5B5B5B;"><h1><a href="https://www.enshuicards.cn/1sift.html" style="text-decoration: none;">自由筛选</a>
+<button onclick="openTab(event, 'tab7')"><h1><a href="https://enshuicards.cn/1sift.html" style="text-decoration: none;">自由筛选</a>
 </h1></button>
 
-
-
-          </div>     
 
 
        </div>    
@@ -91,17 +91,17 @@
                 <h2>省心省力，一步到位！只要你不销户，不私自更改套餐内容，可长期永久使用！</h2>  
 
  <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1700398867XXE.jpg" alt="Thumbnail Image">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1701156416LcQ.jpg" alt="Thumbnail Image">      
                <div>       
     <h1 id="title">“彩虹卡”【长期29元】 </h1> </b></a>    
             <div id="content">      
-             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【自己激活、自己选号】【黄金速率500mbps】</p></b></a>    
+             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【自己激活、自己选号】【5G速率】</p></b></a>    
 
-                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲50（快递员/专属链接）</p>     
+                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲50（快递袋内有专属链接）</p>     
            <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续约</p>     
      <font size="2" color="black"</p><p style="font-size: 190%;">每月180G全国通用流量+30G定向+200分钟全国通话</p>     
      <font size="2" color="black"><p style="font-size: 160%;">首月免月租，长期29+210G+200分钟。
-<br> <br> 新疆、西藏、北京可发！
+<br> <br> 新疆、西藏、北京在内，全国可发！
      </a><br> 
     </a>   
         </div>      
@@ -126,7 +126,7 @@
      </tr>   
          <tr>   
        <td class="header-cell"><b>首冲:</b></td>   
-       <td colspan="3">50元整（快递袋内有教程）</td>   
+       <td colspan="3">50元整（快递袋内有教程，不要在快递员那充值！）</td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>性质:</b></td>   
@@ -145,7 +145,7 @@
      </tr>   
      <tr>   
        <td class="header-cell"><b>号码:</b></td>   
-       <td>激活过程中自己选择</td>   
+       <td>激活过程中自己选号</td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>年龄:</b></td>   
@@ -163,7 +163,7 @@
        <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>   
      <tr>   
        <td class="header-cell"><b>禁发地:</b></td>   
-       <td colspan="3">云南、广西、深圳，其他以运营商审核为准!<a style="color: red;">新疆、西藏部分地区可发！</a></td>   
+       <td colspan="3">以运营商审核为准!<a style="color: red;">新疆、西藏部分地区可发！</a></td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>发货时间</b></td>   
@@ -171,7 +171,7 @@
       </tr>   
         <tr>   
        <td class="header-cell"><b>套餐优势</b></td>   
-       <td colspan="3"><font color="#ff6f6d"><b>自己激活+自己选号+黄金速率500mbps+流量语音均衡</b></font></td>   
+       <td colspan="3"><font color="#ff6f6d"><b>自己激活+自己选号+5G速率+流量语音均衡</b></font></td>   
       </tr>   
    </table>   
    <p>   
@@ -180,15 +180,15 @@
        <td>   
     必须按要求一次性“首冲50元整”，否则无法达成宣传所承诺的流量［不可逆］     
       
-     <br> 
+     <br> <br> 
  <font color="red">原套餐显示39元+每月5G全国通用流量+30G定向流量</font>
-    <br>参加“充50元送120”活动后，50元本金立即到账。<br>
+ <br>    <br>参加“充50元送120”活动后，50元本金立即到账。<br>
  赠送的120元每月返10元，共返12个月。（优惠到期后，每年参加一次！）
   <br>激活首月赠送40元体验金，自动抵扣当月话费！
    <br>48小时内叠加175G全国通用流量包+200分钟全国通话（有效期24 个月，到期自动续订，长期有效！）
    
-     <br><br>最终达成：<br> 首月免月租，长期29元月租+每月210G全国流量+200分钟全国通话<br>
-<font color="#ff6f6d">每年参加“充50送120”活动的目的：为了每月10元月租的减免，若不参加此活动，月租为39元，流量语音自动续订，长期不变。</font>
+     <br><br>最终达成：<br> 首月免月租，长期29元月租+每月210G全国流量+200分钟全国通话<br><br> 
+<font color="#ff6f6d">每年参加“充50送120”活动的目的：为了每月10元月租的减免，若不参加此活动，月租为39元（性价比较差），流量语音自动续订，长期不变</font>
 
 <a href="http://www.get189.cn/phoneCfzfNew/1002">续约地址</a>
     <br>  <br><font color="red">  <b></b><br>    <br>  请勿出售、出租自己的手机卡，收卡人员100%用于电信诈骗，请勿轻信于人！</font>
@@ -201,7 +201,7 @@
     </td></tr></table>   
      <div class="parent-container">     
       <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=7197">    
-        <button id="bt1" style="color: white;"><b>免费领取</b></button>    
+        <button id="bt1" style="color: white;"><b>点击办理</b></button>    
       </a>   
       </div>   
       </div>      
@@ -209,137 +209,21 @@
       </button>       
          <button id="btn66"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;    
       <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=7197">      
-        <button id="bt1"style="color: white;"><b>免费领取</b></button>      
+        <button id="bt1"style="color: white;"><b>点击办理</b></button>      
       </a>      
         </div>      
           </div></div>
 
 
 
-<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1700713475Bsk.jpg" alt="Thumbnail Image">       
-           <div>       
-     <h1 id="title">“豫州卡” 【首年29元，长期39元】 </h1> </a>     
-             <div id="content">       
-              <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【支持5G SA】【18-59周岁】</b></a> </p>   
-                  <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（“中国联通”APP内）</p>      
-            <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续订</p>      
-      <font size="2" color="black"</p><p style="font-size: 190%;">每月200G全国通用流量+100分钟全国通话</p>      
-      <font size="2" color="red"><p style="font-size: 160%;"> 
-      </a>  </font> </p><br>  <br>   
-         </div>       
-       <div id="popup69" class="popup">     
-      <table>       
-    <h1 align="center">豫州卡</h1>    
-      <tr>    
-       <td class="header-cell"><b>月租:</b></td>    
-        <td>首月月租（按激活日期自动折算），第2-13个月29元，第14个月起长期39元</td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>语音/短信:</b></td>    
-        <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>构成:</b></td>    
-        <td colspan="3">每月200G全国通用流量+100分钟全国通话<b></b></td>    
-      </tr>    
-          <tr>    
-        <td class="header-cell"><b>首冲:</b></td>    
-        <td colspan="3">“中国联通”APP预存100元整    
-  
-    </td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>性质:</b></td>    
-        <td>长期套餐: 自动续订  
-    </td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>激活方式:</b></td>    
-  
-        <td><b></b>快递员协助激活&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>归属地:</b></td>    
-        <td><b>随机</b></td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>号码:</b></td>    
-        <td><b>随机</B></td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>年龄:</b></td>    
-        <td>18-59周岁</td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>流量到账时间:</b></td>    
-        <td colspan="3">实时到账<b>［流量通话按天折算］</b></td>    
-          <tr>    
-        <td class="header-cell"><b>合约期:</b></td>    
-        <td colspan="3">无合约期（可随时销户，无违约金！请以我宣传的为准）<b></b></td>    
-      </tr>    
-       <tr>    
-        <td class="header-cell"><b>销户方式:</b></td>    
-        <td colspan="3">支持“中国联通”App在线异地销户！<b></b></td>    
-      <tr>    
-        <td class="header-cell"><b>禁发地:</b></td>    
-        <td colspan="3">北京,广东,贵州,云南,西藏,新疆，其他以地方运营商审核为准！<font color="#ff6f6d"><b>可发广东</b></font></td>    
-      </tr>    
-      <tr>    
-        <td class="header-cell"><b>发货时间</b></td>    
-        <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>    
-       </tr>    
-         <tr>    
-        <td class="header-cell"><b>套餐优势</b></td>    
-        <td colspan="3"><font color="#ff6f6d"><b>超大流量+通话</b></font></td>    
-       </tr>    
-    </table>    
-    <p>    
-    <table>    
-    <tr>    
-        <td>    
-     必须按要求“首充”，否则无非达成宣传所承诺的流量［不可逆］ 
-     <br> <br><font color="red">原月租显示59元+64G全国通用+100分钟</font>     
-     <br>参加冲100活动后，100元本金立即到账，次月起每月返20元，共返12个月（到期自动续订）。
-     <br>次月起店铺每月返10元，共返12个月（月底到账）。   
-     
-      <br>
-    72小时内自动叠加136G全国通用流量（到期自动续订）
-    <br><br>最终达成：
-    <br>首月月租、流量按天折算（以59元为基准）
-    <br>第2-13个月每月29元月租。
-   <br> 第14个月起长期39元月租+每月200G全国通用流量+100分钟全国通话
-
-      <br>
-      <br> <font color="red"> 首月月租：以59元为基准，全月、半月折算。
-     </font> </td></tr></table>    
-     <table>    
-    <tr>    
-        <td>      
-    <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d"></font>    
-     </td></tr></table>    
-      <div class="parent-container">      
-       <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=345862">     
-         <button id="bt1" style="color: white;"><b>点击办理</b></button>     
-       </a>    
-       </div>    
-        </div>       
-     <div id="floating-menu">       
-       </button>        
-          <button id="btn69"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     
-       <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=345862">       
-         <button id="bt1"style="color: white;"><b>点击办理</b></button>       
-       </a>       
-         </div>       
-           </div></div>  
-    
+        
   
  <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1700571620G2o.jpg" alt="Thumbnail Image">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1700815057Y9g.jpg" alt="Thumbnail Image">      
                <div>       
     <h1 id="title">“河北星卡（长期版）”【首月0元，2-6个月19元，8-12个月29，长期39元】 </h1></a>    
             <div id="content">      
-             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【自己激活】【可发北京、河北】【16周岁】</p></b></a>    
+             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【自己激活】【可发北京、河北】【16周岁】【可+副卡】</p></b></a>    
   
                  <font size="2" color="black"</p><p style="font-size: 180%;">首冲50（专属链接）</p>     
            <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:到期前主动续约（联系中国电信1000客服）</p>     
@@ -348,13 +232,13 @@
   
      </a><br> 
       <br>  
-    <a style="color: red;">额外赠送20G全国通用流量<br>100分钟全国通话，需联系店铺客服+1元开通（限时限量，有效期25个月） 
+    <a style="color: red;">额外赠送20G全国通用流量（此流量属于额外赠送，不再宣传承诺的范围之内）<br>100分钟全国通话，需联系店铺客服+1元开通（限时限量，有效期25个月） 
    <br>  <a href="http://a.189.cn/Ivq23f" style="color: blue;">【专属首冲地址】
   <br>
     </a>   
   
    <br> <br>  
-   <p><p>   
+   
    <br>    
         </div>      
       <div id="popup67" class="popup">    
@@ -447,8 +331,8 @@
 <br>联系店铺客服开通“+1元100分钟包”有效期25个月（限时限量领取，到期自动退订）
 
 <br><br>最终达成：<br> 首月免月租，第2-6个月19元月租（39-10-10），第7个月39元，第8-12个月29元（39-10），第13个月起长期39元+每月285G全国流量（5+30+250=285G）+100分钟（100分钟只能领25个月）
-      <br>实际流量为305G每月
-    <br>  <br><font color="red"> <br>    <br>  请勿出售、出租自己的手机卡，收卡人员100%用于电信诈骗，“帮信罪”了解一下！</font>
+    <br>  <font color="red"> <br>限时福利：赠送的20G通用、100分钟、副卡：10元/张（属于额外福利，不在宣传所承诺的套餐内容之内！）
+    <br>  <br> <br>    <br>  请勿出售、出租自己的手机卡，收卡人员100%用于电信诈骗，“帮信罪”了解一下！</font>
   
    </td></tr></table>   
     <table>   
@@ -695,7 +579,7 @@
       </tr>   
         <tr>   
        <td class="header-cell"><b>套餐优势</b></td>   
-       <td colspan="3"><font color="#ff6f6d"><b>长期29+5G黄金速率500mbps+自己激活+100分钟通话</b></font></td>   
+       <td colspan="3"><font color="#ff6f6d"><b>长期29+5G速率500mbps+自己激活+100分钟通话</b></font></td>   
       </tr>   
    </table>   
    <p>   
@@ -1789,6 +1673,127 @@
 
 
       
+
+<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/16992788903HP.jpg" alt="Thumbnail Image">       
+           <div>       
+     <h1 id="title">“三佰卡” 【首年29元，永久39元】 </h1> </a>     
+             <div id="content">       
+              <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【支持5G SA】【16周岁】【提前选号】【发广东】</b></a> </p>   
+                  <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（“中国联通”APP内）</p>      
+            <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:自动续订</p>      
+      <font size="2" color="black"</p><p style="font-size: 190%;">每月106G全国通用流量+100G定向流量+100分钟全国通话</p>      
+      <font size="2" color="red"><p style="font-size: 160%;"> 
+      </a>  </font> </p><br>  <br>   
+         </div>       
+       <div id="popup26" class="popup">     
+      <table>       
+    <h1 align="center">三佰卡</h1>    
+      <tr>    
+       <td class="header-cell"><b>月租:</b></td>    
+        <td>首月按天折算，第2-6个月29元,7-12个月39，第13个月起长期永久49元</td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>语音/短信:</b></td>    
+        <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>构成:</b></td>    
+        <td colspan="3">每月106G全国通用流量+100G定向流量+100分钟全国通话<b></b></td>    
+      </tr>    
+          <tr>    
+        <td class="header-cell"><b>首冲:</b></td>    
+        <td colspan="3">“中国联通”APP预存100元整    
+  
+    </td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>性质:</b></td>    
+        <td>长期套餐: 自动续订  
+    </td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>激活方式:</b></td>    
+  
+        <td><b></b>自己激活&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>归属地:</b></td>    
+        <td><b>随机</b></td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>号码:</b></td>    
+        <td><b>随机</B></td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>年龄:</b></td>    
+        <td>18-60周岁</td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>流量到账时间:</b></td>    
+        <td colspan="3">实时到账<b>［流量全额到账］</b></td>    
+          <tr>    
+        <td class="header-cell"><b>合约期:</b></td>    
+        <td colspan="3">无合约期（可随时销户，无违约金！）<b></b></td>    
+      </tr>    
+       <tr>    
+        <td class="header-cell"><b>销户方式:</b></td>    
+        <td colspan="3">支持“中国联通”App在线异地销户！<b></b></td>    
+      <tr>    
+        <td class="header-cell"><b>禁发地:</b></td>    
+        <td colspan="3">西藏、新疆、云南、北京、重庆、山东（淄博、东营、济宁）、湖北武汉、四川成都、广东河源、江西景德镇、福建，其他地方以地方运营商审核为准！<font color="#ff6f6d"><b>可发广东</b></font></td>    
+      </tr>    
+      <tr>    
+        <td class="header-cell"><b>发货时间</b></td>    
+        <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>    
+       </tr>    
+         <tr>    
+        <td class="header-cell"><b>套餐优势</b></td>    
+        <td colspan="3"><font color="#ff6f6d"><b>联通仅存能发广东的卡</b></font></td>    
+       </tr>    
+    </table>    
+    <p>    
+    <table>    
+    <tr>    
+        <td>    
+     必须按要求“首充”，否则无非达成宣传所承诺的流量［不可逆］ 
+     <br> <br><font color="red">原月租显示39元+10G通用+30G定向+100分钟</font>     
+     <br>参加冲100送120活动后，100元本金立即到账。赠送的120每月返10元，共返12个月。
+     <br>次月起店铺每月返10元，共返5个月。   
+     
+      <br>
+    自动叠加10元70G定向+95G通用（只要不主动退订，长期有效）
+    <br><br>最终达成：
+    <br>首月月租、流量按天折算（以39元为基准）
+    <br>第2-6个月每月29元+每月106G全国通用流量+100G定向+100分钟全国通话
+   <br> 第7-12个月39元月租+每月106G全国通用流量+100G定向+100分钟全国通话
+   <br>第13个月起永久49元+每月106G全国通用流量+100G定向+100分钟全国通话
+      <br>
+      <br> <font color="red"> 定向流量：抖音、B站、虎牙、西瓜、头条、腾讯、优酷等APP
+     </font> </td></tr></table>    
+     <table>    
+    <tr>    
+        <td>      
+    <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d"></font>    
+     </td></tr></table>    
+      <div class="parent-container">      
+       <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=327646">     
+         <button id="bt1" style="color: white;"><b>点击办理</b></button>     
+       </a>    
+       </div>    
+        </div>       
+     <div id="floating-menu">       
+       </button>        
+          <button id="btn26"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     
+       <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=327646">       
+         <button id="bt1"style="color: white;"><b>点击办理</b></button>       
+       </a>       
+         </div>       
+           </div></div>  
+    
+  
+
+
     
 
  <div id="floating-container">      
@@ -1878,141 +1883,164 @@
 			<br>剩余话费15日内全额退还至你所填写的银行卡内！（欠费无法注销）
 			<br><font color="red">注销后可申请其他流量卡，以此类推无限更换  
 				<br>看似麻烦，实际全部为“官方APP线上”操作，按要求填写信息即可，非常简单！无缝衔接!</h2></font>  
-<div id="floating-container">        
-            <img id="thumbnail" src="https://static.91haoka.cn/1700392257I6N.jpg" alt="Thumbnail Image">        
-            <div>        
-      <h1 id="title">4年双套餐 </h1> </b></a>      
-              <div id="content">        
-               <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【支持5G SA】【自己激活】【16-42周岁】</b></a> </p>    
-                   <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（中国联通APP内）</p>       
-             <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:48个月（到期按政策续约）</p>       
-       <font size="2" color="black"</p><p style="font-size: 190%;">逆静：每月190G全国通用流量+100分钟全国通话
-       <br>逆动：每月180G全国通用流量+100分钟全国通话</p>       
-       <p style="font-size: 160%;">  
-       </a>  <br><font color="red">  
-       <br>100G流量只有48个月有效期（到期按政策续约）</font> <br> </p>   
-          </div>        
-        <div id="popup68" class="popup">      
-       <table>        
-     <h1 align="center">逆动静卡</h1>     
-       <tr>     
-        <td class="header-cell"><b>月租:</b></td>     
-         <td>逆动：第1-48个月31元<br>
-         逆静：第1-48个月29元</td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>语音/短信:</b></td>     
-         <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>构成:</b></td>     
-         <td colspan="3">
-逆静：每月190G全国通用流量+100分钟全国通话
-         <br>逆动：每月180G全国通用流量+100分钟全国通话<b></b></td>     
-       </tr>     
-           <tr>     
-         <td class="header-cell"><b>首冲：</b></td>     
-         <td colspan="3">  100元（中国联通APP内）   
-     
-     </td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>性质:</b></td>     
-         <td>  
-         短期套餐:48个月有效期（到期按政策续约）<b>     
-     </td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>激活方式:</b></td>     
+
+<div id="floating-container">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1701172819nOM.jpg" alt="Thumbnail Image">      
+          <div>      
+    <h1 id="title">“欢喜卡”【短期：2年19元】  </h1> </b></a>    
+            <div id="content">      
+             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【20周岁】</p></b></a>    
   
-         <td><b></b>自己激活（快递袋内有教程）&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>归属地:</b></td>     
-         <td>随机</td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>号码:</b></td>     
-         <td>随机</td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>年龄:</b></td>     
-         <td>16-42周岁</td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>流量到账时间:</b></td>     
-         <td colspan="3">实时到账<b>［流量全额到账］</b></td>     
-           <tr>     
-         <td class="header-cell"><b>合约期:</b></td>     
-         <td colspan="3">12个月合约期，可随时销户，无违约金！<b></b></td>     
-       </tr>     
-        <tr>     
-         <td class="header-cell"><b>销户方式:</b></td>     
-         <td colspan="3">支持“中国联通”App在线异地销户！<b></b></td>     
-       <tr>     
-         <td class="header-cell"><b>禁发地:</b></td>     
-         <td colspan="3">新疆、西藏、云南<font color="#ff6f6d"><b>具体以审核为准！</b></font></td>     
-       </tr>     
-       <tr>     
-         <td class="header-cell"><b>发货时间</b></td>     
-         <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>     
-        </tr>     
-          <tr>     
-         <td class="header-cell"><b>套餐优势</b></td>     
-         <td colspan="3"><font color="#ff6f6d"><b>
-        4年29元月租（超大流量）</b></font></td>     
-        </tr>     
-     </table>     
-     <p>     
-     <table>     
-     <tr>     
-         <td>     
-      必须按要求“首充”，否则无非达成宣传所承诺的流量［不可逆］       
+                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（专属链接）</p>     
+           <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:2年有效期</p>     
+     <font size="2" color="black"</p><p style="font-size: 190%;">150G全国通用流量+30G定向</p>     
+     <font size="2" color="black"><p style="font-size: 160%;">首月免月租：   
+   <br>第2-24个月月租19元+每月150G全国通用流量+30G定向 <br> 
 
-       <br><font color="red">原月租39元+30G通用+100分钟</font>
-<br>按要求参加冲100活动后，100元本金立即到账。
-<br>第1-48个月每月自动减免20元（有效期48个月）
-<br>24小时内自动叠加150G全国通用流量包
-（逆静额外叠加2元10G流量包）
-    <br><br>最终达成：
-<br>逆动：
-1-48个月月租29元+每月180G全国通用流量+100分钟全国通话
-<br>逆静：
-1-48个月月租31元+每月190G全国通用流量+100分钟全国通话
-
-
-       
+   <br><font color="red">注意：需要分2次在专属链接充值</font> 
   
   
-       <br><font color="red">必须按要求上传照片，否则不允发货!<br>
+   <p>   
+     </a>    
+        </div>      
+         
+    <div id="floating-menu">      
+        
+      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=24162">      
+        <button id="bt1"style="color: white;"><b>套餐详情</b></button>      
+      </a>      
+        </div>       
+          </div></div> 
 
-必须在11月30日前激活（不含当日），否则无法叠加流量包！（介意请勿申请） </font> 
-  
-       
-  
-     
 
-       <br><br> <b></b>  
-     </td></tr></table>     
-      <table>     
-     <tr>     
-         <td>       
-     <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d"></font>     
-      </td></tr></table>     
-       <div class="parent-container">       
-        <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=343267">      
-          <button id="bt1" style="color: white;"><b>点击办理</b></button>      
-        </a>     
-        </div>     
-         </div>        
-      <div id="floating-menu">        
-        </button>         
-           <button id="btn68"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;      
-        <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=343267">        
-          <button id="bt1"style="color: white;"><b>点击办理</b></button>        
-        </a>        
-          </div>        
-            </div></div>     
+ <div id="floating-container">      
+          <img id="thumbnail" src="https://static.91haoka.cn/169996906277M.jpg" alt="Thumbnail Image">      
+               <div>       
+    <h1 id="title">“深海卡”【2年39元月租】 </h1> </a>    
+            <div id="content">      
+             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【自己激活】【21周岁】</p></b></a>    
+  
+                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲100（专属链接）</p>     
+           <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:24个月有效期</p>     
+     <font size="2" color="black"</p><p style="font-size: 190%;">每月220G全国通用流量+30G定向+100分钟全国通话</p>     
+     <font size="2" color="black"><p style="font-size: 160%;">首月免月租 ，第2-24个月39元
+         <font color="red">  <br>  <br></font> 
+
+ </h2> 
+   <br><br><p>   
+   <br>    
+        </div>      
+      <div id="popup62" class="popup">    
+  
+     <table>   
+  
+  
+  
+  
+<h3 align="center">深海卡</h3>      <tr>   
+      <td class="header-cell"><b>月租:</b></td>   
+       <td>2年39元［首月免月租］</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>语音/短信:</b></td>   
+       <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>构成:</b></td>   
+       <td colspan="3">每月220G全国通用流量+30G定向流量+100分钟全国通话</td>   
+     </tr>   
+         <tr>   
+       <td class="header-cell"><b>首冲:</b></td>   
+       <td colspan="3">100元整（激活过程中） 
+ <br></td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>性质:</b></td>   
+       <td>短期套餐：到期按政策续约  
+  
+      </td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>激活方式:</b></td>   
+  
+       <td><b>自己激活</b></td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>归属地:</b></td>   
+       <td>随机</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>号码:</b></td>   
+       <td>随机</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>年龄:</b></td>   
+       <td>21-60周岁</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>流量到账时间:</b></td>   
+       <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>   
+         <tr>   
+       <td class="header-cell"><b>合约期:</b></td>   
+       <td colspan="3">无合约期，无违约金！<b></b></td>   
+     </tr>   
+      <tr>   
+       <td class="header-cell"><b>销户方式:</b></td>   
+       <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>   
+     <tr>   
+       <td class="header-cell"><b>禁发地:</b></td>   
+       <td colspan="3">新疆、西藏、云南、广西（边防港市）、福建（莆田、龙岩）、广东茂名，其他以地方运营商审核为准!<a style="color: red;"></a></td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>发货时间</b></td>   
+       <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>   
+      </tr>   
+        <tr>   
+       <td class="header-cell"><b>套餐优势</b></td>   
+       <td colspan="3"><font color="#ff6f6d"><b>39元系列+超值大流量+带语音套餐</b></font></td>   
+      </tr>   
+   </table>   
+   <p>   
+   <table>   
+   <tr>   
+       <td>   
+  
+  
+  必须按要求一次性“首冲100元整”，否则无法达成宣传所承诺的流量［不可逆］    
+  
+    <br>   <br> 
+<font color="red">原套餐显示59元+20G全国通用流量+30G定向流量</font> 
+    <p>参加“充100元送240”活动后，100元本金立即到账  
+<br> 赠送的240元，次月起每月返10元，共返24个月。   
+  <br>次月起，系统每月自动减免10元，共减免24个月。
+      <br>激活首月送60元体验金，自动抵扣当月月租！<br> 
+<br>  
+    
+  激活48小时内自动叠加200G全国通用流量包+100分钟全国通话<br><br>
+<br>综上所述：首月免月租，第2-24个月39元+每月220G全国通用流量+30G定向流量+100分钟全国通话<br>  <br> 
+<font color="red">首月实际到账流量与语音，以当月剩余天数折算！</font> 
+  
+   </td></tr></table>   
+    <table>   
+   <tr>   
+       <td>     
+   <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d"></font>   
+    </td></tr></table>   
+     <div class="parent-container">     
+      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=22588">    
+        <button id="bt1" style="color: white;"><b>点击办理</b></button>    
+      </a>   
+      </div>   
+      </div>      
+    <div id="floating-menu">      
+      </button>       
+         <button id="btn61"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;    
+      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=22588">      
+        <button id="bt1"style="color: white;"><b>点击办理</b></button>      
+      </a>      
+        </div>      
+          </div></div>  
+
 
  <div id="floating-container">      
           <img id="thumbnail" src="https://static.91haoka.cn/1700565395Fu0.jpg" alt="Thumbnail Image">      
@@ -2201,7 +2229,7 @@
      </tr>   
      <tr>   
        <td class="header-cell"><b>性质:</b></td>   
-       <td>短期套餐：2年有效期（到期按政策续约）   
+       <td>短期套餐：2年有效期   
   
       </td>   
      </tr>   
@@ -2260,8 +2288,7 @@
   <br>激活首月赠送40元体验金，自动抵扣当月话费！
    
      <br><br>最终达成：<br> 首月免月租，第2-6个月19元月租，第7-24个月39元+每月285G全国流量（5+30+225=285G
-	  <br>   <br> 到期按政策续约：
-由于地方运营商未给出具体细节（到期前拨打10000申请流量续约），请暂时请当做短期套餐使用。       
+	
 
     <br>  <br><font color="red"> <br>    <br>  请勿出售、出租自己的手机卡，收卡人员100%用于电信诈骗，“帮信罪”了解一下！</font>
   
@@ -2288,133 +2315,6 @@
 
 
 
- <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/169996906277M.jpg" alt="Thumbnail Image">      
-               <div>       
-    <h1 id="title">“深海卡”【2年39元月租】 </h1> </a>    
-            <div id="content">      
-             <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【自己激活】【21周岁】</p></b></a>    
-  
-                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲100（专属链接）</p>     
-           <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:24个月有效期（到期按政策续约）</p>     
-     <font size="2" color="black"</p><p style="font-size: 190%;">每月220G全国通用流量+30G定向+100分钟全国通话</p>     
-     <font size="2" color="black"><p style="font-size: 160%;">首月免月租 ，第2-24个月39元
-         <font color="red">  <br>  <br></font> 
-
- </h2> 
-   <br><br><p>   
-   <br>    
-        </div>      
-      <div id="popup62" class="popup">    
-  
-     <table>   
-  
-  
-  
-  
-<h3 align="center">深海卡</h3>      <tr>   
-      <td class="header-cell"><b>月租:</b></td>   
-       <td>2年39元［首月免月租］</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>语音/短信:</b></td>   
-       <td><b>语音:</b>0.1元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>构成:</b></td>   
-       <td colspan="3">每月220G全国通用流量+30G定向流量+100分钟全国通话</td>   
-     </tr>   
-         <tr>   
-       <td class="header-cell"><b>首冲:</b></td>   
-       <td colspan="3">100元整（激活过程中） 
- <br></td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>性质:</b></td>   
-       <td>短期套餐：到期按政策续约  
-  
-      </td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>激活方式:</b></td>   
-  
-       <td><b>自己激活</b></td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>归属地:</b></td>   
-       <td>山西省内随机</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>号码:</b></td>   
-       <td>随机</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>年龄:</b></td>   
-       <td>21-60周岁</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>流量到账时间:</b></td>   
-       <td colspan="3">24小时内全部叠加<b>［实际到账流量以激活当月剩余天数折算］</b></td>   
-         <tr>   
-       <td class="header-cell"><b>合约期:</b></td>   
-       <td colspan="3">无合约期，无违约金！<b></b></td>   
-     </tr>   
-      <tr>   
-       <td class="header-cell"><b>销户方式:</b></td>   
-       <td colspan="3">支持“中国电信”APP在线异地销户<b></b></td>   
-     <tr>   
-       <td class="header-cell"><b>禁发地:</b></td>   
-       <td colspan="3">新疆、西藏、云南、广西（边防港市）、福建（莆田、龙岩）、广东茂名，其他以地方运营商审核为准!<a style="color: red;"></a></td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>发货时间</b></td>   
-       <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>   
-      </tr>   
-        <tr>   
-       <td class="header-cell"><b>套餐优势</b></td>   
-       <td colspan="3"><font color="#ff6f6d"><b>39元系列+超值大流量+带语音套餐</b></font></td>   
-      </tr>   
-   </table>   
-   <p>   
-   <table>   
-   <tr>   
-       <td>   
-  
-  
-  必须按要求一次性“首冲100元整”，否则无法达成宣传所承诺的流量［不可逆］    
-  
-    <br>   <br> 
-<font color="red">原套餐显示59元+20G全国通用流量+30G定向流量</font> 
-    <p>参加“充100元送240”活动后，100元本金立即到账  
-<br> 赠送的240元，次月起每月返10元，共返24个月。   
-  <br>次月起，系统每月自动减免10元，共减免24个月。
-      <br>激活首月送60元体验金，自动抵扣当月月租！<br> 
-<br>  
-    
-  激活48小时内自动叠加200G全国通用流量包+100分钟全国通话<br><br>
-<br>综上所述：首月免月租，第2-24个月39元+每月220G全国通用流量+30G定向流量+100分钟全国通话<br>  <br> 
-<font color="red">首月实际到账流量与语音，以当月剩余天数折算！</font> 
-  
-   </td></tr></table>   
-    <table>   
-   <tr>   
-       <td>     
-   <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d"></font>   
-    </td></tr></table>   
-     <div class="parent-container">     
-      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=22588">    
-        <button id="bt1" style="color: white;"><b>点击办理</b></button>    
-      </a>   
-      </div>   
-      </div>      
-    <div id="floating-menu">      
-      </button>       
-         <button id="btn61"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;    
-      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=22588">      
-        <button id="bt1"style="color: white;"><b>点击办理</b></button>      
-      </a>      
-        </div>      
-          </div></div>  
 <div id="floating-container">        
             <img id="thumbnail" src="https://static.91haoka.cn/1699973614xNv.jpg" alt="Thumbnail Image">        
             <div>        
@@ -2795,132 +2695,6 @@
       </a>      
         </div>       
           </div></div> 
-
-<div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1699188245wug.jpg" alt="Thumbnail Image">      
-          <div>      
-    <h1 id="title">“会员卡”（双套餐） 【16-60】【16-30周岁】 </h1> </a>    
-            <div id="content">      
-             <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【支持5G SA】【5G黄金速率500mbps】【视频会员送1年】</b></a> </p>  
-                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲100元（“中国联通”APP内）</p>     
-           <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:有效期48个月</p>     
-     <font size="2" color="black"</p><p style="font-size: 190%;">全国版：每月100G全国通用流量+300分钟全国通话
-       <br>  浙江版：每月100G全国通用流量+500分钟全国通话</p>     
-     <font size="2" color="red"><p style="font-size: 160%;">全国版：首月11，第2-5个月9元月租，第6-48个月29元月租（18-30周岁）
-           <br>
-         浙江版：首月10，第2-5个月9元月租，第6-48个月29元月租（16-60周岁）</p></font>
-  
-  </a> </p>
-    <br>  
-        </div>      
-      <div id="popup4" class="popup">    
-     <table>      
-   <h1 align="center">会员卡（双套餐）</h1>   
-     <tr>   
-      <td class="header-cell"><b>月租:</b></td>   
-       <td>全国版：首月11，第2-5个月9元月租，第6-48个月29元月租
-           <br>
-         浙江版：首月10，第2-5个月9元月租，第6-48个月29元月租</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>语音/短信:</b></td>   
-       <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>构成:</b></td>   
-       <td colspan="3">全国版：每月100G全国通用流量+300分钟全国通话
-       <br>  浙江版：每月100G全国通用流量+500分钟全国通话<b></b></td>   
-     </tr>   
-         <tr>   
-       <td class="header-cell"><b>首冲:</b></td>   
-       <td colspan="3">“中国联通”APP预存100元整   
-  
-   </td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>性质:</b></td>   
-       <td>短期套餐: 有效期48个月（会员只送1年）   
-   </td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>激活方式:</b></td>   
-  
-       <td><b></b>自己激活（ 快递袋内附有教程）&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>归属地:</b></td>   
-       <td><b>随机</b></td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>号码:</b></td>   
-       <td><b>随机</B></td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>年龄:</b></td>   
-       <td>全国版：18-30周岁 <br> 浙江版：16-60周岁</td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>流量到账时间:</b></td>   
-       <td colspan="3">实时到账<b>［流量全额到账］</b></td>   
-         <tr>   
-       <td class="header-cell"><b>合约期:</b></td>   
-       <td colspan="3">无合约期（可随时销户，无违约金！）<b></b></td>   
-     </tr>   
-      <tr>   
-       <td class="header-cell"><b>销户方式:</b></td>   
-       <td colspan="3">支持“中国联通”App在线异地销户！<b></b></td>   
-     <tr>   
-       <td class="header-cell"><b>禁发地:</b></td>   
-       <td colspan="3">全国版：北京、云南、辽宁、新疆、西藏、贵州、河南、江西上饶、赣州、九江、内蒙通辽、宁夏银川。<font color="#ff6f6d"><b><br>浙江版：只发浙江省内</b></font></td>   
-     </tr>   
-     <tr>   
-       <td class="header-cell"><b>发货时间</b></td>   
-       <td colspan="3">审核期1-3个工作日，若审核通过2-3天内送达！</td>   
-      </tr>   
-        <tr>   
-       <td class="header-cell"><b>套餐优势</b></td>   
-       <td colspan="3"><font color="#ff6f6d"><b>超低月租+超大通话+视频会员</b></font></td>   
-      </tr>   
-   </table>   
-   <p>   
-   <table>   
-   <tr>   
-       <td>   
-    必须按要求“首充100”，否则无非达成宣传所承诺的流量［不可逆］     
-    <p>参加冲100活动后，100元本金立即到账。
-	    <font color="#ff6f6d">原套餐显示29元<br></font>
-     <br>全国版：首月扣11元月租（90G全国通用流量+180分钟全国通话）
-	<br>第2-5个月9元月租，+每月100G全国通用流量+300分钟全国通话（每月减免20元，首冲后72小时后到账）
-<br>第6-50个月每月29元月租+每月100G全国通用流量+300分钟全国通话
-<br><br><br>浙江版：首月扣10元月租（40G全国通用流量+380分钟全国通话）
-	<br>第2-5个月9元月租+每月100G全国通用流量+500分钟全国通话（每月减免20元，首冲后72小时后到账）
-<br>第6-48个月每月29元月租+每月100G全国通用流量+500分钟全国通话
-
-		<br><br> <font color="#ff6f6d">会员有效期只有1年，35款每月任选其一
-			<br>领取路径：公众号：沃音乐--乐生活--乐会员--视频铂金会员（需登录后查看）</font>
-		    
-	  <br><br>  <font color="#ff6f6d">各种优惠减免与会员72小时候自动叠加，勿催！</font>
-	</td></tr></table>   
-    <table>   
-   <tr>   
-       <td>     
-   <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d"></font>   
-    </td></tr></table>   
-     <div class="parent-container">     
-      <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=325865">    
-        <button id="bt1" style="color: white;"><b>点击办理</b></button>    
-      </a>   
-      </div>   
-       </div>      
-    <div id="floating-menu">      
-      </button>       
-         <button id="btn47"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;    
-      <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=325865">      
-        <button id="bt1"style="color: white;"><b>点击办理</b></button>      
-      </a>      
-        </div>         
-          </div></div>   
-
 
 
 
@@ -4088,22 +3862,22 @@
     <div id="floating-menu">      
      
      
-      <a href="http://wk.xiaowoxiangq.com/k/index.html?code=DbWuP9Tryl">      
+      <a href="http://wk.xiaowoxiangq.com/k/index.html?code=x2d7PmfnZq">      
         <button id="bt1"style="color: white;"><b>点击办理</b></button>      
       </a>      
         </div>      
           </div></div>   
   
    <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/170021698928R.jpg" alt="Thumbnail Image">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1700746853y75.jpg" alt="Thumbnail Image">      
           <div>      
-    <h1 id="title">“广寒卡”【半年19元】  </h1> </a>    
+    <h1 id="title">“深圳移动卡（可选号版）”【1年29元】  </h1> </a>    
             <div id="content">      
              <font size="2" color="black"</p><p style="font-size: 180%;"> <b><a style="color: red;">【支持5G SA】【16-65周岁】</p></b></a>    
   
-                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（必须微信或支付宝内）</p>     
+                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（必须微信或支付宝，请参考图文介绍）</p>     
            <font size="2" color="black"</p><p style="font-size: 180%;">短期套餐:1年有效期</p>     
-     <font size="2" color="black"</p><p style="font-size: 190%;">每月125G全国通用流量+30G定向</p>     
+     <font size="2" color="black"</p><p style="font-size: 190%;">每月105G全国通用流量+30G定向</p>     
      <font size="2" color="black"><p style="font-size: 160%;">  
   
    <br></a>   
@@ -4114,12 +3888,12 @@
         </div>      
       <div id="popup66" class="popup">    
   
-   <h5 align="center">广寒卡</h5>   
+   <h5 align="center">深圳移动卡（可选号版）”</h5>   
      <table>    
   
      <tr>   
       <td class="header-cell"><b>月租:</b></td>   
-       <td>19元（半年）</td>   
+       <td>1年内19元</td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>语音/短信:</b></td>   
@@ -4131,7 +3905,7 @@
      </tr>   
          <tr>   
        <td class="header-cell"><b>首冲:</b></td>   
-       <td colspan="3">50元整 （必须微信或支付宝）
+       <td colspan="3">100元整 （必须微信或支付宝：宣传页图文介绍）
   
   
        </td>   
@@ -4149,11 +3923,11 @@
      </tr>   
      <tr>   
        <td class="header-cell"><b>归属地:</b></td>   
-       <td>随机</td>   
+       <td>深圳</td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>号码:</b></td>   
-       <td>随机</td>   
+       <td>申请页面自由选择</td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>年龄:</b></td>   
@@ -4171,7 +3945,7 @@
        <td colspan="3">10086/线下营业厅<b></b></td>   
      <tr>   
        <td class="header-cell"><b>禁发地:</b></td>   
-       <td colspan="3">广东省、云南省,西藏自治区,新疆维吾尔自治区，云南、四川，其他以运营商审核为准！<font color="#ff6f6d"><b> </b></font></td>   
+       <td colspan="3">以运营商审核为准！<font color="#ff6f6d"><b>可发广东 </b></font></td>   
      </tr>   
      <tr>   
        <td class="header-cell"><b>发货时间</b></td>   
@@ -4179,7 +3953,7 @@
       </tr>   
         <tr>   
        <td class="header-cell"><b>套餐优势</b></td>   
-       <td colspan="3"><font color="#ff6f6d"><b>半年19元+移动大流量</b></font></td>   
+       <td colspan="3"><font color="#ff6f6d"><b>可发广东，深圳移动大流量</b></font></td>   
       </tr>   
    </table>   
    <p>   
@@ -4191,11 +3965,10 @@
 	<font color="red">原月租显示59元+10G全国通用流量+30G定向流量  
 	</font>
       <br>参加“50元送120”活动后，50元本金立即到账。赠送的120元每月返10元，共返12本月
- <br>次月起店铺每月15日额外赠送10元（赠送5个月）
-       <br>24小时内叠加115G全国通用流量（有效期12个月）
+       <br>24小时内叠加95G全国通用流量（有效期12个月）
 	     <br>第1-12个月每月系统自动减免20元
          <br><br>最终达成：
-	      <br> 首月免月租，第2-6个月19元，第7-12个月29元月租+每月125G全国通用流量+30G定向流量
+	      <br> 首月免月租，第2-12个月29元月租+每月105G全国通用流量+30G定向流量
   
   
       <br>销户方式：10086/线下营业厅。 
@@ -4210,7 +3983,7 @@
     </td></tr></table>   
      <div class="parent-container">     
   
-      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=340599">    
+      <a href="http://wk.xiaowoxiangq.com/k/index.html?code=VxpjyvpLGa">    
         <button id="bt1" style="color: white;"><b>点击办理</b></button>    
       </a>   
       </div>   
@@ -4218,7 +3991,7 @@
     <div id="floating-menu">      
       </button>       
          <button id="btn66"><b>套餐详情</b> </a></button>     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;    
-      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=340599">      
+      <a href="http://wk.xiaowoxiangq.com/k/index.html?code=VxpjyvpLGa">      
         <button id="bt1"style="color: white;"><b>点击办理</b></button>      
       </a>      
         </div>       
@@ -4897,9 +4670,10 @@
   
   
   
+  
     
   <div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1691838667pBr.jpg">       
+           <img id="thumbnail" src="https://static.91haoka.cn/1700736785daJ.jpg">       
            <div>       
      <h1 id="title">“宽带卡”【1年49元，长期59元】  </h1> </a>     
              <div id="content">       
@@ -5042,6 +4816,121 @@
   
   
   <div id="floating-container">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1700823884Ylx.jpg" alt="Thumbnail Image">      
+          <div>     
+    <h1 id="title">“高山流水”【长期套餐】  【6个月4元，长期19元】</h1> </a>    
+            <div id="content">      
+             <font size="2" color="black"</p><p style="font-size: 190%;"> <b><a style="color: red;">【短期白嫖】【18周岁】</b></a> </p>   
+  
+                 <font size="2" color="black"</p><p style="font-size: 180%;">首冲50元（快递员/“中国联通”APP）</p>     
+           <font size="2" color="black"</p><p style="font-size: 180%;">长期套餐:无需续约（基础套餐）</p>     
+     <font size="2" color="black"</p><p style="font-size: 190%;">高山：2全国通用流量+10G定向流量+100分钟全国通话 <br> 
+流水：3全国通用流量+10G定向流量+100分钟全国通话</p>     
+     <font size="2" color="black"><p style="font-size: 160%;">可免费添加3个联通亲情号码！
+     </a>      
+        </div>      
+      <div id="popup70" class="popup">    
+     <table>      
+   <h1 align="center">高山流水</h1>   
+     <tr>   
+      <td class="header-cell"><b>月租:</b></td>   
+       <td>首月免月租，2-6个月4元［长期19元］</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>语音/短信:</b></td>   
+       <td><b>语音:</b>0.15元/分钟 &nbsp; &nbsp; &nbsp; &nbsp;<b>短信:</b>0.1元/条</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>构成:</b></td>   
+       <td colspan="3">高山：2全国通用流量+10G定向流量+100分钟全国通话 <br> 
+流水：3全国通用流量+10G定向流量+100分钟全国通话<b></b></td>   
+     </tr>   
+         <tr>   
+       <td class="header-cell"><b>首冲:</b></td>   
+       <td colspan="3">京东快递员/中国联通充50元整  ！ 
+  
+   </td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>性质:</b></td>   
+       <td>长期套餐：自动续约，官方可查！ 
+   </td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>激活方式:</b></td>   
+  
+       <td><b></b>快递员激活&nbsp;&nbsp;&nbsp;&nbsp;<b>  </b>   </td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>归属地:</b></td>   
+       <td>随机</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>号码:</b></td>   
+       <td>随机</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>年龄:</b></td>   
+       <td>18-60周岁</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>流量到账时间:</b></td>   
+       <td colspan="3">实时到账<b>［流量语音全额到账］</b></td>   
+         <tr>   
+       <td class="header-cell"><b>合约期:</b></td>   
+       <td colspan="3">无合约期（可随时销户，无违约金！）<b></b></td>   
+     </tr>   
+      <tr>   
+       <td class="header-cell"><b>销户方式:</b></td>   
+       <td colspan="3">支持“中国联通”App在线销户！<b></b></td>   
+     <tr>   
+       <td class="header-cell"><b>禁发地:</b></td>   
+       <td colspan="3">新疆、西藏.、广西、贵州、云南，其他以地方运营商审核为准！禁发地少。<font color="#ff6f6d"><b></b></font></td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>发货时间</b></td>   
+       <td colspan="3">审核期1-3个工作日，若审核通过2-3天送达</td>   
+      </tr>   
+        <tr>   
+       <td class="header-cell"><b>套餐优势</b></td>   
+       <td colspan="3"><font color="#ff6f6d"><b>半年4元（长期19）免费3个亲情号码</b></font></td>   
+      </tr>   
+   </table>   
+   <p>   
+   <table>   
+   <tr>   
+       <td>   
+ 
+    必须按要求“首充50元”，否则无非达成宣传所承诺的流量［不可逆］     
+    <p> 
+ <br> 
+   <br>充50送50，每月返10元，共返5个月
+中国联通APP--我的--我的礼包：手动领取20元话费券（抵扣月租），达成：首月免月租，第2-6个月4元+每月2/3G全国通用+10G定向+100分钟全国通话。 
+  
+ <br>第7个月起长期固定19元月租+每月2/3G全国通用流量+10G定向+100分钟全国通。 
+    
+  
+ </td></tr></table>   
+    <table>   
+   <tr>   
+       <td>       
+    <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b></font>   
+    </td></tr></table>   
+     <div class="parent-container">
+      <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=346983">    
+        <button id="bt1" style="color: white;"><b>点击办理</b></button>    
+      </a>   
+     </div>  
+       </div>      
+    <div id="floating-menu">      
+      </button>       
+         <button id="btn70"><b>套餐详情</b> </a></button>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;    
+      <a href="http://storep.91haoka.cn/h5/duoshangpin.html?id=346983">      
+        <button id="bt1"style="color: white;"><b>点击办理</b></button>      
+      </a>      
+        </div>      
+          </div></div>  
+  <div id="floating-container">      
           <img id="thumbnail" src="https://static.91haoka.cn/1685683689deq.jpg" alt="Thumbnail Image">      
           <div>     
     <h1 id="title">“亲子卡”【长期套餐】  【6个月9元，长期19元】</h1> </a>    
@@ -5117,14 +5006,14 @@
       </tr>   
         <tr>   
        <td class="header-cell"><b>套餐优势</b></td>   
-       <td colspan="3"><font color="#ff6f6d"><b>提前选号、收货地即归属地、半年9元（长期19）免费3个亲情号码，比“中国联通”营业厅合适太多！</b></font></td>   
+       <td colspan="3"><font color="#ff6f6d"><b>提前选号、收货地即归属地、半年9元（长期19）免费3个亲情号码</b></font></td>   
       </tr>   
    </table>   
    <p>   
    <table>   
    <tr>   
        <td>   
-   <font color="#66b3ff">    
+    
     必须按要求“首充50元”，否则无非达成宣传所承诺的流量［不可逆］     
     <p> 
  <br>现在可以提前选号，收货地即归属地，京东快递员/你当地联通工作人员上门开卡，免费添加3个亲情号码（联通）， 
@@ -5132,18 +5021,15 @@
   
  <br>6个月优惠结束后长期固定19元月租+每月3G全国通用流量+10G定向+100分钟全国通。 
        <br>能选归属地的套餐少之又少，套餐流量和语音“电话手表”根本用不完，此卡拨打免费添加的任何亲情号码，免费（不扣全国通话分钟数）！ 
-     <br> 各地方“中国联通”APP也有这个套餐，但无任何优惠，所以此套餐性价比无敌。  
+   
   
     </font> </td></tr></table>   
     <table>   
    <tr>   
        <td>       
-    <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b>&nbsp;&nbsp;&nbsp;</font></button><font color="#ff6f6d">再次点击可关闭</font>   
+    <button class="popup-btn" data-popup="popup60"><b>注意事项（必看）</b></font>   
     </td></tr></table>   
-     <div class="parent-container"> <div class="tooltip"><b>点击下方任意位置可关闭全部窗口</b></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+     <div class="parent-container">  
       <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=5346051">    
         <button id="bt1" style="color: white;"><b>点击办理</b></button>    
       </a>   
@@ -5930,7 +5816,7 @@
                  
                   <br> <br>有任何合理的建议或意见请私信"店铺人工客服”！我将尽力实现！
  <br> <br>个别网络访问较慢，请耐心等待！ <br>
-        <h1><a href="https://www.enshuicards.cn/1sift.html">点此直达</a>
+        <h1><a href="https://enshuicards.cn/1sift.html">点此直达</a>
 </h1>
            
 
@@ -6081,5 +5967,4 @@
  <script src="https://popocard.gitee.io/enshui.io/popup.js"></script> 
 	     <script src="https://popocard.gitee.io/enshui.io/guding.js"> </script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-   
-        <script src="https://popocard.gitee.io/enshui.io/jy.js"></script>    </body>  </html>
+   </body>  </html>
