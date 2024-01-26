@@ -33,7 +33,7 @@ h1 {
 
 #filterFormContainer label span {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 1px 3px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
