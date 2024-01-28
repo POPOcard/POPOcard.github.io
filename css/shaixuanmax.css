@@ -33,7 +33,7 @@ h1 {
 
 #filterFormContainer label span {
     display: inline-block;
-    padding: 1px 3px;
+    padding: 3px 6px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
@@ -47,12 +47,12 @@ h1 {
 }
 
 #resultsContainer {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .product {
     border: 1px solid #ccc;
-    padding: 0px;
+    padding: 3px;
     margin: 0px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
