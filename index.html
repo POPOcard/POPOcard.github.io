@@ -9,29 +9,7 @@
 <script src="https://popocard.gitee.io/enshui.io/menu.js"></script>  
  <script src="https://popocard.gitee.io/enshui.io/content.js"></script> 
  <script src="https://popocard.gitee.io/enshui.io/tab.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 获取所有的 iframe 元素
-    var iframes = document.querySelectorAll('.myIframe');
-    
-    // 定义加载函数
-    function loadIframe(iframe, url) {
-        iframe.src = url;
-    }
 
-    // 获取所有的按钮元素
-    var buttons = document.querySelectorAll('.loadButton');
-
-    // 为每个按钮添加点击事件监听器
-    buttons.forEach(function(button, index) {
-        button.addEventListener('click', function() {
-            var iframe = iframes[index];
-            var url = iframe.getAttribute('src');
-            loadIframe(iframe, url);
-        });
-    });
-});
-</script>
 
   	<style> @keyframes breathe {
     0% { transform: scale(1); }
