@@ -1,0 +1,72 @@
+.highlight-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 10px; /* 圆润度 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 更轻的阴影效果 */
+    margin-bottom: 10px; /* 段落间距 */
+    position: relative;
+    left: 2px;
+}
+
+.highlight0 {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px; /* 圆润度 */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* 更轻的阴影效果 */
+    margin-bottom: 3px; /* 段落间距 */
+    position: relative;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px; /* 调整位置 */
+    margin-right: 5px;
+}
+
+.highlight1 {
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0);
+    color: #333; /* 更深的字体颜色 */
+}
+
+.highlight2 {
+    background: linear-gradient(to right, #ffe082, #ffd54f);
+    color: #333; /* 更深的字体颜色 */
+}
+
+.highlight3 {
+    background: linear-gradient(to right, #d1f7d1, #a0ffa0);
+    color: #333; /* 更深的字体颜色 */
+}
+
+.highlight4 {
+    background: linear-gradient(to right, #c1eaff, #9ecfff);
+    color: #333; /* 更深的字体颜色 */
+}
+
+.highlight5 {
+    background: linear-gradient(to right, #ffc0cb, #ff91a4);
+    color: #333;
+}
+
+.highlight6 {
+    color: #e57373; /* 更柔和的红色 */
+}
+.highlight7 {
+    background: black;
+    color: white;
+}
+
+.highlight8 {
+    background: #1E90FF;
+    color: white;
+}

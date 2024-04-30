@@ -1,0 +1,101 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    font-size: 25px;
+    z-index: 9998;
+    line-height: 1;
+    width: 98%;
+    user-select: none;
+}
+
+.popup::before,
+.popup::after,
+.popup-another::before {
+    content: "恩水通信";
+    position: absolute;
+    font-size: 90px;
+    opacity: .1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.popup::before {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup::after {
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.popup-another::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup-btn, #bt1, [id^="btn"] {
+    display: inline-block;
+    background-color: #d2b48c;
+    color: transparent;
+    -webkit-text-stroke: .05px black;
+    -webkit-text-fill-color: white;
+    border: 0;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.popup-btn:hover, #bt1:hover, [id^="btn"]:hover {
+    background-color: #0069d9;
+}
+
+.popup-btn:focus, #bt1:focus, [id^="btn"]:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.popup-btn:active, #bt1:active, [id^="btn"]:active {
+    background-color: #0062cc;
+}
+.my-element {
+    animation: breathe 1s infinite;
+}
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#bt1 {
+    animation: breathe 1s infinite;
+}
+
+#btn {
+    animation: breathe 1s infinite;
+}
+
+#tab7Btn.custom-color {
+  color: black !important;
+  background-color: #C0C0C0 !important;
+}

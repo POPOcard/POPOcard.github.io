@@ -1,0 +1,116 @@
+ body {
+user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+          font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff; /* 设置背景色为白色 */
+    }
+   header {
+        background-color: #fff; /* 设置背景色为白色 */
+        color: #333; /* 设置文字颜色为黑色 */
+        padding: 6px 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc; /* 增加底部边框 */
+    }
+    nav {
+        display: flex;
+    }
+    nav a {
+        font-size: 10px;
+        color: #333; /* 设置文字颜色为黑色 */
+        text-decoration: none;
+        margin-left: 10px;
+        transition: color 0.3s; /* 添加过渡效果 */
+        border: 1px solid #333; /* 添加边框 */
+        padding: 3px 5px; /* 添加内边距 */
+    }
+    nav a:hover {
+        color: #666; /* 设置鼠标悬停时的文字颜色 */
+    }
+    .menu-icon {
+      
+        padding: 5px;
+        cursor: pointer;  
+    }
+
+    .drawer-menu {
+        position: fixed;
+        top: 0;
+        left: -25px;
+        width: 25px;
+        height: 100%;
+        background-color: #fff;
+        color: #333; 
+        padding: 5px;
+        transition: left 0.3s ease;
+        border: 1px solid black; 
+        z-index: 5; /* 设置 z-index 为 2 */
+    }
+    .drawer-menu.active {
+        left: 0;
+    }
+    .drawer-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .drawer-menu li {
+        margin-bottom: 5px;
+    }
+    .drawer-menu a {
+        color: #333; /* 设置文字颜色为黑色 */
+        text-decoration: none;
+        transition: color 0.3s; /* 添加过渡效果 */
+    }
+    .drawer-menu a:hover {
+        color: #666; 
+    }
+    /* 媒体查询 */
+    @media only screen and (max-width: 600px) {
+      
+    
+    }
+    .content {
+        display: flex;
+font-size: 10px;
+    }
+    .tabs {
+        list-style-type: none;
+        padding: 0;
+        border-right: 1px solid black; /* 增加右侧边框 */
+    }
+    .tabs li {
+        margin-bottom: 1px;
+    }
+    .tabs a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 8px;
+    }
+    .tabs a:hover {
+        background-color: #f4f4f4; /* 设置鼠标悬停时的背景色 */
+ color: #666; 
+    }
+    .tab-content {
+        flex: 1;
+        padding: 5px;
+
+    }
+
+.tab-content > div {
+        display: none;
+        padding: 1px;
+
+    }
+ iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }

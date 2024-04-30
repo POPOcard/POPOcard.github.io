@@ -1,0 +1,28 @@
+
+      body {
+   user-select: none; 
+            font-size: 9px; /* Adjust as needed */
+            
+        
+            margin: 0; /* Remove default margin */
+
+            padding: 1px; /* Adding some padding for readability */
+        }
+        h1 {
+            font-size: 15px; /* Adjust as needed */
+        }
+        h2 {
+            font-size: 20px; /* Adjust as needed */
+        }
+        p {
+            font-size: 10px; /* Adjust as needed */
+        }
+.centered {
+            text-align: center; /* Center the text */
+        }
+.footer {
+    position: relative;
+    bottom: 2px;
+    right: -240px; 
+    font-size: 10px; 
+}
