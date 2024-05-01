@@ -1,0 +1,53 @@
+@keyframes breathe {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #fff; /* 按钮文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    border-radius: 4px; /* 圆角边框 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    animation: breathe 3s infinite; /* 添加呼吸跳动效果 */
+font-size: 12px;
+}
+
+/* 绿色按钮 */
+.btn.green {
+    background-color: #28a745; /* 绿色 */
+}
+
+.btn.green:hover {
+    background-color: #218838; /* 深绿色 */
+}
+
+/* 蓝色按钮 */
+.btn.blue {
+    background-color: #007bff; /* 蓝色 */
+}
+
+.btn.blue:hover {
+    background-color: #0056b3; /* 深蓝色 */
+}
+
+/* 红色按钮 */
+.btn.red {
+    background-color: #dc3545; /* 红色 */
+}
+
+.btn.red:hover {
+    background-color: #c82333; /* 深红色 */
+}
+
+/* 黑色按钮 */
+.btn.black {
+    background-color: #343a40; /* 黑色 */
+}
+
+.btn.black:hover {
+    background-color: #23272b; /* 深黑色 */
+}

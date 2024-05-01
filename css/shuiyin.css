@@ -1,0 +1,19 @@
+body:before{
+  content: '恩水通信';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  
+  color: #0d745e;
+  font-size: 80px;
+  font-weight: 500px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  opacity: 0.1;
+  transform: rotate(-15deg);
+}

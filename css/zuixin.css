@@ -1,0 +1,114 @@
+/* Common styles for all elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Tab styles */
+.tab {
+    display: none;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.tab-menu button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-menu button:hover {
+    background-color: #ddd;
+}
+
+.tab-menu button.active {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+/* Article styles */
+.article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.article h1 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.article p {
+    margin: 10px 0;
+    font-size: 10px;
+}
+
+.article .timestamp {
+    color: #999;
+    font-size: 8px;
+}
+
+/* Thumbnail and Lightbox styles */
+.thumbnail {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.lightbox-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.lightbox-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
