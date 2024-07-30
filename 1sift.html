@@ -1,134 +1,333 @@
-<!DOCTYPE html><html><meta charset="UTF-8"><title>恩水通信</title>
-     <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-control" content="no-cache">
-    <meta http-equiv="Cache" content="no-cache">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
+<!DOCTYPE html>  <html><meta charset="UTF-8"><title>恩水通信</title>  
+  
+  <link rel="stylesheet" href=".//css/jindu.css">      
+   <script src="./css/jindu.js"></script>   
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="apple-mobile-web-app-capable" content="yes"> 
+     <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+     <meta name="format-detection" content="telephone=no"> 
+     <meta http-equiv="Expires" content="0"> 
+     <meta http-equiv="Pragma" content="no-cache"> 
+     <meta http-equiv="Cache-control" content="no-cache"> 
+     <meta http-equiv="Cache" content="no-cache"> 
+     <meta name="renderer" content="webkit"> 
+     <meta http-equiv="Cache-Control" content="no-siteapp"> 
+ <div class="progress-container" id="progressContainer"> 
+     <div class="progress-bar" id="myBar"></div> 
+     <div class="progress-text" id="progressText">0%</div> 
+   </div> 
+  
+  <div class="content" id="content" style="display: none;"> 
+  
+ </div> 
+  
+      <link rel="stylesheet" href="./css/caidan.css">    
+   <link rel="stylesheet" href=".//css/tab.css">  
+ <link rel="stylesheet" href=".//css/color.css">   
+   <link rel="stylesheet" href=".//css/biaoshi.css">      
+  
+   <script src="./css/tab.js"></script> 
+   <script src="./css/menu.js"></script>   
+   <script src="./css/content.js"></script>   
+   <link rel="stylesheet" href="./css/shaixuan.css">     
+   </head> 
+         <body> 
+  <body class="{{ if is_weixin }}weixin{{ endif }}">    
+    <script> window.onload=function(){var a=document.getElementById("floating-container");if(isWeixinBrowser()){a.style.border="1px solid black"}};function isWeixinBrowser(){var a=navigator.userAgent.toLowerCase();return a.indexOf("micromessenger")!==-1}; </script>          
+   <script src="./css/tc11.js"></script>  
+   <script src="./css/tc21.js"></script>  
+ </body> <style>#tab7Btn.custom-color { 
+   color: black !important; 
+   background-color: #808080 !important; 
+ }</style> 
+  
+   <div id="filterFormContainer"> 
+ <span><h2><b>运&ensp;营&ensp;商&ensp;：</b></span> 
+       <label> 
+         <input type="radio" name="operator" value="all" checked> 
+         <span>全部</span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="operator" value="mobile"> 
+         <span><a style="color: #008B45;">中国移动</a></span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="operator" value="unicom"> 
+         <span><a style="color:  #EE2C2C;">中国联通</a></span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="operator" value="telecom"> 
+         <span><a style="color: #1E90FF;">中国电信</a></span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="operator" value="bcast"> 
+         <span><a style="color: #00CD66;">中国广电</a></span> 
+       </label></h2> 
+  
+ <span><h2><b>性&nbsp&nbsp&nbsp&nbsp&ensp;&ensp;质&ensp;：</b></span> 
+       <label> 
+         <input type="radio" name="packageType" value="all" checked> 
+         <span>全部</span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="packageType" value="longTerm"> 
+         <span>长期套餐</span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="packageType" value="shortTerm"> 
+         <span>短期套餐</span></h2> 
+       </label> 
+  
+ <span><h2><b>月&ensp;&ensp;&ensp;&ensp;租&ensp;：</b></span> 
+       <label> 
+         <input type="radio" name="minAge" value="all" checked> 
+         <span>全部</span>&ensp; 
+       </label> 
+       <label> 
+         <input type="radio" name="minAge" value="9"> 
+         <span>9元</span>&ensp; 
+        </label> 
+  <label> 
+         <input type="radio" name="minAge" value="19"> 
+         <span>19元</span>&ensp; 
+        </label> 
+        <label> 
+         <input type="radio" name="minAge" value="29"> 
+         <span>29元</span>&ensp; 
+        </label> 
+  
+        <label> 
+         <input type="radio" name="minAge" value="39"> 
+         <span>39元</span>&ensp; 
+        </label> 
+  
+        <label> 
+         <input type="radio" name="minAge" value="49"> 
+         <span>49元</span>&ensp; 
+        </label> 
+           <label> 
+         <input type="radio" name="minAge" value="59"> 
+         <span>59元</span> 
+ </h2>       </label> 
+  <span><h2><b>敏感地区&ensp;：</b></span> 
+       <label> 
+       <input type="radio" name="deliveryArea" value="all" checked> 
+       <span>默认</span>&ensp; 
+     </label> 
+     <label> 
+       <input type="radio" name="deliveryArea" value="Yunnan"> 
+       <span>云南</span>&ensp; 
+     </label> 
+     <label> 
+       <input type="radio" name="deliveryArea" value="Beijing"> 
+       <span>北京</span>&ensp; 
+     </label> 
+    <label> 
+       <input type="radio" name="deliveryArea" value="Guangdong"> 
+       <span>广东</span>&ensp; 
+     </label> 
+     <label> 
+       <input type="radio" name="deliveryArea" value="Guangxi"> 
+       <span>广西</span>&ensp; 
+     </label> 
+  
+     <label> 
+       <input type="radio" name="deliveryArea" value="Xinjiang"> 
+       <span>新疆</span>&ensp; 
+     </label> 
+     <label> 
+       <input type="radio" name="deliveryArea" value="Tibet"> 
+       <span>西藏</span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 
+     </label> 
+ <label> 
+  
+ <a href="index.html"> <span><font color="red">返回主页</h2></a></font></span> 
+     </label> 
+    <br>        
+ <b>【以下“条件”可多选】(如不显示，即不符合指定条件）</b><br> 
+  
+  <h2>   <label> 
+         <input type="checkbox" name="selfActivate"> 
+         <span>自己激活</span> 
+       </label>&ensp;  
+ <label> 
+         <input type="checkbox" name="number"> 
+         <span>自己选号</span> 
+       </label>&ensp;  
+       <label> 
+         <input type="checkbox" name="rollover"> 
+         <span>流量结转</span> 
+       </label>&ensp;  
+  
+      <label> 
+         <input type="checkbox" name="broadband"> 
+         <span>宽带</span> 
+       </label> 
+  
+ &ensp; 
+       <label> 
+         <input type="checkbox" name="location"> 
+         <span>选归属地</span> 
+       </label>&ensp; 
+     <label> 
+         <input type="checkbox" name="superData"> 
+         <span>副卡</span> 
+       </label>&ensp;  
+ <label> 
+         <input type="checkbox" name="videoMember"> 
+         <span>视频会员</span> 
+       </label> 
+  <br>  <br> 
+   <label> 
+         <input type="checkbox" name="niceNumber"> 
+         <span>黄金速率：500mbps</span> 
+       </label>&ensp; 
+       <label> 
+         <input type="checkbox" name="history"> 
+         <span>白金速率：1000mbps</span> 
+       </label> 
+  
+  
+               <label> 
+         <input type="checkbox" name="superVoice"> 
+         <span><font color="red"></font></span> 
+       </label><label> 
+         <input type="checkbox" name="recommended"> 
+         <span><font color="red"></font></span> 
+       </label></h2> 
+        </div> </div> 
+  
 
-<link rel="icon" href="./favicon.ico">
-<link rel="shortcut icon" href="./favicon.ico">
-   
- <link rel="stylesheet" href="./css/jindu.css">     
- <script src="./css/jindu.js"></script>  
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
 
-<div class="progress-container" id="progressContainer">
-    <div class="progress-bar" id="myBar"></div>
-    <div class="progress-text" id="progressText">0%</div>
-  </div>
-
- <div class="content" id="content" style="display: none;">
-
-</div>
-
-<center><h2>浏览量： <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>人</h2></center> 
-     <link rel="stylesheet" href="./css/caidan.css">   
-  <link rel="stylesheet" href="./css/tab.css">     
-<link rel="stylesheet" href="./css/color.css">  
-<link rel="stylesheet" href="./css/biaoshi.css"> 
-<link rel="stylesheet" href="./css/zhedie.css">
-
-</head> 
-<body>  
-
-<script src="./css/menu.js"></script>  
- <script src="./css/content.js"></script> 
- <script src="./js/zhedie.js"></script> 
- <script src="./css/tab.js"></script>
-	<body class="{{ if is_weixin }}weixin{{ endif }}">   
-   <script> window.onload=function(){var a=document.getElementById("floating-container");if(isWeixinBrowser()){a.style.border="1px solid black"}};function isWeixinBrowser(){var a=navigator.userAgent.toLowerCase();return a.indexOf("micromessenger")!==-1}; </script> 
+<!--花魁卡 -->
+ <div id="floating-container">        
+              <img id="thumbnail" src="https://static.91haoka.cn/17130008776tx440016.jpg" alt="Thumbnail Image">        
+              <div>  
+                <span  style="font-size: 160%;" class="highlight highlight7">------------【短期套餐】2年有效期------------ </span>  <br>
+  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
  
-  <script src="./css/ccopy.js"></script> </body>  
-	 <header> <img id="header-image" src="https://file.storep.91haoka.cn/img/1706099258263.jpeg">     </header>
-      <div class="menu">      
-               <a href="https://enshuicard.cn/kftz.html">      
-          <img id="menu-image1" img src="https://static.91haoka.cn/1682155560DDO.jpg" alt="Thumbnail 1" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
-          <span>人工服务</span>    
-  </a>      
-  <a href="https://enshuicard.cn/5chaxun.html">      
-          <img src="https://static.91haoka.cn/1682156239ARH.jpg" alt="Thumbnail 2" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
-         <span><b>订单查询</b></span>     
-  </a>      
-  <a href="https://mp.weixin.qq.com/s/6v7ONX8ab5dUn_lWuM-VNA">      
-          <img src="https://static.91haoka.cn/1682594993Jcy.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
-          <span>异地销户</span>       
-  </a>      
+  <span  style="font-size: 170%;" class="highlight highlight3">在线选号 </span>
 
-  </a>      
-  <a href="https://enshuicards.cn/1jydh.html">      
-          <img src="https://static.91haoka.cn/1682508575GMC.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
-          <span>解疑答惑</span>       
-  </a>      
-</a>      
+ <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br>
+<br><br><br>
+                    <div id="content">
+              <span  style="font-size: 85%;" class="">
+                 <b>   </b></a> 第1-24个月19元月租，
+  <br>每月<b>95G全国通用流量+60G定向+100分钟全国通话</b><br>       
+  <br><b> <font color="#ff6f6d">此版本为2年短期套餐</font></b> <br></span>
       
-  <a href="https://enshuicard.cn/fuli.html">      
-          <img src="https://static.91haoka.cn/1685359030YiP.jpg" alt="Thumbnail 3" style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" onmousedown="return false;" oncontextmenu="return false;"> <!-- 添加缩略图标 -->      
-          <span>福利活动</span>       
-  </a>   </div>      
-  <br>         
-       <div class="tab-menu"> 
-
-<div class="tab-container">       
-    <div class="main-tab" onclick="toggleTabs()">〖诚意推荐〗</div>
-    <div class="dropdown-tabs" id="dropdownTabs"><br>
-<button id="tab1Btn" class="active" onclick="openTab(event, 'tab1')" style="color: #5B5B5B;"><h1><b>长期使用</b></h1></button>
-<br><br><button id="tab2Btn" onclick="openTab(event, 'tab2')"  style="color: #5B5B5B;"><h1><b>短期过渡</b></h1></button>
-<br><br></div></div>
-
-        
-<button id="tab3Btn" onclick="openTab(event, 'tab3')" style="color: #1E90FF;"><h1><b>中国电信</b></h1></button>
-
-<button id="tab4Btn" onclick="openTab(event, 'tab4')" style="color: #EE2C2C;"><h1><b>中国联通</b></h1></button>
-
-<button id="tab5Btn" onclick="openTab(event, 'tab5')" style="color: #008B45;"><h1><b>中国移动</b></h1></button>
-
-<button id="tab6Btn" onclick="openTab(event, 'tab6')" style="color: #00CD66;"><h1><b>中国广电</b></h1></button>
-
-<button id="tab7Btn" onclick="openTab(event, 'tab7')" style="color: #fdb100; text-decoration: none;">
-  <h1><b><a href="1sift.html" style="color: inherit; text-decoration: inherit;">自由筛选</a></b></h1>
-</button>
-<div class="tab-container">
- <div class="main-tab">【其他业务】</div>
-<div class="dropdown-tabs"><br>
-
-<button id="tab8Btn" onclick="openTab(event, 'tab8')" style="color: #FF4500;">  <h1><b>专属靓号</b></h1>
-</button><br><br>
-
-<button id="tab9Btn" onclick="openTab(event, 'tab9')" style="color: #00CD00;"><h1><b>移动WiFi</b></h1></button>
-<br><br>
-
-<button id="tab10Btn" onclick="openTab(event, 'tab10')" style="color: #CD5555;"><h1><b>[物联卡]</b></h1></button>
-<br><br>
-
-</div></div></div></div>
-
-<div id="tab1" class="tab">  
-  <h2>省心省力，一步到位！只要不主动退订，资费、流量、通话长期固定不变！<br>（部分套餐需每年手动参加"充值活动续约"）</h2>
- <div id="mirrorBlock1"> </div>    <div id="mirrorBlock2"></div>      <div id="mirrorBlock3"></div>  
- <div id="mirrorBlock4"></div>     <div id="mirrorBlock5"></div>      <div id="mirrorBlock6"></div>
- <div id="mirrorBlock7"> </div>     <div id="mirrorBlock8"> </div>     <div id="mirrorBlock9"> </div>
-  <div id="mirrorBlock10"> </div>   </div> 
-
-  <div id="tab2" class="tab"> 
-    <h2>到期后取消赠送的流量包、语音包，恢复成官方基础套餐，但号码依然可以永久使用！<br>只是无大额流量包、语音包加持的官方基础套餐，性价比较低，推荐提前注销即可<br>（店内套餐均支持“在线异地销户”，不用去号码营业厅，真正的足不出户！）！</h2>
-    <div id="mirrorBlock11"> </div>    <div id="mirrorBlock12"></div>      <div id="mirrorBlock13"></div> 
-  <div id="mirrorBlock14"></div>      <div id="mirrorBlock15"></div>        <div id="mirrorBlock16"></div>
-    <div id="mirrorBlock17"> </div>   <div id="mirrorBlock18"> </div>      <div id="mirrorBlock19"> </div>
-  <div id="mirrorBlock20"> </div>  </div> 
+  </div>    <div id="popup" class="popup"> 
+  <iframe src="taocan/gxlt155G.html" frameborder="0" width="100%" height="1520px"></iframe>
+   <table> <tr> <td class="header-cell"> 
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+        <a href="   <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=495192">    
+    ">    
+          <button id="btt1" style="color: white;"><b>【---点击选号---】</b></button>    
+        </a>    </td></tr></table>   </div></div>
+  <div id="floating-menu">
+      <button id="btn"><b>套餐详情</b></button>    
+        </div></div></div>
 
 
-              <div id="tab3" class="tab">        
-                <h2>中国电信：套餐性价比全网最高！</h2>
+  
+
+  
+     
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
+  
+ <!-- 杭州卡 -->   
+   <div id="floating-container">         
+               <img id="thumbnail" src="https://static.91haoka.cn/17138584704BY440016.jpg" alt="Thumbnail Image">         
+               <div>   
+                 <span  style="font-size: 160%;" class="highlight highlight7">------------【长期套餐】自动续约------------ </span>  <br> 
+   <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp; 
+ <span  style="font-size: 170%;" class="highlight highlight2">在线选号 </span> &nbsp; 
+  
+   <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br> 
+ <br><br><br> 
+                     <div id="content"> 
+               <span  style="font-size: 85%;" class=""> 
+                  <b>   </b></a> 首年29元，长期每月39元月租 
+   <br>每月<b>185G全国通用流量+100分钟全国通话</b><br>        
+   <br><b> <font color="#ff6f6d"></font></b> <br></span> 
+  
+   </div>    <div id="popup" class="popup">  
+   <iframe src=".//taocan/zjlt185G.html" frameborder="0" width="100%" height="1600px"></iframe> 
+    <table> <tr> <td class="header-cell">  
+       <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
+   <div class="parent-container">      
+         <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=474495">     
+           <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>     
+         </a>    </td></tr></table>   </div></div> 
+   <div id="floating-menu"> 
+       <button id="btn"><b>套餐详情</b></button>     
+         </div></div> </div> 
  
-
-
+  
+ <div class="product" 
+      data-operator="telecom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="9"    
+      data-delivery-area="all"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="true"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
  <!-- 省米卡 -->  
-  <div class="codeBlock" id="codeBlock11">
   <div id="floating-container">       
            <img id="thumbnail" src="https://static.91haoka.cn/1713478751NkN440016.jpg" alt="Thumbnail Image">   <div> 
   <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】手动续约------------- </span>  <br>         
@@ -154,837 +353,84 @@
        </a>    </td></tr></table>   </div></div> 
  <div id="floating-menu"> 
      <button id="btn"><b>套餐详情</b></button>      
-         </div> </div></div>  
-
-
-
-
-
-<!-- 浙江 -->
-  <div class="codeBlock" id="codeBlock11">
-  <div id="floating-container">       
-             <img id="thumbnail" src="https://static.91haoka.cn/1719708742ShE440016.jpg" alt="Thumbnail Image">       
-             <div> 
-              <span  style="font-size: 160%;" class="highlight highlight8">----------------【短期套餐】2年有效期---------------- </span>  <br>
-
-              <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
- <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-   <span  style="font-size: 160%;" class="highlight highlight5">首月免月租 </span>  <br> <br>
-   <div id="content">
-              <span  style="font-size: 70%;" class=""> 
-             首月免月租，第2-24个月每月19元月租
-
-                <br>每月<b>105G全国通用流量+30G定向+100分钟（第二年无100分钟）</b> </span>
-                <br> <br>
-             <font size="2" color="red</p><p style="font-size: 150%;">超值短期，只需一次预存，流量语音均衡！ </p>   </font>
-        
-             </div>   <div id="popup" class="popup"> 
-  <iframe src="taocan/zjdx135G1.html" frameborder="0" width="100%" height="1500px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=529938">    
-          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-        </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>     
-      </div></div>    </div>
-
-
- <div class="codeBlock" id="codeBlock2">
-<!-- 内蒙卡 --> 
-
-
-
-   <div id="floating-container">      
-             <img id="thumbnail" src="https://static.91haoka.cn/1722127729cCQ440016.jpg" alt="Thumbnail Image">      
-                  <div>  
-                    <span  style="font-size: 160%;" class="highlight highlight7">---------------【长期套餐】自动续约--------------</span>  <br> 
-   <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-   <span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-   <span  style="font-size: 160%;" class="highlight highlight4">送2年视频会员 </span> &nbsp;
+         </div> </div></div>   
  
- <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁</span> &nbsp;
   
-                     <div id="content">
-               <span  style="font-size: 70%;" class="">
-   <br>首月10元， 长期29元月租+<br>每月<b>105G全国通用流量+++30G定向+2年视频会员</b></span><br> <br> 
-       
-    <font size="2" color="red"</p><p style="font-size: 150%;">会员种类：酷狗、优酷、芒果、爱奇艺、哩哩、腾讯视频等（）
-   <br> </p>  
-   </div> <div id="popup" class="popup"> 
-   <iframe src="taocan/nmgdx135G.html" frameborder="0" width="100%" height="1520px"></iframe>
-    <table> <tr> <td class="header-cell"> 
-       <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-   <div class="parent-container">     
-         <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=506445">    
-           <button id="btt1" style="color: white;"><b>【---申请---】</b></button>    
-
-
-      </a>    </td></tr></table>   </div></div>
-   <div id="floating-menu">
-       <button id="btn"><b>套餐详情</b></button>    
-          </div></div> </div>
-<!-- 湖南星 --> 
-  <div class="codeBlock" id="codeBlock2">
-  <div id="floating-container">      
-            <img id="thumbnail" src="https://static.91haoka.cn/1722044022AMk440016.jpg" alt="Thumbnail Image">      
-                 <div>    
-                  <span  style="font-size: 160%;" class="highlight highlight7">--------------【长期套餐】自动续约-------------- </span>  <br>
-      <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">自己激活</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">在线选号 </span>  &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span><br>
-   <div id="content">
-              <span  style="font-size: 85%;" class="">
-                 <b>   </b></a> <br>首月免月租，长期永久29元月租<br>
-  每月<b>105G全国通用流量+30G定向+100分钟全国通话</b></span> <br>   
-   <font size="2" color="black"><p style="font-size: 140%;"><b><br>注意接听短信/电话回访，按要求回复，否则不允发货！</p> 
-  <font size="2" color="red"><p style="font-size: 140%;"><br>（全国可用，无地域限制，后期无需参加“充值返费活动”）</b></p>   </font>
-          
-  </div> <div id="popup" class="popup"> 
-  <iframe src="taocan/hndx135G.html" frameborder="0" width="100%" height="1500px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=500160">    
-          <button id="btt1" style="color: white;"><b>【选号版】</b></button></a>     &nbsp;&nbsp; 
-   <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=551919">    
-          <button id="btt1" style="color: white;"><b>【湖南省内版】</b></button>    
-   
-
-     </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>      
-          </div></div> </div>
-
- <div class="codeBlock" id="codeBlock2">
-
- <!-- 白岩卡 --> 
- <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1722041955Ubp440016.jpg" alt="Thumbnail Image">   <div>
- <span  style="font-size: 160%;" class="highlight highlight7">-----------------【长期套餐】自动续约---------------- </span>  <br>        
-<span  style="font-size: 130%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight3">20-55周岁 </span>
-<span  style="font-size: 130%;" class="highlight highlight4">流量全结转</span>  &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight5">首月免月租 </span>
-
-       <div id="content">
-            <span  style="font-size: 66%;" class=""><a style="color: red;">
-               <b> <a style="color: red;">  </b></a>
- <br>首月免月租，长期永久29元月租+每月<b>105G全国通用流量+30G定向+200分钟</b><br>
- <b> <a style="color: red;"> </b></a></span></p>  
-
-     <font size="2" color="red"><p style="font-size: 140%;"><br>（全国可用，无地域限制，后期无需参加“充值返费活动”）</b></p>   </font>
-           
-</div> 
-<div id="popup" class="popup"> 
-<iframe src="taocan/jldx135G2.html" frameborder="0" width="100%" height="1500px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
-  <div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=463145">    
-        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>  </a>    </td></tr></table>   </div></div>
-
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>
-   </div>     </div>
-</div>
-<!-- 江西 -->
-<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1712750884Yuu440016.jpg" alt="Thumbnail Image">       
-           <div>
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】每年手动续约----------------</span>  
-
-            <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-65周岁 </span><br> 
- 
- <div id="content">
-            <span  style="font-size: 70%;" class=""> <br>首月免月租，
-            第2-13个月29元，每年续约后长期29元
-              <br>每月<b>105G全国通用流量+30G定向+100分钟</b> </span>
-              <br> <br>
-           <font size="2" color="black"</p><p style="font-size: 150%;"></p>   
-      
-        </div>     <div id="popup" class="popup"> 
-<iframe src="taocan/jxdx135G.html" frameborder="0" width="100%" height="1510px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=485546">    
-        <button id="bt1" style="color: white;"><b>【---点击办理---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>     
-        </div> </div>  
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-   
-   
-
-
-
-
-
- 
-
-
-
- 
-
-                
-
-
-              
-
-
-
-
-               
-
-
-
-
-     
-
-
-
-
-
-
-
-           
-
+  
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-      
   
-
-            
-   
-   
-        
-
-            
-   
-
-           
+ <div class="product" 
+      data-operator="unicom"      
   
-          
-
-     
-
-
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Yunnan"  
   
-     
-              
-
-
-
-
-     
-
-        
-         
-
-
-
- </div> </div>  
-
-
-   <div id="tab4" class="tab"> 
-    <h2>中国联通：多数城市网络稳定性比电信稳（具体看当地5G基站建设，及覆盖）</h2>
-
-
-
-
-
-<!-- 青芒卡 --> 
- <div class="codeBlock" id="codeBlock1">
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/17212745004uQ440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-
-<span  style="font-size: 160%;" class="highlight highlight4">自己激活 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>  <br><br>
-
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月按天折算，次月起长期19元月租
-<br>每月<b>95G全国通用流量+60G定向+100分钟全国通话</b></span><br><br>
-<font size="2" color="red"><p style="font-size: 150%;">【后期无需任何“充返续约”】</p></font>  
-
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>限时回归，随时下架！（只承诺长期19元月租，无法与其他优惠减免叠加）</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/jxlt155G2.html" frameborder="0" width="100%" height="1500px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-
-&nbsp;&nbsp; &nbsp;
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=493861">    
-        <button id="btt1" style="color: white;"><b>【点击申请】</b></button>    
-      </a>   
-
-      
-      </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div></div>
-
-<!-- 海南-->  
-<div class="codeBlock" id="codeBlock11">
-  <div id="floating-container">      
-           <img id="thumbnail" src="https://static.91haoka.cn/1722258034uVC440016.jpg" alt="Thumbnail Image">      
-                <div> 
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
- <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight4">自己激活 </span> &nbsp;
-
- <span  style="font-size: 170%;" class="highlight highlight3">18-28周岁 </span>
-<span  style="font-size: 170%;" class="highlight highlight4">N多视频会员送4年（每月任选其一） </span> &nbsp;<br> <br>
-    <div id="content">
-             <span  style="font-size: 70%;" class=""><a style="color: red;">
-                </a>第1-2个月免月租，第3-48个月每月29元<br>+每月<b>280G全国通用流量+100分钟全国通话+4年视频会员</b><br>
-         
-              </span>
-          <font size="2" color="black"</p><p style="font-size: 150%;"></b></p> </font> 
-         </div>   
-          <div id="popup" class="popup"> 
- <iframe src="taocan/hainlt280G.html" frameborder="0" width="100%" height="1500px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
- <div class="parent-container">     
-       <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=553181">    
-         <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>    
-       </a>   
-     </td></tr></table>   </div></div>
- <div id="floating-menu">
-     <button id="btn"><b>套餐详情</b></button>     
-         </div>  </div> </div> 
-<!-- 康城卡 --> 
- <div class="codeBlock" id="codeBlock1">
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1722073489gFm440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight4">自己激活</span>
-<span  style="font-size: 160%;" class="highlight highlight3">18-30周岁 </span> <br><br>
-
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月10元，次月起长期19元月租
-<br>每月<b>60G全国通用流量+30G定向+300分钟全国通话</b></span><br>
-<font size="2" color="red"><p style="font-size: 150%;"></p></font>  
-
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>下单需要上传照片！（防电诈，介意勿拍）</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/cqlt90G.html" frameborder="0" width="100%" height="1500px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=552637">    
-        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div></div>
-        
-        
-        
-
-
-<!-- 徽章卡 --> 
-  <div class="codeBlock" id="codeBlock2">
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
+  
+    
+<!-- 云南合集 -->  
  <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/17219188252Bn440016.jpg" alt="Thumbnail Image">   <div>
- <span  style="font-size: 160%;" class="highlight highlight7">----【长期套餐】每4年手动续约----- </span>  <br>        
-<span  style="font-size: 130%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight2">5G黄金速率500mbps </span> &nbsp;
+          <img id="thumbnail" src="https://static.91haoka.cn/1722237516hK4440016.jpg" alt="Thumbnail Image">      
+               <div> 
+                <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
 
-<span  style="font-size: 130%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight4">部分流量可结转</span> &nbsp;
-
-<span  style="font-size: 130%;" class="highlight highlight3">18-42周岁 </span> 
-
-       <div id="content">
-            <span  style="font-size: 66%;" class=""><a style="color: red;">
-               <b> </b></a>
- <br>第1-48个月每月29元，长期29元月租<br>+每月<b>180G全国通用流量+400G安徽省内通用流量+150分钟全国通话</b><br> 
-               </div> 
-<div id="popup" class="popup"> 
-<iframe src="taocan/ahlt580G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=551007">    
-        <button id="btt1" style="color: white;"><b>【--申请地址---】</b></button>  </a>    </td></tr></table>   </div></div>
-
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>
-   </div>     </div>  </div> 
-
-<!-- 四川会员卡 --> 
- <div class="codeBlock" id="codeBlock6">
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1720607365Tp6440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-30周岁 </span> <br>
-<span  style="font-size: 160%;" class="highlight highlight3">每月领2个视频会员（第二年单会员）</span> <br><br>
-
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月按天折算，长期28元月租
-<br>每月<b>183G全国通用流量+100分钟全国通话</b></span><br><br>
-<font size="2" color="red"><p style="font-size: 150%;"> </p></font>  <br>
-
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>后期无需任何充费活动。</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/sclt250G.html" frameborder="0" width="100%" height="1520px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=542967">    
-        <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div></div>
-
-<!-- 逆动卡 --> 
-  <div class="codeBlock" id="codeBlock2">
- <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1718791577V9B440016.jpg" alt="Thumbnail Image">   <div>
- <span  style="font-size: 160%;" class="highlight highlight7">----【长期套餐】每4年联系联通客服续约----- </span>  <br>        
-<span  style="font-size: 130%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight2">5G黄金速率500mbps </span> &nbsp;
-
-<span  style="font-size: 130%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 130%;" class="highlight highlight4">部分流量可结转</span> &nbsp;
-
-<span  style="font-size: 130%;" class="highlight highlight3">18-42周岁 </span> 
-
-       <div id="content">
-            <span  style="font-size: 66%;" class=""><a style="color: red;">
-               <b> </b></a>
- <br>长期29元月租<br>+每月<b>180G全国通用流量+100分钟全国通话</b><br> 
-               </div> 
-<div id="popup" class="popup"> 
-<iframe src="taocan/ahlt180G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=327253">    
-        <button id="btt1" style="color: white;"><b>【--申请地址---】</b></button>  </a>    </td></tr></table>   </div></div>
-
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>
-   </div>     </div>  </div> 
-
-<!-- 永久卡 --> 
- <div class="codeBlock" id="codeBlock2">
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1721472617BEF440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight4">会员每月任选其一（长期领） </span> <br>
-
-<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span> 
-<span  style="font-size: 160%;" class="highlight highlight4">自己激活</span> <br><br>
-
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月免月租，次月起长期24元月租
-<br>每月<b>20G全国通用流量+30G定向+300分钟全国通话</b></span><br><br>
-<font size="2" color="red"><p style="font-size: 150%;">会员种类：B站、腾讯、优酷、爱奇艺、懒人听书、喜马拉雅等。</p></font>  <br>
-
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>下单需要上传照片！（防电诈，介意勿拍）</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/cqlt50G.html" frameborder="0" width="100%" height="1500px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=548756">    
-        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div></div>
-
-
-
-  
-
-
-<!-- 鹅城卡 --> 
-
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1721306729VBg440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率</span>
-<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span> 
-<span  style="font-size: 160%;" class="highlight highlight4">自己激活</span> <br><br>
-
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月免月租，次月起长期19元月租
-<br>每月<b>20G全国通用流量+30G定向+300分钟全国通话</b></span><br><br>
-<font size="2" color="red"><p style="font-size: 150%;">限时限量</p></font>  <br>
-
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>下单需要上传照片！（防电诈，介意勿拍）</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/1zglt50G.html" frameborder="0" width="100%" height="1500px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=546838">    
-        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div>
-        
- <!-- 躺平五杰-->    
-
-   <div id="floating-container">        
-            <img id="thumbnail" src="https://static.91haoka.cn/1698112284dhH.jpg" alt="Thumbnail Image">        
-                 <div>     
-                  <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>  
-  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
-  <span  style="font-size: 170%;" class="highlight highlight2">在线选号 </span> &nbsp;  
-  <span  style="font-size: 170%;" class="highlight highlight3">16/18-60周岁 </span><br>  <br> 
-   <div id="content">  
-              <span  style="font-size: 70%;"><a style="color: red;">  
-                    <b>湖南卡</b>： </a><br>长期29元+每月135G全国通用流量+100分钟--（）</span><br>   
-  
-                  <span  style="font-size: 70%;">  <a style="color: red;"><b> 江苏卡</b>： </a><br>长期29元+每月135G全国通用流量+200分钟--（）</span> <br>   
-  
-           <font size="2" color="black"</p><p style="font-size: 150%;">  
-  <br><br>  </p>    
-  
-          </div>        
-              <div id="popup" class="popup">   
-  <iframe src=".//taocan/tangping5.html" frameborder="0" width="100%" height="1520px"></iframe>  
-   <table> <tr> <td class="header-cell">   
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
-  <div class="parent-container">       
-        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=414516">      
-          <button id="btt1" style="color: white;"><b>【湖南-】</b></button>   </a> &nbsp; &nbsp; &nbsp;    
-          <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=414513">      
-            <button id="btt1" style="color: white;"><b>【江苏】</b></button>    
-        </a>    </td></tr></table>   </div></div>  
-  <div id="floating-menu">  
-      <button id="btn"><b>套餐详情</b></button>       
-          </div>  </div> 
-<!-- 江苏卡 -->  
-
-  <div id="floating-container">        
-              <img id="thumbnail" src="https://static.91haoka.cn/1721296991ey6440016.jpg" alt="Thumbnail Image">        
-              <div>  
-                <span  style="font-size: 160%;" class="highlight highlight8">----------------【短期套餐】2年有效期---------------- </span>  <br>
-  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-    <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br><br>
-                    <div id="content">
-              <span  style="font-size: 85%;" class="">
-                 <b>   </b></a>首月按天扣费， 第2-24个月39元月租
-  <br>每月<b>210G全国通用流量+100分钟全国通话</b><br>       
-  <br><b> <font color="#ff6f6d">全国可用，无地域使用限制（只发江苏省内地址）</font></b> <br></span>
-      
-  </div>    <div id="popup" class="popup"> 
-  <iframe src="taocan/jslt210G.html" frameborder="0" width="100%" height="1520px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=546593">    
-          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-        </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>    
-        </div></div>  
-<!-- 黑龙卡-->  
-<div class="codeBlock" id="codeBlock1">
-  <div id="floating-container">      
-           <img id="thumbnail" src="https://file.storep.91haoka.cn/img/1721282455361.jpeg" alt="Thumbnail Image">      
-                <div> 
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
- <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率（500mbps）</span> &nbsp;
-  <span  style="font-size: 170%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br> <br> 
-    <div id="content">
-             <span  style="font-size: 70%;" class=""><a style="color: red;">
-                小黑龙： </a>首月29，长期每月29元月租<br>+每月<b>160G全国通用流量+100分钟</b><br><br>  
-<a style="color: red;">
-               大黑龙： </a>首月39，长期每月39元月租<br>+每月<b>215G全国通用流量+100分钟</b><br><br> 
-         
-              </span>
-          <font size="2" color="red"</p><p style="font-size: 150%;"></b>【此版本后期无需任何充值续约】</p> </font> 
-         </div>   
-          <div id="popup" class="popup"> 
- <iframe src="taocan/hljlt160G2.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
- <div class="parent-container">     
-       <a href="https://storep.91haoka.cn/h5/duoshangpin.html?id=546329">    
-         <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>    
-       </a>   
-     </td></tr></table>   </div></div>
- <div id="floating-menu">
-     <button id="btn"><b>套餐详情</b></button>     
-         </div>  </div> </div> 
-
- <!--花魁卡 -->  <div class="codeBlock" id="codeBlock11">  
- <div id="floating-container">        
-              <img id="thumbnail" src="https://static.91haoka.cn/17130008776tx440016.jpg" alt="Thumbnail Image">        
-              <div>  
-                <span  style="font-size: 160%;" class="highlight highlight8">------------【短期套餐】2年有效期------------ </span>  <br>
-  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
- 
-  <span  style="font-size: 170%;" class="highlight highlight3">在线选号 </span>
-
- <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br>
-<br><br><br>
-                    <div id="content">
-              <span  style="font-size: 85%;" class="">
-                 <b>   </b></a> 第1-24个月19元月租，
-  <br>每月<b>95G全国通用流量+60G定向+100分钟全国通话</b><br>       
-  <br><b> <font color="#ff6f6d">此版本为2年短期套餐</font></b> <br></span>
-      
-  </div>    <div id="popup" class="popup"> 
-  <iframe src="taocan/gxlt155G.html" frameborder="0" width="100%" height="1520px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-<a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=465478">    
-          <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
-        </a> &nbsp;&nbsp;
-
-          <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=495192">    
-     
-          <button id="btt1" style="color: white;"><b>【---点击选号---】</b></button>    
-        </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>    
-        </div></div></div>
-
-
-
-
-<div class="codeBlock" id="codeBlock12">  
-<!-- 广东卡 -->  
-  <div id="floating-container">        
-              <img id="thumbnail" src="https://static.91haoka.cn/1720665290MmZ440016.jpg" alt="Thumbnail Image">        
-              <div>  
-                <span  style="font-size: 160%;" class="highlight highlight8">------------【短期套餐】4年有效期------------ </span>  <br>
-  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-
-  <span  style="font-size: 170%;" class="highlight highlight3">18-30周岁 </span><br><br>
-                    <div id="content">
-              <span  style="font-size: 60%;" class="">
-                 <b><font color="red">  19元版：</font> </b></a> 首月按天扣费，第2-12个月19元月，第13-48个月29元
-  <br>每月<b>30G全国通用流量+200G广东省内通用流量+40G定向+100分钟全国通话<br><br></b>       
- 
-                 <b> <font color="red"> 20元版： </font></b></a> 首月按天扣费，第2-12个月20元月，第13-48个月30元
-  <br>每月<b>55G全国通用流量+200G广东省内通用流量+40G定向+100分钟全国通话</b><br>       
-<br>  
- 
-<b> <font color="red"> 30元版： </font> </b></a> 第1-48个月30元月
-  <br>每月<b>55G全国通用流量+400G广东省内通用流量+40G定向+100分钟全国通话</b>      
-  
-
- 
- </span>
-      
-  </div>    <div id="popup" class="popup"> 
-  <iframe src="taocan/gdlt495G.html" frameborder="0" width="100%" height="1500px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="https://storep.91haoka.cn/h5/duoshangpin.html?id=543353">    
-          <button id="btt1" style="color: white;"><b>【---点击办理（合集）---】</b></button>    
-        </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>    
-        </div></div> </div>
-
-
-
-
-<!-- 四川会员卡 --> 
- 
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1720607365Tp6440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-30周岁 </span> <br>
-<span  style="font-size: 160%;" class="highlight highlight3">每月领2个视频会员（送2年）</span> <br><br>
-
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月1元，次月起长期28元月租
-<br>每月<b>50G全国通用流量+200G四川省内通用流量+300分钟全国通话</b></span><br><br>
-<font size="2" color="red"><p style="font-size: 150%;"> </p></font>  <br>
-
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>只发四川，后期无需任何充费活动。</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/sclt250G.html" frameborder="0" width="100%" height="1520px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=542967">    
-        <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div>
-
-
-<!-- 浙江卡 -->  
-  <div id="floating-container">        
-              <img id="thumbnail" src="https://static.91haoka.cn/1719406941ufb440016.jpg" alt="Thumbnail Image">        
-              <div>  
-                <span  style="font-size: 160%;" class="highlight highlight7">------------【长期套餐】自动续约------------ </span>  <br>
-  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight2">副卡10元/张（共享主卡流量语音） </span> &nbsp;
-
-  <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br>
-<br><br><br>
-                    <div id="content">
-              <span  style="font-size: 85%;" class="">
-                 <b>   </b></a> 首月按天扣费，第2-24个月每月29元月租，后长期每月39元月租
-  <br>每月<b>185G全国通用流量+100分钟全国通话</b><br>       
-  <br><b> <font color="#ff6f6d"></font></b> <br></span>
-      
-  </div>    <div id="popup" class="popup"> 
-  <iframe src="taocan/zjlt185G1.html" frameborder="0" width="100%" height="1500px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=535170">    
-          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-        </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>    
-        </div></div> 
-
-
-
-<!-- 陕西 -->
-<div class="codeBlock" id="codeBlock1">
-  <div id="floating-container">       
-             <img id="thumbnail" src="https://static.91haoka.cn/17190644960wR440016.jpg" alt="Thumbnail Image">       
-             <div> 
-              <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
-
-              <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-   <span  style="font-size: 160%;" class="highlight highlight3">20-60周岁 </span> 
+<span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 170%;" class="highlight highlight2">在线选号 </span> &nbsp;
+<span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br> 
+<span  style="font-size: 170%;" class="highlight highlight3">只发云南，全国可用（港澳台除外） </span>
    <div id="content">
-              <span  style="font-size: 70%;" class=""> <br>
-              首月扣29元，长期29元月租
-
-                <br>每月<b>130G全国通用流量+30G定向+100分钟</b> </span>
-                <br> <br>
-             <font size="2" color="black"</p><p style="font-size: 150%;"> </p>   
-        
-             </div>   <div id="popup" class="popup"> 
-  <iframe src="taocan/sxlt160G.html" frameborder="0" width="100%" height="1500px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=529953">    
-          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-        </a> 
-
-<a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=529953">    
-          <button id="btt1" style="color: white;"><b>【无需首充版】</b></button>    
-        </a> 
-   </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>     
-      </div></div></div>    
+            <span  style="font-size: 70%;" class=""><a style="color: red;">
+               <b></b> </a><br>长期29元+每月<b>135G全国通用流量+100分钟<br></b>
+           <a style="color: red;">  <b></b></a> <br>长期29元+每月<b>155G全国通用流量+30G定向+100分钟<br> </b>
+               <a style="color: red;">   </b></a> <br>长期59元+每月<b>235G全国通用流量+100分钟<br></b> </span>
+         <font size="2" color="black"</p><p style="font-size: 150%;">长期永久套餐:到期自动续订（无需任何操作）  <br> （因各地政策随时调整，号池号码有限，先到先得！）</b></p> </font> 
+        </div>        </div>
+         <div id="floating-menu">
+      <div class="parent-container">     
+  <a href="https://enshuicards.cn/1ynlt.html">    
+  <button id="btt1" style="color: white;"><b>【点击申请】</b></button>    </a>
+    </div>     </div>  </div></div>
+   
 
 
-<!-- 新疆卡 --> 
- 
-	<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1718938369ZWk440016.jpg" alt="Thumbnail Image">       
-           <div>    
-            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-65周岁 </span>  <br><br>
+<div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29 39"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="true"        
+  
+     data-broadband="false"       
+     data-location="true"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
 
-     <div id="content">
-            <span  style="font-size: 85%;"> <br>首月扣29元（30G通用+30G定向），长期29元月租
-<br>每月<b>103G全国通用流量+400分钟全国通话</b></span><br><br>
-<font size="2" color="red"><p style="font-size: 150%;"> </p></font>  <br>
 
-<font size="2" color="red"> <p style="font-size: 130%;">   <b>只发新疆省内，外省勿扰！</b></p> </font> 
-
-</div> <div id="popup" class="popup"> 
-<iframe src="taocan/xjlt.html" frameborder="0" width="100%" height="1520px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=528510">    
-        <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>    
-        </div></div>
-        
- <div class="codeBlock" id="codeBlock2">
-<!-- 骑士卡 -->
+    <!-- 骑士卡 -->
     <div id="floating-container">       
       <img id="thumbnail" src="https://static.91haoka.cn/1717164750WyN440016.jpg" alt="Thumbnail Image">       
       <div> 
@@ -1024,23 +470,463 @@
   <div id="floating-menu">
   <button id="btn"><b>套餐详情</b></button>    
   </div> </div></div>
+
+
+
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+
+<!-- 陕西无忧 -->
+   <div id="floating-container">       
+             <img id="thumbnail" src="https://static.91haoka.cn/17190644960wR440016.jpg" alt="Thumbnail Image">       
+             <div> 
+              <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
+
+              <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+   <span  style="font-size: 160%;" class="highlight highlight3">20-60周岁 </span> 
+   <div id="content">
+              <span  style="font-size: 70%;" class=""> <br>
+              首月扣29元，长期29元月租
+
+                <br>每月<b>130G全国通用流量+30G定向+100分钟</b> </span>
+                <br> <br>
+             <font size="2" color="black"</p><p style="font-size: 150%;"> </p>   
+        
+             </div>   <div id="popup" class="popup"> 
+  <iframe src="taocan/sxlt160G.html" frameborder="0" width="100%" height="1500px"></iframe>
+   <table> <tr> <td class="header-cell"> 
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=529953">    
+          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
+        </a> 
+
+<a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=529953">    
+          <button id="btt1" style="color: white;"><b>【无需首充版】</b></button>    
+        </a> 
+   </td></tr></table>   </div></div>
+  <div id="floating-menu">
+      <button id="btn"><b>套餐详情</b></button>     
+      </div></div></div>    
+
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
+
+
+
+<!-- 广东卡 -->  
+  <div id="floating-container">        
+              <img id="thumbnail" src="https://static.91haoka.cn/1720665290MmZ440016.jpg" alt="Thumbnail Image">        
+              <div>  
+                <span  style="font-size: 160%;" class="highlight highlight8">------------【短期套餐】4年有效期------------ </span>  <br>
+  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+
+  <span  style="font-size: 170%;" class="highlight highlight3">18-30周岁 </span><br>
+                    <div id="content">
+              <span  style="font-size: 60%;" class="">
+                 <b><font color="red">  19元版：</font> </b></a> 首月按天扣费，第2-12个月19元月，第13-48个月29元
+  <br>每月<b>30G全国通用流量+200G广东省内通用流量+40G定向+100分钟全国通话</b><br>       
+  <br>
+                 <b> <font color="red"> 20元版： </font></b></a> 首月按天扣费，第2-12个月20元月，第13-48个月30元
+  <br>每月<b>55G全国通用流量+200G广东省内通用流量+40G定向+100分钟全国通话</b><br>       
+<br>  
  
+<b> <font color="red"> 30元版： </font> </b></a> 第1-48个月30元月
+  <br>每月<b>55G全国通用流量+400G广东省内通用流量+40G定向+100分钟全国通话</b>      
+  
+
+ 
+ </span>
+      
+  </div>    <div id="popup" class="popup"> 
+  <iframe src="taocan/gdlt495G.html" frameborder="0" width="100%" height="1500px"></iframe>
+   <table> <tr> <td class="header-cell"> 
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+        <a href="https://storep.91haoka.cn/h5/duoshangpin.html?id=543353">    
+          <button id="btt1" style="color: white;"><b>【---点击办理（合集）---】</b></button>    
+        </a>    </td></tr></table>   </div></div>
+  <div id="floating-menu">
+      <button id="btn"><b>套餐详情</b></button>    
+        </div></div> </div> 
+  
+  <div class="product" 
+      data-operator="telecom"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+<!-- 浙江 -->
+    <div id="floating-container">       
+             <img id="thumbnail" src="https://static.91haoka.cn/1719708742ShE440016.jpg" alt="Thumbnail Image">       
+             <div> 
+              <span  style="font-size: 160%;" class="highlight highlight8">----------------【短期套餐】2年有效期---------------- </span>  <br>
+
+              <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
+ <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+<span  style="font-size: 160%;" class="highlight highlight4">2年19元 </span>
+   <span  style="font-size: 160%;" class="highlight highlight5">首月免月租 </span> 
+   <div id="content">
+              <span  style="font-size: 70%;" class=""> <br>首月免月租，
+              <br>首月免月租，第2-24个月每月19元月租
+
+                <br>每月<b>105G全国通用流量+30G定向+100分钟（第二年无100分钟）</b> </span>
+                <br> <br>
+             <font size="2" color="black"</p><p style="font-size: 150%;">超值短期，只需一次预存，流量语音均衡！ </p>   
+        
+             </div>   <div id="popup" class="popup"> 
+  <iframe src="taocan/zjdx135G1.html" frameborder="0" width="100%" height="1500px"></iframe>
+   <table> <tr> <td class="header-cell"> 
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=529938">    
+          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
+        </a>    </td></tr></table>   </div></div>
+  <div id="floating-menu">
+      <button id="btn"><b>套餐详情</b></button>     
+      </div></div>    </div>
+ 
+ 
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
+  <!-- 徽商-->    
+ <div id="floating-container">        
+             <img id="thumbnail" src="https://static.91haoka.cn/17100341524wQ440016.jpg" alt="Thumbnail Image">        
+                  <div>   
+   <span  style="font-size: 160%;" class="highlight highlight8">----------------【短期套餐】按政策续约---------------- </span>  <br>  
+   <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
+  <span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率</span> &nbsp;  
+   <span  style="font-size: 170%;" class="highlight highlight3">广东、北京可发 </span>  
+   <span  style="font-size: 170%;" class="highlight highlight3">18-40周岁 </span><br>   
+      <div id="content">  
+               <span  style="font-size: 70%;" class=""><a style="color: red;">  
+                  </a>第1-48个月每月19元，+每月130G全国通用流量+100分钟<br>  
+  
+                </span>  
+            <font size="2" color="black"</p><p style="font-size: 150%;">全国可发，4年19元元月租</b></p> </font>   
+           </div>     
+            <div id="popup" class="popup">   
+   <iframe src=".//taocan/ahlt130G.html" frameborder="0" width="100%" height="1520px"></iframe>  
+    <table> <tr> <td class="header-cell">   
+       <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
+   <div class="parent-container">       
+         <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=436353">      
+           <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>      
+         </a>     
+       </td></tr></table>   </div></div>  
+   <div id="floating-menu">  
+       <button id="btn"><b>套餐详情</b></button>       
+           </div>  </div> </div>   
+  
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+ <!-- 浙江卡 -->    
+   <div id="floating-container">          
+                <img id="thumbnail" src="https://static.91haoka.cn/1701765333QmT.jpg" alt="Thumbnail Image">          
+                <div>    
+                  <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>  
+    <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
+    <span  style="font-size: 170%;" class="highlight highlight2">自己/快递员激活混发 </span> &nbsp;  
+    <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br>  
+    <span  style="font-size: 170%;" class="highlight highlight2"> 2年内19元月租（超高性价比）</span> &nbsp;  
+    <span  style="font-size: 170%;" class="highlight highlight3">只发浙江省内地址 </span><br><br><br>  
+                      <div id="content">  
+                <span  style="font-size: 85%;" class="">  
+                   <b>   </b></a> 第1-24个月19元月租，第25个个月起长期永久29元月租  
+    <br>每月<b>135G全国通用流量+100分钟全国通话</b><br>         
+    <br><b> <font color="#ff6f6d">只发浙江，外省勿扰！无法转寄（转寄自动作废）！</font></b> <br></span>  
+  
+    </div>    <div id="popup" class="popup">   
+    <iframe src=".//taocan/zjlt1.html" frameborder="0" width="100%" height="1520px"></iframe>  
+     <table> <tr> <td class="header-cell">   
+        <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
+    <div class="parent-container">       
+          <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=364055">      
+            <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>      
+          </a>    </td></tr></table>   </div></div>  
+    <div id="floating-menu">  
+        <button id="btn"><b>套餐详情</b></button>      
+          </div></div>  </div>  
+  
+   
+
+  
+  
+
+  <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="Guangdong"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> <!-- 黑涯-->   
+   <div id="floating-container">       
+            <img id="thumbnail" src="https://static.91haoka.cn/171284014903H440016.jpg" alt="Thumbnail Image">       
+                 <div>  
+  <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br> 
+  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp; 
+ <span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率</span> &nbsp; 
+   <span  style="font-size: 170%;" class="highlight highlight2">自己激活</span> &nbsp; 
+ <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br>  
+     <div id="content"> 
+              <span  style="font-size: 70%;" class=""><a style="color: red;"> 
+                 </a>首月29元月租，长期每月29元，+每月150G全国通用流量+100分钟<br> 
+  
+               </span> 
+           <font size="2" color="black"</p><p style="font-size: 150%;"></b></p> </font>  
+          </div>    
+           <div id="popup" class="popup">  
+  <iframe src=".//taocan/1sjlt150G.html" frameborder="0" width="100%" height="1520px"></iframe> 
+   <table> <tr> <td class="header-cell">  
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
+  <div class="parent-container">      
+        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=451763">     
+          <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>     
+        </a>    
+      </td></tr></table>   </div></div> 
+  <div id="floating-menu"> 
+      <button id="btn"><b>套餐详情</b></button>      
+          </div>  </div> </div>  
+  
+  
+    
+  
+  
+  
+  
+   <div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
+<!--上海卡 -->
+     <div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1719569409FyN440016.jpg" alt="Thumbnail Image">       
+      <div> 
+        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期-------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
 
 
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+  <div id="content">
+ <br> <span  style="font-size: 70%;" class="">
+  首月免月租，第2-12个月19元月租<br>每月<b>158G全国通用流量+30G定向</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">只发上海市，全国可用（港澳台除外）</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/shyd188G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=535992">    
+  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
+
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div></div>
+
+<!--安徽卡 -->
+   <div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+  <div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1719637359ZOf440016.jpg" alt="Thumbnail Image">       
+      <div> 
+        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】2年有效期-------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight3">收货地即归属地</span> &nbsp;
 
 
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+  <div id="content">
+ <br> <span  style="font-size: 70%;" class="">
+  首月免月租，第2-24个月19元月租<br>每月<b>158G全国通用流量+30G定向</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">可选归属地，只发安徽，无法转寄！</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/ahyd188G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=536642">    
+  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
 
-
-
-
-
-
-
-
-
-<!-- 烟花卡 --> 
-  <div class="codeBlock" id="codeBlock12">  
-<div id="floating-container">       
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div></div>
+     
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="9"    
+      data-delivery-area="all"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="true"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">  
+  
+ <!-- 烟花卡 --> 
+ <div id="floating-container">       
            <img id="thumbnail" src="https://static.91haoka.cn/1721480876np1440016.jpg" alt="Thumbnail Image">       
            <div> 
             <span  style="font-size: 160%;" class="highlight highlight7">---------------【长期套餐】自动续约--------------- </span>  <br>           
@@ -1068,542 +954,456 @@
 <div id="floating-menu">
     <button id="btn"><b>套餐详情</b></button>       
        </div></div></div>  
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-<!-- 会上亲子-->  
-
-  <div id="floating-container">      
-           <img id="thumbnail" src="https://static.91haoka.cn/1712142961NPA440016.jpg" alt="Thumbnail Image">      
-                <div> 
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
- <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight3">电话手表必备：控制上网时间 </span>
- <span  style="font-size: 170%;" class="highlight highlight3">18-65周岁 </span><br> 
-    <div id="content">
-             <span  style="font-size: 70%;" class=""><a style="color: red;">
-                </a>首月19元，第2-72个月每月10元，后期永久19元，+每月3G全国通用流量+10G定向+100分钟<br>
-         
-              </span><br><br>
-          <font size="2" color="black"</p><p style="font-size: 150%;"><a style="color: red;">控制孩子上网时间，额外流量1元/1G/天</b></p> </a></font> 
-         </div>   
-          <div id="popup" class="popup"> 
- <iframe src="taocan/gdlt13G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
- <div class="parent-container">     
-       <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=411583">    
-         <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>    
-       </a>   
-     </td></tr></table>   </div></div>
- <div id="floating-menu">
-     <button id="btn"><b>套餐详情</b></button>     
-         </div>  </div> 
-
-
-
-
-
-
-
-
-
-
-<!-- 黑涯-->  
-  <div id="floating-container">      
-           <img id="thumbnail" src="https://static.91haoka.cn/1718783031m99440016.jpg" alt="Thumbnail Image">      
-                <div> 
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
- <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率</span> &nbsp;
-  <span  style="font-size: 170%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br> 
-    <div id="content">
-             <span  style="font-size: 70%;" class=""><a style="color: red;">
-                </a>首月29元月租，长期永久每月29元，<br>+每月<b>155G全国通用流量+100分钟</b><br>
-         
-              </span>
-          <font size="2" color="red"</p><p style="font-size: 150%;"></b>【此版本后期无需任何充值续约】</p> </font> 
-         </div>   
-          <div id="popup" class="popup"> 
- <iframe src="taocan/1sjlt150G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
- <div class="parent-container">     
-       <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=451763">    
-         <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>    
-       </a>   
-     </td></tr></table>   </div></div>
- <div id="floating-menu">
-     <button id="btn"><b>套餐详情</b></button>     
-         </div>  </div>  
-
-<!-- 徽商-->  
-<div class="codeBlock" id="codeBlock12">
-  <div id="floating-container">      
-           <img id="thumbnail" src="https://static.91haoka.cn/17100341524wQ440016.jpg" alt="Thumbnail Image">      
-                <div> 
- <span  style="font-size: 160%;" class="highlight highlight8">----------------【短期套餐】按政策续约---------------- </span>  <br>
- <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率</span> &nbsp;
- <span  style="font-size: 170%;" class="highlight highlight3">广东、北京可发 </span>
- <span  style="font-size: 170%;" class="highlight highlight3">18-40周岁 </span><br> <br> 
-    <div id="content">
-             <span  style="font-size: 70%;" class=""><a style="color: red;">
-                </a>第1-48个月每月19元，+每月130G全国通用流量+100分钟<br>
-         
-              </span>
-          <font size="2" color="black"</p><p style="font-size: 150%;">全国可发，4年19元元月租</b></p> </font> 
-         </div>   
-          <div id="popup" class="popup"> 
- <iframe src="taocan/ahlt130G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
- <div class="parent-container">     
-       <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=436353">    
-         <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>    
-       </a>   
-     </td></tr></table>   </div></div>
- <div id="floating-menu">
-     <button id="btn"><b>套餐详情</b></button>     
-         </div>  </div> </div> 
-
-
-
-
-           <!-- 浙江卡 -->  
-<div class="codeBlock" id="codeBlock6">
-  <div id="floating-container">        
-              <img id="thumbnail" src="https://static.91haoka.cn/1701765333QmT.jpg" alt="Thumbnail Image">        
-              <div>  
-                <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
-  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 170%;" class="highlight highlight2">自己/快递员激活混发 </span> &nbsp;
-  <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br>
-  <span  style="font-size: 170%;" class="highlight highlight2"> 2年内19元月租（超高性价比）</span> &nbsp;
-  <span  style="font-size: 170%;" class="highlight highlight3">只发浙江省内地址 </span><br><br><br>
-                    <div id="content">
-              <span  style="font-size: 85%;" class="">
-                 <b>   </b></a> 第1-24个月19元月租，第25个月起长期永久29元月租
-  <br>每月<b>135G全国通用流量+100分钟全国通话</b><br>       
-  <br><b> <font color="#ff6f6d">只发浙江，外省勿扰！无法转寄（转寄自动作废）！</font></b> <br></span>
-      
-  </div>    <div id="popup" class="popup"> 
-  <iframe src="taocan/zjlt1.html" frameborder="0" width="100%" height="1520px"></iframe>
-   <table> <tr> <td class="header-cell"> 
-      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-        <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=364055">    
-          <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-        </a>    </td></tr></table>   </div></div>
-  <div id="floating-menu">
-      <button id="btn"><b>套餐详情</b></button>    
-        </div></div>  </div>
-              
-
-          
-            
+  
   
 
-
-
-
-
-   
-    
-<!-- 云南合集 -->  
- <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1722237516hK4440016.jpg" alt="Thumbnail Image">      
-               <div> 
-                <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
-
-<span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight2">在线选号 </span> &nbsp;
-<span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br> 
-<span  style="font-size: 170%;" class="highlight highlight3">只发云南，全国可用（港澳台除外） </span>
-   <div id="content">
-            <span  style="font-size: 70%;" class=""><a style="color: red;">
-               <b></b> </a><br>长期29元+每月<b>135G全国通用流量+100分钟<br></b>
-           <a style="color: red;">  <b></b></a> <br>长期29元+每月<b>155G全国通用流量+30G定向+100分钟<br> </b>
-               <a style="color: red;">   </b></a> <br>长期59元+每月<b>235G全国通用流量+100分钟<br></b> </span>
-         <font size="2" color="black"</p><p style="font-size: 150%;">长期永久套餐:到期自动续订（无需任何操作）  <br> （因各地政策随时调整，号池号码有限，先到先得！）</b></p> </font> 
-        </div>        </div>
-         <div id="floating-menu">
-      <div class="parent-container">     
-  <a href="https://enshuicards.cn/ynlt.html">    
-  <button id="btt1" style="color: white;"><b>【点击申请】</b></button>    </a>
-    </div>     </div></div>  
-   
-
-     
-
-
-     <!-- 海南联通 -->  
-<div class="codeBlock" id="codeBlock9">
-  <div id="floating-container">      
-          <img id="thumbnail" src="https://static.91haoka.cn/1712723691v03440016.jpg" alt="Thumbnail Image">      
-               <div>   
-                <span  style="font-size: 160%;" class="highlight highlight7">-----【长期套餐】自动续约---------- </span>  <br>
-<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">自己激活 </span> 
-<span  style="font-size: 160%;" class="highlight highlight2">在线选号</span>&nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">北京/广东可发！</span>&nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span><br> <br>
-   <div id="content">
-            <span  style="font-size: 70%;" class=""> 
-              
-            
-             
-                     <a style="color: red;">
-            <b> 椰子卡：</a>  </b> <br>首月按天折算，第2-5个月29元，长期39元<br> 每月<b>235G全国流量</b><br> <br>
-               <a style="color: red;">   <b>椰岛卡：</b></a>   <br>首月按天折算，第2-5个月49元，长期59元<br>每月<b>350G全国流量<br> </b>
-                 </span><br>
-           <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐:到期自动续订  </p>   
+  
+  
+  
+  
+  
+  
  
-        </div>     <div id="popup" class="popup"> 
-<iframe src="taocan/hainlt.html" frameborder="0" width="100%" height="1520px"></iframe>
+  
+  
+  
+  
+  
+  
+     
+  
+ 
+  
+    
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+ <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="9"    
+      data-delivery-area="Guangdong Beijing Yunnan"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false">  
+  
+ <!-- 亲子卡 -->   
+   <div id="floating-container">        
+             <img id="thumbnail" src="https://static.91haoka.cn/1712142961NPA440016.jpg" alt="Thumbnail Image">        
+                  <div>   
+   <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>  
+   <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
+  <span  style="font-size: 170%;" class="highlight highlight3">电话手表必备：控制上网时间 </span>  
+   <span  style="font-size: 170%;" class="highlight highlight3">18-65周岁 </span><br>   
+      <div id="content">  
+               <span  style="font-size: 70%;" class=""><a style="color: red;">  
+                  </a>首月19元，第2-72个月每月10元，后期永久19元，+每月3G全国通用流量+10G定向+100分钟<br>  
+  
+                </span><br><br>  
+            <font size="2" color="black"</p><p style="font-size: 150%;"><a style="color: red;">控制孩子上网时间，额外流量1元/1G/天</b></p> </a></font>   
+           </div>     
+            <div id="popup" class="popup">   
+   <iframe src=".//taocan/gdlt13G.html" frameborder="0" width="100%" height="1650px"></iframe>  
+    <table> <tr> <td class="header-cell">   
+       <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
+   <div class="parent-container">       
+         <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=411583">      
+           <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>      
+         </a>     
+       </td></tr></table>   </div></div>  
+   <div id="floating-menu">  
+       <button id="btn"><b>套餐详情</b></button>       
+           </div>  </div>   </div>  
+  
+  
+
+  
+  <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false">  
+  
+     <!-- 逆流卡 --> 
+  	<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/1714212325J8z440016.jpg" alt="Thumbnail Image">       
+           <div>    
+            <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>   
+<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">在线选号 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span> <br>
+<span  style="font-size: 160%;" class="highlight highlight3">北京、广东、云南等，敏感地区亦可发货！</span> <br><br>
+
+     <div id="content">
+            <span  style="font-size: 85%;"> <br>首月按天扣费，次月起长期29元月租
+<br>每月<b>183G全国通用流量+100分钟全国通话</b></span><br><br>
+<font size="2" color="red"><p style="font-size: 150%;"> （此版本无需每年“充返续约”）</p></font>  <br>
+
+<font size="2" color="red"> <p style="font-size: 130%;">   <b></b></p> </font> 
+
+</div> <div id="popup" class="popup"> 
+<iframe src="taocan/sclt.html" frameborder="0" width="100%" height="1520px"></iframe>
  <table> <tr> <td class="header-cell"> 
     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
 <div class="parent-container">     
- <a href="https://storep.91haoka.cn/h5/duoshangpin.html?id=406883">    &nbsp;&nbsp;&nbsp;&nbsp; 
-        <button id="btt1" style="color: white;"><b>【自己激活版】</b></button>    
-       &nbsp;&nbsp;&nbsp;&nbsp; 
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=289044">    
-        <button id="btt1" style="color: white;"><b>【235G选号版】</b></button>    
- <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=289039">    &nbsp;&nbsp;&nbsp;&nbsp; 
-        <button id="btt1" style="color: white;"><b>【350G选号版】</b></button>    
-       </td></tr></table>   </div></div>
+      <a href="http://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=382262">    
+        <button id="btt1" style="color: white;"><b>【选号】</b></button>    
+      </a>
+
+      
+      </td></tr></table>   </div></div>
+<div id="floating-menu">
+    <button id="btn"><b>套餐详情</b></button>    
+        </div></div></div>  
+        
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong Beijing Guangxi"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+<!-- 康城卡 --> 
+<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/1722073489gFm440016.jpg" alt="Thumbnail Image">       
+           <div>    
+            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
+<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight3">18-30周岁 </span> 
+<span  style="font-size: 160%;" class="highlight highlight3">全国可发！</span> <br><br>
+
+     <div id="content">
+            <span  style="font-size: 85%;"> <br>首月10元，次月起长期19元月租
+<br>每月<b>60G全国通用流量+30G定向+300分钟全国通话</b></span><br><br>
+<font size="2" color="red"><p style="font-size: 150%;">限时限量</p></font>  <br>
+
+<font size="2" color="red"> <p style="font-size: 130%;">   <b>下单需要上传照片！（防电诈，介意勿拍）</b></p> </font> 
+
+</div> <div id="popup" class="popup"> 
+<iframe src="taocan/cqlt90G.html" frameborder="0" width="100%" height="1500px"></iframe>
+ <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+<div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=552637">    
+        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
+      </a>    </td></tr></table>   </div></div>
+<div id="floating-menu">
+    <button id="btn"><b>套餐详情</b></button>    
+        </div></div></div>
+        
+
+  
+  
+<div class="product" 
+      data-operator="telecom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+
+<!-- 江西 -->
+<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/1712750884Yuu440016.jpg" alt="Thumbnail Image">       
+           <div>
+ <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】每年手动续约----------------</span>  
+
+            <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率</span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight3">18-65周岁 </span><br> 
+ 
+ <div id="content">
+            <span  style="font-size: 70%;" class=""> <br>首月免月租，
+            第2-13个月29元，每年续约后长期29元
+              <br>每月<b>105G全国通用流量+30G定向+100分钟</b> </span>
+              <br> <br>
+           <font size="2" color="black"</p><p style="font-size: 150%;"></p>   
+      
+        </div>     <div id="popup" class="popup"> 
+<iframe src="taocan/jxdx135G.html" frameborder="0" width="100%" height="1510px"></iframe>
+ <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+<div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=485546">    
+        <button id="bt1" style="color: white;"><b>【---点击办理---】</b></button>    
+      </a>    </td></tr></table>   </div></div>
 <div id="floating-menu">
     <button id="btn"><b>套餐详情</b></button>     
-        </div> </div> </div> 
-    
-       
-   
+        </div> </div>   </div>
+<div class="product" 
+      data-operator="telecom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="true"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true"> 
+   <!-- 白岩卡 --> 
+ <div id="floating-container">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1722041955Ubp440016.jpg" alt="Thumbnail Image">   <div>
+ <span  style="font-size: 160%;" class="highlight highlight7">-----------------【长期套餐】自动续约---------------- </span>  <br>        
+<span  style="font-size: 130%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight3">20-55周岁 </span>
+<span  style="font-size: 130%;" class="highlight highlight4">流量全结转</span>  &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight5">首月免月租 </span>
 
+       <div id="content">
+            <span  style="font-size: 66%;" class=""><a style="color: red;">
+               <b> <a style="color: red;">  </b></a>
+ <br>首月免月租，长期永久29元月租+每月<b>105G全国通用流量+30G定向+200分钟</b><br>
+ <b> <a style="color: red;"> </b></a></span></p>  
 
-  <!-- 晨光卡 -->
-  <div id="floating-container">       
-    <img id="thumbnail" src="https://static.91haoka.cn/17037710349qh440016.jpg" alt="Thumbnail Image">       
-    <div> 
-      <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
-     <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">在线选号</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">2000分钟</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">16-60周岁 </span><br> <br><br>
-<div id="content">
-<span  style="font-size: 70%;" class="">
-首月半量半价，长期永久59元<br><br>每月<b>100G全国通用流量+2000分钟全国通话</b> </span>
- <br><br><br>
-<font size="2" color="red"</p><p style="font-size: 150%;">禁止用于“电信网络诈骗”！</p>  
-</span></font>
-</div>     
+     <font size="2" color="red"><p style="font-size: 140%;"><br>（全国可用，无地域限制，后期无需参加“充值返费活动”）</b></p>   </font>
+           
+</div> 
 <div id="popup" class="popup"> 
-<iframe src="taocan/gdlt2000fz.html" frameborder="0" width="100%" height="1520px"></iframe>
-<table> <tr> <td class="header-cell"> 
-<button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-<a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=11165985">    
-<button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-</a>  
-</td></tr></table>   </div></div>
+<iframe src="taocan/jldx135G2.html" frameborder="0" width="100%" height="1500px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
+  <div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=463145">    
+        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>  </a>    </td></tr></table>   </div></div>
+
 <div id="floating-menu">
-<button id="btn"><b>套餐详情</b></button>    
-</div> </div>       
+    <button id="btn"><b>套餐详情</b></button>
+   </div>     </div>     </div>
 
-  </div></div>
+  <div class="product" 
+      data-operator="telecom"      
   
-
-
-
-
-
-
-        <div id="tab5" class="tab"> 
-          <h2>中国移动：基站数量全国第一，当你在偏远山区、地下停车场，会明白一分价钱一分货的意义！</h2>
- <!-- 广东卡 -->
-  <div class="codeBlock" id="codeBlock12">
-
-<div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1720867473X8W440016.jpg" alt="Thumbnail Image">       
-      <div> <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】4年有效期------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">首月，次月免月租</span> &nbsp;
-    <span  style="font-size: 160%;" class="highlight highlight3">18-30周岁 </span>
- <br> <br><br>
-  <div id="content">
-  <span  style="font-size: 70%;" class="">
-  第1-2个月免月租，第3-12个月30元月租，第13-48个月29元<br>每月<b>100G全国通用流量+40G定向+100分钟</b> 
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
   
-  <font size="2" color="red"</p><p style="font-size: 150%;"><br><br>只发广东（4年套餐）</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/gdyd140G.html" frameborder="0" width="100%" height="1500px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=544501">    
-  <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-  </a>  
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div></div>
- <!--安徽卡 -->
-  <div class="codeBlock" id="codeBlock12">
-  <div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1719637359ZOf440016.jpg" alt="Thumbnail Image">       
-      <div> 
-        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】2年有效期-------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">收货地即归属地</span> &nbsp;
-
-
-  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-  <div id="content">
- <br> <span  style="font-size: 70%;" class="">
-  首月免月租，第2-24个月19元月租<br>每月<b>158G全国通用流量+30G定向</b> 
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
   
-  <font size="2" color="red"</p><p style="font-size: 150%;"><br><br>可选归属地，只发安徽，无法转寄！</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/ahyd188G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=536642">    
-  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
-
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div></div>
-
-<!--上海卡 -->
-  <div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1719621890GIK440016.jpg" alt="Thumbnail Image">       
-      <div> 
-        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期-------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
-
-
-  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-  <div id="content">
- <br> <span  style="font-size: 70%;" class="">
-  第1-12个月29元月租<br>每月<b>188G全国通用流量+15G定向+50分钟全国通话</b> 
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="true"       
+     data-super-data="false"        
   
-  <font size="2" color="red"</p><p style="font-size: 150%;"><br><br>只发上海，无法转寄！</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/shyd203G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=535992">    
-  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
-
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div>
-<!--上海卡 -->
-
-    <div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1719569409FyN440016.jpg" alt="Thumbnail Image">       
-      <div> 
-        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期-------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
-
-
-  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-  <div id="content">
- <br> <span  style="font-size: 70%;" class="">
-  首月免月租，第2-12个月19元月租<br>每月<b>158G全国通用流量+30G定向</b> 
+     data-nice-number="true"          
+     data-history="false"          
   
-  <font size="2" color="red"</p><p style="font-size: 150%;">只发上海市，全国可用（港澳台除外）</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/shyd188G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=535992">    
-  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
+     data-recommended="false"                        
+     data-super-voice="true"> 
 
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div>
-<div class="codeBlock" id="codeBlock12">
-
-<!-- 广东卡 -->
-<div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1719630551TGL440016.jpg" alt="Thumbnail Image">       
-      <div> <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】2年有效期------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp;
-   <span  style="font-size: 160%;" class="highlight highlight2">可选号</span> &nbsp;
-     <span  style="font-size: 160%;" class="highlight highlight5">动态月结 </span> 
-
- <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-   <br><br>
-  <div id="content">
-  <span  style="font-size: 70%;" class="">
-  首月免月租，第2-24个月29元月租<br>每月<b>105G全国通用流量+30G定向</b> 
-  
-  <font size="2" color="red"</p><p style="font-size: 150%;"><br><br>【此版本微信/支付宝 预存100】</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src=" frameborder="0" width="100%" height="1500px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+   <div id="floating-container">      
+             <img id="thumbnail" src="https://static.91haoka.cn/1722127729cCQ440016.jpg" alt="Thumbnail Image">      
+                  <div>  
+                    <span  style="font-size: 160%;" class="highlight highlight7">---------------【长期套餐】自动续约--------------</span>  <br> 
+   <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+   <span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
+   <span  style="font-size: 160%;" class="highlight highlight4">送2年视频会员 </span> &nbsp;
  
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-<a href="http://wk.xiaowoxiangq.com/k/index.html?code=VxpjyvpLGa" style="color: blue;">
-
-  <button id="btn"><b>套餐详情</b></button>   </a> 
-  </div> </div></div>
+ <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁</span> &nbsp;
   
-<!-- 广东卡 -->
-<div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1718940061Jcv440016.jpg" alt="Thumbnail Image">       
-      <div> <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】2年有效期------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight5">动态月结 </span> 
+                     <div id="content">
+               <span  style="font-size: 70%;" class="">
+   <br>首月10元， 长期29元月租+<br>每月<b>105G全国通用流量+++30G定向+2年视频会员</b></span><br> <br> 
+       
+    <font size="2" color="red"</p><p style="font-size: 150%;">会员种类：酷狗、优酷、芒果、爱奇艺、哩哩、腾讯视频等（）
+   <br> </p>  
+   </div> <div id="popup" class="popup"> 
+   <iframe src="taocan/nmgdx135G.html" frameborder="0" width="100%" height="1520px"></iframe>
+    <table> <tr> <td class="header-cell"> 
+       <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+   <div class="parent-container">     
+         <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=506445">    
+           <button id="btt1" style="color: white;"><b>【---申请---】</b></button>    
 
-    <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-  <br> <br><br>
-  <div id="content">
-  <span  style="font-size: 70%;" class="">
-  首月免月租，第2-24个月29元月租<br>每月<b>105G全国通用流量+30G定向</b> 
+
+      </a>    </td></tr></table>   </div></div>
+   <div id="floating-menu">
+       <button id="btn"><b>套餐详情</b></button>    
+          </div></div> </div>
   
-  <font size="2" color="red"</p><p style="font-size: 150%;"><br><br>广东专属（唯一可发广东）</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/gdyd135G1.html" frameborder="0" width="100%" height="1500px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=528513">    
-  <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-  </a>  
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div>
-<!-- 牛马卡 -->
-
-
-  <div class="codeBlock" id="codeBlock11">
-    <div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1715304648FWy440016.jpg" alt="Thumbnail Image">       
-      <div> 
-        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">在线选号</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
-  <span  style="font-size: 160%;" class="highlight highlight5">首月免月租 </span> 
-  <br> <br><br>
-  <div id="content">
-  <span  style="font-size: 70%;" class="">
-  <font color="red">小牛马：</font>首月免月租，第2-12个月19元月租<br>每月<b>50G全国通用流量+30G定向</b> 
-  <br><br>
-  <font color="red">大牛马：</font>首月免月租，第2-12个月29元月租<br>每月<b>105G全国通用流量+30G定向</b> 
-  <br>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/gdyd80135G.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=490555">    
-  <button id="btt1" style="color: white;"><b>【---19元选号---】</b></button>    
-  </a>&nbsp;&nbsp;&nbsp;
+ <div class="product" 
+      data-operator="unicom"      
   
-  <div class="parent-container">     
-  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=490554">    
-  <button id="btt1" style="color: white;"><b>【---29元选号---】</b></button>    
-  </a>
+      data-package-type="longTerm" 
+      data-min-age="29 49"    
+      data-delivery-area="Guangdong"  
   
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div></div>
-
-
-
-
-
+     data-self-activate="true"    
+     data-number="true"     
+     data-rollover="false"        
   
-
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false">  
+  
+ <!-- 海南联通 -->    
+   <div id="floating-container">        
+            <img id="thumbnail" src="https://static.91haoka.cn/1712723691v03440016.jpg" alt="Thumbnail Image">        
+                 <div>     
+                  <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>  
+  <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
+  <span  style="font-size: 160%;" class="highlight highlight2">自己激活 </span>   
+  <span  style="font-size: 160%;" class="highlight highlight2">在线选号</span>&nbsp;  
+  <span  style="font-size: 160%;" class="highlight highlight3">北京/广东可发！</span>&nbsp;  
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span><br>   
+     <div id="content">  
+              <span  style="font-size: 70%;" class="">   
+  
+                <a style="color: red;">  
+  
+                       <a style="color: red;">  
+              <b> 椰子卡：</a>  </b> <br>首月按天折算，第2-5个月29元，长期39元+ 每月<b>235G全国流量</b><br>   
+                 <a style="color: red;"> <br>  <b>椰岛卡：</b></a>   <br>首月按天折算，第2-5个月49元，长期59元+每月<b>350G全国流量<br> </b>  
+                   </span><br>  
+             <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐:到期自动续订  </p>     
+  
+          </div>     <div id="popup" class="popup">   
+  <iframe src=".//taocan/hainlt.html" frameborder="0" width="100%" height="1520px"></iframe>  
+   <table> <tr> <td class="header-cell">   
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
+  <div class="parent-container">       
+   <a href="https://storep.91haoka.cn/h5/duoshangpin.html?id=406883">    &nbsp;&nbsp;&nbsp;&nbsp;   
+          <button id="btt1" style="color: white;"><b>【自己激活版】</b></button>      
+         &nbsp;&nbsp;&nbsp;&nbsp;   
+        <a href="https://haokeyun.vip/t/qqSsX2e7Je8D">      
+          <button id="btt1" style="color: white;"><b>【235G选号版】</b></button>      
+   <a href="https://91haoka.cn/webapp/gantanhaoluodi/index.html?share_id=440016&id=12495985">    &nbsp;&nbsp;&nbsp;&nbsp;   
+          <button id="btt1" style="color: white;"><b>【350G选号版】</b></button>      
+        </a>    
+      </td></tr></table>   </div></div>  
+  <div id="floating-menu">  
+      <button id="btn"><b>套餐详情</b></button>       
+          </div> </div> </div>   
+  
+  
   
     
-    
-    <!-- 宽带卡 -->
-    <div id="floating-container">       
-      <img id="thumbnail" src="https://static.91haoka.cn/1700736785daJ.jpg" alt="Thumbnail Image">       
-      <div> 
-        <span  style="font-size: 160%;" class="highlight highlight8">-----------【长期套餐】自动续约---------------- </span>  <br> 
-       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight2">在线选号</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight4">送300M宽带</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight4">送1年视频会员</span> &nbsp;
-  <span  style="font-size: 160%;" class="highlight highlight3">16-60周岁 </span><br> <br><br>
-  <div id="content">
-  <span  style="font-size: 70%;" class="">
-  第1-12个月每月49元，后永久59元<br>每月<b>20G全国通用流量+30G定向+100分钟全国通话+300M宽带</b> 
-  <br><br><br>
-  <font size="2" color="red"</p><p style="font-size: 150%;">300M宽带包含在月租内，长期永久有效！</p>  
-  </span></font>
-  </div>     
-  <div id="popup" class="popup"> 
-  <iframe src="taocan/1qgkd.html" frameborder="0" width="100%" height="1520px"></iframe>
-  <table> <tr> <td class="header-cell"> 
-  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-  <div class="parent-container">     
-  <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=6748637">    
-  <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
-  </a>  
-  </td></tr></table>   </div></div>
-  <div id="floating-menu">
-  <button id="btn"><b>套餐详情</b></button>    
-  </div> </div>    
   
-  </div>
-   
-
-          <div id="tab6" class="tab"> 
-            <h2>中国广电：与中国移动共用5G基站，5G网络稳定性吊打电信、联通！（4G网络体验较差，对手机型号较挑剔！）</h2>
-
-   <div class="codeBlock" id="codeBlock3">
- <!-- 祥龙卡-->
+  <div class="product" 
+      data-operator="bcast"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Beijing Guangdong Xinjiang Tibet Yunnan Guangxi"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="true"        
+  
+     data-broadband="false"       
+     data-location="true" 
+     data-video-member="false"       
+     data-super-data="true"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">   
+  <!-- 祥龙卡-->
 <div id="floating-container">       
   <img id="thumbnail" src="https://static.91haoka.cn/1716820367Lex440016.jpg" alt="Thumbnail Image">       
   <div> 
@@ -1622,7 +1422,7 @@
 <div id="content">
    <span  style="font-size: 70%;" class=""> <br>首月免月租，
    第2-6个月19元月租，后长期29元
-     <br>每月<b>192G全国通用流量</b> </span>
+     <br>每月<b>162G全国通用流量+30G定向</b> </span>
      <br> <br>
   <font size="2" color="black"</p><p style="font-size: 150%;"> </p>   
 
@@ -1639,7 +1439,28 @@
 </div> 
   </div></div> 
 
-<div class="codeBlock" id="codeBlock3">
+
+  <div class="product" 
+      data-operator="bcast"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="Beijing Guangdong Xinjiang Tibet Yunnan Guangxi"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="true"        
+  
+     data-broadband="false"       
+     data-location="true" 
+     data-video-member="false"       
+     data-super-data="true"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="true">   
 <!-- 升龙卡-->
 <div id="floating-container">       
   <img id="thumbnail" src="https://static.91haoka.cn/17168498693Fq440016.jpg" alt="Thumbnail Image">       
@@ -1674,252 +1495,1032 @@
 <div id="floating-menu">
 <button id="btn"><b>套餐详情</b></button>     
 </div> 
-  </div>  </div></div>
+  </div>
+   </div>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="true"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false">   
+  
+ <!-- 躺平五杰-->    
+  
+    <div id="floating-container">        
+            <img id="thumbnail" src="https://static.91haoka.cn/1698112284dhH.jpg" alt="Thumbnail Image">        
+                 <div>     
+                  <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>  
+  <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
+  <span  style="font-size: 170%;" class="highlight highlight2">在线选号 </span> &nbsp;  
+  <span  style="font-size: 170%;" class="highlight highlight3">16/18-60周岁 </span><br>   
+   <div id="content">  
+              <span  style="font-size: 70%;"><a style="color: red;">  
+                    <b>湖南卡</b>： </a><br>长期29元+每月135G全国通用流量+100分钟--（）</span><br>   
+  
+                  <span  style="font-size: 70%;">  <a style="color: red;"><b> 江苏卡</b>： </a><br>长期29元+每月135G全国通用流量+200分钟--（）</span> <br>   
+  
+           <font size="2" color="black"</p><p style="font-size: 150%;">  
+  <br><br>（因各地政策随时调整，号池号码有限，先到先得！）   </p>    
+  
+          </div>        
+              <div id="popup" class="popup">   
+  <iframe src=".//taocan/tangping5.html" frameborder="0" width="100%" height="1520px"></iframe>  
+   <table> <tr> <td class="header-cell">   
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
+  <div class="parent-container">       
+        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=414516">      
+          <button id="btt1" style="color: white;"><b>【湖南-】</b></button>   </a> &nbsp; &nbsp; &nbsp;    
+          <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=414513">      
+            <button id="btt1" style="color: white;"><b>【江苏】</b></button>    
+        </a>    </td></tr></table>   </div></div>  
+  <div id="floating-menu">  
+      <button id="btn"><b>套餐详情</b></button>       
+          </div>  </div> </div>  
           
-
-<div id="tab8" class="tab"> 
-            <h1>【汇集各省专属靓号】请注意区分“长期套餐、短期套餐”</h1>
-
-
-<a href="https://enshuicard.cn/tz.html"><span  style="font-size: 180%;" class="highlight highlight4">——【点击进入】——</span></a>
-
-<br><br><span  style="font-size: 170%;">
- <font color="red">可选归属地，可选号码<b><绝版稀有靓号><b>，所见即所得！</font><br><br>
-
-靓号相关说明：<br>
-优惠到期后，号码永久使用，可自由更改任意套餐（8元等）。<br><br>
-兜底之言：申请这些靓号套餐也只是为了占有靓号，部分套餐内容确实很水。
-<br><br>当然，多数套餐性价比还是很高的！鱼和熊掌不可兼得，请量力而行！
-<br></span>
-<br>
-
-
-<a href="https://enshuicard.cn/tz.html"><span  style="font-size: 180%;" class="highlight highlight4">——【点击进入】——</span></a>
-
-</div>  </div>
-
-<div id="tab9" class="tab"> 
-            <h1>【随身WiFi】</h1>
-
-<!-- 上网宝-->
+<div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false"> 
+<!-- 广东卡 -->
+  
 <div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1721834533isG440016.jpg" alt="Thumbnail Image">       
-           <div>
- <span  style="font-size: 160%;" class="highlight highlight8">----------------【2年套餐】----------------</span>  
-<br> 
-            <span  style="font-size: 160%;" class="highlight highlight1">支持3G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight4">全国发货，无禁区</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+      <img id="thumbnail" src="https://static.91haoka.cn/1720867473X8W440016.jpg" alt="Thumbnail Image">       
+      <div> <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】4年有效期------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">首月，次月免月租</span> &nbsp;
+    <span  style="font-size: 160%;" class="highlight highlight3">18-30周岁 </span>
+ <br> <br><br>
+  <div id="content">
+  <span  style="font-size: 70%;" class="">
+  第1-2个月免月租，第3-12个月30元月租，第13-48个月29元<br><br>每月<b>100G全国通用流量+40G定向+100分钟</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">只发广东（4年套餐）</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/gdyd140G.html" frameborder="0" width="100%" height="1500px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=544501">    
+  <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
+  </a>  
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div></div>
+  
+<div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false"> 
+ <!--安徽卡 -->
+ <div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1719637359ZOf440016.jpg" alt="Thumbnail Image">       
+      <div> 
+        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】2年有效期-------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight3">收货地即归属地</span> &nbsp;
 
-<br> 
+
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+  <div id="content">
+ <br> <span  style="font-size: 70%;" class="">
+  首月免月租，第2-24个月19元月租<br>每月<b>158G全国通用流量+30G定向</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">可选归属地，只发安徽，无法转寄！</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/ahyd188G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=536642">    
+  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
+
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div></div>
+<div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false"> 
+<!--上海卡 -->
+  <div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1719621890GIK440016.jpg" alt="Thumbnail Image">       
+      <div> 
+        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期-------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
+
+
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+  <div id="content">
+ <br> <span  style="font-size: 70%;" class="">
+  第1-12个月29元月租<br>每月<b>188G全国通用流量+15G定向+50分钟全国通话</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">只发上海，无法转寄！</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/shyd203G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=535992">    
+  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
+
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div>
+</div>
+  
+<div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="19"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false"> 
+  
+<!--上海卡 -->
+
+    <div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1719569409FyN440016.jpg" alt="Thumbnail Image">       
+      <div> 
+        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期-------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight2">500mbps</span> &nbsp;
+
+
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+  <div id="content">
+ <br> <span  style="font-size: 70%;" class="">
+  首月免月租，第2-12个月19元月租<br>每月<b>158G全国通用流量+30G定向</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">只发上海市，全国可用（港澳台除外）</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/shyd188G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=535992">    
+  <button id="btt1" style="color: white;"><b>【---点击申请---】</b></button>    
+
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div></div>
+<div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="shortTerm" 
+      data-min-age="29"    
+      data-delivery-area="Guangdong beijing xinjiang Tibet Yunnan"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="true"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false"> 
+<!-- 广东卡 -->
+<div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1719630551TGL440016.jpg" alt="Thumbnail Image">       
+      <div> <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】2年有效期------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp;
+   <span  style="font-size: 160%;" class="highlight highlight2">可选号</span> &nbsp;
+     <span  style="font-size: 160%;" class="highlight highlight5">动态月结 </span> 
+
+ <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+   <br><br>
+  <div id="content">
+  <span  style="font-size: 70%;" class="">
+  首月免月租，第2-24个月29元月租<br><br>每月<b>105G全国通用流量+30G定向</b> 
+  
+  <font size="2" color="red"</p><p style="font-size: 150%;">【此版本微信/支付宝 预存100】</p>  
+  </span></font>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src=" frameborder="0" width="100%" height="1500px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
  
- <div id="content">
-            <span  style="font-size: 90%;" class=""> <br>
-                  <a style="color: red;">19元/月：</a>不限量
-  <br><a style="color: red;">79元/6个月：</a>不限量(折合13.1元/月)
-<br><a style="color: red;">129元/12个月：</a>不限量(折合10.7元/月)
-<br><a style="color: red;">199元/24个月：</a>不限量(折合8.2元/月)
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+<a href="http://wk.xiaowoxiangq.com/k/index.html?code=VxpjyvpLGa" style="color: blue;">
+
+  <button id="btn"><b>套餐详情</b></button>   </a> 
+  </div> </div></div>
+  
+   <div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="longTerm" 
+      data-min-age="49"    
+      data-delivery-area="Guangdong beijing xinjiang Tibet Yunnan"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="true"        
+  
+     data-broadband="true"       
+     data-location="true"        
+     data-video-member="true"       
+     data-super-data="true"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false">        
+  
+     <!-- 宽带卡 --> 
+ <div id="floating-container">        
+       <img id="thumbnail" src="https://static.91haoka.cn/1700736785daJ.jpg" alt="Thumbnail Image">        
+       <div>  
+         <span  style="font-size: 160%;" class="highlight highlight8">----------------【长期套餐】自动续约---------------- </span>  <br>  
+        <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp; 
+   <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp; 
+   <span  style="font-size: 160%;" class="highlight highlight2">在线选号</span> &nbsp; 
+   <span  style="font-size: 160%;" class="highlight highlight4">送300M宽带</span> &nbsp; 
+   <span  style="font-size: 160%;" class="highlight highlight4">送1年视频会员</span> &nbsp; 
+   <span  style="font-size: 160%;" class="highlight highlight3">16-60周岁 </span><br> <br><br> 
+   <div id="content"> 
+   <span  style="font-size: 70%;" class=""> 
+   第1-12个月每月49元，后永久59元<br>每月<b>20G全国通用流量+30G定向+100分钟全国通话+300M宽带</b>  
+   <br><br><br> 
+   <font size="2" color="red"</p><p style="font-size: 150%;">300M宽带包含在月租内，长期永久有效！</p>   
+   </span></font> 
+   </div>      
+   <div id="popup" class="popup">  
+   <iframe src=".//taocan/1qgkd.html" frameborder="0" width="100%" height="1600px"></iframe> 
+   <table> <tr> <td class="header-cell">  
+   <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
+   <div class="parent-container">      
+   <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=6748637">     
+   <button id="bt1" style="color: white;"><b>【---点击办理---】</b></button>     
+   </a>   
+   </td></tr></table>   </div></div> 
+   <div id="floating-menu"> 
+   <button id="btn"><b>套餐详情</b></button>     
+   </div> </div>     
+  
+   </div> 
+  
+  
+  
+  
+  
+    
+  
+   <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="59"    
+      data-delivery-area="Guangdong"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false">  
+  
+  
+ <!-- 晨光卡 -->  
+    <div id="floating-container">         
+      <img id="thumbnail" src="https://static.91haoka.cn/17037710349qh440016.jpg" alt="Thumbnail Image">         
+      <div>   
+        <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>  
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;  
+  <span  style="font-size: 160%;" class="highlight highlight2">在线选号</span> &nbsp;  
+  <span  style="font-size: 160%;" class="highlight highlight2">2000分钟</span> &nbsp;  
+  <span  style="font-size: 160%;" class="highlight highlight3">16-60周岁 </span><br> <br><br>  
+  <div id="content">  
+  <span  style="font-size: 70%;" class="">  
+  首月半量半价，长期永久59元<br><br>每月<b>100G全国通用流量+2000分钟全国通话</b> </span>  
+   <br><br><br>  
+  <font size="2" color="red"</p><p style="font-size: 150%;">禁止用于“电信网络诈骗”！</p>    
+  </span></font>  
+  </div>       
+  <div id="popup" class="popup">   
+  <iframe src=".//taocan/gdlt2000fz.html" frameborder="0" width="100%" height="1520px"></iframe>  
+  <table> <tr> <td class="header-cell">   
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>  
+  <div class="parent-container">       
+  <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=11165985">      
+  <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>      
+  </a>    
+  </td></tr></table>   </div></div>  
+  <div id="floating-menu">  
+  <button id="btn"><b>套餐详情</b></button>      
+  </div> </div>         
+  
+       </div> 
+<div class="product" 
+      data-operator="telecom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="Guangdong Guangxi Yunnan Beijing"  
+  
+     data-self-activate="true"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false"> 
+<!-- 湖南星 --> 
+
+  <div id="floating-container">      
+            <img id="thumbnail" src="https://static.91haoka.cn/1722044022AMk440016.jpg" alt="Thumbnail Image">      
+                 <div>    
+                  <span  style="font-size: 160%;" class="highlight highlight7">--------------【长期套餐】自动续约-------------- </span>  <br>
+      <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">自己激活</span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">在线选号 </span>  &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span><br>
+   <div id="content">
+              <span  style="font-size: 85%;" class="">
+                 <b>   </b></a> <br>首月免月租，长期永久29元月租<br>
+  每月<b>105G全国通用流量+30G定向+100分钟全国通话</b></span> <br>   
+   <font size="2" color="black"><p style="font-size: 140%;"><b><br>注意接听短信/电话回访，按要求回复，否则不允发货！</p> 
+  <font size="2" color="red"><p style="font-size: 140%;"><br>（全国可用，无地域限制，后期无需参加“充值返费活动”）</b></p>   </font>
+          
+  </div> <div id="popup" class="popup"> 
+  <iframe src="taocan/hndx135G.html" frameborder="0" width="100%" height="1500px"></iframe>
+   <table> <tr> <td class="header-cell"> 
+      <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+        <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=500160">    
+          <button id="btt1" style="color: white;"><b>【选号版】</b></button></a>     &nbsp;&nbsp; 
+   <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=551919">    
+          <button id="btt1" style="color: white;"><b>【湖南省内版】</b></button>    
+   
+
+     </a>    </td></tr></table>   </div></div>
+  <div id="floating-menu">
+      <button id="btn"><b>套餐详情</b></button>      
+          </div></div> </div>
+       
+      <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false">  
+  
+<!-- 青芒卡 --> 
+	<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/17212745004uQ440016.jpg" alt="Thumbnail Image">       
+           <div>    
+            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
+<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+
+<span  style="font-size: 160%;" class="highlight highlight4">自己激活 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>  <br><br>
+
+     <div id="content">
+            <span  style="font-size: 85%;"> <br>首月按天折算，次月起长期19元月租
+<br>每月<b>95G全国通用流量+60G定向+100分钟全国通话</b></span><br><br>
+<font size="2" color="red"><p style="font-size: 150%;">【后期无需任何“充返续约”】</p></font>  
+
+<font size="2" color="red"> <p style="font-size: 130%;">   <b>限时回归，随时下架！（只承诺长期19元月租，无法与其他优惠减免叠加）</b></p> </font> 
+
+</div> <div id="popup" class="popup"> 
+<iframe src="taocan/jxlt155G2.html" frameborder="0" width="100%" height="1500px"></iframe>
+ <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+<div class="parent-container">     
+
+&nbsp;&nbsp; &nbsp;
+<div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=493861">    
+        <button id="btt1" style="color: white;"><b>【点击申请】</b></button>    
+      </a>   
+
+      
+      </td></tr></table>   </div></div>
+<div id="floating-menu">
+    <button id="btn"><b>套餐详情</b></button>    
+        </div></div></div>
+<div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false">  
+<!-- 鹅城卡 --> 
+	<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/1721306729VBg440016.jpg" alt="Thumbnail Image">       
+           <div>    
+            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
+<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+
+<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span> 
+<span  style="font-size: 160%;" class="highlight highlight4">自己激活</span> <br><br>
+
+     <div id="content">
+            <span  style="font-size: 85%;"> <br>首月免月租，次月起长期19元月租
+<br>每月<b>20G全国通用流量+30G定向+300分钟全国通话</b></span><br><br>
+<font size="2" color="red"><p style="font-size: 150%;">限时限量</p></font>  <br>
+
+<font size="2" color="red"> <p style="font-size: 130%;">   <b>下单需要上传照片！（防电诈，介意勿拍）</b></p> </font> 
+
+</div> <div id="popup" class="popup"> 
+<iframe src="taocan/1zglt50G.html" frameborder="0" width="100%" height="1500px"></iframe>
+ <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+<div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=546838">    
+        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
+      </a>    </td></tr></table>   </div></div>
+<div id="floating-menu">
+    <button id="btn"><b>套餐详情</b></button>    
+        </div></div></div>
+  
+   <div class="product" 
+      data-operator="mobile"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19 29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="false"                        
+     data-super-voice="false">
+  
+<!-- 牛马卡 -->
+   <div id="floating-container">       
+      <img id="thumbnail" src="https://static.91haoka.cn/1715304648FWy440016.jpg" alt="Thumbnail Image">       
+      <div> 
+        <span  style="font-size: 160%;" class="highlight highlight8">-------------【短期套餐】1年有效期------------- </span>  <br> 
+       <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">可选归属地</span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight2">在线选号</span> &nbsp;
+  <span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span>
+  <span  style="font-size: 160%;" class="highlight highlight5">首月免月租 </span> 
+  <br> <br><br>
+  <div id="content">
+  <span  style="font-size: 70%;" class="">
+  小牛马：首月免月租，第2-12个月19元月租<br>每月<b>50G全国通用流量+30G定向</b> 
+  <br><br>
+  大牛马：首月免月租，第2-12个月29元月租<br>每月<b>105G全国通用流量+30G定向</b> 
+  <br>
+  </div>     
+  <div id="popup" class="popup"> 
+  <iframe src="taocan/gdyd80135G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+  <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=490555">    
+  <button id="btt1" style="color: white;"><b>【---19元选号---】</b></button>    
+  </a>&nbsp;&nbsp;&nbsp;
+  
+  <div class="parent-container">     
+  <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=490554">    
+  <button id="btt1" style="color: white;"><b>【---29元选号---】</b></button>    
+  </a>
+  
+  </td></tr></table>   </div></div>
+  <div id="floating-menu">
+  <button id="btn"><b>套餐详情</b></button>    
+  </div> </div></div>
+  
+<div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="all"  
+  
+     data-self-activate="false"    
+     data-number="true"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="false"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false"> 
+  
+  
+  <!-- 湖北-->  
+  <div id="floating-container">      
+           <img id="thumbnail" src="https://static.91haoka.cn/17215160202vZ440016.jpg" alt="Thumbnail Image">      
+                <div> 
+ <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
+ <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+ <span  style="font-size: 170%;" class="highlight highlight4">在线选号 </span>
+ <span  style="font-size: 170%;" class="highlight highlight3">18-60周岁 </span><br> 
+    <div id="content">
+             <span  style="font-size: 70%;" class=""><a style="color: red;">
+                </a>首月按天扣费，次月起长期每月29元<br>+每月<b>139G全国通用流量+100分钟全国通话</b><br>
+         
               </span>
-              <br> <br>
-           <font size="2" color="red"</p><p style="font-size: 150%;">消费群体：老人刷视频，孩子上网课！</p>   </font>
-      
-        </div>     <div id="popup" class="popup"> 
-<iframe src="wl/wf19.html" frameborder="0" width="100%" height="1500px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=550933">    
-        <button id="bt1" style="color: white;"><b>【---点击申请---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>     
-        </div> </div>  
-
-
-
-
-
-
-</div>  </div>
-<div id="tab10" class="tab"> 
-            <h1>物联卡</h1>
-<span  style="font-size: 140%;">
-<font color="red">优势：</font><b>14周岁可以申请、支持5G网络、无需首充、无需注销。</b>
-<br><font color="red">使用方法：</font>每月手动订购流量包（每月费用固定）！
-<br><br>注意：恶意刷流量，直接强制注销！（介意勿拍）
-<br>部分“物联卡”流量虚量（有标注），请以实际为准！（介意勿拍）
-</span><br>
-
-<!-- 广电官方 -->
-<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1721830024v6T440016.jpg" alt="Thumbnail Image">       
-           <div>
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】----------------</span>  
-<br> 
-            <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率（500mbps）</span> &nbsp;
-
-<span  style="font-size: 160%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight4">全国发货，无禁区</span> &nbsp;
-
-<span  style="font-size: 160%;" class="highlight highlight4">官方套餐0虚量</span>
-
-<span  style="font-size: 160%;" class="highlight highlight3">14-60周岁 </span>
-<span  style="font-size: 160%;" class="highlight highlight4">中国广电APP可登录</span><br> 
+          <font size="2" color="black"</p><p style="font-size: 150%;">只发湖北省内地址！</b></p> </font> 
+         </div>   
+          <div id="popup" class="popup"> 
+ <iframe src="taocan/hblt139G.html" frameborder="0" width="100%" height="1500px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+ <div class="parent-container">     
+       <a href="https://enshuicard.cn/tz.html">    
+         <button id="btt1" style="color: white;"><b>【→点击选号←】</b></button>    
+       </a>   
+     </td></tr></table>   </div></div>
+ <div id="floating-menu">
+     <button id="btn"><b>套餐详情</b></button>     
+         </div>  </div> </div>
  
-<br> 
-
- <div id="content">
-            <span  style="font-size: 90%;" class=""> <br>
-                 <font color="red"> 29元：</font><b>200G全国通用流量</b>
-              <br><font color="red">39元：</font><b>500G全国通用流量</b> </span>
-              <br> <br>
-           <font size="2" color="red"</p><p style="font-size: 150%;">此套餐可登录"中国广电APP"。<br>上述两款流量包，每月自由选择。</p>   </font>
-      
-        </div>     <div id="popup" class="popup"> 
-<iframe src="wl/gd200.html" frameborder="0" width="100%" height="1510px"></iframe>
- <table> <tr> <td class="header-cell"> 
-    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
-<div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=550800">    
-        <button id="bt1" style="color: white;"><b>【---点击办理---】</b></button>    
-      </a>    </td></tr></table>   </div></div>
-<div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>     
-        </div> </div>  
-
-
-<!-- 广电物联 -->
-<div id="floating-container">       
-           <img id="thumbnail" src="https://static.91haoka.cn/1721832170rzo440016.jpg" alt="Thumbnail Image">       
-           <div>
- <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】----------------</span>  
-<br> 
-            <span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight2">5G黄金速率（500mbps）</span> &nbsp;
-
-<span  style="font-size: 160%;" class="highlight highlight2">自己激活</span> &nbsp;
-<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span><br> 
  
- <div id="content">
-            <span  style="font-size: 90%;" class=""> <br>
-        <font color="red">19元：</font><b>100G全国通用流量</b>
-<br><font color="red">29元：</font><b>200G全国通用流量</b>
-<br><font color="red">39元：</font><b>300G全国通用流量</b>
-<br><font color="red">49元：</font><b>400G全国通用流量</b>
-<br><font color="red">59元：</font><b>500G全国通用流量</b> </span>
-              <br> <br>
-           <font size="2" color="black"</p><p style="font-size: 150%;">流量包每月自由选择。</p>   
-      
-        </div>     <div id="popup" class="popup"> 
-<iframe src="wl/gd100.html" frameborder="0" width="100%" height="1510px"></iframe>
+
+
+
+
+<div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="true"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false"> 
+<!-- 永久卡 --> 
+
+	<div id="floating-container">       
+           <img id="thumbnail" src="https://static.91haoka.cn/1721472617BEF440016.jpg" alt="Thumbnail Image">       
+           <div>    
+            <span  style="font-size: 160%;" class="highlight highlight7">-----------【长期套餐】自动续约----------- </span>  <br>   
+<span  style="font-size: 160%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 160%;" class="highlight highlight4">会员每月任选其一（长期领） </span> <br>
+
+<span  style="font-size: 160%;" class="highlight highlight3">18-60周岁 </span> 
+<span  style="font-size: 160%;" class="highlight highlight4">自己激活</span> <br><br>
+
+     <div id="content">
+            <span  style="font-size: 85%;"> <br>首月免月租，次月起长期24元月租
+<br>每月<b>20G全国通用流量+30G定向+300分钟全国通话</b></span><br><br>
+<font size="2" color="red"><p style="font-size: 150%;">会员种类：B站、腾讯、优酷、爱奇艺、懒人听书、喜马拉雅等。</p></font>  <br>
+
+<font size="2" color="red"> <p style="font-size: 130%;">   <b>下单需要上传照片！（防电诈，介意勿拍）</b></p> </font> 
+
+</div> <div id="popup" class="popup"> 
+<iframe src="taocan/cqlt50G.html" frameborder="0" width="100%" height="1500px"></iframe>
  <table> <tr> <td class="header-cell"> 
     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
 <div class="parent-container">     
-      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=550801">    
-        <button id="bt1" style="color: white;"><b>【---点击办理---】</b></button>    
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=548756">    
+        <button id="btt1" style="color: white;"><b>【---点击办理---】</b></button>    
       </a>    </td></tr></table>   </div></div>
 <div id="floating-menu">
-    <button id="btn"><b>套餐详情</b></button>     
-        </div> </div>
-
-</div>   
-      <div id="popup60" class="popup">  
-   <div class="popup-content">  
-      <p>  
-   <table>   
-  
-  <font color="CD853F"><b>    
-   <h3 align="center">收货地址填写规范</h3></font></b>  
-  
-  <tr>  
-    <td>  
-      <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>  
-    </tr>  
-    <tr>  
-     <td class="header-cell"><b>所在区域：<br></b></td>  
-      <td>选择对应的“选项”：省、市、区/县</td>  
-    </tr>  
-    <tr>  
-      <td class="header-cell"><b>详细地址：<br></b></td>  
-      <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！  
-  
-  <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>  
-  <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］  
-  
-  <p><b>**镇/乡**村/屯**号**</b>  
-  <br>如：大王镇小王村9号（请以实际地址为准！）  
-  </td></tr>  
-  
-  <tr>  
-  <td class="header-cell">禁填“字眼”</td>  
-  
-  <td>收货地址出现以下任何类似相关“字眼”不允发货:  
-  <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址!</td>  
-  </tr>  
-  
-     <td class="header-cell"><b>解决办法：</b></td>  
-      <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可make up］！  
-  <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>  
-    </tr>  
-  <tr>  
-     <td class="header-cell"><b>疑惑解析：</b></td>  
-      <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！   
-    <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。   
-    <p>部分村庄无法送货上门，请以实际为准！</td>  
-    </tr></table>  
-  
-        <font color="CD853F"><b>    
-   <h3 align="center">使用注意事项</h3></font></b>  
-    <table><tr>   
-       <td>     
-  
- <font color="#CD853F"><b>申请前请仔细查看“图文介绍”，因篇幅有限，有任何疑问请咨询人工客服！</b></font><br> 
-  由于新入网号码流量到账时间不一，为了避免因流量“<font color="#CD853F"><b>超量</b></font>”而额外扣费，新卡激活后先不要使用流量。  
-           请使用其他网络登录“中国移动、联通、电信、广电”APP，确认流量到账后再合理使用！   
-        <br><font color="#CD853F"><b>相同、类似套餐，每个身份证号只能申请一张，多次申请无效！</b></font>  
-          <br>   订单成功提交后，可在店铺主页“<font color="#CD853F"><b>订单查询</b></font>”板块查看订单状态！  
-              <br>如显示：<font color="#CD853F"><b>订单失败、订单终止</b></font>，请及时联系<font color="#CD853F"><b>人工客服</b></font>咨询具体原因！  
-                 <br>如显示：<font color="#CD853F"><b>订单欠费</b></font>，请选择<font color="#CD853F"><b>无视</b>,</font>稍后会恢复正常！  
-  
-      <br> <br>针对个别“激活首月全额扣月租”的流量卡，推荐月底申请，月初激活，可与快递员重新约定送货时间！（最多延期7天）<font color="#CD853F">收货之日即激活之日！</font> 
-      <br><font color="#CD853F"><b></b></font><br>需要自己激活的“流量卡”，收货后请在<b>48小时内完成激活！</b>逾期请联系店铺客服！ 
-
-</td></tr></table>  
-<font color="red"><b>    
-   <h3 align="center">公告</h3></font></b>
-<table><tr><td>  
-<font color="red">请勿抱有任何侥幸心理出租、出售、出借自己/他人的手机卡，收卡人员100%用于“电信网络诈骗”！
-<br> <br>并非危言耸听，注意这是刑事犯罪！所有手机卡激活时均需本人实名、活体认证（他人无法激活）。请勿过于幼稚天真！现在是大数据时代，公安机关追根溯源太过简单！
-哪怕你没有主观参与，依然附有连带刑事责任（帮信罪），案底伴随终生！
-
-<br><br>从此无法办理任何手机卡，入党、参军、教师、事业编、公务员等职业彻底与你无缘（包括你的子女，政审查三代了解一下！）
- 请勿为了蝇头小利葬送自己和家人的前程!
- <br><br>本店已做到在醒目位置警示，并积极主动告知每位申请者相关注意事项的义务，如有“涉诈”案件发生均属个人行为，与本公司及本人无关，请积极主动的配合公安机关调查！
+    <button id="btn"><b>套餐详情</b></button>    
+        </div></div></div>
 
 
 
-</font>
- </td></tr></table>  
-         <br><br>   
-    </div>   
-  </div>  
+<div class="product" 
+      data-operator="unicom"      
   
-<body> 
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="true"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false"> 
+<!-- 逆动卡 --> 
+ <div id="floating-container">      
+          <img id="thumbnail" src="https://static.91haoka.cn/1718791577V9B440016.jpg" alt="Thumbnail Image">   <div>
+ <span  style="font-size: 160%;" class="highlight highlight7">----【长期套餐】每4年联系联通客服续约----- </span>  <br>        
+<span  style="font-size: 130%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight2">5G黄金速率500mbps </span> &nbsp;
 
-		<script src="./css/close.js"> </script>
-<script src="./css/popup.js"> </script>
-	     <script src="./css/guding.js"> </script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "1https://hm.baidu.com/hm.js?88b7be797589e624b346760172cfccba";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<span  style="font-size: 130%;" class="highlight highlight2">自己激活</span> &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight4">部分流量可结转</span> &nbsp;
 
-</body>  </html>
+<span  style="font-size: 130%;" class="highlight highlight3">18-42周岁 </span> 
+
+       <div id="content">
+            <span  style="font-size: 66%;" class=""><a style="color: red;">
+               <b> </b></a>
+ <br>长期29元月租<br>+每月<b>180G全国通用流量+100分钟全国通话</b><br> 
+               </div> 
+<div id="popup" class="popup"> 
+<iframe src="taocan/ahlt180G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
+<div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=327253">    
+        <button id="btt1" style="color: white;"><b>【--申请地址---】</b></button>  </a>    </td></tr></table>   </div></div>
+
+<div id="floating-menu">
+    <button id="btn"><b>套餐详情</b></button>
+   </div>     </div>  </div> 
+  
+  
+  
+  <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="19"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="true"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false"> 
+
+<!-- 海南-->  
+  <div id="floating-container">      
+           <img id="thumbnail" src="https://static.91haoka.cn/1722258034uVC440016.jpg" alt="Thumbnail Image">      
+                <div> 
+ <span  style="font-size: 160%;" class="highlight highlight7">----------------【长期套餐】自动续约---------------- </span>  <br>
+ <span  style="font-size: 170%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 170%;" class="highlight highlight2">5G黄金速率 </span> &nbsp;
+<span  style="font-size: 170%;" class="highlight highlight4">自己激活 </span> &nbsp;
+
+ <span  style="font-size: 170%;" class="highlight highlight3">18-28周岁 </span>
+<span  style="font-size: 170%;" class="highlight highlight4">N多视频会员送4年（每月任选其一） </span> &nbsp;<br> <br>
+    <div id="content">
+             <span  style="font-size: 70%;" class=""><a style="color: red;">
+                </a>第1-2个月免月租，第3-48个月每月29元<br>+每月<b>280G全国通用流量+100分钟全国通话+4年视频会员</b><br>
+         
+              </span>
+          <font size="2" color="black"</p><p style="font-size: 150%;"></b></p> </font> 
+         </div>   
+          <div id="popup" class="popup"> 
+ <iframe src="taocan/hainlt280G.html" frameborder="0" width="100%" height="1500px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+     <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button>
+ <div class="parent-container">     
+       <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=553181">    
+         <button id="btt1" style="color: white;"><b>【→点击办理←】</b></button>    
+       </a>   
+     </td></tr></table>   </div></div>
+ <div id="floating-menu">
+     <button id="btn"><b>套餐详情</b></button>     
+         </div>  </div> </div> 
+  
+  
+    <div class="product" 
+      data-operator="unicom"      
+  
+      data-package-type="longTerm" 
+      data-min-age="29"    
+      data-delivery-area="Guangdong Beijing"  
+  
+     data-self-activate="true"    
+     data-number="false"     
+     data-rollover="false"        
+  
+     data-broadband="false"       
+     data-location="false"        
+     data-video-member="false"       
+     data-super-data="false"        
+  
+     data-nice-number="true"          
+     data-history="false"          
+  
+     data-recommended="true"                        
+     data-super-voice="false"> 
+<!-- 徽章卡 --> 
+
+ <div id="floating-container">      
+          <img id="thumbnail" src="https://static.91haoka.cn/17219188252Bn440016.jpg" alt="Thumbnail Image">   <div>
+ <span  style="font-size: 160%;" class="highlight highlight7">----【长期套餐】每4年手动续约----- </span>  <br>        
+<span  style="font-size: 130%;" class="highlight highlight1">支持5G网络 </span> &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight2">5G黄金速率500mbps </span> &nbsp;
+
+<span  style="font-size: 130%;" class="highlight highlight2">自己激活</span> &nbsp;
+<span  style="font-size: 130%;" class="highlight highlight4">部分流量可结转</span> &nbsp;
+
+<span  style="font-size: 130%;" class="highlight highlight3">18-42周岁 </span> 
+
+       <div id="content">
+            <span  style="font-size: 66%;" class=""><a style="color: red;">
+               <b> </b></a>
+ <br>第1-48个月每月29元，长期29元月租<br>+每月<b>180G全国通用流量+400G安徽省内通用流量+150分钟全国通话</b><br> 
+               </div> 
+<div id="popup" class="popup"> 
+<iframe src="taocan/ahlt580G.html" frameborder="0" width="100%" height="1520px"></iframe>
+  <table> <tr> <td class="header-cell"> 
+    <button class="popup-btn" data-popup="popup60"> <b>注意事项（必看）</b></button> 
+<div class="parent-container">     
+      <a href="https://storep.91haoka.cn/h5/dingdanxinxiliu1218xin.html?id=551007">    
+        <button id="btt1" style="color: white;"><b>【--申请地址---】</b></button>  </a>    </td></tr></table>   </div></div>
+
+<div id="floating-menu">
+    <button id="btn"><b>套餐详情</b></button>
+   </div>     </div>  </div> 
+
+  
+  
+  
+  
+  
+  
+  
+  
+ </div> 
+ <div id="popup1000" class="popup">   
+  <div class="popup-content">   
+  <iframe src="1sift.html" frameborder="0" width="100%" height="1510"></iframe> 
+    </div> 
+    </div></div> 
+       <div id="popup60" class="popup">   
+    <div class="popup-content">   
+       <p>   
+    <table>    
+  
+   <font color="CD853F"><b>     
+    <h3 align="center">收货地址填写规范</h3></font></b>   
+  
+   <tr>   
+     <td>   
+       <td><b>为了提高运营商审核通过率，请务必按要求规范填写收货地址！</b></td>   
+     </tr>   
+     <tr>   
+      <td class="header-cell"><b>所在区域：<br></b></td>   
+       <td>选择对应的“选项”：省、市、区/县</td>   
+     </tr>   
+     <tr>   
+       <td class="header-cell"><b>详细地址：<br></b></td>   
+       <td><font color="#CD853F"><b>详细地址需手动填写！</b></font><br>“选项栏”内的“省、市、区/县”不必在此重复填写！   
+  
+   <p><b>**街/路/号**小区**号楼**单元**号</b><font color="#CD853F">［必须精确到门牌号］</font>   
+   <br>如：政候街36号渚河湾1号楼1单元1011号［或者1-1-1011］   
+  
+   <p><b>**镇/乡**村/屯**号**</b>   
+   <br>如：大王镇小王村9号（请以实际地址为准！）   
+   </td></tr>   
+  
+   <tr>   
+   <td class="header-cell">禁填“字眼”</td>   
+  
+   <td>收货地址出现以下任何类似相关“字眼”不允发货:   
+   <p>学校、大学、学院、高中、中学、宾馆、酒店、商场、写字楼、公寓、旅馆、宿舍、超市、菜鸟驿站、快递柜、代收点、酒吧、KTV、会所、门市等一切临时住所、门面房、娱乐场所、涉密敏感地址、模糊地址!</td>   
+   </tr>   
+  
+      <td class="header-cell"><b>解决办法：</b></td>   
+       <td>如涉及到上述情况，或者无法确定具体收货地址。请打开手机导航，填写附近的小区地址，必须精确到门牌号［可make up］！   
+   <br>郊区、村镇：请以导航显示附近村庄的实际地址为准！</td>   
+     </tr>   
+   <tr>   
+      <td class="header-cell"><b>疑惑解析：</b></td>   
+       <td>送货前快递员会提前与你电话联系，并不会直接送到你填写的收货地址，也不会对你填写的收货地址造成任何影响！敬请放心！    
+     <p>请以你方便收货的时间为准，让快递员送到你指定地点（可校门口）。    
+     <p>部分村庄无法送货上门，请以实际为准！</td>   
+     </tr></table>   
+  
+         <font color="CD853F"><b>     
+    <h3 align="center">使用注意事项</h3></font></b>   
+     <table><tr>    
+        <td>      
+  
+  <font color="#CD853F"><b>申请前请仔细查看“图文介绍”，因篇幅有限，有任何疑问请咨询人工客服！</b></font><br>  
+   由于新入网号码流量到账时间不一，为了避免因流量“<font color="#CD853F"><b>超量</b></font>”而额外扣费，新卡激活后先不要使用流量。   
+            请使用其他网络登录“中国移动、联通、电信、广电”APP，确认流量到账后再合理使用！    
+         <br><font color="#CD853F"><b>相同、类似套餐，每个身份证号只能申请一张，多次申请无效！</b></font>   
+           <br>   订单成功提交后，可在店铺主页“<font color="#CD853F"><b>订单查询</b></font>”板块查看订单状态！   
+               <br>如显示：<font color="#CD853F"><b>订单失败、订单终止</b></font>，请及时联系<font color="#CD853F"><b>人工客服</b></font>咨询具体原因！   
+                  <br>如显示：<font color="#CD853F"><b>订单欠费</b></font>，请选择<font color="#CD853F"><b>无视</b>,</font>稍后会恢复正常！   
+  
+       <br> <br>针对个别“激活首月全额扣月租”的流量卡，推荐月底申请，月初激活，可与快递员重新约定送货时间！（最多延期7天）<font color="#CD853F">收货之日即激活之日！</font>  
+       <br><font color="#CD853F"><b></b></font><br>需要自己激活的“流量卡”，收货后请在<b>48小时内完成激活！</b>逾期请联系店铺客服！  
+  
+ </td></tr></table>   
+ <font color="red"><b>     
+    <h3 align="center">公告</h3></font></b> 
+ <table><tr><td>   
+ <font color="red">请勿抱有任何侥幸心理出租、出售、出借自己/他人的手机卡，收卡人员100%用于“电信网络诈骗”！ 
+ <br> <br>并非危言耸听，注意这是刑事犯罪！所有手机卡激活时均需本人实名、活体认证（他人无法激活）。请勿过于幼稚天真！现在是大数据时代，公安机关追根溯源太过简单！ 
+ 哪怕你没有主观参与，依然附有连带刑事责任（帮信罪），案底伴随终生！ 
+  
+ <br><br>从此无法办理任何手机卡，入党、参军、教师、事业编、公务员等职业彻底与你无缘（包括你的子女，政审查三代了解一下！） 
+  请勿为了蝇头小利葬送自己和家人的前程! 
+  <br><br>本店已做到在醒目位置警示，并积极主动告知每位申请者相关注意事项的义务，如有“涉诈”案件发生均属个人行为，与本公司及本人无关，请积极主动的配合公安机关调查！ 
+  
+  
+  
+ </font> 
+  </td></tr></table>   
+          <br><br>    
+     </div>    
+   </div>   
+  
+ <body>  
+  
+  
+  
+  <script src="./css/popup.js"> </script> 
+  <script src="./css/close.js"> </script> 
+    <script src="./css/shaixuan.js"> </script> 
+  
+ </body>      
+      </html>  
