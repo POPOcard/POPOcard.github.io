@@ -1,0 +1,7 @@
+
+    .lazy {
+      display: block;
+      min-height: 150px; /* Example height */
+      background: url('path/to/placeholder.jpg') no-repeat center center;
+      background-size: cover;
+    }
